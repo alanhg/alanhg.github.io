@@ -30,6 +30,8 @@ key.alias.password=<YOUR_ALIAS password>
 `ionic cordova build android --prod --release`
 在`/platforms/android/build/outputs/apk`下就会看到有`android-release.apk`文件。
 
+![cordova-build-android](http://or0g12e5e.bkt.clouddn.com/cordova-build-android.png)
+
 其实也可以打包出来为签名版本的apk，通过命令行手动加签名，但是对比这个方案就会略显麻烦，建议按照上述这种方式，自动化加上签名。
 
 参考文章[Ionic 2 : Building A Release Android APK](http://ionichelper.forlearning.net/ionic-2-building-a-release-android-apk/)
