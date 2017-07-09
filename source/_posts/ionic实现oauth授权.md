@@ -1,15 +1,18 @@
 ---
 title: ionic实现oauth授权
-date: 2017-07-09 00:19:04
 tags:
-- ionic
-- oauth
-- wakatime
-- codetracker
+  - ionic
+  - oauth
+  - wakatime
+  - codetracker
+abbrlink: 3ca825ae
+date: 2017-07-09 00:19:04
 ---
 ## 背景
-最近在开发一款APP-CodeTracker,其实就是使用WakaTime-API拿到一些数据进行APP展示，而获取这些数据有两种办法，第一种是本身wakatime账号给与的API-KEY，另一种方式是oauth2授权，用户通过登录账户登录授权该APP，进而拿到授权后的令牌，获取相关信息。
-本身输入API-KEY是最简单的方式，但是在实际使用中，因为APIKEY是很长且无需的字符串，用户并不可能记住，所以必须实现授权登录，查阅资料最终实现了这个功能
+最近在开发一款APP-CodeTracker,其实就是使用WakaTime-API拿到一些数据进行APP展示，而获取这些数据有两种办法，第一种是本身WakaTime账号给与的API-KEY，另一种方式是oauth2授权，用户通过登录账户授权给该APP，进而拿到授权后的令牌，获取相关信息。
+本身输入API-KEY是最简单的方式，但是在实际使用中，因为APIKEY是很长且无需的字符串，用户并不可能记住，所以必须实现授权登录，查阅资料最终实现了这个功能，效果如下
+
+![wakatime-oauth](http://or0g12e5e.bkt.clouddn.com/wakatime-oauth.gif)
 
 ## 实现方法
 
