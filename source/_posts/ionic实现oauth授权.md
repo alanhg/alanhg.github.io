@@ -72,6 +72,11 @@ export class WelcomePage {
 
 ```
 ### 说明
-+ 这里其实就是APP内部启动浏览器，让用户登录对应平台输入用户名密码后，授权成功会回调，且带上了令牌，这个时候只要监听到浏览器URI变化了，拿到对应的令牌，然后继续执行目标操作即可。
++ 原理上:这里其实就是APP内部启动浏览器，让用户登录对应平台输入用户名密码后，授权成功会回调，且带上了令牌，这个时候只要监听到浏览器URI变化了，拿到对应的令牌，然后继续执行目标操作即可。
 + `REDIRECT_URI`对于APP的话，就是`http://localhost`
-+ 关于oauth有不明白的，建议看[理解OAuth 2.0](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
++ 我这里登录授权成功,回调后的URI如下
+```
+http://localhost/#access_token=sec_VjDDAPwUz8b6p6RezqckosgD2oNVqS0aYyuFGo4gpEYsRpIVcgmxzXTId8iKpelEszZpuzQJc4cWM6Na&refresh_token=ref_EDkGC1NyhcnEU76mYlg7FRuWdymLDNDUcvF4NhqT4UNUUECPqIGrM1xU2mXzSyfmTCvqn9sVdn2baO6k&scope=email%2Cread_stats&uid=1fcb745b-b90e-4660-9c2d-2ae97a8ba010&token_type=bearer&expires_in=43200
+```
+其它授权系统类似。
++ 关于oauth有不明白的，建议看阮一峰老师的文章[理解OAuth 2.0](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
