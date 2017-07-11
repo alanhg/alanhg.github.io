@@ -45,4 +45,25 @@ $ tar zxvf FileName.tar.gz
 ```
 # 当前用户目录下
 $ cd ~
+
+```
+
+## 服务
+`chkconfig`命令主要用来更新（启动或停止）和查询系统服务的运行级信息。谨记chkconfig不是立即自动禁止或激活一个服务，它只是简单的改变了符号连接。
+```
+chkconfig --list        #列出所有的系统服务
+chkconfig --add httpd        #增加httpd服务
+chkconfig --del httpd        #删除httpd服务
+chkconfig --level httpd 2345 on        #设置httpd在运行级别为2、3、4、5的情况下都是on（开启）的状态
+chkconfig --list        #列出系统所有的服务启动情况
+chkconfig --list mysqld        #列出mysqld服务设置情况
+chkconfig --level 35 mysqld on        #设定mysqld在等级3和5为开机运行服务，--level 35表示操作只在等级3和5执行，on表示启动，off表示关闭
+chkconfig mysqld on        #设定mysqld在各等级为on，“各等级”包括2、3、4、5等级
+```
+`service`命令常被用于运行初始化脚本，通常所有的系统级初始化脚本被存储于`/etc/init.d`目录下.常用 命令如下
+```
+$ service SCRIPT-Name start
+$ service SCRIPT-Name status
+$ service SCRIPT-Name restart
+
 ```
