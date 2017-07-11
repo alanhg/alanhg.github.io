@@ -5,15 +5,17 @@ tags:
 - redis
 - linux
 ---
-redis官方提供的方式是源码安装，官方已经提供了安装教程，习惯原版，[点击这里](https://redis.io/topics/quickstart)，我这里更多是翻译和讲解下。
+redis官方提供的方式是源码安装，官方已经提供了安装教程，习惯原版，[点击这里](https://redis.io/topics/quickstart)，我这里更多是翻译和讲解下。顺便再回顾下常用命令
 
 ## 编译
 官方提供的是源码
 ```
-wget http://download.redis.io/redis-stable.tar.gz
-tar xvzf redis-stable.tar.gz
-cd redis-stable
-make
+$ wget http://download.redis.io/redis-stable.tar.gz
+# 解压，释放源代码文件
+$ tar xvzf redis-stable.tar.gz
+$ cd redis-stable
+# 编译
+$ make
 ```
 进入src目录下，会看到这些可执行的脚本
 + redis-server redis服务本身
