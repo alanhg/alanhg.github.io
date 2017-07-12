@@ -55,6 +55,9 @@ $ git branch <branchName> <sha1-of-commit>
 # 推送到主干
 $ git push origin <branchName>
 
+# 修改对应的远程分支
+$ git branch -u origin/dev
+
 ```
 # 常见错误
 ## Git: fatal: Pathspec is in submodule
