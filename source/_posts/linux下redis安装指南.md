@@ -1,9 +1,10 @@
 ---
 title: linux下redis安装指南
-date: 2017-07-11 23:17:34
 tags:
-- redis
-- linux
+  - redis
+  - linux
+abbrlink: '85e41428'
+date: 2017-07-11 23:17:34
 ---
 redis官方提供的方式是源码安装，官方已经提供了安装教程，习惯原版，[点击这里](https://redis.io/topics/quickstart)，我这里更多是翻译和讲解下。顺便再回顾下常用命令
 
