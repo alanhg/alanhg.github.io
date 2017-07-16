@@ -15,8 +15,8 @@ since: 2016
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.1991421.cn
 root: /
-permalink: :year/:month/:day/:title/
-#permalink: posts/:abbrlink/
+#permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:abbrlink/
 permalink_defaults:
 
 # Directory
