@@ -21,4 +21,11 @@ date: 2017-07-14 21:55:27
 按照启动动画默认的设置，实际运行，发现启动动画消失后会有长时间的白屏问题，分析发现，是inappbrowser在打开网页的时候是会有一段时间的白屏，那么这个就造成很不好的体验，需要实现启动动画一直显示，然后如果事件监听到网页加载完成了，就手动关闭启动动画，这样子是最好，查看插件官方文档，有这么个参数配置
 `<preference name="AutoHideSplashScreen" value="false" />`
 按照配置说明是设置为false,就不会自动关闭，需要手动关闭
-但是实际配置后，添加平台，运行，发现不起作用，查看
+但是实际配置后，添加平台，运行，发现不起作用，查看pr,果然有人提PR，
+![cordova-plugin-splashscreen-pull](http://or0g12e5e.bkt.clouddn.com/cordova-plugin-splashscreen-pull.png)
+又是open状态，没招。
+
+
+## 总结
++ Apache基金会缺钱，缺人，这些插件都是常年累月没人更新，这样造成很多问题无法及时解决，久而久之的话，这些开源技术也就不会有人使用了
++ Google、Github、Stackoverflow，很多时候问题都是在这上面寻找，都是
