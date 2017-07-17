@@ -25,6 +25,49 @@ date: 2017-07-14 21:55:27
 ![cordova-plugin-splashscreen-pull](http://or0g12e5e.bkt.clouddn.com/cordova-plugin-splashscreen-pull.png)
 又是open状态，没招。
 
+最终只是绕路解决，想到的方案是配置文件中将splashscreen的时效设置为0，然后手动启动和关闭，但是因为启动会自动消失，所以，写循环，不断的show，保证splash不消失，具体代码如下
+
++ `config.xml`
+```
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="SplashScreenDelay" value="0"/>
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="FadeSplashScreenDuration" value="0"/>
+
+```
++ `index.js`
+```
+    onDeviceReady: function () {
+        // this.receivedEvent('deviceready');
+        var url = 'http://apache.org';
+        var target = '_blank';
+        var options = "location=no,toolbar=no";
+        var intervalID = window.setInterval(function () {
+                console.log('navigator.splashscreen.show()');
+                navigator.splashscreen.show();
+            }, 500
+        );
+        inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+        inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
+        inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
+
+        function loadStartCallBack() {
+            // inAppBrowserRef.hide();
+        }
+
+        function loadStopCallBack() {
+            // inAppBrowserRef.show();
+            if (navigator.splashscreen) {
+                clearInterval(intervalID);
+                //         // We're done initializing, remove the splash screen
+                navigator.splashscreen.hide();
+                console.warn('Hiding splash screen');
+            }
+        }
+    },
+
+```
+测试效果不错
 
 ## 总结
 + Apache基金会缺钱，缺人，这些插件都是常年累月没人更新，这样造成很多问题无法及时解决，久而久之的话，这些开源技术也就不会有人使用了
