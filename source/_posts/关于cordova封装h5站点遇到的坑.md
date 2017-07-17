@@ -16,7 +16,8 @@ date: 2017-07-14 21:55:27
 + 是pr，说明已经解决，并且提交，申请合并主干了，但是由于pr是打开状态，说明还没合并主干，那么通过npm，cordova安装的都不行了，因为官方版本不行，所以只能根据提交记录找到提交记录作者的fork状态下的插件即可，然后下载下来丢到项目中对应插件下，重新添加平台，构建打包，发现，果然解决啦。
 ![inappbrowser-pull](http://or0g12e5e.bkt.clouddn.com/inappbrowser-pull.png)
 ![inappbrowser-fork](http://or0g12e5e.bkt.clouddn.com/inappbrowser-fork.png)
-解决问题的插件分支，[](https://github.com/MeirBon/cordova-plugin-inappbrowser/tree/download-permissions)
+
+解决问题的插件分支，[点击下载](https://github.com/MeirBon/cordova-plugin-inappbrowser/tree/download-permissions)
 
 ## 坑2-启动画面-splashscreen
 按照启动动画默认的设置，实际运行，发现启动动画消失后会有长时间的白屏问题，分析发现，是inappbrowser在打开网页的时候是会有一段时间的白屏，那么这个就造成很不好的体验，需要实现启动动画一直显示，然后如果事件监听到网页加载完成了，就手动关闭启动动画，这样子是最好，查看插件官方文档，有这么个参数配置
