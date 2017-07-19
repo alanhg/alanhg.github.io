@@ -10,7 +10,7 @@ date: 2017-07-19 06:55:18
 
 ## 原配置
 ```
-# rewrite ^.+ http://web-b.com$uri;
+# return 307 $scheme://web-b.com$request_uri;
 ```
 但是经过测试发现问题，跳转到B，表单提交信息会丢失
 
