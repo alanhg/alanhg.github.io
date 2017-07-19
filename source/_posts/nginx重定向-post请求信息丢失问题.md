@@ -1,8 +1,9 @@
 ---
 title: nginx重定向-post请求信息丢失问题
-date: 2017-07-19 06:55:18
 tags:
-- nginx
+  - nginx
+abbrlink: 15b3f3fd
+date: 2017-07-19 06:55:18
 ---
 > 
 做了两个网站，网站A，网站B，A网站会接收POST提交，然后重定向到B网站，重定向是在nginx中进行配置，具体配置语法，请参考nginx官方文档，这里只贴出关键语句
@@ -18,7 +19,7 @@ tags:
 经过查询，果然rewrite会将post提信息丢失，所以应该使用307重定向，具体配置如下
 
 ```
-  return 307 ^.+ http://web-b.com$uri；
+return 307 $scheme://m.html5.wkinfo.com.cn$request_uri;
 ```
 
 ## 说明

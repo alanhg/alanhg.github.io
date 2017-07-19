@@ -6,22 +6,23 @@ tags:
 - git
 ---
 
-# 前言
-想玩好Github开源项目，不懂git不行，所以这里记录下，在使用中，用到的一些命令，方便自己以后去反复记忆，同时也希望能帮到一些朋友。
-
+> 想玩好Github开源项目，不懂git不行，所以这里记录下，在使用中，用到的一些命令，方便自己以后去反复记忆，同时也希望能帮到一些朋友。
 主要的命令记住，方便操作，其余的会查询即可。
 
 # 命令
 以实际例子来说明，我在实际使用中用到的一些命令
 ```
+# 配置
+$ git config [--global] user.name "qianghe"
+$ git config [--global] user.email "qianghe@kland.com.cn"
 
 # 取github上仓库的某个分支
-git clone -b source git@github.com:heqiang421/heqiang421.github.io.git
+$ git clone -b source git@github.com:heqiang421/heqiang421.github.io.git
 
-git status
+$ git status
 
 # 添加当前目录的所有文件到暂存区
-git add .
+$ git add .
 
 # 撤销暂存区的文件
 $ git reset HEAD <file>...
@@ -29,10 +30,10 @@ $ git reset HEAD <file>...
 git commit -m 'message'
 
 # 提交修改
-git push
+$ git push
 
 # 更新远程代码到本地
-git pull
+$ git pull
 
 # 停止追踪指定文件，但该文件会保留在工作区
 $ git rm --cached [file]
