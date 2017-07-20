@@ -24,8 +24,8 @@ $ git status
 # 添加当前目录的所有文件到暂存区
 $ git add .
 
-# 撤销暂存区的文件
-$ git reset HEAD <file>...
+# 撤销暂存区提交，回退一个版本
+$ git reset HEAD^
 
 git commit -m 'message'
 
