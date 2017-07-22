@@ -67,3 +67,9 @@ $ service SCRIPT-Name status
 $ service SCRIPT-Name restart
 
 ```
+
+## http
+```
+$ curl http://1991421.cn >> test.html
+
+```
