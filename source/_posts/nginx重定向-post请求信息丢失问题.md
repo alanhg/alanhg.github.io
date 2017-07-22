@@ -10,16 +10,16 @@ date: 2017-07-19 06:55:18
 
 ## 原配置
 ```
-# return 307 $scheme://web-b.com$request_uri;
+#  rewrite ^.+ http://b.com$uri；
 ```
 但是经过测试发现问题，跳转到B，表单提交信息会丢失
 
 ## 解决
 
-经过查询，果然rewrite会将post提信息丢失，所以应该使用307重定向，具体配置如下
+经过查询，果然`rewrite`会将post提信息丢失，所以应该使用`307`重定向，具体配置如下
 
 ```
-return 307 $scheme://m.html5.wkinfo.com.cn$request_uri;
+return 307 $scheme://b.com$request_uri;
 ```
 
 ## 说明
