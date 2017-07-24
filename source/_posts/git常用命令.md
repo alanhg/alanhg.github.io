@@ -25,6 +25,9 @@ $ git branch
 # 删除本地分支dev
 $ git branch -d dev
 
+# 切换本地分支
+$ git checkout <branchName>
+
 # 基于之前的某个 Commit 新开分支
 $ git branch <branchName> <sha1-of-commit>
 
@@ -33,7 +36,6 @@ $ git status
 # 添加当前目录的所有文件到暂存区
 $ git add .
 
-# 撤销
 ```
 ## 撤销暂存区提交，回退一个版本
 $ git reset HEAD^
