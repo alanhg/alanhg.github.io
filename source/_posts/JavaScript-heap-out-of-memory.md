@@ -1,10 +1,11 @@
 ---
 title: JavaScript heap out of memory
-date: 2017-07-22 17:07:56
 tags:
-- nodejs
-- webpack
-- angular
+  - nodejs
+  - webpack
+  - angular
+abbrlink: 7fa2b445
+date: 2017-07-22 17:07:56
 ---
 ## 问题
 最近在ng开发，牵扯到构建打包，在进行JIT打包，一切正常，但是当AOT打包时，会报`JavaScript heap out of memory`及内存溢出,如下图

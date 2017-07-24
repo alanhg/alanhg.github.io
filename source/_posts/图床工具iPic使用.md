@@ -1,10 +1,11 @@
 ---
 title: 图床工具iPic使用
-date: 2017-07-22 20:06:05
 tags:
-- CDN
-- 利器
-- markdown
+  - CDN
+  - 利器
+  - markdown
+abbrlink: 53fe91c5
+date: 2017-07-22 20:06:05
 ---
 > md博客编写不免需要有图片或者gif动画,上传图床是最佳方案
 
