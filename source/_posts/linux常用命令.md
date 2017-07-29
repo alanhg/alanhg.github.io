@@ -13,6 +13,9 @@ uname -a # 查看内核，操作系统，CPU信息
 head -n 1 /etc/issue   # 查看操作系统版本
 env # 查看环境变量
 
+# centos版本查看
+$ rpm -q centos-release
+
 ```
 ## 账户权限
 ```
@@ -73,3 +76,4 @@ $ service SCRIPT-Name restart
 $ curl http://1991421.cn >> test.html
 
 ```
+

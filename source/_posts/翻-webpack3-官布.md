@@ -1,5 +1,5 @@
 ---
-title: '[翻]webpack3:官布'
+title: '[翻]webpack3:发布'
 tags:
   - 英翻
 abbrlink: 24e981e7
@@ -25,10 +25,12 @@ webpack团队宣布，我们发布了`webpack3.0.0`,你如今可以下载或者�
 
 正如我们所提到的，我们致力于发布的功能正式你们所需要的，由于Github的贡献，来自于我们的支持者和赞助者的支持，我们能够解决任何的问题。
 
-### 作用域提升
+### Scope Hoisting 作用域提升
 作用域提升是webpack3的旗舰级功能，捆绑之后，webpack的一个取
 
-### 魔法注释
+![体积大小对比](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-29-124018.jpg)
+
+### Magic Comments 魔法注释
 
 
 
