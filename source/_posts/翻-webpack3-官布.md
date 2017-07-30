@@ -1,5 +1,5 @@
 ---
-title: '[翻]webpack3:发布'
+title: '[翻译]webpack3:发布'
 tags:
   - 英翻
 abbrlink: 24e981e7
