@@ -17,7 +17,11 @@ tags:
 
 ## 解决
 搜了半天，终于找到解决方案，进入插件管理
-`Configuration > Plugin > Android Support Plugin`,该插件处于enable状态，点击OK，重启IDE即可
+`Configuration > Plugin > Android Support Plugin`,该插件处于enable状态，点击OK
+![Android Support Plugin](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-130152.jpg)
+
+重启IDE即可
+
 ![successful](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-121403.jpg)
 
 ## 分析
