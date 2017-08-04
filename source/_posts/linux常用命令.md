@@ -76,4 +76,9 @@ $ service SCRIPT-Name restart
 $ curl http://1991421.cn >> test.html
 
 ```
+## 查找
+```
+# 在环境变量$PATH设置的目录里查找python指令位置
+$ which python
 
+```
