@@ -3,10 +3,11 @@ title: 了解DDNS
 date: 2017-08-04 19:10:23
 tags:
 - DDNS
+- DNS
 ---
 
-最近朋友给了个VPS，我打算用来搭建WEB服务，但是面临的问题是没有固定IP，这样就无法直接godaddy上增加域名到IP地址的解析记录了,
-问了朋友了解到原来有[动态DNS](https://zh.wikipedia.org/wiki/%E5%8B%95%E6%85%8BDNS)不了解这个技术，所以维基了一会儿，终于搞明白了。
+最近搞了台个VPS，我打算用来搭建WEB服务，但是面临的问题是VPS没有固定IP，这样就无法直接godaddy上增加域名到IP地址的解析记录了,困惑时，了解到VPS所在的服务器网络环境是有[动态DNS](https://zh.wikipedia.org/wiki/%E5%8B%95%E6%85%8BDNS),
+之前不了解这个技术，所以维基了一会儿，终于搞明白了些。
 
 DDNS就是为了解决动态IP问题的，原来可以利用DDNS给出一个固定的动态域名比如[aaaaaaa.asuscomm.com]绑定web服务，这样就可以直接用这个动态域名去访问。
 当然正常我们搭建个web的话肯定是不希望用这个域名去直接访问的怎么办的，好办，只要在自己买的域名比如alanhe.me上增加个记录
