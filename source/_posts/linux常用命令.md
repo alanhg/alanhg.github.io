@@ -82,3 +82,21 @@ $ curl http://1991421.cn >> test.html
 $ which python
 
 ```
+
+## 环境
++ 显示环境变量NODE_ENV
+```
+$ echo $NODE_ENV
+```
++ 设置环境变量
+```
+$ export NODE_ENV="production"
+```
++ 显示所有环境变量
+```
+$ env
+```
++ 删除环境变量
+```
+$ unset NODE_ENV
+```
