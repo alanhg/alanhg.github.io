@@ -84,11 +84,11 @@ $ which python
 ```
 
 ## 环境
-+ 显示环境变量NODE_ENV
++ 显示环境变量`NODE_ENV`
 ```
 $ echo $NODE_ENV
 ```
-+ 设置环境变量
++ 设置环境变量`NODE_ENV`
 ```
 $ export NODE_ENV="production"
 ```
@@ -96,7 +96,7 @@ $ export NODE_ENV="production"
 ```
 $ env
 ```
-+ 删除环境变量
++ 删除环境变量`NODE_ENV`
 ```
 $ unset NODE_ENV
 ```
