@@ -1,9 +1,10 @@
 ---
 title: 了解DDNS
-date: 2017-08-04 19:10:23
 tags:
-- DDNS
-- DNS
+  - DDNS
+  - DNS
+abbrlink: 6931a7f0
+date: 2017-08-04 19:10:23
 ---
 
 最近搞了台个`VPS`，我打算用来搭建WEB服务，但是面临的问题是VPS没有固定IP，这样就无法直接godaddy上增加域名到IP地址的解析记录了,困惑时，了解到VPS所在的服务器网络环境是有[动态DNS](https://zh.wikipedia.org/wiki/%E5%8B%95%E6%85%8BDNS),

@@ -1,10 +1,11 @@
 ---
 title: androidstudio启动没有SDK管理问题
-date: 2017-07-30 20:12:40
 tags:
-- ide
-- android
-- 环境配置
+  - ide
+  - android
+  - 环境配置
+abbrlink: 88eec433
+date: 2017-07-30 20:12:40
 ---
 
 ## 问题
