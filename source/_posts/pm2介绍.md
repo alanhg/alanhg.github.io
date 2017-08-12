@@ -19,7 +19,7 @@ PM2支持在Linux(稳定) & MacOSx (稳定) & Windows (稳定)工作.
 npm命令是在你安装node时，自带的CLI - [通过NVM安装node](https://keymetrics.io/2015/02/03/installing-node-js-and-io-js-with-nvm/)
 
 ## 更新PM2
-```
+```bash
 # 安装最新版PM2
 $ npm install pm2 -g
 # 保存进程列表，退出旧的PM2，重新存储所有的进行

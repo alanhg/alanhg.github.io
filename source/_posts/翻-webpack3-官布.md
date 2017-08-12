@@ -35,7 +35,7 @@ webpack团队宣布，我们发布了`webpack3.0.0`,你如今可以下载或者�
 
 如今随着webpack3的到来，你可以添加下面的插件到你的配置文件中，从而开启这个功能：
 
-```
+```javascript
 module.exports = {  
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin()

@@ -18,7 +18,7 @@ date: 2017-07-09 00:19:04
 
 ### 主要代码
 仅贴重要部分
-```
+```typescript
 @Component({
     selector: 'page-welcome',
     templateUrl: 'welcome.html'

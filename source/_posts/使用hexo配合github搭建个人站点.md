@@ -7,7 +7,7 @@ tags:
 
 
 常用命令
-```
+```bash
 
 # 浏览器启动
 hexo s --debug

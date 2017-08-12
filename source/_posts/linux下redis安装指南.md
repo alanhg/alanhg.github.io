@@ -11,7 +11,7 @@ redis官方提供的方式是源码安装，官方已经提供了安装教程，
 
 ## 安装
 官方提供的是源码
-```
+```bash
 $ wget http://download.redis.io/redis-stable.tar.gz
 # 解压，释放源代码文件
 $ tar xvzf redis-stable.tar.gz

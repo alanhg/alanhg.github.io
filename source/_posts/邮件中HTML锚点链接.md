@@ -2,6 +2,7 @@
 title: 邮件中HTML锚点链接
 tags:
   - email
+  - html
 abbrlink: faebe2a0
 date: 2017-08-10 20:55:11
 ---
