@@ -12,7 +12,7 @@ date: 2017-05-31 23:06:05
 当我们应用设定了信任代理的时候，直接使用`req.ip`获取的会是客户端的真实IP，但是信任代理的话，代理是会修改[XXF](https://zh.wikipedia.org/zh-hans/X-Forwarded-For)头部信息的，比如
 我遇到的情况就是代理修改请求头，导致我获取的`req.ip`为空，其实代理改了头，隐藏了真实客户端IP的话，的确我们是不可能得到真实的客户端IP了，但是代理本身的IP还是可以得到的，所以，我就封装了我自己的获取IP方法，
 
-```
+```javascript
 /**
  * 获取客户端IP地址
  * req.ips would be ["client", "proxy1", "proxy2"]

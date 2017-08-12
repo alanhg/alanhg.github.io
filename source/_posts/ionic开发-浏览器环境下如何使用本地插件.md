@@ -39,7 +39,7 @@ providers: [
 ```
 下面是完整的例子
 
-```
+```typescript
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';

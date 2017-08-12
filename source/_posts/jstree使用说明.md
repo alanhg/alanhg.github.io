@@ -10,7 +10,7 @@ tags:
 必须承认ztree好些,但是我还是建议使用jstree,因为更灵活。
 这里贴出jstree官网:<https://www.jstree.com/api/>
 **节点添加,重命名,删除代码**
-```
+```javascript
 <script>
 function demo_create() {
 var ref = $('#jstree_demo').jstree(true),

@@ -37,7 +37,7 @@ date: 2017-05-21 16:29:06
 
 卸载旧版CLI，全局安装新的CLI:
 
-```
+```bash
 npm uninstall -g ionic
 npm install -g ionic@latest
 
@@ -47,13 +47,13 @@ npm install -g ionic@latest
 对于ionic/cordova app,你需要安装cordova插件(ionic/cli-plugin-cordova)和项目插件(@ionic/cli-plugin-ionic-angular 或 @ionic/cli-plugin-ionic1)。
 
 对于ionic angular:
-```
+```bash
 npm install --save-dev --save-exact @ionic/cli-plugin-ionic-angular@latest
 npm install --save-dev --save-exact @ionic/cli-plugin-cordova@latest
 ```
 
 对于ionic 1:
-```
+```bash
 npm install --save-dev --save-exact @ionic/cli-plugin-ionic1@latest
 npm install --save-dev --save-exact @ionic/cli-plugin-cordova@latest
 ```

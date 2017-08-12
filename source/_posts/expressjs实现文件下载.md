@@ -10,7 +10,7 @@ tags:
 查看[expressAPI](http://expressjs.com/zh-cn/4x/api.html#res.download)，
 对于文件下载，最简单的实现下载方法为如下
 
-```
+```javascript
 res.download('/report-12345.pdf', 'report.pdf', function(err){
   if (err) {
     // Handle error, but keep in mind the response may be partially-sent
@@ -26,7 +26,7 @@ res.download('/report-12345.pdf', 'report.pdf', function(err){
 换句话说，不要用这种高度封装的写法就好了，那么如何解决呢。
 如下一种写法，这种没有高度封装，自己去写返回头部信息，经测试Safari下载果然没问题了。
 
-```
+```javascript
     let filename = "你好，地球人你好，地球人你好，地球人你好，地球人.pdf";
     let filePath = path.resolve(__dirname, '..') + '/static/pdf/test.pdf';
     let mimetype = mime.lookup(filePath);
@@ -41,7 +41,7 @@ res.download('/report-12345.pdf', 'report.pdf', function(err){
 所以最好的解决办法是根据请求头部，对应处理下。
 对于浏览器判别可以用下面的类库
 
-```
+```javascript
  const parser = require('ua-parser-js');
  let ua = parser(req.headers['user-agent']);
   if (['Edge', 'Chrome', 'Firefox'].indexOf(ua.browser.name) > -1) {

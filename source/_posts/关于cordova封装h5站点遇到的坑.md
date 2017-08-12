@@ -30,7 +30,7 @@ date: 2017-07-14 21:55:27
 最终只是绕路解决，想到的方案是配置文件中将splashscreen的时效设置为0，然后手动启动和关闭，但是因为启动会自动消失，所以写定时器循环，不断的show，保证splash不消失，具体代码如下
 
 + `config.xml`
-```
+```xml
     <preference name="ShowSplashScreenSpinner" value="false"/>
     <preference name="SplashScreenDelay" value="0"/>
     <preference name="FadeSplashScreen" value="false"/>
