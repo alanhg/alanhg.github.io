@@ -1,16 +1,16 @@
 ---
-title: git子模块使用说明
+title: git submodule 使用说明
 tags:
   - git
 abbrlink: 827afe6e
 date: 2017-07-09 22:48:39
 ---
-## 使用说明
+> 
 git子模块允许你将一个Git仓库作为另一个Git仓库的子目录。 它能让你将另一个仓库克隆到自己的项目中，同时还保持提交的独立。
 最近在实际项目开发中，用到了，也遇到一些细节问题，所以将git子模块常用操作总结如下，以备不时之需。
 
 ## 添加子模块
-```
+```bash
 # 添加子模块
 $ git submodule add https://github.com/chaconinc/DbConnector
 
@@ -29,6 +29,7 @@ $ git submodule add https://github.com/chaconinc/DbConnector
 
 ### 更新子模块代码
 + 方法1
+
 ```     
 $ cd DbConnector
 $ git fetch
@@ -50,4 +51,13 @@ $ cd DbConnector
 $ git checkout stable
 $ git submodule update --remote --merge
 $ git push
+```
+
+## 删除子模块
+```
+# 解除指定的子模块，将从配置文件.git/config中删除
+$ git submodule deinit {MOD_NAME}
+ 
+# 删除.gitmodules中记录的模块信息（--cached选项清除.git/modules中的缓存）
+$ git rm --cached {MOD_NAME} 
 ```
