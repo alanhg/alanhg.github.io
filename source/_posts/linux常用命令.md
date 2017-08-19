@@ -8,7 +8,7 @@ date: 2017-05-15 15:40:41
 ![terminal](http://or0g12e5e.bkt.clouddn.com/blog/2017-08-19-040639.jpg)
 > 命令不同于GUI界面，更为高效和灵活,平时不免接触linux,常用命令总结如下。
 
-## 查看系统信息
+## 系统
 
 ```
 uname -a # 查看内核，操作系统，CPU信息 
@@ -19,12 +19,12 @@ env # 查看环境变量
 $ rpm -q centos-release
 
 ```
-## 账户权限
+## 账户
 ```
 # 修改当前用户密码
 $ passwd
 ```
-## 文件操作
+## 文件
 
 ```
 vi filename
@@ -44,8 +44,11 @@ $ tar zcvf FileName.tar.gz DirName
 
 # 解压
 $ tar zxvf FileName.tar.gz
+
+# 复制
+$ cp vsftpd.conf vsftpd.conf.bak
 ```
-## 目录操作
+## 目录
 
 ```
 # 当前用户目录下
