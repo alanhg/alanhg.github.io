@@ -5,6 +5,8 @@ tags:
 abbrlink: fe4ef317
 date: 2017-05-15 15:40:41
 ---
+![terminal](http://or0g12e5e.bkt.clouddn.com/blog/2017-08-19-040639.jpg)
+> 命令不同于GUI界面，更为高效和灵活,平时不免接触linux,常用命令总结如下。
 
 ## 查看系统信息
 
@@ -99,4 +101,11 @@ $ env
 + 删除环境变量`NODE_ENV`
 ```
 $ unset NODE_ENV
+```
+
+## 软件
+
++ 查看已安装软件版本
+```
+rpm -qa | grep vsftpd
 ```
