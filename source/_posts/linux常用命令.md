@@ -10,13 +10,19 @@ date: 2017-05-15 15:40:41
 
 ## 系统
 
-```
+```bash
 uname -a # 查看内核，操作系统，CPU信息 
 head -n 1 /etc/issue   # 查看操作系统版本
 env # 查看环境变量
 
 # centos版本查看
 $ rpm -q centos-release
+
+# cpu
+$ cat /proc/cpuinfo
+
+# 内存
+$ cat /proc/meminfo
 
 ```
 ## 账户
