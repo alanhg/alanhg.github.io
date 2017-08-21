@@ -11,14 +11,21 @@ tags:
 以实际例子来说明，我在实际使用中用到的一些命令
 
 ## 配置
-```
+```bash
 $ git config [--global] user.name "qianghe"
-$ git config [--global] user.email "qianghe@kland.com.cn"
+$ git config [--global] user.email "i@xx.x"
+
+```
+## 新建仓库
+
+```
+# clone仓库
+$ git clone -b source git@github.com:heqiang421/heqiang421.github.io.git
 
 ```
 ## 分支
 ```
-$ git clone -b source git@github.com:heqiang421/heqiang421.github.io.git
+
 # 查看本地分支
 $ git branch 
 
@@ -37,16 +44,14 @@ $ git status
 $ git add .
 
 ```
-## 撤销暂存区提交，回退一个版本
-$ git reset HEAD^
 
-```
 ## 提交
 ```
 $ git commit -m 'message'
 $ git push
 ```
 ## 更新
+```
 $ git pull
 
 # 停止追踪指定文件，但该文件会保留在工作区
@@ -61,16 +66,28 @@ $ git remote -v
 # 修改远程仓库对应的网址
 $ git remote set-url origin git@github.com:username/repo.git
 
-## 删除远程分支
+# 建立追踪关系，在现有分支与指定的远程分支之间
+$ git branch --set-upstream [branch] [remote-branch]
+
+# 删除远程分支
 $ git push origin --delete <branchName>
 
 # 推送到主干
 $ git push origin <branchName>
 
-## 修改对应的远程分支
+# 修改对应的远程分支
 $ git branch -u origin/dev
 
 ```
+
+## 撤销
+
+```
+# 撤销暂存区提交，回退一个版本
+$ git reset HEAD^
+
+```
+
 # 常见错误
 ## Git: fatal: Pathspec is in submodule
  解决办法：

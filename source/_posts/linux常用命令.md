@@ -76,6 +76,7 @@ chkconfig mysqld on        #设定mysqld在各等级为on，“各等级”包�
 ```
 `service`命令常被用于运行初始化脚本，通常所有的系统级初始化脚本被存储于`/etc/init.d`目录下.常用 命令如下
 ```
+$ service SCRIPT-Name stop
 $ service SCRIPT-Name start
 $ service SCRIPT-Name status
 $ service SCRIPT-Name restart
