@@ -24,6 +24,8 @@ app属于客户端，也可以叫做前端，目前有三种方案
 ## 轻量APP方案选择
 在实际的开发中，我也做的比较多了，对于小的APP项目，我建议采用ionic+expressjs的方案去dev。
 
+![ionic+expressjs](http://or0g12e5e.bkt.clouddn.com/blog/2017-08-26-154720.jpg)
+
 ### 优势
 + ionic算是很成熟的混合开发技术，github上也有30k星了，成熟度不言而喻，另外目前的ionicv3对比之前的ionic1，性能上有了明显的提升，
 当然现在的启动白屏还是过长，这点应该几周内就可以解决，因为v4要发布了，另外ionicv3目前采用的js框架是angular，之前的叫angularjs，
