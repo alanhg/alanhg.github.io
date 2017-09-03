@@ -1,10 +1,11 @@
 ---
 title: linux下vsftpd安装及配置
-date: 2017-08-19 09:57:02
 tags:
-- linux
-- ftp
-- vsftpd
+  - linux
+  - ftp
+  - vsftpd
+abbrlink: f84c18e6
+date: 2017-08-19 09:57:02
 ---
 ![vsftpd](http://or0g12e5e.bkt.clouddn.com/blog/2017-08-26-082519.jpg)
 
