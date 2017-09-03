@@ -9,7 +9,7 @@ date: 2017-07-22 20:06:05
 ---
 > md博客编写不免需要有图片或者gif动画,上传图床是最佳方案
 
-## 原先做法
+## 原做法
 + 浏览器打开网页
 + 多步操作[对象存储-内容管理-上传文件-复制链接]
 + 在md-blog,粘贴链接，使用
@@ -26,3 +26,6 @@ date: 2017-07-22 20:06:05
 iPic的确是个好东西，简化了资源上传图床整个流程，给Jason[iPic之父]点赞
 
 附上iPic工具官方网站介绍[点击这里](https://toolinbox.net/iPic/)
+
+## Win环境工作者怎么办?
+推荐`Visual Studio Code`配合[qiniu-upload-image](https://marketplace.visualstudio.com/items?itemName=imys.qiniu-upload-image)即可，但体验差于iPic,毕竟一个是应用程序，一个是插件。
