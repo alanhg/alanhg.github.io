@@ -19,7 +19,9 @@ date: 2017-07-22 20:06:05
 
 ## iPic使用后
 如下即利用iPic上传图片效果
+
 ![use-iPic](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-22-121516.jpg)
+
 这样以后编写blog,就可以拖拽图片到iPic，或者直接iPic发送截图到目标图床，上传成功，得到的链接会自动
 赋到系统剪贴板，这样子，只需要粘贴到md文件中。
 
@@ -28,4 +30,4 @@ iPic的确是个好东西，简化了资源上传图床整个流程，给Jason[i
 附上iPic工具官方网站介绍[点击这里](https://toolinbox.net/iPic/)
 
 ## Win环境工作者怎么办?
-推荐`Visual Studio Code`配合[qiniu-upload-image](https://marketplace.visualstudio.com/items?itemName=imys.qiniu-upload-image)即可，但体验差于iPic,毕竟一个是应用程序，一个是插件。
+推荐[MPic](http://mpic.lzhaofu.cn/)
