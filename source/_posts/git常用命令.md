@@ -124,8 +124,10 @@ $ git remote set-url origin git@github.com:username/repo.git
 
 ```
 
-# 常见错误
-## Git: fatal: Pathspec is in submodule
+## 常见错误
+
+### Git: fatal: Pathspec is in submodule
+
  解决办法：
  
   ```
@@ -134,7 +136,7 @@ $ git remote set-url origin git@github.com:username/repo.git
   
   ```
 
-# 辅助资料
+## 辅助资料
 
 + [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 + [Git手册](https://git-scm.com/docs)
