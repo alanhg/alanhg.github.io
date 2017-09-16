@@ -4,6 +4,7 @@ abbrlink: 423abe9e
 date: 2017-05-05 23:22:37
 tags:
 - git
+- command
 ---
 ![What is git and why should I use it? - Quora](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-10-161721.jpg)
 
@@ -46,6 +47,15 @@ $ git reset HEAD^
 
 ```
 
+### rm
+```
+# 停止追踪指定文件，但该文件会保留在工作区
+$ git rm --cached [file]
+
+# 删除工作区文件，并且将这次删除放入暂存区
+$ git rm [file1] [file2] ...
+
+```
 ## Branching and Merging
 
 ### Branch
@@ -60,6 +70,13 @@ $ git branch -d dev
 # 基于之前的某个 Commit 新开分支
 $ git branch <branchName> <sha1-of-commit>
 
+# 建立追踪关系，在现有分支与指定的远程分支之间
+$ git branch --set-upstream [branch] [remote-branch]
+
+# 修改对应的远程分支
+$ git branch -u origin/dev
+
+
 ```
 
 ### Checkout
@@ -71,37 +88,41 @@ $ git checkout <branchName>
 $ git checkout dev --track origin/dev
 ```
 
-
 ## Sharing and Updating Projects
+
+
+### pull
+
 ```
+# 拉取最新代码
 $ git pull
 
-# 停止追踪指定文件，但该文件会保留在工作区
-$ git rm --cached [file]
+```
 
-# 删除工作区文件，并且将这次删除放入暂存区
-$ git rm [file1] [file2] ...
+### push
 
-# 列出远程仓库信息,包括网址
-$ git remote -v
-
-# 修改远程仓库对应的网址
-$ git remote set-url origin git@github.com:username/repo.git
-
-# 建立追踪关系，在现有分支与指定的远程分支之间
-$ git branch --set-upstream [branch] [remote-branch]
-
+```
 # 删除远程分支
 $ git push origin --delete <branchName>
 
 # 推送到主干
 $ git push origin <branchName>
 
-# 修改对应的远程分支
-$ git branch -u origin/dev
-
 ```
 
+### remote
+
+```
+# 列出远程仓库信息,包括网址
+$ git remote -v
+
+# 添加远程仓库
+$ git remote add git@github.com:username/repo.git
+
+# 修改远程仓库对应的网址
+$ git remote set-url origin git@github.com:username/repo.git
+
+```
 
 # 常见错误
 ## Git: fatal: Pathspec is in submodule
