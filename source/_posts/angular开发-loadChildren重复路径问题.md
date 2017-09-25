@@ -28,7 +28,7 @@ ERROR in Duplicated path in loadChildren detected: "./security/security.module#S
 
 ## 解决方案
 
-+ 在官方仓库issues中，大家给出的方案是以绝对形式进行路径配置
++ 在官方仓库issues中，大家给出的方案是以绝对路径形式进行配置
 + 修改模块名称及模块所在文件夹名称，倘若不一样，也就不存在重复问题
 
 但分析这个问题，其实也在于官方cli工具还是存在不足，希望未来的版本可以解决这个。
