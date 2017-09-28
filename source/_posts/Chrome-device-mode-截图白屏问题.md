@@ -19,6 +19,8 @@ tags:
 
 关闭标签页，重新打开网页，按F12，点击设备模式，还是刚刚自定义的设备，点击截图，发现OK了。
 
+![is ok](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-28-150757.jpg)
+
 ## 说明
 
 ### Device pixel ratio
