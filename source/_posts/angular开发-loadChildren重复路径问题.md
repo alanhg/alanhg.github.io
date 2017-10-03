@@ -1,9 +1,10 @@
 ---
 title: angular开发-loadChildren重复路径问题
-date: 2017-09-24 22:47:26
 tags:
-- webpack
-- angular
+  - webpack
+  - angular
+abbrlink: 272c6847
+date: 2017-09-24 22:47:26
 ---
 > ng在开发中是对所有的资源进行模块化，随着web的发展，系统会越来越庞大，为了提升性能，往往会使用懒加载，但由于设计原因，可能会出现以下的设计情况
 

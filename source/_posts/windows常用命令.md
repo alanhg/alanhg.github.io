@@ -1,9 +1,10 @@
 ---
 title: Windows常用命令
-date: 2017-09-12 09:35:51
 tags:
-- bash
-- command
+  - bash
+  - command
+abbrlink: 843f3569
+date: 2017-09-12 09:35:51
 ---
 
 ## 环境变量

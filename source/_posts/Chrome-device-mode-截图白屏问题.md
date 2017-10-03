@@ -1,8 +1,9 @@
 ---
 title: Chrome device mode 截图白屏问题
-date: 2017-09-28 22:44:26
 tags:
-- Chrome
+  - Chrome
+abbrlink: a45efddd
+date: 2017-09-28 22:44:26
 ---
 > 测试网站或者制作移动网页截图，使用对应真机设备是一种方式，但在特定场景下也不免效率和成本偏高，Chrome浏览器自带的device mode可以完美模拟各种移动设备的分辨率，
 另外还Chrome提供了截图功能。

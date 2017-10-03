@@ -1,8 +1,9 @@
 ---
 title: Xcode simulator使用常见问题
-date: 2017-09-29 11:11:51
 tags:
-- apple
+  - apple
+abbrlink: 200c07be
+date: 2017-09-29 11:11:51
 ---
 > Xcode模拟器使得在没有真机设备的时候方便对APP进行模拟测试，在使用中也会碰到一些问题，这里总结下
 

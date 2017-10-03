@@ -1,9 +1,10 @@
 ---
 title: res.send之后代码执行问题
-date: 2017-09-25 09:28:20
 tags:
-- expressjs
-- nodejs
+  - expressjs
+  - nodejs
+abbrlink: d0f93228
+date: 2017-09-25 09:28:20
 ---
 > express是node.js下最受欢迎的框架了，灵活的中间件思维及路由控制，使其实现了简单上手。
 但是灵活往往会带来另一个问题就是可维护性，毕竟灵活对于团队开发的规范就有了更高的要求。
