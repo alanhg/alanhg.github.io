@@ -34,4 +34,52 @@ phpstudy直接继承了
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-03-093521.jpg)
 再次浏览器访问页面，就OK了。
 
+## Apache配置
+php项目运行需要在Apache下，直接配置路径，运行会报403错误，还需要一些配置,如下为修改后的配置，改动前，建议备份原配置文件
+
+```
+<Directory />
+    Options  Indexes  FollowSymLinks
+    AllowOverride None
+   Order deny,allow
+    Allow from all
+</Directory>
+
+
+DocumentRoot "/Users/juliana/newsp/testing/Test/www"
+<Directory "/Users/juliana/newsp/testing/Test/www">
+    #
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+    # The Options directive is both complicated and important.  Please see
+    # http://httpd.apache.org/docs/2.4/mod/core.html#options
+    # for more information.
+    #
+    Options FollowSymLinks Multiviews
+    MultiviewsMatch Any
+
+
+    #
+    # AllowOverride controls what directives may be placed in .htaccess files.
+    # It can be "All", "None", or any combination of the keywords:
+    #   AllowOverride FileInfo AuthConfig Limit
+    #
+    # AllowOverride None
+      AllowOverride All
+
+
+    #
+    # Controls who can get stuff from this server.
+    #
+    Require all granted
+</Directory>
+```
+
+
+
 
