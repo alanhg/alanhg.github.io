@@ -7,7 +7,7 @@ tags:
 ---
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-03-201336.jpg)
 
-> 最近在进行mysql数据迁移时遇见了这个错误
+> 最近在进行mysql数据迁移时遇见了这个错误,推断是mysql版本差异性带来的问题，我的A、B机器MySQL版本分别是5.6和5.7
 
 ## 原因
 Google了一把，发现原来是MySQL-SQL Mode的问题。
