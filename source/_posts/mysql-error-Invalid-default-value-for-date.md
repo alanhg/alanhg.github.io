@@ -13,4 +13,9 @@ tags:
 Google了一把，发现原来是MySQL-SQL Mode的问题。
 
 ## 解决
-
+修改配置文件,重启服务
+```
+# sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
+sql_mode=ONLY_FULL_GROUP_BY,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+```
+提示:去掉sql_mode配置是不起作用的
