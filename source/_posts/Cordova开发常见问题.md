@@ -8,9 +8,9 @@ tags:
 ---
 > 在利用ionic或者直接使用Cordova开发会经常遇见些问题，这里总结下
 
-+ [Android版，代号、标记和细分版本 (Build) 号关系](代号、标记和细分版本 (Build) 号关系)
-+ [crosswalk-webview是否需要](crosswalk-webview是否需要)
-+ [config.xml文件修改，平台重新添加?](config.xml文件修改，平台重新添加?)
++ [Android版，代号、标记和细分版本 (Build) 号关系](#代号、标记和细分版本 (Build) 号关系)
++ [crosswalk-webview是否需要](#crosswalk-webview是否需要)
++ [config.xml文件修改，平台重新添加?](#config.xml文件修改，平台重新添加?)
 
 ## 代号、标记和细分版本 (Build) 号关系
 
