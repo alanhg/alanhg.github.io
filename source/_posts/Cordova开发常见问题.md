@@ -4,6 +4,7 @@ date: 2017-10-09 21:55:12
 tags:
 - Cordova
 - Android
+- ionic
 ---
 > 在利用ionic或者直接使用Cordova开发会经常遇见些问题，这里总结下
 
@@ -35,7 +36,8 @@ Ice Cream Sandwich|	4.0.3-4.0.4|	API 级别 15，NDK 8
 这个插件，主要是解决老手机卡顿APP操作下卡顿问题，但如果不考虑较旧手机(Android4.4以下)，那么不建议安装
 > Android 4.4之前的Android系统浏览器内核是WebKit，Android4.4系统浏览器切换到了Chromium(内核是Webkit的分支Blink)。
 
-安装该插件，就是用使用[Crosswalk Webview](http://blog.csdn.net/itcatface/article/details/49799337)，从而替代了系统的WebView.
+安装该插件，就是使用[Crosswalk Webview](http://blog.csdn.net/itcatface/article/details/49799337)替代了系统的WebView.
+本质就是将`Chromium`带到APP里,但是4.4及以后已经切换到了`Chromium`
 
 优点:
 + 不依赖安卓版本
