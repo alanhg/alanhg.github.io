@@ -9,6 +9,8 @@ date: 2017-10-11 20:56:20
 ---
 > 在进行angular项目开发时，使用webpack进行打包，最近频繁出现了`JavaScript heap out of memory`即内存溢出，查找资料，找到了解决办法，这里记录下
 
+![error](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-12-044030.jpg)
+
 ## 解决方法
 本质问题是，项目打包所需要的性能开销，超过了v8缺省的内存限定，需要修改下配置
 
