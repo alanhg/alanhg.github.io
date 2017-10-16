@@ -36,5 +36,6 @@ raw代指原始数据，binary代指二进制数据。
 ## 参考文章
 
 + [W3C Form content types](https://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.1)
++ [W3C html-json-forms](https://www.w3.org/TR/html-json-forms/)
 + [POST提交数据的常见编码方式](http://chayangge.com/2016/12/01/POST%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F/)
 + [常用的Post提交类型](http://www.voidcn.com/article/p-figxdxhn-bdu.html)
