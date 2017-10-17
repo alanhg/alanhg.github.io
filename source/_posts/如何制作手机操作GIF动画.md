@@ -18,7 +18,7 @@ tags:
 
 + [屏幕录像专家](http://www.tlxsoft.com/index1.htm)`WIN`
 
-![屏幕录像专家](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-17-135933.jpg)
+![屏幕录像专家](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-17-150355.jpg)
 
 ## 视频到GIF转换
 
