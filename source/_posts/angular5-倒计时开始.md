@@ -1,17 +1,17 @@
 ---
-title: 'angular5:倒计时开始'
+title: 'Angular5:倒计时开始'
 tags:
-  - angular5
-  - angular
+  - Angular5
+  - Angular
   - 英翻
 abbrlink: d019bec4
 date: 2017-07-01 13:07:08
 ---
 
 [英文原文](https://jaxenter.com/road-to-angular-5-133253.html)
-对于angular的下一个版本的过多信息，我们并不知情，但我们现在知道它会在10月份正式发布。
+对于Angular的下一个版本的过多信息，我们并不知情，但我们现在知道它会在10月份正式发布。
 
-![angular计划](http://or0g12e5e.bkt.clouddn.com/QQ20170701-131026@2x.png)
+![Angular计划](http://or0g12e5e.bkt.clouddn.com/QQ20170701-131026@2x.png)
 官方计划[点击这里](https://github.com/angular/angular/blob/master/docs/RELEASE_SCHEDULE.md)
 
 ```

@@ -1,9 +1,10 @@
 ---
 title: 'mysql error:Invalid default value for date'
-date: 2017-10-04 03:34:51
 tags:
-- mysql
-- db
+  - mysql
+  - db
+abbrlink: 7c1b75b3
+date: 2017-10-04 03:34:51
 ---
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-03-201336.jpg)
 

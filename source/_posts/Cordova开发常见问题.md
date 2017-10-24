@@ -1,10 +1,11 @@
 ---
 title: Cordova开发常见问题
-date: 2017-10-09 21:55:12
 tags:
-- Cordova
-- Android
-- ionic
+  - Cordova
+  - Android
+  - ionic
+abbrlink: 29ac284a
+date: 2017-10-09 21:55:12
 ---
 > 在利用ionic或者直接使用Cordova开发会经常遇见些问题，这里总结下
 
