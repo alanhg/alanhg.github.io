@@ -41,8 +41,8 @@ tags:
 
 ### 相关网站
 
-+ Angular官网,[英文](https://angular.io),[中文](https://angular.cn/)
-+ TypeScript官网,[英文](https://www.typescriptlang.org/),[中文](https://www.tslang.cn)
++ Angular官网,[![english](https://jaywcjlove.github.io/sb/lang/english.svg)](https://angular.io),[![chinese](https://jaywcjlove.github.io/sb/lang/chinese.svg)](https://angular.cn)
++ TypeScript官网,[![english](https://jaywcjlove.github.io/sb/lang/english.svg)](https://www.typescriptlang.org/),[![chinese](https://jaywcjlove.github.io/sb/lang/chinese.svg)](https://www.tslang.cn)
 
 ### 相关书籍
 
