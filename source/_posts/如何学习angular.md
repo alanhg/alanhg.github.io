@@ -1,8 +1,9 @@
 ---
 title: 如何学习Angular
-date: 2017-10-23 21:21:20
 tags:
-- angular
+  - angular
+abbrlink: 30ca2b93
+date: 2017-10-23 21:21:20
 ---
 # 如何学习Angular ？？？
 
