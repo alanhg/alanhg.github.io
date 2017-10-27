@@ -12,6 +12,8 @@ date: 2017-10-09 21:55:12
 + [Android版，代号、标记和细分版本 (Build) 号关系](#代号、标记和细分版本(Build)号关系)
 + [crosswalk-webview是否需要](#crosswalk-webview是否需要)
 + [config.xml文件修改，平台重新添加?](#config.xml文件修改，平台重新添加?)
++ [IOS-相册权限](#Missing Info.plist key)
++ [IOS-打包上传，构建版本中不显示](#IOS-打包上传，构建版本中不显示)
 
 ## 代号、标记和细分版本 (Build) 号关系
 
@@ -55,5 +57,33 @@ Ice Cream Sandwich|	4.0.3-4.0.4|	API 级别 15，NDK 8
 - ionic项目的的话，`不需要`，执行`ionic cordova build platform`或者`ionic cordova run platform`，ionic-cli直接更新平台中对应的code了。
 - Cordova初始化构建的项目，需要rm然后再add。
 
+## IOS-相册权限
 
+如果APP没有声明相机权限，在实际的APP操作中，访问相册，APP会直接闪退并报错。所以必须添加对应插件，具体配置信息如下:
 
+```
+ <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+      <string>need camera access to take pictures</string>
+    </edit-config>
+    <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+      <string>need microphone access to record sounds</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+      <string>need to photo library access to get pictures from there</string>
+    </edit-config>
+    
+<plugin name="cordova-plugin-media-capture" spec="~1.4.3">
+    <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera."/>
+    <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone."/>
+    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library."/>
+  </plugin>
+```
+注意`edit-config`标签中的内容会打包进入info.list文件中，这段必须写，否则，最终打包的APP提交构建版本会失败
+## IOS-打包上传，构建版本中不显示
+
+如果打包上传，提示了成功，但是在Itunes Connect-活动-所有构建版本中没有看到，说明提交APP被打回来了，都会有邮件，并说明了错误信息。
+比如下面信息。
+> Missing Info.plist key - This app attempts to access privacy-sensitive data without a usage description. The app's Info.plist must contain an NSPhotoLibraryUsageDescription key with a string value explaining to the user how the app uses this data.
+    Once these issues have been corrected, you can then redeliver the corrected binary.
+    
+对应修复后，再次提交，直接刷新页面，就会提示，提交的版本及状态。
