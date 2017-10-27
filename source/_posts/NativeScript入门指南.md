@@ -5,7 +5,7 @@ tags:
 abbrlink: 7ce0841c
 date: 2017-06-11 00:09:57
 ---
-nativescript是个跨平台开发框架，号称性能只比原生差10%,同时又支持angular写法，这对于有web及ng开发人，算是足够有诱惑力啦。
+nativescript是个跨平台开发框架，号称性能只比原生差10%,同时又支持Angular写法，这对于有web及ng开发人，算是足够有诱惑力啦。
 
 ## 环境搭建
 

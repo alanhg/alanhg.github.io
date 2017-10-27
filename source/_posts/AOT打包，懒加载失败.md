@@ -1,7 +1,7 @@
 ---
 title: AOT打包，懒加载失败
 tags:
-  - angular
+  - Angular
   - webpack
 abbrlink: 4584b520
 date: 2017-07-22 18:10:24

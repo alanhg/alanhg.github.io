@@ -3,7 +3,7 @@ title: JavaScript heap out of memory
 tags:
   - nodejs
   - webpack
-  - angular
+  - Angular
 abbrlink: 7fa2b445
 date: 2017-07-22 17:07:56
 ---

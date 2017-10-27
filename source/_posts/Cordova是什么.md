@@ -20,7 +20,7 @@ Cordova详细介绍及前世今生，建议看维基百科和官网,[点击这�
 
 ## Ionic跟Cordova的关系是什么
 ![ionic](http://or0g12e5e.bkt.clouddn.com/Ionic-logo.png)
-我们一般并不直接用Cordova开发混合应用，而是用Ionic,Ionic是用于构建Hybid-app的开源SDK，它提供了工具和服务来从事开发，Ionic是构建于angularjs和cordova之上的，所以可以明确ionic与cordova并不是一个层面的东西。
+我们一般并不直接用Cordova开发混合应用，而是用Ionic,Ionic是用于构建Hybid-app的开源SDK，它提供了工具和服务来从事开发，Ionic是构建于Angularjs和cordova之上的，所以可以明确ionic与cordova并不是一个层面的东西。
 
 ## Cordova拿来干什么
 利用Cordova，开发人员可以用web开发技术来进行app开发，同时利用Cordova给与的访问设备底层api的接口，实现相机，蓝牙等功能。而Ionic这种技术的存在，是为了提升app开发效率，为我们提供了大量的组件轮子而已。

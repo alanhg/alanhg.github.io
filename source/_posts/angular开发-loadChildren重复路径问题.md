@@ -2,7 +2,7 @@
 title: Angular开发-loadChildren重复路径问题
 tags:
   - webpack
-  - angular
+  - Angular
 abbrlink: 272c6847
 date: 2017-09-24 22:47:26
 ---
