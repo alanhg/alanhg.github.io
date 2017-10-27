@@ -13,6 +13,7 @@ tags:
 
 + [[innerHTML]中的JavaScript不能执行吗？](#[innerHTML]中的JavaScript不能执行吗？)
 + [同时订阅路由参数和查询参数即params和queryParams](#同时订阅路由参数和查询参数即params和queryParams)
++ [多异步请求并行处理](#多异步请求并行处理)
 + [*ngFor遍历对象属性](#*ngFor遍历对象属性)
 
 ## [innerHTML]中的JavaScript不能执行吗？
@@ -93,6 +94,31 @@ key:{{key}},
 value:{{facetFields[key]}}
       </div>
 ```
+
+## 多异步请求并行处理
+有时需要多请求结果同时进行处理，嵌套去做的话，会是如此
+```typescript
+this.http.get('/api/test1')
+      .subscribe(res1 => {
+        this.http.get('/api/test2').subscribe(res2 => {
+          this.res1 = res1;
+          this.res2 = res2;
+        });
+      });
+```
+这种结构臃肿，难以维护，使用Rxjs的`forkJoin`操作符
+```typescript
+const req1 = this.http.get('/api/test1');
+const req2 =this.http.get('/api/test2');
+
+Rx.Observable.forkJoin(req1, req2).subscribe(
+res => {
+ this.res1 = res[0];
+ this.res2 = res[1];
+)) 
+
+```
+只有当多请求结果都得到时，才会通知我们
 
 ## 仍有疑问???
 
