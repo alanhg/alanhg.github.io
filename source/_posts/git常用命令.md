@@ -13,9 +13,13 @@ tags:
 以实际例子来说明，我在实际使用中用到的一些命令
 
 
-## Config
+## Getting and Creating Projects
 ```bash
-$ git config [--global] user.name "qianghe"
+# 创建一个空的Git仓库，或者对于已存在的仓库，进行重初始化
+$ git init 
+
+# 配置
+$ git config [--global] user.name "alanhg"
 $ git config [--global] user.email "i@xx.x"
 
 ```
