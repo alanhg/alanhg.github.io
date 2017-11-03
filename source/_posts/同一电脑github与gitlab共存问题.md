@@ -7,15 +7,15 @@ tags:
 - github
 - gitlab
 ---
-## 问题描述
-在实际开发中，遇到这样一个问题，公司项目管理用到了`gitlab`，自己的业余项目开发用到了`github`，但两者的账户是不同的，以我为例，`gitlab`是公司邮箱`he@company.com`，`github`是个人邮箱`he@1991421.cn`这样就存在冲突问题，在网上检索后，总结下解决方法。
+
+> 在实际开发中，遇到这样一个问题，公司项目管理用到了`gitlab`，自己的业余项目开发用到了`github`，但两者的账户是不同的，以我为例，`gitlab`是公司邮箱`he@company.com`，`github`是个人邮箱`he@1991421.cn`这样就存在冲突问题，在网上检索后，总结下解决方法。
 
 ## 解决步骤
 
 + 生成SSH-key
 `win`环境下，请运行git客户端,`mac`默认终端即可。
 
-  ```
+```
   cd ~/.ssh/
   # 生成github所需要用的，使用默认名称回车跳过
   $ ssh-keygen -t rsa -C "he@1991421.cn"
@@ -24,7 +24,8 @@ tags:
   $ ssh-keygen -t rsa -C "he@1991421.cn"
 
  ```
- 这样两者的密钥就是分开生成了 互不冲突
+
+这样两者的密钥就是分开生成了,互不冲突
 
 + 粘贴公钥到对应的平台 
 `cat id_rsa.pub`
@@ -33,6 +34,7 @@ tags:
 + 配置config
 执行`touch config`，创建配置文件
 将下面的配置粘贴进去
+
 ```
 # company-gitlab
 Host 192.168.1.140
@@ -64,3 +66,8 @@ $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 
 ```
+
+## 常见问题
+
++ ssh登录，提示权限拒绝
+确保密码、配置正确，如果还是提示的话，其实可能性是出在权限上，注意确保`.ssh`文件夹权限，建议直接777吧
