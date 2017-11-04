@@ -25,9 +25,11 @@ date: 2017-11-04 19:54:27
 ### 项目活跃度
 `dagre-d3`能够有1K+的星星数，说明这个类库还是很受欢迎的，但是无论是dagre还是d3-dagre已经处于非活跃状态，作者本人已经不再维护了。
 
-### 用法
+## Demo
 
 这里直接上一个简单的demo，说明下
+
+![](http://or0g12e5e.bkt.clouddn.com/blog/2017-11-04-142637.png)
 
 [完整源码看这里](https://github.com/alanhg/angular-demo)
 
@@ -138,3 +140,13 @@ html部分
         edgeDrag.call(svg.selectAll("g.edgePath")); 
    
 ```
+## 主要函数
+
+用法，建议直接看d3-dagre源码，这样不会有漏，这里列举下主要函数：
+
++ 添加节点`setNode(v, {label: 'VVV'})`
++ 添加边`setEdge(v, s)`
++ 删除节点`removeNode(v)`
++ 删除边`removeEdge(v,s)`
+
+拖拽、缩放功能其实是通过D3实现，方法如上，如果想实现单击节点或者边，右键菜单，可以通过JQ来实现，比如该插件[jQuery-contextMenu](https://github.com/swisnl/jQuery-contextMenu)
