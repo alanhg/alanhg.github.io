@@ -26,9 +26,10 @@ date: 2017-11-04 19:54:27
 `dagre-d3`能够有1K+的星星数，说明这个类库还是很受欢迎的，但是无论是dagre还是d3-dagre已经处于非活跃状态，作者本人已经不再维护了。
 
 ### 用法
+
 这里直接上一个简单的demo，说明下
 
-[源码看这里](https://github.com/alanhg/angular-demo)
+[完整源码看这里](https://github.com/alanhg/angular-demo)
 
 html部分
 
@@ -44,24 +45,96 @@ html部分
 ```
 
 ```typescript
-// 缩放功能实现
+
  let svg = d3.select("svg"),
-            inner = svg.select("g"),
-            zoom = d3.behavior.zoom().on("zoom", function () {
-                inner.attr("transform", d3.event.transform);
-            });
+            inner = svg.select("g");
+
+        // Create the input graph
+        this.g = new dagreD3.graphlib.Graph({});
+        // Set an object for the graph label
+        this.g.setGraph({});
+        // Default to assigning a new object as a label for each new edge.
+        this.g.setDefaultEdgeLabel(function () {
+            return {};
+        });
+        this.g.graph().transition = function (selection) {
+            return selection.transition().duration(500);
+        };
+
+        // 缩放功能实现
+        var zoom = d3.behavior.zoom().on("zoom", function () {
+            inner.attr("transform", "translate(" + d3.event.translate + ")" +
+                "scale(" + d3.event.scale + ")");
+        });
         svg.call(zoom);
- // Create the input graph
-this.g = new dagreD3.graphlib.Graph({});
-// 添加节点
-this.g.setNode(0, {label: 'VVV'});
-this.g.setNode(1, {label: "A"});
-this.g.setNode(2, {label: "B"});
 
-// 添加边
-this.g.setEdge(0, 1);
-this.g.setEdge(0, 2);
+        this.g.setNode(0, {label: 'VVV'});
+        this.g.setNode(1, {label: "A"});
+        this.g.setNode(2, {label: "B"});
+        this.g.setNode(3, {labelType:"html",label: "<i class=\"fa fa-database\"></i>B"});
 
-// 渲染
-this.render(inner, this.g);
+        this.g.setEdge(0, 1);
+        this.g.setEdge(0, 2);
+        this.g.setEdge(2, 3);
+
+        // Run the renderer. This is what draws the final graph.
+        this.render(inner, this.g);
+
+
+        this.g.nodes().forEach((v) => {
+            let node = this.g.node(v);
+            console.log(`Node ${v}: Label:${node.label},X:${node.x},Y:${node.y}`);
+        });
+
+        //give IDs to each of the nodes so that they can be accessed
+        svg.selectAll("g.node rect")
+            .attr("id", function (d) {
+                return "node" + d;
+            });
+        svg.selectAll("g.edgePath path")
+            .attr("id", function (e) {
+                return e.v + "-" + e.w;
+            });
+        svg.selectAll("g.edgeLabel g")
+            .attr("id", function (e) {
+                return 'label_' + e.v + "-" + e.w;
+            });
+
+
+        this.g.nodes().forEach((v) => {
+            var node = this.g.node(v);
+            node.customId = "node" + v;
+        });
+        this.g.edges().forEach((e) => {
+            var edge = this.g.edge(e.v, e.w);
+            edge.customId = e.v + "-" + e.w
+        });
+
+        // code for drag
+        function dragstart(d) {
+            d3.event.sourceEvent.stopPropagation();
+        }
+
+        let dragmover = (currentThis, d) => {
+            this.dragmove(currentThis, d);
+        };
+
+        function dragmove(d) {
+            dragmover(this, d)
+        }
+
+        let nodeDrag = d3.behavior.drag()
+            .on("dragstart", dragstart)
+            .on("drag", dragmove);
+
+        let edgeDrag = d3.behavior.drag()
+            .on("dragstart", dragstart)
+            .on('drag', (d) => {
+                this.translateEdge(this.g.edge(d.v, d.w), d3.event.dx, d3.event.dy);
+                $('#' + this.g.edge(d.v, d.w).customId).attr('d', this.calcPoints(d));
+            });
+
+        nodeDrag.call(svg.selectAll("g.node"));
+        edgeDrag.call(svg.selectAll("g.edgePath")); 
+   
 ```
