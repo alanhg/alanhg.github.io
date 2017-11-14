@@ -80,6 +80,9 @@ $ git branch --set-upstream [branch] [remote-branch]
 # 修改对应的远程分支
 $ git branch -u origin/dev
 
+# 本地分支重命名
+$ git branch (-m | -M) [<oldbranch>] <newbranch>
+
 
 ```
 
