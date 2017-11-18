@@ -15,6 +15,7 @@ tags:
 + [同时订阅路由参数和查询参数即params和queryParams](#同时订阅路由参数和查询参数即params和queryParams)
 + [多异步请求并行处理](#多异步请求并行处理)
 + [*ngFor遍历对象属性](#*ngFor遍历对象属性)
++ [组件类的继承性](#组件类的继承性)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -119,6 +120,24 @@ res => {
 
 ```
 只有当多请求结果都得到时，才会通知我们
+
+## 组件类的继承性
+`ng-v2.3`版本加入了对于组件继承性的支持，这样进一步的提升代码的复用性。
+
+组件继承性说明:
++ meta注解，比如@input,@output
++ 构造函数
++ 组件生命周期
+
+以上三者均支持复用，官方说明看这里，[链接](https://github.com/angular/angular/commit/f5c8e09)
+![image](https://user-images.githubusercontent.com/9245110/32786687-9d9776ee-c98f-11e7-972e-79e47e713e9f.png)
+
+### 注意
+
+`组件继承不支持模板和样式，任何操作dom的行为都应该物理分离。`
+
+[实际Demo看这里](https://github.com/alanhg/angular-demo/issues/10)
+
 
 ## 仍有疑问???
 
