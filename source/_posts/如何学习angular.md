@@ -55,3 +55,7 @@ date: 2017-10-23 21:21:20
 + [angular-starter](https://github.com/AngularClass/angular-starter)
 + [ngx-admin](https://github.com/akveo/ngx-admin)
 + [NiceFish](https://github.com/damoqiongqiu/NiceFish)
+
+### 常见问题
+
++ [Angular开发常见问题](http://1991421.cn/2017/10/26/dc22bcd7/)

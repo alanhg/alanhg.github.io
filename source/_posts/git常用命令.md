@@ -38,12 +38,12 @@ $ git add .
 
 ```
 
-## Commit
+### Commit
 ```
 $ git commit -m 'message'
 $ git push
 ```
-## Reset
+### Reset
 
 ```
 # 撤销暂存区提交，回退一个版本
@@ -51,7 +51,7 @@ $ git reset HEAD^
 
 ```
 
-### rm
+#### rm
 ```
 # 停止追踪指定文件，但该文件会保留在工作区
 $ git rm --cached [file]
