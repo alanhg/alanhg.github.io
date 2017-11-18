@@ -7,7 +7,7 @@ tags:
 abbrlink: 29ac284a
 date: 2017-10-09 21:55:12
 ---
-> 在利用ionic或者直接使用Cordova开发会经常遇见些问题，这里总结下
+> 在利用ionic或者直接使用Cordova开发会经常遇见些问题，这里总结下,`本文持续更新`
 
 + [Android版，代号、标记和细分版本 (Build) 号关系](#代号、标记和细分版本(Build)号关系)
 + [crosswalk-webview是否需要](#crosswalk-webview是否需要)
