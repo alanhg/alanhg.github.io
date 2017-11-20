@@ -137,12 +137,18 @@ res => {
 
 ### 如何使得A组件的样式在A的子组件比如B中能够使用的
 
-答案就是配置视图的封装模式，将A组件设定为`encapsulation: ViewEncapsulation.None`，那么A的样式就可以出去，比如A组件下的B组件就可以直接使用A中定义的样式。
+除了将样式写外链CSS即全局CSS之外，其实还可以修改视图封装模式即**view encapsulation mode**达到组件样式可以出去，使得其他组件可以使用。只需要配置比如A组件的视图模式，如下配置
+```
+@Component({
+    selector: 'app-css',
+    templateUrl: './css.component.html',
+    styleUrls: ['./css.component.css'],
+    encapsulation: ViewEncapsulation.None
+})
+```
 
-### 如果使得A组件中的html代码块能够使用A组件样式
+如上，则该组件下的各级组件dom元素均可使用该样式。
 
-有时候后端传来的是html代码块，或者前端使用了jstree等插件，动态创建了一些html代码块，由于ng组件样式会有作用域的问题，你会发现这个组件样式不能对这些dom元素生效，如何解决呢。
-答案是利用ng提供的特殊选择器`::ng-deep`，或者就需要写在全局样式中，即style.css.
 
 ### 注意
 
