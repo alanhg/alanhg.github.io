@@ -16,6 +16,7 @@ tags:
 + [多异步请求并行处理](#多异步请求并行处理)
 + [*ngFor遍历对象属性](#*ngFor遍历对象属性)
 + [组件类的继承性](#组件类的继承性)
++ [如何使组件样式超出组件作用域](#如何使组件样式超出组件作用域)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -131,6 +132,17 @@ res => {
 
 以上三者均支持复用，官方说明看这里，[链接](https://github.com/angular/angular/commit/f5c8e09)
 ![image](https://user-images.githubusercontent.com/9245110/32786687-9d9776ee-c98f-11e7-972e-79e47e713e9f.png)
+
+## 如何使组件样式超出组件作用域
+
+### 如何使得A组件的样式在A的子组件比如B中能够使用的
+
+答案就是配置视图的封装模式，将A组件设定为`encapsulation: ViewEncapsulation.None`，那么A的样式就可以出去，比如A组件下的B组件就可以直接使用A中定义的样式。
+
+### 如果使得A组件中的html代码块能够使用A组件样式
+
+有时候后端传来的是html代码块，或者前端使用了jstree等插件，动态创建了一些html代码块，由于ng组件样式会有作用域的问题，你会发现这个组件样式不能对这些dom元素生效，如何解决呢。
+答案是利用ng提供的特殊选择器`::ng-deep`，或者就需要写在全局样式中，即style.css.
 
 ### 注意
 

@@ -1,7 +1,7 @@
 ---
 title: 关于Cordova封装h5站点遇到的坑
 tags:
-  - cordova
+  - Cordova
   - hybrid
 abbrlink: fcd67311
 date: 2017-07-14 21:55:27
