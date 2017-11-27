@@ -123,15 +123,15 @@ $ git push origin <branchName>
 # 列出远程仓库信息,包括网址
 $ git remote -v
 
-# 添加远程仓库
-$ git remote add git@github.com:username/repo.git
+# 添加远程仓库,支持多远程仓库地址
+$ git remote add [shortname] [url]
 
 # 修改远程仓库对应的网址
 $ git remote set-url origin git@github.com:username/repo.git
 
 ```
 
-## 常见错误
+## 常见问题
 
 ### Git: fatal: Pathspec is in submodule
 
