@@ -4,17 +4,20 @@ date: 2017-11-29 23:17:53
 tags:
 -node
 ---
-> 一开始通过mac安装了个node版本，后来发现了nvm这个好东西，但nvm管理的多版本node是与自己系统安装的是并存，这个时候管理上会有些混乱，所以需要删除掉自己安装的版本。
+> 一开始通过mac安装了个node版本，后来发现了nvm这个好东西，但nvm管理的多版本node是与自己系统安装的并存，这个时候管理上会有些混乱。
+比如我在nvm中的某个node版本安装了很多全局的CLI，并且将这个版本设定为缺省，但是有时候开启终端会话，默认会是系统版本的node，这样每次切换很浪费时间，最好的版本是删除系统版本的node，统一使用nvm进行管理。
 
-> 如果nvm下管理的node版本，那么卸载node很简单，执行`nvm uninstall version`即可，如果是利用brew包管理器进行的安装，直接执行`brew uninstall node`即可。
+
+## 如何卸载node???
+
+如果nvm下管理的node版本，那么卸载node很简单，执行`nvm uninstall version`即可，如果是利用brew包管理器进行的安装，直接执行`brew uninstall node`即可。
 如果是直接官网卸载pkg包进行的安装，那么删除就复杂了，请往下看。
-
 
 ![nvm ls](http://or0g12e5e.bkt.clouddn.com/blog/2017-11-29-152926.jpg)
 
 注意执行`nvm ls`，system就是自己系统安装的node
 
-## 卸载pkg安装的node
+## 手动卸载pkg安装的node
 
 ### 删除`/usr/local/lib`下的node相关文件
 ```bash
