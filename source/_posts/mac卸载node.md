@@ -11,7 +11,7 @@ tags:
 ## 如何卸载node???
 
 如果nvm下管理的node版本，那么卸载node很简单，执行`nvm uninstall version`即可，如果是利用brew包管理器进行的安装，直接执行`brew uninstall node`即可。
-如果是直接官网卸载pkg包进行的安装，那么删除就复杂了，请往下看。
+如果是直接官网下载pkg包进行的安装，那么删除就麻烦了，请往下看。
 
 ![nvm ls](http://or0g12e5e.bkt.clouddn.com/blog/2017-11-29-152926.jpg)
 
@@ -45,7 +45,7 @@ sudo rm -rf /usr/local/bin/npm
 sudo rm -rf /usr/local/bin/node
 ls -las 仔细查看，全局安装的npm包一般会在这个目录下创建软连接，发现就删除
 ```
-#### 其它清理工作
+### 其它清理工作
 ```
 sudo rm -rf /usr/local/share/man/man1/node.1
 sudo rm -rf /usr/local/lib/dtrace/node.d
