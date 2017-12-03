@@ -11,12 +11,13 @@ tags:
 
 ## 目录
 
-+ [[innerHTML]中的JavaScript不能执行吗？](#[innerHTML]中的JavaScript不能执行吗？)
-+ [同时订阅路由参数和查询参数即params和queryParams](#同时订阅路由参数和查询参数即params和queryParams)
-+ [多异步请求并行处理](#多异步请求并行处理)
-+ [*ngFor遍历对象属性](#*ngFor遍历对象属性)
-+ [组件类的继承性](#组件类的继承性)
-+ [如何使组件样式超出组件作用域](#如何使组件样式超出组件作用域)
+1. [[innerHTML]中的JavaScript不能执行吗？](#[innerHTML]中的JavaScript不能执行吗？)
+2. [同时订阅路由参数和查询参数即params和queryParams](#同时订阅路由参数和查询参数即params和queryParams)
+3. [多异步请求并行处理](#多异步请求并行处理)
+4. [*ngFor遍历对象属性](#*ngFor遍历对象属性)
+5. [组件类的继承性](#组件类的继承性)
+6. [如何使组件样式超出组件作用域](#如何使组件样式超出组件作用域)
+7. [下拉列表选项布尔类型转换](#下拉列表选项布尔类型转换)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -156,6 +157,18 @@ res => {
 
 [实际Demo看这里](https://github.com/alanhg/angular-demo/issues/10)
 
+## 下拉列表选项布尔类型转换
+
+> 当我们对下拉列表进行ngModel双向绑定，如果我们的对象是非字符串类型，比如boolean,当用户选择选项后，会变成字符串。
+
+如果下拉选项被提供了非字符串类型，缺省value是会进行字符串类型转换，如果使用ngValue，就可以保持类型不变。
+
+```html
+<select [(ngModel)]="isList" (ngModelChange)="viewTypeChanged()">
+    <option [ngValue]="true">列表浏览</option>
+    <option [ngValue]="false">分组浏览</option>
+</select>
+```
 
 ## 仍有疑问???
 
