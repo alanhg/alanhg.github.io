@@ -6,7 +6,7 @@ abbrlink: fe4ef317
 date: 2017-05-15 15:40:41
 ---
 ![terminal](http://or0g12e5e.bkt.clouddn.com/blog/2017-08-19-040639.jpg)
-> 命令不同于GUI界面，更为高效和灵活,平时不免接触linux,常用命令总结如下。
+> 使用文字界面来设定，对于了解Linux有一定的帮住,平时不免接触,常用命令总结如下。
 
 ## 系统
 
@@ -30,7 +30,7 @@ $ cat /proc/meminfo
 # 修改当前用户密码
 $ passwd
 ```
-## 文件
+## 档案与目录管理
 
 ## 基本属性
 
@@ -58,12 +58,6 @@ $ rm -rf dir
 
 # 查找并删除
 $ find  .  -name test  | xargs rm -rf   
-
-# 压缩
-$ tar zcvf FileName.tar.gz DirName
-
-# 解压
-$ tar zxvf FileName.tar.gz
 
 # 复制
 $ cp vsftpd.conf vsftpd.conf.bak
@@ -161,3 +155,20 @@ $ unset NODE_ENV
 + 安装指定软件 `yum install <package_name>`
 + 删除指定软件 `yum remove <package_name>`
 + 查找软件包 `yum search <keyword>`
+
+## 磁盘与硬件管理
+### mount
+```
+# mount  /dev/fd0 /mnt/floppy     <=軟碟(windows 系統檔) 
+
+```
+`说明`这种方式，立即生效，但是主机重启后会失效，永久生效的方法为在/etc/rx.local添加`mount  /dev/fd0 /mnt/floppy`
+
+## 压缩指令
+```
+# 压缩
+$ tar zcvf FileName.tar.gz DirName
+
+# 解压
+$ tar zxvf FileName.tar.gz
+```
