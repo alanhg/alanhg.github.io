@@ -18,6 +18,7 @@ tags:
 5. [组件类的继承性](#组件类的继承性)
 6. [如何使组件样式超出组件作用域](#如何使组件样式超出组件作用域)
 7. [下拉列表选项布尔类型转换](#下拉列表选项布尔类型转换)
+8. [模板标签<ng-container>、<ng-template>](#模板标签<ng-container>、<ng-template>)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -168,6 +169,48 @@ res => {
     <option [ngValue]="true">列表浏览</option>
     <option [ngValue]="false">分组浏览</option>
 </select>
+```
+
+## 模板标签<ng-container>、<ng-template>
+
+`ng-template`我们经常搭配ngIf指令等使用，如下:
+```html
+<div *ngIf="isList;else elseBlock">
+    <ul>
+        <li *ngFor="let item of items">
+            <a routerLink='../detail/{{item.id}}' [queryParams]="{title:item.title}">
+                {{item.title}}
+            </a>
+        </li>
+    </ul>
+</div>
+<ng-template #elseBlock>
+    <div>
+        分组浏览
+    </div>
+</ng-template>
+
+```
+但是，这样子，比如为true时候，我们生成的code中是会多了个if所谓的标签`div`，有时候我们是不需要这个的，如何不额外增加`div`标签呢,答案是使用ng-container标签。
+
+```html
+<ng-container *ngIf="isList;else elseBlock">
+    <ul>
+        <li *ngFor="let item of items">
+            <a routerLink='../detail/{{item.id}}' [queryParams]="{title:item.title}">
+                {{item.title}}
+            </a>
+        </li>
+    </ul>
+</ng-container>
+<ng-template #elseBlock>
+    <div>
+        分组浏览
+    </div>
+    <div *ngFor="let i of [1,2,3]">
+        <h3> {{i}}</h3>
+    </div>
+</ng-template>
 ```
 
 ## 仍有疑问???
