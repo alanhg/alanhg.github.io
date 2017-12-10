@@ -211,12 +211,9 @@ links_layout: block
 #links_layout: inline
 links:
   ruanyifeng: http://www.ruanyifeng.com/blog
-  Kunl: http://kunl.github.io
   liuyichao: http://createyl.me
   Morning: https://lingchenxuan.com
   Jake: https://czjake.com
-  XPYan: http://xpyan.win
-
 
 # ---------------------------------------------------------------
 # Post Settings
