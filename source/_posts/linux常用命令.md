@@ -178,3 +178,6 @@ $ tar zcvf FileName.tar.gz DirName
 # 解压
 $ tar zxvf FileName.tar.gz
 ```
+
+## 相关网站
++ [Linux命令大全](http://man.linuxde.net/)
