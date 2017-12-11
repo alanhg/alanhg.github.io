@@ -63,6 +63,12 @@ $ find  .  -name test  | xargs rm -rf
 $ cp vsftpd.conf vsftpd.conf.bak
 
 ```
+### ln
+
+ln命令用来为文件创建连接，连接类型分为硬连接和符号连接两种，默认的连接类型是硬连接。如果要创建符号连接必须使用"-s"选项。
+
+`ln -s /usr/mengqc/mub1 /usr/www/aaa`
+
 
 ## vi
 
