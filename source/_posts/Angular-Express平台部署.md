@@ -22,7 +22,7 @@ tags:
 使用`putty`开启会话连接目标服务器
 
 ## 安装NVM
-直接安装node，其实是可以的，但使用NVM安装node更为方便，版本变更也方便。
+直接安装node，其实可以，但使用NVM安装node更为方便，版本变更也方便。
 
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -31,7 +31,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | b
 
 NVM官方仓库地址:[点击这里](https://github.com/creationix/nvm)
 
-**注意NVM安装后，会话关闭，重启会话，才能生效。**
+**注意NVM安装后，会话需关闭重开启，才生效。**
 
 ## 安装Node
 ```bash
@@ -39,7 +39,7 @@ nvm install 6
 ```
 我这里安装的是6.x最新版。
 ### 安装NRM
-NRM是何物，管理npm源的，由于我们身处上不去谷歌的自由国家，NPM下载包还是慢的很，所以安装NRM，切换到国内源，还是会快很多。
+NRM是何物，管理npm源的，由于我们身处上不去谷歌的自由过度，NPM下载包还是慢的很，所以安装NRM，切换到国内源，还是会快很多。
 
 ```bash
 $ npm i nrm -g
@@ -61,8 +61,8 @@ mkdir /var/www/projectName
 
 **根据Linux目录标准，var下存放经常变动的文件**
 
-### 部署web应用
-部署web，Angular前端就是个dist文件夹，直接丢到该文件夹即可。后端应用也一样直接丢进去即可。
+### 拷贝web应用[前端dist文件夹+后端程序文件+第三方node_modules包]
+Angular前端就是个dist文件夹，直接丢到该文件夹即可。后端应用也一样直接丢进去即可。
 上传这些文件，可以用`WinSCP`直接上传。
 
 由于后端是expressJS，牵扯到`node_modules`，可以直接将生产依赖的包，上传，或者直接在项目根路径下，执行`npm i`，即可将依赖的包安装上去。
@@ -146,6 +146,14 @@ $ nginx -s reload
 $ nginx -s stop
 
 ```
+### nginx设定为自启动
+
+实际生产环境，其实服务器会存在重启，所以这里也需要设定为自启动
+
+```
+$ chkconfig nginx on
+```
+
 ## 开放对外服务端口
 
 ```
