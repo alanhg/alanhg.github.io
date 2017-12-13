@@ -171,10 +171,11 @@ $ service iptables stop # 停止服务
 ```
 
 ## 结语
-![successful](http://or0g12e5e.bkt.clouddn.com/blog/2017-12-13-104408.jpg)
+![fighting](http://or0g12e5e.bkt.clouddn.com/blog/2017-12-13-104640.png)
+
 大功告成，这个时候，直接访问服务器IP地址，就可以了，需要域名访问，就在DNS加条域名解析即可。
 
 说明:因为实际部署我正好用的win机器，其实mac也差不多，部分工具有差异而已，比如win下用的putty,mac下推荐使用iterm2。
 部署操作差别不大。
 
-上述有对具体命令不熟悉的，建议自行谷歌吧。
+`上述有对基本工具、基本命令不熟悉的，建议自行谷歌吧。`
