@@ -105,7 +105,7 @@ yum -y install nginx
 
 ```
 ### 代理配置
-nginx的配置文件在`/etc/nginx/conf.d/default.conf`,因为我的应用对外是80访问，所以这里直接在这里修改
+nginx的配置文件在`/etc/nginx/conf.d/default.conf`,因为我的应用对外是80访问，所以这里直接在这里修改，
 
 ```
 server {
@@ -132,6 +132,8 @@ server {
 }
 
 ```
+注意:我是利用nginx直接代理了`3001`的web服务，web服务本身的静态、动态内容都是在3001下。当然也可以利用nginx管理静态资源，动态内容反向代理，均可。
+
 ### 启动nginx
 由于是YUM安装nginx,所以可以直接使用nginx命令
 
