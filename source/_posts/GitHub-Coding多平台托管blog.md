@@ -1,9 +1,10 @@
 ---
 title: 'GitHub,Coding多平台托管blog'
-date: 2017-12-14 12:45:16
 tags:
-- GitHub
-- Hexo
+  - GitHub
+  - Hexo
+abbrlink: fdccd09f
+date: 2017-12-14 12:45:16
 ---
 > GitHub提供静态页托管服务，所以之前一直使用GitHub托管个人静态blog
 
