@@ -14,6 +14,7 @@ date: 2017-10-09 21:55:12
 + [config.xml文件修改，平台重新添加?](#config.xml文件修改，平台重新添加?)
 + [IOS-相册权限](#Missing Info.plist key)
 + [IOS-打包上传，构建版本中不显示](#IOS-打包上传，构建版本中不显示)
++ [Could not find an installed version of Gradle](#Gradle)
 
 ## 代号、标记和细分版本 (Build) 号关系
 
@@ -87,3 +88,18 @@ Ice Cream Sandwich|	4.0.3-4.0.4|	API 级别 15，NDK 8
     Once these issues have been corrected, you can then redeliver the corrected binary.
     
 对应修复后，再次提交，直接刷新页面，就会提示，提交的版本及状态。
+
+## <span id="Gradle">Could not find an installed version of Gradle</span>
+完整错误是
+> Could not find an installed version of Gradle either in Android Studio, or on your system to install the gradle wrapper. Please include gradle in your path, or install Android Studio
+
+官方网站，有相关介绍如下:
+> As of cordova-android@4.0.0, Cordova for Android projects are built using Gradle. 
+
+所以明白了问题，解决方案正如错误而言，安装Gradle即可。
+
+如果是`mac`建议，执行`brew install gradle`即可。
+
+
+
+
