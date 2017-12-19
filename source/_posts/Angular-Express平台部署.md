@@ -80,8 +80,9 @@ $ npm i pm2 -g
 
 ```bash
 
+$ vi /etc/profile
 $ export NODE_ENV="production"
-$ echo $NODE_ENV
+$ source /etc/profile
 ```
 
 ### 启动应用
