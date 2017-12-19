@@ -155,6 +155,7 @@ $ env
 ```
 $ unset NODE_ENV
 ```
+`说明`，永久生效方法为在`/etc/profile`中添加`export NODE_ENV="production""`
 
 ## yum
 
