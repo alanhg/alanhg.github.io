@@ -1,9 +1,9 @@
 {
-  "name": "Qiang.He",
+  "name": "Alan.He",
   "version": "0.0.1",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.4.3"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
