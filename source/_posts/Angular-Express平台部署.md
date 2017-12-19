@@ -81,7 +81,11 @@ $ npm i pm2 -g
 ```bash
 
 $ vi /etc/profile
+
+# 默认加入
 $ export NODE_ENV="production"
+
+# 退出vi执行，加载配置命令，立即生效
 $ source /etc/profile
 ```
 
