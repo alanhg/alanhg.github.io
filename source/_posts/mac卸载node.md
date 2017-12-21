@@ -57,3 +57,7 @@ _注意_:/usr/local/lib 和 /usr/local/bin 这两个文件夹，全局安装的n
 当一切都执行OK后，再看`nvm ls`,发现system版本不存在啦。
 
 ![nvm ls](http://or0g12e5e.bkt.clouddn.com/blog/2017-11-29-153057.png)
+
+## 开启新终端会话，nvm总是忘了设定的node版本上
+执行上面的卸载后，发现存在这个问题，在[GitHub](#https://github.com/creationix/nvm/issues/679)找到了如下方案。
+执行`source ~/.nvm/nvm.sh`
