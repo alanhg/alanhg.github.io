@@ -323,12 +323,7 @@ const connectorPaintStyle = {
 
 ## 总结
 
-jsPlumb相对其它绘图方案已经非常成熟，如果不想自己重新造轮子，使用这个可以满足所需，当然实际使用上，个人认为官方Doc还是不算完善，有时看的莫名其妙，有时还没即使更新。
+`jsPlumb`相对其它绘图方案已经成熟，如果不想自己重新造轮子，使用这个可以满足所需，当然实际使用上，个人认为官方Doc还是不算完善，有时看的莫名其妙，有时还有错误。
 
-比如删边，其实函数名称叫`deleteConnection`,下图:
+比如删边，其实函数名称叫`deleteConnection`,如下图:
 [https://github.com/jsplumb/jsplumb/issues/697](![issue](http://or0g12e5e.bkt.clouddn.com/blog/2017-12-23-065854.png))
-
-最终原因是文档更新不及时，与我使用的最新版没对应。。。。
-
-
-
