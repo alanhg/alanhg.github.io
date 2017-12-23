@@ -1,5 +1,5 @@
 ---
-title: 流程图绘制类库-dagre-d3
+title: dagre-d3使用指南
 tags:
   - D3
   - dagre
@@ -33,7 +33,7 @@ date: 2017-11-04 19:54:27
 
 [完整源码看这里](https://github.com/alanhg/angular-demo)
 
-html部分
+### Show me the code
 
 ```html
 <div class="container">
