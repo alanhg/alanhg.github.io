@@ -73,7 +73,7 @@ $ pm2 delete all                # 停止且删除所有应用
 $ pm2 delete 0                  # 停止且删除id为0的应用
 
 # 启动管理
-$ pm2 startup                   # 监听初始化系统，生成且配置PM2启动脚本
+$ pm2 startup [platform]        # 监听初始化系统，生成且配置PM2启动脚本
 $ pm2 save                      # 存储当前进程列表
 $ pm2 resurrect                 # 重新存储之前存储的进程
 $ pm2 unstartup                 # 停用并删除启动程序
@@ -142,6 +142,7 @@ $ pm2 reloadLogs          # Reload all logs
 ```
 
 ### 启动脚本生成
+
 PM2能够生成并配置启动脚本，从而使PM2和你的进程能够在每次服务器重启时保持运行状态。
 支持初始化系统包括：systemd (Ubuntu 16, CentOS, Arch), upstart (Ubuntu 14/12), launchd (MacOSx, Darwin), rc.d (FreeBSD).
 ```
@@ -203,9 +204,11 @@ pm2-server-monit monitor your server health
 
 你会看到两次执行，出来的窗体显示信息不同，实际原因是第一次执行时候，我的终端窗体很窄，拉大后再执行命令就显示下部的样子，所以想显示完整的应用信息，需要确保终端窗体大一些。
 
-+ 如果重启、关闭等多个应用
++ 如何重启、关闭等多个应用
 
 比如我们有appid为0、1两个应用，除了单个或全部方式操作外，其实pm2支持多个，操作方式如下
 `pm2 start 0 1`,这样就会启动id为0和1两个应用,stop、restart等操作等同。
 
++ pm2应用日志有必要吗
+一般而言，pm2管理的应用本身都有自己日志系统，比如我开发node应用一般会使用`log4js`,所以pm2没必要输出需要禁用
 
