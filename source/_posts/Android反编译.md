@@ -8,7 +8,6 @@ tags:
 ---
 > 由于业务需要，进行了反编译的学习，有几点收获,这里总结下。
 
-
 ## 什么是反编译
 APP开发是将项目代码打包成一个最终的APP，如果是安卓版就是个APK包，最终通过商店或者其它渠道，最终安装在用户的手机上。
 而反编译是将APP包，进行逆向工程，最大程度的拿到原来的所有资源，如项目代码。
@@ -23,7 +22,7 @@ Android还具有一定的可行性，当然目前的APP一般都是做了代码�
 
 ## 环境准备
 
-+ JAVA环境-建议1.8+
++ JAVA环境-建议[1.8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 + IDE，推荐`Intelij IDEA`或`Android Studio`
 + Unix环境，推荐`Mac,Ubuntu`
 
@@ -60,6 +59,21 @@ $ jadx-gui
 
 如图为某瓣APP反编译出来的项目CODE
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-04-145604.png)
+
+### 分析CODE
+
+这点就看个人功力了，学过JAVA，学过Android会好很多
+
+## 代码之外
+除了反编译出来的项目代码外，还需要结合两点
+
+### 玩APP
+通过APP的具体操作，比如发帖按钮，其实对应去CODE中找对应的Activity等类库会好很多。
+
+### 通过搭建模拟器，代理网络，抓包
+
+除了APP本身，APP是需要与服务端进行交互的，所以利用Fiddler等抓包工具，进行抓包分析，可以拿到接口信息，从而印证某些推断。
+目前的HTTP请求很多都是加密了的，即HTTPS,这个需要证书来解决了，建议查下相关资料吧。 
 
 
 ## 写在最后
