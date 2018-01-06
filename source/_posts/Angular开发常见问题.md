@@ -20,6 +20,7 @@ tags:
 7.  [下拉列表选项布尔类型转换](#下拉列表选项布尔类型转换)
 8.  [模板标签<ng-container>、<ng-template>](#模板标签<ng-container>、<ng-template>)
 9.  [CLI下index.html页面未模板化，如何动态更改内容](#CLI下index.html页面未模板化，如何动态更改内容)
+10. [CLI下如何添加第三方CSS](#CLI项目如何添加第三方CSS)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -254,9 +255,38 @@ fs.readFile(indexFilePath, 'utf8', function (err, data) {
 
 这样，当我们执行`npm run build:prod`时，就会在前端构建成功后，执行修改内容脚本。
 
+## CLI项目如何添加第三方CSS
+> 对于第三方CSS，由于考虑未来升级可能，及避免被开发人员直接强行篡改源码，所以一般不放在assets下。
+
+对于第三方的CSS
+### 如果是要打包直接进入styles.css中，有两个办法:
+1. json配置文件里配置
+```json
+ "styles": [
+        "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+        "styles.css"
+      ],
+
+```
+2. css中直接import
+
+```css
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
+
+
+```
+
+单纯就这两个方案，建议使用第一个，CLI下面的项目优先考虑使用CLI的方式
+
+### 如果还是物理分离，直接在index.html中导入即可
+```html
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+```
+
 
 ## 仍有疑问???
 
 ![仍有疑问???](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-26-question_72px_1094871_easyicon.net.png)
 
-### 欢迎在GitHub/angular-demo上提票[点击这里](https://github.com/alanhg/angular-demo/issues)
+### 欢迎在GitHub/angular-demo上提票和查看以上问题的最新解答[点击这里](https://github.com/alanhg/angular-demo/issues)
