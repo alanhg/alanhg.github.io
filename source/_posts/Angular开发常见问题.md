@@ -11,14 +11,15 @@ tags:
 
 ## 目录
 
-1. [[innerHTML]中的JavaScript不能执行吗？](#[innerHTML]中的JavaScript不能执行吗？)
-2. [同时订阅路由参数和查询参数即params和queryParams](#同时订阅路由参数和查询参数即params和queryParams)
-3. [多异步请求并行处理](#多异步请求并行处理)
-4. [*ngFor遍历对象属性](#*ngFor遍历对象属性)
-5. [组件类的继承性](#组件类的继承性)
-6. [如何使组件样式超出组件作用域](#如何使组件样式超出组件作用域)
-7. [下拉列表选项布尔类型转换](#下拉列表选项布尔类型转换)
-8. [模板标签<ng-container>、<ng-template>](#模板标签<ng-container>、<ng-template>)
+1.  [[innerHTML]中的JavaScript不能执行吗？](#[innerHTML]中的JavaScript不能执行吗？)
+2.  [同时订阅路由参数和查询参数即params和queryParams](#同时订阅路由参数和查询参数即params和queryParams)
+3.  [多异步请求并行处理](#多异步请求并行处理)
+4.  [*ngFor遍历对象属性](#*ngFor遍历对象属性)
+5.  [组件类的继承性](#组件类的继承性)
+6.  [如何使组件样式超出组件作用域](#如何使组件样式超出组件作用域)
+7.  [下拉列表选项布尔类型转换](#下拉列表选项布尔类型转换)
+8.  [模板标签<ng-container>、<ng-template>](#模板标签<ng-container>、<ng-template>)
+9.  [CLI下index.html页面未模板化，如何动态更改内容](#CLI下index.html页面未模板化，如何动态更改内容)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -212,6 +213,47 @@ res => {
     </div>
 </ng-template>
 ```
+
+## CLI下index.html页面未模板化，如何动态更改内容
+
+> Angular开发，多数还是使用官方的CLI构建工具，但是官方CLI构建下的前端，index页面是死的，比如希望构建打包的index页面中是无法追加部分内容的，那么只能自己手动去实现了。
+
+以下就是场景和对应的解决思路
+### 场景
+> 生产部署，我是希望构建打包出来的index.html页面中增加<meta name="releaseDate" content="${releaseDate}"/>，这样通过看源码的标记位，我能知晓，这是何时发布的新版前端。
+
+### 解决方案
+#### 增加脚本文件
+
+```javascript
+const fs = require('fs');
+const cheerio = require('cheerio');
+const moment = require('moment');
+const indexFilePath = 'dist/index.html';
+
+fs.readFile(indexFilePath, 'utf8', function (err, data) {
+  if (err) {
+    return console.log(err);
+  }
+  const $ = cheerio.load(data, {decodeEntities: false});
+  const releaseDate = moment().format('YYYY-MM-DD HH:mm');
+  $('meta').last().append(`<meta name="releaseDate" content="${releaseDate}"/>`);
+  // now write that file back
+  fs.writeFile(indexFilePath, $.html(), function (err) {
+    if (err) return console.log(err);
+    console.log('Successfully rewrote index html');
+  });
+});
+
+```
+
+#### package.json
+```json
+    "build:prod": "ng build --prod && node scripts/after-build.js",
+```
+
+这样，当我们执行`npm run build:prod`时，就会在前端构建成功后，执行修改内容脚本。
+
 
 ## 仍有疑问???
 
