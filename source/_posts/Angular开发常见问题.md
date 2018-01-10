@@ -7,7 +7,7 @@ tags:
 ---
 > Angular开发总会遇到诸多的问题，这里我将自己在开发中遇到的主要问题总结一番，方便自己偶尔翻查，也兴许能够帮大家解决些问题。
 
-说明:`*本文持续更新*`
+说明:`*本文持续更新*`,所贴代码由于篇幅限制，有些只是部分，建议直接去[GitHub-ISSUE](https://github.com/alanhg/angular-demo/issues)中去看
 
 ## 目录
 
@@ -21,6 +21,7 @@ tags:
 8.  [模板标签<ng-container>、<ng-template>](#模板标签<ng-container>、<ng-template>)
 9.  [CLI下index.html页面未模板化，如何动态更改内容](#CLI下index.html页面未模板化，如何动态更改内容)
 10. [CLI下如何添加第三方CSS](#CLI项目如何添加第三方CSS)
+11. [httpclient下的拦截器使用](#httpclient下的拦截器使用)
 
 ## [innerHTML]中的JavaScript不能执行吗？
 
@@ -284,8 +285,67 @@ fs.readFile(indexFilePath, 'utf8', function (err, data) {
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 ```
 
+## httpclient下的拦截器使用
 
-## 仍有疑问???
+
+ng4.3推出拦截器功能,支持对于请求和回复的改变，也就是在发起请求前和收到回复后可以预先处理下。
+
+官网原话:
+> A major feature of /http is interception, the ability to declare interceptors which sit in between your application and the backend. When your application makes a request, interceptors transform it before sending it to the server, and the interceptors can transform the response on its way back before your application sees it. This is useful for everything from authentication to logging.
+
+### 场景
+> 在实际开发做用户认证的时候，我的前端需要在请求头部加入令牌，然后再收到后端回复的时候，对于特定状态，执行相应动作。
+  
+### CODE
+
+token.interceptor.service.ts
+
+```typescript
+import {Injectable} from '@angular/core';
+import {AuthService} from './auth.service';
+import {HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
+import {AlertService} from './alert.service';
+import 'rxjs/add/operator/do';
+
+/**
+ * Created by He on 10/01/18.
+ * 令牌拦截器
+ */
+@Injectable()
+export class TokenInterceptor implements HttpInterceptor {
+  constructor(public authService: AuthService, private alertService: AlertService) {
+  }
+
+  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    if (this.authService.getToken()) {
+      request = request.clone({
+        setHeaders: {
+          Authorization: `Bearer ${this.authService.getToken()}`
+        }
+      });
+    }
+    return next.handle(request).do((event) => {
+        return event;
+      },
+      (err: any) => {
+        if (err instanceof HttpErrorResponse) {
+          if (err.status === 401) {
+            this.alertService.showAlert({type: 'danger', msg: err.error['err']});
+            this.authService.removeToken();
+            location.reload();
+          }
+        }
+        return Observable.throw(err);
+
+      }
+    );
+  }
+}
+
+```
+
+## 仍有疑问???不够详细???
 
 ![仍有疑问???](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-26-question_72px_1094871_easyicon.net.png)
 
