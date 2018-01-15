@@ -62,6 +62,9 @@ $ find  .  -name test  | xargs rm -rf
 # 复制
 $ cp vsftpd.conf vsftpd.conf.bak
 
+# 单列，长格式，显示所有文件,包含隐藏文件及目录
+$ ls -Al
+
 ```
 ### ln
 
@@ -178,6 +181,20 @@ $ tar zcvf FileName.tar.gz DirName
 
 # 解压
 $ tar zxvf FileName.tar.gz
+```
+## 硬件·内核·Shell·监测
+
+-i<条件>：列出符合条件的进程。（4、6、协议、:端口、 @ip ）
+
+```
+$ lsof -i:4000
+
+```
+
+### kill
+```
+# 杀死指定进程
+$ kill -9 3840
 ```
 
 ## 相关网站
