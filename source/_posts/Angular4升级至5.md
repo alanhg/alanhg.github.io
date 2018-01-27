@@ -56,11 +56,9 @@ date: 2018-01-27 14:47:23
 升级后试了下AOT打包，体积情况如下
 
 ### Angular4
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-27-064154.png)
-
+![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-27-075543.png)
 ### Angular5
-
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-27-064154.png)
+![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-27-075556.png)
 
 **单说构建打包出来的体积的话，没变化，但vendor文件消失了，体积都转移到了main中。**
 
