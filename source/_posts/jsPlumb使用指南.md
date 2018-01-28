@@ -20,6 +20,7 @@ tags:
 + [官方DOC](https://jsplumbtoolkit.com/community/doc/home.html)
 + [官方DEMO](https://jsplumbtoolkit.com/demos.html)
 + [GitHub](https://github.com/jsplumb/jsplumb)
++ [更新日志](https://github.com/jsplumb/jsplumb/blob/master/doc/wiki/changelog.md)
 
 除了这些官方资料，看一些博文也能有不小帮助，正如我这里写的，愿能帮到你些。
 
