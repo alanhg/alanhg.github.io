@@ -30,4 +30,4 @@ if (isPrivateMode()) {
 
 ```
 ## 写在最后
-这里之所以判别不用localStorage，是因为Safari不适用，所以这样写会好点。
+这里之所以判别不用`localStorage`,`sessionStorage`，是因为`Safari 11`已经不适用，所以需要这样判断。
