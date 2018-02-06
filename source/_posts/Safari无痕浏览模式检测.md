@@ -29,5 +29,9 @@ if (isPrivateMode()) {
 }
 
 ```
+## 相关链接
+
+[Apple官网无痕浏览介绍](https://support.apple.com/zh-cn/HT203036)
+
 ## 写在最后
 这里之所以判别不用`localStorage`,`sessionStorage`，是因为`Safari 11`已经不适用，所以需要这样判断。
