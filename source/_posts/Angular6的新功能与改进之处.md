@@ -11,7 +11,7 @@ tags:
 当然Angular6较之5将会使开发更容易，体积更小，速度更快。
 
 ## Angular6的提升与功能
-+ ClI集成Service Worker支持
++ CLI集成Service Worker支持
     - `ng generate universal <name>`
     - `ng build --app=<name>`
 + CLI改进了Universial与APPShell的支持
@@ -44,6 +44,6 @@ tags:
 + 删除注释的生成
 + 修复在窄屏下SideNav高问题
 
-英文原文:[https://www.code-sample.com/2018/01/whats-new-in-angular-6.html](点击这里)
+英文原文:[点击这里](https://www.code-sample.com/2018/01/whats-new-in-angular-6.html)
 
 想了解更详细的功能及BUG情况，请查看官方仓库，[点击这里](https://github.com/angular/angular/blob/master/CHANGELOG.md)
