@@ -8,7 +8,7 @@ date: 2018-02-17 13:17:46
 ---
 > GitHub Pages本身是支持HTTPS，比如仓库地址是alanhg.github.io,https可以正常访问，但自定义域名后，是不可以https访问的。
 这里利用Cloudflare的免费CDN服务来实现。
-
+## 操作步骤
 + 注册Cloudflare账户
 + 点击'Add Site'
     ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-17-052245.png)
@@ -30,4 +30,9 @@ date: 2018-02-17 13:17:46
 
     ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-17-053427.png)
 
-配置完成后，访问`https://1991421.cn`发现可以了，但是浏览器会提示证书错误，为GitHub的，这个问题需要等待一段时间，我是第二天再访问正常了。
+## 写在最后
+配置完成后，访问`https://1991421.cn`发现可以了，但是浏览器会提示证书错误，为GitHub的，所以我们自定义域名与其不符。
+这个问题需要等待一段时间，我是第二天再访问正常了。
+![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-17-055144.png)
+
+![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-17-055008.png)
