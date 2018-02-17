@@ -414,7 +414,7 @@ jiathis: true
 google_site_verification: X2kZZYv5HVaZzDyVf-pFnNdRG2BQGA50qxmGwDGyiG4
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-113986847-2
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
