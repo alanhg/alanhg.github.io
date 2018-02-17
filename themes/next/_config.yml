@@ -411,7 +411,7 @@ jiathis: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: X2kZZYv5HVaZzDyVf-pFnNdRG2BQGA50qxmGwDGyiG4
 
 # Google Analytics
 #google_analytics:
