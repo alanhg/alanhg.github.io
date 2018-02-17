@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://www.1991421.com/sitemap.xml
-Sitemap: http://www.1991421.com/baidusitemap.xml
+Sitemap: https://www.1991421.cn/sitemap.xml
+Sitemap: https://www.1991421.cn/baidusitemap.xml
