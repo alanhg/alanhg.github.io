@@ -1,0 +1,8 @@
+<OpenSearchDescription>
+    <ShortName>进击之路</ShortName>
+    <Description>Blog站内搜索</Description>
+    <Contact>qianghe421@163.com</Contact>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Url type="text/html" template="https://1991421.cn/tags/{searchTerms}"/>
+    <Image height="32" width="32" type="image/x-icon">https://1991421.cn/favicon.ico</Image>
+</OpenSearchDescription>

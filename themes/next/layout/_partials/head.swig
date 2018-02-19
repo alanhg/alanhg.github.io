@@ -113,7 +113,7 @@
   <meta property="fb:admins" content="{{ theme.facebook_sdk.fb_admin }}" />
   <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}" />
 {% endif %}
-
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="进击之路" />
 
 {{
   open_graph({
