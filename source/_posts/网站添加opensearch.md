@@ -42,5 +42,13 @@ Chrome下
 href="opensearch.xml" title="文章检索" rel="search" />
 ```
 
+### suggestion支持，后端返回结果集格式
+
+```javascript
+res.json(["fir", ["firefox", "first choice", "mozilla firefox"]]);
+
+```
+其中，fir为用户输入的关键词
+
 ## 写在最后
 上述只是使用了部分设定，更详细的设置，看[这里](http://www.opensearch.org/Specifications/OpenSearch/1.1)
