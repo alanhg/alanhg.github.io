@@ -7,10 +7,10 @@ tags:
 ---
 > 对于一个具备检索功能的站点，除了本身在站点内部点击页内检索等外，可以通过添加配置文件，从而让浏览器自动发现和提示添加新的搜索插件/扩展到浏览器的搜索栏中。
 
-Firefox下
+## Firefox下
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-19-131050.png)
 
-Chrome下
+## Chrome下
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-19-134323.png)
 
 当然前提是`网站本身具有搜索且支持GET参数传递`即可。建立在这样一个前提下，向下看。
@@ -20,10 +20,7 @@ Chrome下
 `vi opensearch.xml`
 
 ```xml
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" slick-uniqueid="3">
-  <div>
-    <a id="slick_uniqueid"/>
-  </div>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>进击之路</ShortName>
   <Description>文章检索</Description>
   <Contact>qianghe421@163.com</Contact>
