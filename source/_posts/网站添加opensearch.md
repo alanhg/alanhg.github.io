@@ -17,7 +17,7 @@ Chrome下
 
 ## 编写OpenSearch描述文件
 
-`vi content-search.xml`
+`vi opensearch.xml`
 
 ```xml
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" slick-uniqueid="3">
