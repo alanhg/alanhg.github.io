@@ -11,7 +11,7 @@ tags:
 1. 主分支：`master`【保护分支】
 2. 开发分支：`dev`
 3. 功能分支：`feature/分支名称`
-4. bug分支修复：`bugfix/issueNumber`
+4. bug分支修复：`hotfix/issueNumber`
 
 ## 操作步骤
 1. 管理员`【项目负责人】`创建git仓库，创建dev分支
