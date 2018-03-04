@@ -63,6 +63,8 @@ router.use(function (err, req, res, next) {
 
 异常处理其实是next使用的一种场景。
 
+*注意:*因为这里是先路由请求之后进行的异常处理，所以这里异常中间件处理在路由请求处理之后。
+
 ## 相关文档
 + [expressjs源码](https://github.com/expressjs/express)
 + [对express中next函数的一些理解](https://cnodejs.org/topic/5757e80a8316c7cb1ad35bab)
