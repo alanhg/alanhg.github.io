@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "hexo": {
-    "version": "3.5.0"
+    "version": "3.6.0"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "hexo": "3.5.0",
+    "hexo": "3.6.0",
     "hexo-abbrlink": "^2.0.4",
     "hexo-admin": "^2.1.0",
     "hexo-algoliasearch": "^0.2.1",
