@@ -62,6 +62,12 @@ $ find  .  -name test  | xargs rm -rf
 # 复制
 $ cp vsftpd.conf vsftpd.conf.bak
 
+# 文件重命名
+$ mv aa.txt aaa.txt
+
+# 当前文件夹下所有文件移动到当前目录
+$ mv /temp/deploy/* .
+
 # 单列，长格式，显示所有文件,包含隐藏文件及目录
 $ ls -Al
 
