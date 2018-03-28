@@ -1,5 +1,5 @@
 ---
-title: 搭建Jenkins进行持续集成化
+title: Jenkins持续集成-搭建配置
 tags:
   - Jenkins
   - DevOps

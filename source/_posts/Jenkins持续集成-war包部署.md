@@ -1,5 +1,5 @@
 ---
-title: Jenkins构建部署war包
+title: Jenkins持续集成-war包部署
 abbrlink: d703fbc2
 date: 2018-03-25 13:50:15
 tags:
