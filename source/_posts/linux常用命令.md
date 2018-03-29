@@ -23,8 +23,54 @@ $ cat /proc/cpuinfo
 
 # 内存
 $ cat /proc/meminfo
+```
+### 进程状态
 
 ```
+# ps结合grep查看某进程状态
+$ ps aux|grep xxx
+
+```
+ps aux输出格式：
+
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+
+USER:| 行程拥有者
+
+PID: pid
+
+%CPU: 占用的 CPU 使用率
+
+%MEM: 占用的记忆体使用率
+
+VSZ: 占用的虚拟记忆体大小
+
+RSS: 占用的记忆体大小
+
+TTY: 终端的次要装置号码 (minor device number of tty)
+
+STAT: 该行程的状态，linux的进程有5种状态：
+
+D 不可中断 uninterruptible sleep (usually IO)
+
+R 运行 runnable (on run queue)
+
+S 中断 sleeping
+
+T 停止 traced or stopped
+
+Z 僵死 a defunct (”zombie”) process
+
+注: 其它状态还包括W(无驻留页), <(高优先级进程), N(低优先级进程), L(内存锁页).
+
+START: 行程开始时间
+
+TIME: 执行的时间
+
+COMMAND:所执行的指令
+
+*_ps命令能够支持的系统类型相当的多_*
+
 ## 账户
 ```
 # 修改当前用户密码
@@ -202,6 +248,10 @@ $ lsof -i:4000
 # 杀死指定进程
 $ kill -9 3840
 ```
+
+### top
+实时动态查看系统的整体运行情况
+
 
 ## 相关网站
 + [Linux命令大全](http://man.linuxde.net/)
