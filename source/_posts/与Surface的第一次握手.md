@@ -3,9 +3,9 @@ title: 与Surface的第一次握手
 abbrlink: 917a1a2
 date: 2018-04-06 22:04:01
 tags:
----
 - 随笔
 - 利器
+---
 
 > 最近有购买WIN本的需求，周边用的最多的是联想的ThinkPad-小黑了。考虑到预算和使用场景【轻移动办公】，最终锁定了几款，ThinkPad T480，微软的Surface Pro5,Surface Laptop,苹果的Macbook，Macbook Air。
 纠结了个把小时，最终还是决定去顺电看下，做出直观判断。
