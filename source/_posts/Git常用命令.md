@@ -42,6 +42,9 @@ $ git add .
 ```
 $ git commit -m 'message'
 $ git push
+
+# 修改最新提交
+
 ```
 ### Reset
 
@@ -49,6 +52,8 @@ $ git push
 # 撤销暂存区提交，回退一个版本
 $ git reset HEAD^
 
+# 恢复到一个已知状态
+# git reset --hard
 ```
 
 #### rm
