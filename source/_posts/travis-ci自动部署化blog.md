@@ -4,6 +4,7 @@ tags:
   - travis
   - ci
   - hexo
+  - devops
 abbrlink: d10aa459
 date: 2017-07-04 22:33:54
 ---

@@ -1,9 +1,10 @@
 ---
 title: Token令牌机制设计
-date: 2018-02-21 12:02:10
 tags:
-- jwt
-- auth0
+  - jwt
+  - auth0
+abbrlink: e55561d1
+date: 2018-02-21 12:02:10
 ---
 
 ## 认证流程
