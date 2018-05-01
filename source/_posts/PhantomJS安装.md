@@ -35,6 +35,9 @@ $ cp MicrosoftYaHei.ttf /usr/share/fonts/chinese/
 $ mkfontscale
 $ mkfontdir
 $ fc-cache -fv
+
+# 列出中文字体
+$ fc-list:lang=zh
 ```
 
 ## Mac
