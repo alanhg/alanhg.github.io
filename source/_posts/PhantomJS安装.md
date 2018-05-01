@@ -7,6 +7,8 @@ tags:
 
 ---
 > [PhantomJS](https://en.wikipedia.org/wiki/PhantomJS)是一个基于webkit的JavaScript API。它使用QtWebKit作为它核心浏览器的功能，使用webkit来编译解释执行JavaScript代码。任何你可以在基于webkit浏览器做的事情，它都能做到。比如服务端生成JS图表图片等，使用场景很广泛。
+
+
 如何安装呢，这里简要说明下。
 
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-05-01-103648.png)
@@ -24,7 +26,7 @@ $ ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin
 ```
 
 ### 字体问题
-因为在实际使用中，我用到了PhantomJS执行highcharts图表生成图片这样一个场景，所以需要安装下微软雅黑字体，具体操作命令，依次如下
+因为在实际使用中，我用到了PhantomJS执行highcharts图表生成图片这样一个场景，图表中用到了中文字体，所以需要安装下微软雅黑字体，具体操作命令，依次如下
 
 ```
 $ mkdir /usr/share/fonts/chinese
@@ -41,6 +43,6 @@ brew install phantomjs
 
 ```
 `利用brew安装最为方便`
-## Win
+## Windows
 
-下载zip包解压，进行环境变量配置
+下载zip包解压，比如放在`D://phantomjs-2.1.1-windows`,进行环境变量配置，系统环境变量中，Path后加入`;D:\phantomjs-2.1.1-windows\bin`
