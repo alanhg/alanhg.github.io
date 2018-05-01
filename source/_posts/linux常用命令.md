@@ -124,6 +124,11 @@ ln命令用来为文件创建连接，连接类型分为硬连接和符号连接
 
 `ln -s /usr/mengqc/mub1 /usr/www/aaa`
 
+### unzip
+```
+# 解压zip包到当前目录下
+$ unzip test.zip
+```
 
 ## vi
 
