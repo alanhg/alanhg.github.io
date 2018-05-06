@@ -28,3 +28,7 @@ branches:
 env:
  global:
    - GH_REF: github.com/alanhg/alanhg.github.io.git
+
+notifications:
+  email:
+    - i@alanhe.me
