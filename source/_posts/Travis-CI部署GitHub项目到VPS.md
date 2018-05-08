@@ -21,9 +21,9 @@ so,如何实现呢
 ssh登录终端传统方式是指令密码，除此之外是公钥私钥方式的免密登录，这里采用这种方式，首先在本地开启机器的ssh公钥添加到部署的目标服务器的authorized_keys中去。
 
 ```bash
-# 生成ssh-key
+# 开发机生成ssh-key
 $ ssh-keygen
-# 将id_rsa.pub中的内容粘贴到vps服务器~/.ssh/authorized_keys中
+# 将开发机id_rsa.pub中的内容粘贴到VPS服务器的~/.ssh/authorized_keys中，VPS上没有该文件则touch下
 ```
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-05-07-153554.png)
 
