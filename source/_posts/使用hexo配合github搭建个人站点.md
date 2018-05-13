@@ -1,5 +1,5 @@
 ---
-title: 使用hexo配合github搭建个人站点
+title: 使用hexo配合GitHub搭建个人站点
 abbrlink: 2aaeef79
 date: 2017-04-29 20:47:24
 tags:

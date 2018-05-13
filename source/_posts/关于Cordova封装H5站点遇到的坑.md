@@ -1,5 +1,5 @@
 ---
-title: 关于Cordova封装h5站点遇到的坑
+title: 关于Cordova封装H5站点遇到的坑
 tags:
   - Cordova
   - hybrid
@@ -10,7 +10,7 @@ date: 2017-07-14 21:55:27
 将其封装为APP，主要使用到了这个插件[cordova-plugin-inappbrowser](https://github.com/apache/cordova-plugin-inappbrowser)
 
 ## 坑1-文件下载
-在实际APP中，点击下载，发现没反应，几次都不行，推断有问题，在github插件pr中检索download,果然，发现有相关问题，如下图，仔细看了下，得到以下两点信息
+在实际APP中，点击下载，发现没反应，几次都不行，推断有问题，在GitHub插件pr中检索download,果然，发现有相关问题，如下图，仔细看了下，得到以下两点信息
 ![inappbrowser-pr](http://or0g12e5e.bkt.clouddn.com/inappbrowser-pr.png)
 + 首先这个下载问题，的确是这个插件的事，本质原因是安卓手机下载，就意味着文件要存储在手机上，而这是需要授权的，所以插件必须要声明文件存储权限，然后看了下插件的源码，果然，根本没有存储权限
 + 是pr，说明已经解决，并且提交，申请合并主干了，但是由于pr是打开状态，说明还没合并主干，那么通过npm，cordova安装的都不行了，因为官方版本不行，所以只能根据提交记录找到提交记录作者的fork状态下的插件即可，然后下载下来丢到项目中对应插件下，重新添加平台，构建打包，发现，果然解决啦。

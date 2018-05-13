@@ -1,5 +1,5 @@
 ---
-title: 同一电脑github与gitlab共存问题
+title: 同一电脑Github与GitLab共存问题
 abbrlink: 9811465d
 date: 2017-06-05 22:52:54
 tags:
@@ -13,7 +13,7 @@ tags:
 ## 解决步骤
 
 + 生成SSH-key
-`win`环境下，请运行git客户端,`mac`默认终端即可。
+`win`环境下，请运行Git客户端,`mac`默认终端即可。
 
 ```
   cd ~/.ssh/
