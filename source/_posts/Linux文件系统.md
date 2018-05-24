@@ -3,8 +3,8 @@ title: Linux文件系统
 abbrlink: a4b4101b
 date: 2018-03-18 23:02:28
 tags:
-- linux
-- unix
+- Linux
+- Unix
 - directory
 ---
 > 最近在推进公司的CI，CD化，玩Linux又频繁了点，之前也玩过点，但毕竟主责是系统开发，所以基本功不扎实。当安装Tomcat，安装JDK，FTP时等等，总是会困惑下
@@ -32,6 +32,9 @@ tags:
 
 ## /opt vs /usr/local
 > /usr/local通常是进入/usr的东西,或者重写已经在/usr下的。/opt是全部在一个文件夹下，或者其它特殊的。
+
+## /tmp文件何时清除
+> 我们如果把一些文件放在/tmp下，会发现这些文件过段时间会消失,因为Centos系统中有个定时任务叫tmpwatch,负责定时清除部分目录文件，其中会清除/tmp下超10天的文件,其它系统比如Debian系统是会在启动时清除。
 
 ## 相关资料
 - https://serverfault.com/questions/24523/meaning-of-directories-on-unix-and-unix-like-systems
