@@ -19,11 +19,11 @@ so,废话不说开搞！
 
 ## war包传输到目标服务器
 
-文件传输，使用`Publish Over SSH`,这里我是传输到`/tmp/deploy/war`下
+文件传输，使用`Publish Over SSH`,这里我是传输到`/opt/deploy/war`下
 
 ## 编写部署脚本
 
-1. `vi /tmp/deploy/deploy.sh`
+1. `vi /opt/deploy/deploy.sh`
 
 2. ```bash
     #!/bin/bash
@@ -43,7 +43,7 @@ so,废话不说开搞！
 
 ## Jenkins构建任务配置
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-03-25-060405.png)
+![](http://or0g12e5e.bkt.clouddn.com/blog/2018-05-25-035825.png)
 
 ## 写在最后
 shell编写脚本实现构建的具体执行细节，而Jenkins提供钩子，机制上的支持，这样配合，解决了部署，并且给了很大的自由度。如此一来，我们只需要专注于程序编写，
