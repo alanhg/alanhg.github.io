@@ -1,8 +1,8 @@
 ---
-title: nginx安装及配置
+title: Nginx安装及配置
 author: Qiang He
 tags:
-  - nginx
+  - Nginx
   - proxy
   - server
 abbrlink: 37016
