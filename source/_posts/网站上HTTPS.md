@@ -65,9 +65,8 @@ server {
  }       
 
 ```
-配置完成后，执行`nginx -t`，如果提示OK，则重启服务，访问`https://tool.alanhe.me`，完美!
-
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-05-30-145836.png)
+配置完成后，执行`nginx -t`，如果提示OK，则重启服务，访问`https://tool.alanhe.me`，地址栏出现了小绿锁，完美!
+![](http://or0g12e5e.bkt.clouddn.com/blog/2018-05-31-030134.png)
 
 ## 证书更新?
 安装acme.sh之后，程序会自动创建了cronjob,定期会Check证书，如果过期会自动更新，所以无需担心。
