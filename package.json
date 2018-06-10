@@ -5,6 +5,9 @@
   "hexo": {
     "version": "3.6.0"
   },
+  "scripts": {
+    "start": "hexo s -w"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "hexo": "3.6.0",
@@ -30,6 +33,6 @@
     "hexo-wordcount": "^2.0.0"
   },
   "devDependencies": {
-    "moment": "^2.22.1"
+    "moment": "^2.22.2"
   }
 }
