@@ -1,7 +1,7 @@
 ---
-title: linux常用命令
+title: Linux常用命令
 tags:
-  - linux
+  - Linux
 abbrlink: fe4ef317
 date: 2017-05-15 15:40:41
 ---
@@ -256,6 +256,16 @@ $ kill -9 3840
 
 ### top
 实时动态查看系统的整体运行情况
+
+
+## 网络管理
+### ifconfig
+配置和显示Linux系统网卡的网络参数
+```
+$ ifconfig
+
+```
+
 
 
 ## 相关网站
