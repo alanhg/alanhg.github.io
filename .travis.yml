@@ -12,12 +12,12 @@ script:
 - hexo g
 after_script:
 - cd ./public
-- git init
-- git config user.name "alanhg"
-- git config user.email "qianghe421@163.com"
-- git add .
-- git commit -m "update"
-- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+#- git init
+#- git config user.name "alanhg"
+#- git config user.email "qianghe421@163.com"
+#- git add .
+#- git commit -m "update"
+#- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 - rsync -az -vv --delete -e 'ssh -p 29554' ./** root@45.78.58.109:/var/www/blog-html
 branches:
   only:
