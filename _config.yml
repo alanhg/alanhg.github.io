@@ -5,7 +5,7 @@
 # Site
 title: 进击之路
 subtitle: 个人博客
-description: www.1991421.cn
+description: 1991421.cn
 author: Alan He
 language: en
 # timezone: Asia/Shanghai
@@ -13,7 +13,7 @@ since: 2016
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.1991421.cn
+url: https://1991421.cn
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :year/:month/:day/:abbrlink/
