@@ -28,11 +28,12 @@ acme.sh  --issue  -d tool.alanhe.me --webroot  /var/www/toolkit
 
 ### copy 证书到 nginx
 
-注意:`/etc/nginx/ssl`文件夹可能不存在，如果没有需要创建`mkdir /etc/nginx/ssl`
+### 注意
+- `/etc/nginx/ssl`文件夹可能不存在，如果没有需要手动创建`mkdir /etc/nginx/ssl`
 
-注意:因为CA会check网站下`.well-known/acme-challenge/`的文件来完成证书发放，所以我们需要该路径下文件支持对外访问。
+- 因为CA会check网站下`.well-known/acme-challenge/`的文件来完成证书发放，所以我们需要该路径下文件支持对外访问。
 以下为nginx容器下配置。
-
+- 执行下面命令，证书是自动copy到ssl，不需要手动去做
 ```
 location ^~ /.well-known/acme-challenge/ {
         alias /var/www/toolkit/.well-known/acme-challenge/;
@@ -40,7 +41,7 @@ location ^~ /.well-known/acme-challenge/ {
     }
 ```
 
-配置完成后，我们就可以执行证书命令了
+配置完成后，我们就可以执行证书命令
 
 ```
 acme.sh  --installcert  -d  tool.alanhe.me --key-file   /etc/nginx/ssl/tool.alanhe.me.key --fullchain-file /etc/nginx/ssl/fullchain.cer --reloadcmd  "service nginx force-reload"
