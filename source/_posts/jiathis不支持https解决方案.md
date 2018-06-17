@@ -1,9 +1,10 @@
 ---
 title: jiathis不支持https解决方案
-date: 2018-02-25 13:13:47
 tags:
-- HTTPS
-- JavaScript
+  - HTTPS
+  - JavaScript
+abbrlink: f7cce253
+date: 2018-02-25 13:13:47
 ---
 > 第三方社会化分享插件使用比较多的也就是baidushare，jiathis，但这些都不支持https,如果https站点使用是会报错的。
 如何解决呢，其实只能改源码解决了，当然也可以利用反向代理解决。
