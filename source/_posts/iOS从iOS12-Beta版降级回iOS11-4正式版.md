@@ -2,6 +2,8 @@
 title: iOS从iOS12 Beta版降级回iOS11.4正式版
 tags:
   - iOS
+  - 折腾
+  - 搞机
 abbrlink: cfc076d8
 date: 2018-06-17 16:15:30
 ---
