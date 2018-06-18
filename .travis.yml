@@ -1,11 +1,5 @@
 language: node_js
 node_js: stable
-addons:
-  ssh_known_hosts:
-  - 45.78.58.109:29554
-before_install:
-- openssl aes-256-cbc -K $encrypted_33db0eed5041_key -iv $encrypted_33db0eed5041_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
 install:
 - npm install
 script:
@@ -18,7 +12,6 @@ after_script:
 - git add .
 - git commit -m "update"
 - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-- rsync -az -vv --delete -e 'ssh -p 29554' ./** root@45.78.58.109:/var/www/blog-html
 branches:
   only:
   - source
