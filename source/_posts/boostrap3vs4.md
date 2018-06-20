@@ -1,10 +1,11 @@
 ---
 title: '[译]Boostrap3 vs 4'
+tags:
+  - BootStrap
+  - CSS
+  - 译
+abbrlink: cebcfde4
 date: 2018-06-20 06:48:15
-tags: 
-- BootStrap
-- CSS
-- 译
 ---
 > Bootstrap于1月19日放出了4的正式版，4带来了一些主要的改变，添加了新的组件，废弃了一些。这里是Bootstrap 3与4的区别
 
@@ -24,7 +25,7 @@ tags:
 |Table表头样式|不支持|`.thead-light` 和 `.thead-dark`|
 |紧缩表格|`.table-condensed`|`.table-sm`|
 |状态类|Bootstrap 3 不用`.table-`前缀，例如Bootstrap 3 用`.active`然而Bootstrap 4 用`.table-active`,状态关键词都是(active,success,info,warning,danger)|添加`.table-`前缀来做表格的状态类
-|响应式表格|`.table-response`类必须添加到父级div元素上|一样，同时增加了`table-responsive-*`来表明断点`.table-responsive{-sm|-md|-lg|-xl}`
+|响应式表格|`.table-response`类必须添加到父级div元素上|一样，同时增加了`table-responsive-*`来表明断点`.table-responsive{-sm|-md|-lg|-xl}`|
 |表单|
 |水平表单|
 |复选框与单元按钮|
