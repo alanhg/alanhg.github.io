@@ -1,8 +1,11 @@
 ---
 title: hexo-error
-date: 2018-06-20 08:17:24
 tags:
-- hexojs
+  - hexojs
+  - nodejs
+  - javascript
+abbrlink: 15c803b4
+date: 2018-06-20 08:17:24
 ---
 > 个人博客是用的hexo，虽然简单，但使用中还是会遇到一些小问题，这里贴出常见错误
 
