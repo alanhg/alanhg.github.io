@@ -13,6 +13,7 @@ tags:
 
 1. 安装Session中间件
 `npm i express-session --save`
+
 2.Session配置开启
 app.js下进行如下配置，这里直接贴出完整文件
 ```javascript
@@ -53,7 +54,9 @@ app.listen(conf.server.port, "127.0.0.1", function () {
     }
 );
 ``` 
+
 3. 用户登录更新Session
+
 ```javascript
 router.post('/login', (req, res) => {
         const user = appUsers[req.body.email];
@@ -73,8 +76,10 @@ router.post('/login', (req, res) => {
 );
 
 ```
+
 4. 用户退出 销毁Session
-```
+
+```javascript
 router.get('/logout', function (req, res) {
     req.session.destroy((err) => {
         if (err) {
@@ -84,7 +89,8 @@ router.get('/logout', function (req, res) {
         }
     });
 });
-```javascript
+```
+
 5. 改变Session存储方案
 Session存储的默认存储方案为MemoryStore，当我们生产环境应用时，会得到如下提示
 ```
