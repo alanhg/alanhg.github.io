@@ -41,14 +41,12 @@ date: 2018-06-20 06:48:15
 |标题|不支持|提供`.col-form-label`用于legend标签|
 |固定文本|用`.form-control-static`去渲染固定文本|`.form-control-plaintext`|
 |自定义表单|不支持|支持|
-
 |按钮|||
 |样式|`.btn-secondary`不可用|去掉`.btn-default`，增加了`btn-secondary`,`btn-light`,和`btn-dark`|
 |边框按钮|不支持|`btn-outline-*`为按钮增加边框颜色|
 |按钮尺寸|`.btn-xs`可用|`.btn-xs`删除,`.btn-sm`,`.btn-lg`可用|
 |控件组|
 |Classes|使用`.input-group-addon`和`.input-group-btn`|废除了`.input-group-addon`,`input-group-btn`,增加了`input-group-prepend`,`.input-group-append`，也增加了`.input-group-text`用于空间组中文本|
-
 |媒体对象|||
 |Classes|`.media`,`.media-body`等|媒体对象可以直接使用flex布局类|
 |下拉菜单|||
