@@ -27,7 +27,7 @@ date: 2018-06-20 06:48:15
 |Table表头样式|不支持|`.thead-light` 和 `.thead-dark`|
 |紧缩表格|`.table-condensed`|`.table-sm`|
 |状态类|Bootstrap 3 不用`.table-`前缀，例如Bootstrap 3 用`.active`然而Bootstrap 4 用`.table-active`,状态关键词都是(active,success,info,warning,danger)|添加`.table-`前缀来做表格的状态类
-|响应式表格|`.table-response`类必须添加到父级div元素上|一样，同时增加了`table-responsive-*`来表明断点`.table-responsive{-sm|-md|-lg|-xl}`|
+|响应式表格| `.table-response`类必须添加到父级div元素上 |一样，同时增加了`table-responsive-*`来表明断点`.table-responsive{-sm|-md|-lg|-xl}`|
 |表单|
 |水平表单|
 |复选框与单元按钮|
@@ -46,11 +46,27 @@ date: 2018-06-20 06:48:15
 |Classes|使用`.input-group-addon`和`.input-group-btn`|废除了`.input-group-addon`,`input-group-btn`,增加了`input-group-prepend`,`.input-group-append`，也增加了`.input-group-text`用于空间组中文本|
 |Glyphicons|
 |支持性|支持|不支持|
+|印刷|
+|引用|缺省使用`<blockquote>`元素|引入`.blockquote`样式应用于`<blockquote>`元素上
+|对齐|使用`.block-reverse`来右对齐|使用文本工具类`.text-center`和`.text-right`来对齐元素
+|头部|`page-header`支持|`page-header`不支持|
+|描述列表|使用`.dl-horizonal`来描述水平列表|水平列表的话，在`<dl>`上加入`.row`，在`<dt><dd>`上使用栅格系统|
 |非响应式使用|
 |支持性|支持|不支持|
+|List Groups|
+|链接列表，按钮列表|`.list-group-item`到a元素上|`.list-group-item-action`到a元素上|
+|折叠|
+|展示内容|`.in`|`.show`|
+|卡片|
+|支持性|支持|不支持|
+|Panel面板|
+|支持性|支持|不支持|
+|Well容器|支持|不支持|
+|缩略图|
+|支持性|支持|不支持|
 |路径导航|
+|类|用`.breadcrumb`|同时也要求加入`.breadcrumb-item`用在li元素上
 | 轮播 |
 |轮播项|用`.item`|用`.carousel-item`
-|Affix|
+|附加导航（Affix）|
 |支持性|支持|不支持|
-
