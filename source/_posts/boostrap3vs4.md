@@ -97,6 +97,6 @@ date: 2018-06-20 06:48:15
 |支持性|支持|不支持|
 
 ## 写在最后
-以上只是列出需要关注的差一点，具体还是看官网吧。
+以上只是列出需要关注的差异点，具体还是看官网吧。
 + [官网](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 + [GitHub仓库](https://github.com/twbs/bootstrap)
