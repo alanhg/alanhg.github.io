@@ -27,7 +27,7 @@ date: 2018-06-20 06:48:15
 |Table表头样式|不支持|`.thead-light` 和 `.thead-dark`|
 |紧缩表格|`.table-condensed`|`.table-sm`|
 |状态类|Bootstrap 3 不用`.table-`前缀，例如Bootstrap 3 用`.active`然而Bootstrap 4 用`.table-active`,状态关键词都是(active,success,info,warning,danger)|添加`.table-`前缀来做表格的状态类
-|响应式表格| `.table-response`类必须添加到父级div元素上 |一样，同时增加了`table-responsive-*`来表明断点`.table-responsive{-sm\|-md\|-lg\|-xl}`|
+|响应式表格| `.table-responsive`必须添加到父级div元素上 |一样，同时增加了`table-responsive-*`来表明断点`.table-responsive-sm -md -lg -xl`|
 |表单|
 |水平表单|使用`form-horizontal`|废除了`form-horizontal`，当需要使用栅格化的话，使用`.row`，同时引入`.form-row`类|
 ||Form布局的话使用`.control-label`进行栅格布局|使用`col-form-label-*`进行栅格布局|
