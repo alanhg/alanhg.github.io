@@ -22,6 +22,8 @@ Error: Cannot find module 'semver'
 - 左边图是之前构建报错的lock文件
 - 右边是重新生成的
 
+## package-lock说明
+如果改了package.json，且package.json和lock文件不同，那么执行`npm i`时npm会根据package中的版本号以及语义含义去下载最新的包，并更新至lock。如果两者是同一状态，那么执行`npm i `都会根据lock下载，不会理会package实际包的版本是否有新。
 
 
 
