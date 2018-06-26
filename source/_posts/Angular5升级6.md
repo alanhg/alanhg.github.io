@@ -30,7 +30,7 @@ $ rxjs-5-to-6-migrate -p src/tsconfig.app.json
 Property 'map' does not exist on type 'Observable<Response>'
 ```
 ![](http://or0g12e5e.bkt.clouddn.com/2018-06-26-052755.png)
-![](http://or0g12e5e.bkt.clouddn.com/2018-06-26-052755.png)
+![](http://or0g12e5e.bkt.clouddn.com/2018-06-26-061753.png)
 
 升级成功后，对打包速度，打包体积及WEB运行性能进行了对比，情况如下
 
