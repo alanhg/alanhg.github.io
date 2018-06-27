@@ -13,8 +13,9 @@ date: 2018-06-20 06:48:15
 ![](http://or0g12e5e.bkt.clouddn.com/2018-06-21-114624.png)
 
 原文链接:[这里](https://www.quackit.com/bootstrap/bootstrap_4/differences_between_bootstrap_3_and_bootstrap_4.cfm)
-
+## 组件差异
 |组件|Bootstrap 3| Bootstrap 4|
+|---|---|---|
 |全局|||
 |CSS源文件|LESS|SCSS|
 |CSS主要单位|px|rem|
@@ -22,7 +23,7 @@ date: 2018-06-20 06:48:15
 |全局字体大小|14px|16px|
 |缺省字体集|Helvetica Neue, Helvetica, Arial, sans-serif|Uses a "native font stack" (user's system fonts), with a fallback to Helvetica Neue, Arial, and sans-serif|
 |栅格化|||
-|栅格参数|4种栅格系统(xs,sm,md,lg)|5种(xs,sm,md,lg,xl) *Bootstrap 4已经删除了最小断点的的xs,因此col-*覆盖了所有所有设备`不再需要标明这种情况得尺寸了`*
+|栅格参数 | 4种栅格系统(xs,sm,md,lg) | 5种(xs,sm,md,lg,xl) *Bootstrap 4已经删除了最小断点的的xs,因此col-*覆盖了所有所有设备`不再需要标明这种情况得尺寸了`*|
 |偏移|用col-*-offset-*去偏移列,例如col-md-offset-4|用offset-*-*去偏移列，例如,offset-md-4.|
 |表格|||
 |黑色主题表格|不支持|增加dark表格样式，用`.table-dark`|
@@ -96,7 +97,6 @@ date: 2018-06-20 06:48:15
 |支持性|支持|不支持|
 
 ## 浏览器支持
-
 ![](http://or0g12e5e.bkt.clouddn.com/2018-06-27-040213.png)
 
 ## 写在最后
