@@ -1,9 +1,10 @@
 ---
 title: ' Cannot find module inherits'
-date: 2018-06-26 02:51:28
 tags:
-- Node
-- nodejs
+  - Node
+  - nodejs
+abbrlink: 7a3a5e4
+date: 2018-06-26 02:51:28
 ---
 > 最近在做项目Angular5升级至6时，遇到了提交源码，CI服务器执行构建报错`“Error: Cannot find module 'inherits'”`
 
