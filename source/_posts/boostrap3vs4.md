@@ -15,7 +15,6 @@ date: 2018-06-20 06:48:15
 原文链接:[这里](https://www.quackit.com/bootstrap/bootstrap_4/differences_between_bootstrap_3_and_bootstrap_4.cfm)
 
 |组件|Bootstrap 3| Bootstrap 4|
-|浏览器支持|
 |全局|||
 |CSS源文件|LESS|SCSS|
 |CSS主要单位|px|rem|
