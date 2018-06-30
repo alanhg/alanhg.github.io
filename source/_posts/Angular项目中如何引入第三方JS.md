@@ -48,3 +48,4 @@ NO！我们也可以这样
 ## 相关文档
 + [声明文件使用](https://www.tslang.cn/docs/handbook/declaration-files/consumption.html)
 + [stories third party lib](https://github.com/angular/angular-cli/wiki/stories-third-party-lib)
++ [TypeScript 的声明文件的使用与编写](https://my.oschina.net/fenying/blog/748805)
