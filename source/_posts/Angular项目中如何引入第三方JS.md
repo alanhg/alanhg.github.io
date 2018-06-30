@@ -1,8 +1,9 @@
 ---
 title: Angular项目中如何引入第三方JS
-date: 2018-06-30 09:29:50
 tags:
-- Angular
+  - Angular
+abbrlink: 90871f29
+date: 2018-06-30 09:29:50
 ---
 > 在实际进行Angular项目开发时，会需要引入第三方JS，比如`base64.js`，一个关键词检索高亮的类库。
 
@@ -43,3 +44,7 @@ NO！我们也可以这样
 1. index.html文件中导入对应的JS资源
 2. 在使用的组件头部进行声明`declare const Base64: any;`
 这样也可以，但坏处就是实际上发挥不了TS的静态类型检查，算是有利有弊吧。
+
+## 相关文档
++ [声明文件使用](https://www.tslang.cn/docs/handbook/declaration-files/consumption.html)
++ [stories third party lib](https://github.com/angular/angular-cli/wiki/stories-third-party-lib)
