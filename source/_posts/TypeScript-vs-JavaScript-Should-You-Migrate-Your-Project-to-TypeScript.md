@@ -68,6 +68,7 @@ let password = getPassword('false'); // throws: error TS2345: Argument of type '
 - **静态类型**支持摇树优化:摇树优化是通过静态构造(如命名模块导入/导出和常量)来消除死代码，TypeScript目前不支持摇树优化。
 
 ## 语法与编译对比
+通常听到开发者选择TypeScript是因为模块和类这些功能。然而，这些功能在ES6标准下的JS也是可以的，理解这点很重要。你可以通过Babel转译成ES5来满足浏览器兼容性。因为这个困惑，这里有个语法对比。对于每一个功能，你将能够看到TypeScript版本和它编译后的ES5版JavaScript，还有ES6和利用babel转义的ES5。
 ### 类
 
 ```typescript
@@ -88,6 +89,12 @@ var Article = /** @class */ (function () {
 }());
 ```
 ```javascript
+// -- JavaScript with Babel -- //
+class Article {
+    constructor(name) {
+        this.name = name;
+    }
+}
 
 // -- Babel compiled output -- //
 "use strict";
@@ -99,7 +106,7 @@ var Article = function Article(name) {
 
     this.name = name;
 };
-
+Modules
 ```
 ### 模块
 ```typescript
