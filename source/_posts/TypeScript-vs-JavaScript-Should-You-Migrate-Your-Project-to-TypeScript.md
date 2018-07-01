@@ -10,7 +10,7 @@ tags:
 
 ![](http://or0g12e5e.bkt.clouddn.com/2018-07-01-025045.jpg)
 
-在编程领域，TypeScript(TS)和JavaScript(JS)是两种流行的开发语言，但两者的区别是什么，什么情况下使用一种，而甚于另一种呢?在这篇文章里，我们对比两门语言，看看两者如何，讨论下它们的主要区别，和彼此的优缺点。
+在编程领域，TypeScript(TS)和JavaScript(JS)是两种流行的开发语言，但两者的区别是什么，什么情况下适用?在这篇文章里，我们对比两门语言，看看两者如何，讨论下它们的主要区别，和彼此的优缺点。
 
 ## 定义TypeScript
 TypeScript是JavaScript的超集，可以编译成JavaScript(EcmaScript 3+)。TypeScript提供类型注释，以此在编译环节进行可选、静态类型分析。因为是JavaScript的超集，所有的JavaScript语法在TS中都是有效的。然而，这并不意味着所有JavaScript都可以在TypeScript编译器下执行通过。
@@ -44,15 +44,15 @@ function getPassword(clearTextPassword: boolean) : string {
 
 let password = getPassword('false'); // throws: error TS2345: Argument of type '"false"' is not assignable to parameter of type 'boolean'.
 ```
-这个例子描述我们如何能够避免使用非期待类型调用。历史原因，JavaScript的问题之一就是类型检查缺失造成的问题追踪。
+这个例子描述我们如何能够避免使用意外类型调用。历史原因，JavaScript的问题之一就是类型检查缺失造成的问题追踪,这会导致不熟悉JavaScript复杂性的人产生不良结果。
 
 ### 语言功能
 除了静态类型分析外，TypeScript也添加了以下功能点
-- 接口
-- 泛型
-- 命名空间
-- 空检查
-- 访问修饰符
+- [接口](https://www.tslang.cn/docs/handbook/interfaces.html)
+- [泛型](https://www.tslang.cn/docs/handbook/generics.html)
+- [命名空间](https://www.tslang.cn/docs/handbook/namespaces.html)
+- [空检查](https://www.tslang.cn/docs/release-notes/typescript-2.0.html)
+- [访问修饰符](https://www.tslang.cn/docs/handbook/classes.html)
 
 ## API文档
 假如上面的getPassword(...)函数属于一个类库，我如何知道函数的传参类型呢，有jsdoc，许多IDE，编辑器，比如VSCode都支持。也有一些类库的文档，比如Dash这种工具。但是这些都没有提供如TypeScript这样的体验。
