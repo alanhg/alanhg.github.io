@@ -5,7 +5,7 @@ tags:
 abbrlink: 90871f29
 date: 2018-06-30 09:29:50
 ---
-> 在实际进行Angular项目开发时，会需要引入第三方JS，比如`base64.js`，一个关键词检索高亮的类库。
+> 在实际进行Angular项目开发时，会需要引入第三方JS，比如[base64.js](https://github.com/dankogai/js-base64)，一个base64转码器。
 
 如何去做呢?
 
