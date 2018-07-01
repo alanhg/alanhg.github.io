@@ -1,5 +1,5 @@
 ---
-title: '【译】TypeScript vs. JavaScript: Should You Migrate Your Project to TypeScript?'
+title: '【译】TypeScript vs. JavaScript: 应该移植项目到TypeScript吗?'
 date: 2018-06-30 22:09:37
 tags:
 - TypeScript
