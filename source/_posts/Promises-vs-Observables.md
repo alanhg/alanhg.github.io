@@ -63,7 +63,7 @@ numberObservable.subscribe(value => console.log(value));
 - DOM事件(鼠标click 等等)
 - 任何其它种类事件，这个问题(也存在于Node.js)
 
-尽管后来，我们在Promises上取得了一些进步，但我们仍然会继续使用魔鬼回调。没人意识到我们只是解决了部分问题吗?谢谢RxJS作者所做的。
+尽管后来，我们在Promises上取得了一些进步，但我们仍然会继续使用可怕的回调。没人意识到我们只是解决了部分问题吗?谢谢RxJS作者所做的。
 让我们看下，如何用Observable包裹setInterval.
 ```javascript
 const secondsObservable = new Observable((observer) => {       
@@ -106,7 +106,7 @@ const observable = new Observable(() => {
     console.log('I was called!');
 });
 ```
-这件事情没有发生。这是因为Promises是不懒，而Observables是懒惰。函数传递到Observable构造函数，但只有某人实际订阅到一个Observable，才能唤起。
+这件事情没有发生。这是因为Promises是立即，而Observables是懒惰。函数传递到Observable构造函数，但只有某人实际订阅到一个Observable，才能唤起。
 ```javascript
 observable.subscribe();
 // just now "I was called!" gets printed
@@ -127,7 +127,7 @@ const secondsObservable = new Observable((observer) => {
 ## 不可取消 vs 可取消的
 我们假设Promises是懒惰的。想象下在我们Promise的例子中，我们只有在有人监听这个结果的时候调用`setInterval`。但这时如果有人停止监听了呢？你可以能知道，setInterval返回令牌，这个可以被用于取消这个定时器。当消费者已不再希望监听这个事件的时候，我们能够这么做，因为当没人监听的时候，这些资源不能被浪费。
 
-实际上，一些Promise类库支持这些。Bluebird Promises支持取消方法，你可以在一个Promise身上用，去停止里面发生的。让我们看下如何去做，从而取消掉这些。
+实际上，一些Promise类库支持这些。[Bluebird Promises](http://bluebirdjs.com/docs/getting-started.html)支持取消方法，你可以在一个Promise身上用，去停止里面发生的。让我们看下如何去做，从而取消掉这些。
 
 ```javascript
 const secondsPromise = new Promise((resolve, reject, onCancel) => {
