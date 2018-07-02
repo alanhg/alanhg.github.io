@@ -1,13 +1,14 @@
 ---
 title: '【译】TypeScript vs. JavaScript: 应该移植项目到TypeScript吗?'
-date: 2018-06-30 22:09:37
 tags:
-- TypeScript
-- 译
+  - TypeScript
+  - 译
+abbrlink: 7cff1954
+date: 2018-06-30 22:09:37
 ---
 原文链接:[TypeScript vs. JavaScript: Should You Migrate Your Project to TypeScript?](https://stackify.com/typescript-vs-javascript-migrate/)
 
-> 16年9月,Angular2首个正式版放出，官方是推荐使用TypeScript进行开发的，由此，玩Angular的开发者大多都选择TypeScript。除了Angular框架，其它的框架，如React,Vue实际上也都相继支持TS开发，TS现在的确是挺火的。但TS好在哪呢，与JS差异在哪，解决的痛点是什么呢，这点一直没去系统的梳理。
+> 16年9月,Angular2首个正式版放出，官方是推荐使用TypeScript进行开发的，由此，玩Angular的开发者大多都选择TypeScript。除了Angular框架，其它的框架，如React,Vue实际上也都相继支持TS开发，TS现在的确是挺火的。但TS好在哪呢，与JS差异在哪，解决的痛点是什么呢。
 最近看到篇文章写的很棒，这里译一下，兴许能帮到大家。
 
 ![](http://or0g12e5e.bkt.clouddn.com/2018-07-01-025045.jpg)
