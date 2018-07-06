@@ -1,9 +1,10 @@
 ---
-title: Angular5升级6
+title: Angular5升级至6
 abbrlink: 682d106
 date: 2018-05-05 23:33:16
 tags:
-- Angular
+- Angular5
+- Angular6
 ---
 ![](http://or0g12e5e.bkt.clouddn.com/blog/2018-05-06-022853.jpg)
 
@@ -24,6 +25,12 @@ tags:
 $ npm install -g rxjs-tslint
 $ rxjs-5-to-6-migrate -p src/tsconfig.app.json
 ```
+但是比如执行上述成功后，实际上还是有部分代码需要我们手动自己去修改，否则就会报错比如这里的一个操作符修改。
+```
+Property 'map' does not exist on type 'Observable<Response>'
+```
+![](http://or0g12e5e.bkt.clouddn.com/2018-06-26-052755.png)
+![](http://or0g12e5e.bkt.clouddn.com/2018-06-26-061753.png)
 
 升级成功后，对打包速度，打包体积及WEB运行性能进行了对比，情况如下
 

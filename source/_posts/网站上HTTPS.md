@@ -1,5 +1,5 @@
 ---
-title: 网站上HTTPS
+title: 给网站加HTTPS
 tags:
   - HTTPS
   - SSL
@@ -7,7 +7,7 @@ tags:
 abbrlink: cb08c555
 date: 2018-05-30 22:33:12
 ---
-> 给网站上HTTPS已成一种趋势，新版Chrome访问未加密的站点会直接提示不安全。总提示不安全，另外加S的确可以加强网站信息传输的安全，so有必要搞一搞。
+> 给网站加HTTPS已成一种趋势，新版Chrome访问未加密的站点会直接提示不安全。总提示不安全，另外加S的确可以加强网站信息传输的安全，so有必要搞一搞。
 
 ## Let’s Encrypt证书
 国内阿里云之前提供赛门铁克免费证书，但现在没了，好消息是Let’s Encrypt有免费SSL证书，不过证书有效期只有90天，别担心，有办法解决自动更新证书问题。
@@ -26,14 +26,16 @@ acme.sh  --issue  -d tool.alanhe.me --webroot  /var/www/toolkit
 
 ```
 
-### copy 证书到 nginx
+### copy 证书到 NGINX
 
 ### 注意
 - `/etc/nginx/ssl`文件夹可能不存在，如果没有需要手动创建`mkdir /etc/nginx/ssl`
 
 - 因为CA会check网站下`.well-known/acme-challenge/`的文件来完成证书发放，所以我们需要该路径下文件支持对外访问。
-以下为nginx容器下配置。
+以下为NGINX容器下配置。
 - 执行下面命令，证书是自动copy到ssl，不需要手动去做
+- 当最终CA完成check后,wellknow文件夹下是会被删除，所以我们看不到，但是还是保持该路径支持访问，因为证书更新还需要保持能够请求
+
 ```
 location ^~ /.well-known/acme-challenge/ {
         alias /var/www/toolkit/.well-known/acme-challenge/;
@@ -45,9 +47,8 @@ location ^~ /.well-known/acme-challenge/ {
 
 ```
 acme.sh  --installcert  -d  tool.alanhe.me --key-file   /etc/nginx/ssl/tool.alanhe.me.key --fullchain-file /etc/nginx/ssl/fullchain.cer --reloadcmd  "service nginx force-reload"
-
-
 ```
+没意外的话，终端会显示OK，接下来就是NGINX配置下证书即可。
 
 ### nginx配置
 

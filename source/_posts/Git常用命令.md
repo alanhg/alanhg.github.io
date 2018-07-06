@@ -145,9 +145,14 @@ $ git remote set-url origin git@github.com:username/repo.git
   ```
    git rm --cached directory
    git add directory
-  
   ```
 
+### You have not concluded your merge (MERGE_HEAD exists).
+
+```
+$ git reset --merge
+
+```
 ## 辅助资料
 
 + [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)

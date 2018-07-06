@@ -1,6 +1,5 @@
 ---
 title: Nginx安装及配置
-author: Qiang He
 tags:
   - Nginx
   - proxy
@@ -8,8 +7,7 @@ tags:
 abbrlink: 37016
 date: 2016-09-10 09:14:03
 ---
-## nginx简介
-最近在部署web站点,用到了nginx,这里记录主要相关操作及配置。
+> 最近在部署Web站点,用到了nginx,这里记录主要相关操作及配置。
 来句概括的话，nginx是一个高性能的http与反向代理服务器,具体nginx了解请看[官网](https://nginx.org/en/)及[维基百科](https://zh.wikipedia.org/zh-hans/Nginx)，了解下,
 
 ## 相关命令
@@ -21,7 +19,7 @@ $ yum -y install nginx
 # 启动nginx服务
 $ nginx
 
-# 重启nginx服务
+# 重载nginx配置
 $ nginx -s reload
 
 # 停止nginx服务
@@ -31,15 +29,15 @@ $ nginx -s stop
 ```
 ## 相关配置
 
-+ gzip
+### gzip
 
 Gzip开启以后会将输出到用户浏览器的数据进行压缩的处理，减小通过网络传输的数据量，提高浏览的速度。
 
 **下面贴出在nginx.conf配置文件中配置gzip的基本信息**
-```  
+``` bash  
+# Gzip
 # 开启gzip
 gzip on;
-``
 # 启用gzip压缩的最小文件，小于设置值的文件将不会压缩
 gzip_min_length 1k;
 
@@ -76,12 +74,32 @@ gzip_static on;
 
         location / {
             root /usr/www/website_root;
-
         }
     }
 
 ```
+### HTTP强转HTTPS
+```
+server {
+        listen 80;
+        server_name blog.alanhe.me;
 
-## 相关好文
+        return 301 https://$server_name$request_uri;
+}
+
+server {
+        listen       443 ssl http2 default_server;
+        listen       [::]:443 ssl http2 default_server;
+
+        ssl on;
+        ssl_certificate "/etc/nginx/ssl/blog.alanhe.me/fullchain.cer";
+        ssl_certificate_key "/etc/nginx/ssl/blog.alanhe.me/blog.alanhe.me.key";
+
+       ...
+}
+```
+
+
+## 相关文章
 
 + [Nginx何时取代Apache？](http://www.infoq.com/cn/news/2016/11/Nginx-when-replace-Apache)
