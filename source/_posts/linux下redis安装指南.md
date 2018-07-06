@@ -6,7 +6,7 @@ tags:
 abbrlink: '85e41428'
 date: 2017-07-11 23:17:34
 ---
-redis官方提供的方式是源码安装，官方已经提供了安装教程，若习惯原版，[点击这里](https://redis.io/topics/quickstart)，我这里更多是翻译和补充下。
+> redis官方提供的方式是源码安装，官方已经提供了安装教程，若习惯原版，[点击这里](https://redis.io/topics/quickstart)，我这里更多是翻译和补充下。
 顺便再回顾下常用命令
 
 ## 安装
@@ -106,5 +106,10 @@ $ chkconfig -add redis
 ```
 $ chkconfig redis on 
 ```
-
+## yum安装
+以上是源码安装，较为麻烦，如果yum安装则简单多了
+```bash
+$ yum install -y redis
+```
+安装完成后，启动服务即可。
 
