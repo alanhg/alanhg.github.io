@@ -5,6 +5,7 @@ date: 2017-05-05 23:22:37
 tags:
 - git
 - command
+- 指令集
 ---
 ![What is git and why should I use it? - Quora](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-10-161721.jpg)
 
@@ -153,6 +154,18 @@ $ git remote set-url origin git@github.com:username/repo.git
 $ git reset --merge
 
 ```
+### 每次push都提示输入用户名及密码
+![](http://or0g12e5e.bkt.clouddn.com/2018-07-07-031614.png)
+出现这个的原因是远程库我们是以HTTPS形式设定的，修改为SSH即可
+```
+# 查看远程库协议
+$ git remote -v
+
+$ git remote rm origin 
+$ git remote add origin git@github.com:alanhg/alanhg.github.io.git
+
+```
+
 ## 辅助资料
 
 + [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
