@@ -1,9 +1,10 @@
 ---
 title: Docker常用命令
-date: 2018-07-07 10:36:48
 tags:
-- Docker
-- 指令集
+  - Docker
+  - 指令集
+abbrlink: 29dc6fe8
+date: 2018-07-07 10:36:48
 ---
 ![](http://or0g12e5e.bkt.clouddn.com/2018-07-07-024107.png)
 
@@ -29,4 +30,4 @@ $ docker rm contaierId
 $ docker images
 ```
 ## 写在最后
-最终以官方CLI为准，[点击这里](https://docs.docker.com/engine/reference/run/)
+命令存在改变或失效可能，最终以官方CLI为准，[点击这里](https://docs.docker.com/engine/reference/run/)
