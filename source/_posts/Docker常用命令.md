@@ -28,6 +28,9 @@ $ docker rm contaierId
 
 # 查看所有镜像
 $ docker images
+
+# 创建镜像
+$ docker build -t toolkit:v1 . 
 ```
 ## 写在最后
 以上命令可能改变或失效，最终以官方CLI为准，[点击这里](https://docs.docker.com/engine/reference/run/)
