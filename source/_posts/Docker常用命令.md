@@ -30,4 +30,4 @@ $ docker rm contaierId
 $ docker images
 ```
 ## 写在最后
-命令存在改变或失效可能，最终以官方CLI为准，[点击这里](https://docs.docker.com/engine/reference/run/)
+以上命令可能改变或失效，最终以官方CLI为准，[点击这里](https://docs.docker.com/engine/reference/run/)
