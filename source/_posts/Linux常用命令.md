@@ -261,12 +261,15 @@ $ kill -9 3840
 ## 网络管理
 ### ifconfig
 配置和显示Linux系统网卡的网络参数
-```
+```bash
 $ ifconfig
-
 ```
 
-
+### nslookup
+常用域名查询工具，就是查DNS信息用的命令
+```bash
+$ nslookup 1991421.cn
+```
 
 ## 相关网站
 + [Linux命令大全](http://man.linuxde.net/)
