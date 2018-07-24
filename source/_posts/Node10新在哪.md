@@ -8,7 +8,7 @@ tags:
 > 每一个玩Node的人都深陷版本旋涡，停上一段时间，差了好几版，我之前玩Node是v6，现在都v10了，可怕不可怕。有人说`前端十八个月难度翻一倍`，这话我信。所以新东西，还是尽可能积极跟进，Node v10发布有段时间了，这里翻译篇文章，介绍下亮点。
 
 ![Node.js](https://ws2.sinaimg.cn/large/006tKfTcly1ftkxbekhq8j30m805z0t3.jpg)
-原文网址：[点击这里](https://levelup.gitconnected.com/whats-new-in-node-10-ad360ae55ee4)
+原文网址：[戳这里](https://levelup.gitconnected.com/whats-new-in-node-10-ad360ae55ee4)
 
 Node.js v10于2018年4月24日已经发布，10月将进入[长期支持（LTS）](https://zh.wikipedia.org/wiki/%E9%95%B7%E6%9C%9F%E6%94%AF%E6%8F%B4)，我们来看下这次发布中指的关注的一些功能。
 ### 添加错误码
@@ -33,8 +33,7 @@ Node 8引入了试验性的HTTP/2模块，这是一个重要的更新。HTTP/2�
 
 ### V8引擎 v6.6表现提升
 Node停止了V8 JavaScript引擎，Node.js v10中装了最新版本的引擎。对于浏览器，Chrome 66下的v8引擎v6.6能够减少转换和编译20-40%的JavaScript时间。因此，我们可以预期Node 10在这方面有更大的收益，同时它也提供异步生成器和阵列表现。
-对于软件，速度是王道，最新版的Node致力于提升这些。想了解更多，[戳这里](https://v8project.blogspot.com/2018/04/improved-code-caching.html)
-
+使用软件，速度至关重要，最新版的Node致力于提升这些。想了解更多，[戳这里](https://v8project.blogspot.com/2018/04/improved-code-caching.html)
 
 ### ES模块（ESM）更好地支持
 ```javascript
