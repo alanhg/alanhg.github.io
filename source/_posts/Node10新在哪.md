@@ -4,9 +4,9 @@ date: 2018-07-24 21:58:08
 tags:
 - Node
 ---
-> 每一个玩Node的人都深陷版本旋涡，停上一段时间，差了好几版，我之前玩Node是v6，现在都v10了，可怕不可怕。有人说前端技术，每18个月，难度翻一番，这话我信。所以新东西，还是尽可能积极跟进，v10发布有段时间了，这里翻译下篇文章，介绍下10的亮点。
+> 每一个玩Node的人都深陷版本旋涡，停上一段时间，差了好几版，我之前玩Node是v6，现在都v10了，可怕不可怕。有人说`前端十八个月难度翻一倍`，这话我信。所以新东西，还是尽可能积极跟进，Node v10发布有段时间了，这里翻译下篇文章，介绍下亮点。
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1ftkxbekhq8j30m805z0t3.jpg)
+![Node.js](https://ws2.sinaimg.cn/large/006tKfTcly1ftkxbekhq8j30m805z0t3.jpg)
 原文网址：[点击这里](https://levelup.gitconnected.com/whats-new-in-node-10-ad360ae55ee4)
 
 Node.js v10于2018年4月24日已经发布，10月将进入[长期支持（LTS）](https://zh.wikipedia.org/wiki/%E9%95%B7%E6%9C%9F%E6%94%AF%E6%8F%B4)，我们来看下这次发布中指的关注的一些功能。
