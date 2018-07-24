@@ -5,7 +5,7 @@ tags:
 - Node
 - 译
 ---
-> 每一个玩Node的人都深陷版本旋涡，停上一段时间，差了好几版，我之前玩Node是v6，现在都v10了，可怕不可怕。有人说`前端十八个月难度翻一倍`，这话我信。所以新东西，还是尽可能积极跟进，Node v10发布有段时间了，这里翻译下篇文章，介绍下亮点。
+> 每一个玩Node的人都深陷版本旋涡，停上一段时间，差了好几版，我之前玩Node是v6，现在都v10了，可怕不可怕。有人说`前端十八个月难度翻一倍`，这话我信。所以新东西，还是尽可能积极跟进，Node v10发布有段时间了，这里翻译篇文章，介绍下亮点。
 
 ![Node.js](https://ws2.sinaimg.cn/large/006tKfTcly1ftkxbekhq8j30m805z0t3.jpg)
 原文网址：[点击这里](https://levelup.gitconnected.com/whats-new-in-node-10-ad360ae55ee4)
