@@ -18,6 +18,8 @@ respone body中填写返回结果(创建成功后，也支持修改)
 ![](http://or0g12e5e.bkt.clouddn.com/2018-07-29-DD9DBC85-A328-406C-BEF3-9EA7A6FA027D.png)
 
 点击关闭，点击单个请求发送，我们会看到返回结果集。
+mock服务创建成功之后，也会给我们提供请求的完整地址，鼠标移动到地址栏${{url}}上即可查看。
+
 ### 增加请求
 ![](http://or0g12e5e.bkt.clouddn.com/2018-07-29-093439.png)
 save保存到我们刚才创建的mock collection下。返回结果添加与下面的修改请求结果实例类似操作。
