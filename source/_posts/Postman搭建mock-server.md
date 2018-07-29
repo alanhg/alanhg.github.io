@@ -1,12 +1,13 @@
 ---
 title: Postman搭建mock server
-date: 2018-07-29 17:11:53
 tags:
-- postman
-- mock
-- 软件技巧
+  - postman
+  - mock
+  - 软件技巧
+abbrlink: 74fadb6c
+date: 2018-07-29 17:11:53
 ---
-> mock单词的意思很多，其中一个意思是模仿。在进行前端开发的时候，为了不依赖后端的进度，我们可以根据既定的API规范，搭建mock server，这样可以独立进行开发。等后端开发完毕，只是需要将请求地址由mock请求地址修改为后端服务地址既可。
+> mock这词其中一个意思是模仿。在进行前端开发的时候，为了不依赖后端的进度，我们可以根据既定的API规范，搭建mock server，这样可以独立进行开发。等后端开发完毕，只是需要将请求地址由mock请求地址修改为后端服务地址既可。
 postman是个厉害的API工具，除了可以调试API之外，也支持创建mock服务。最近因为在做前端开发，利用postman搭建了mock服务，这里记录下。
 
 postman下载地址-[戳这里](https://www.getpostman.com/)
