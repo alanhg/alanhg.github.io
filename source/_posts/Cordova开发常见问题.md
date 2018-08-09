@@ -15,6 +15,7 @@ date: 2017-10-09 21:55:12
 + [IOS-相册权限](#Missing Info.plist key)
 + [IOS-打包上传，构建版本中不显示](#IOS-打包上传，构建版本中不显示)
 + [Could not find an installed version of Gradle](#Gradle)
++ [com.android.ide.common.process.ProcessException: Failed to execute aapt]
 
 ## 代号、标记和细分版本 (Build) 号关系
 
@@ -100,6 +101,11 @@ Ice Cream Sandwich|	4.0.3-4.0.4|	API 级别 15，NDK 8
 
 如果是`mac`建议，执行`brew install gradle`即可。
 
-
-
+## com.android.ide.common.process.ProcessException: Failed to execute aapt
+执行`cordova build android`会报此错误，原因在于项目中的crosswalk-webview。解决办法
+1. 卸载cordova-plugin-crosswalk-webview插件
+	`cordova plugin rm cordova-plugin-crosswalk-webview`
+2. 安装cordova-android-support-gradle-release插件
+	`cordova plugin add cordova-android-support-gradle-release`
+两种办法都可，取决于我们还是否使用crosswalk，关于使用它的优缺点，[戳这里](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview)
 
