@@ -15,7 +15,7 @@ date: 2017-10-09 21:55:12
 + [IOS-相册权限](#Missing Info.plist key)
 + [IOS-打包上传，构建版本中不显示](#IOS-打包上传，构建版本中不显示)
 + [Could not find an installed version of Gradle](#Gradle)
-+ [com.android.ide.common.process.ProcessException: Failed to execute aapt]
++ [com.android.ide.common.process.ProcessException: Failed to execute aapt](#)
 
 ## 代号、标记和细分版本 (Build) 号关系
 
