@@ -1,10 +1,11 @@
 ---
 title: 聊聊Babel与TSC
-date: 2018-08-11 20:31:35
 tags:
-- Babel
-- Polyfill
-- Compiler
+  - Babel
+  - Polyfill
+  - Compiler
+abbrlink: 55eb7b77
+date: 2018-08-11 20:31:35
 ---
 > React项目一般使用Babel进行编译，Angular【不是AngularJS】项目则会使用TSC进行编译。之前都只是肤浅的使用这些，未尝深入，so在开发中总是不小心踩坑，比如Object.assign，Promise不支持，比如正则引用。
 
@@ -36,7 +37,7 @@ tags:
 
 #### babel-runtime
 1. 安装babel-plugin-transform-runtime和core-js
-2. 
+
 	```
 	npm i babel-plugin-transform-runtime --save-dev
 
