@@ -7,7 +7,7 @@ tags:
 abbrlink: 55eb7b77
 date: 2018-08-11 20:31:35
 ---
-> React项目一般使用Babel进行编译，Angular【不是AngularJS】项目则会使用TSC进行编译。之前都只是肤浅的使用这些，未尝深入，so在开发中总是不小心踩坑，比如Object.assign，Promise不支持，比如正则引用。
+> React项目一般使用Babel进行编译，Angular【不是AngularJS】项目则会使用TSC进行编译。之前都只是肤浅的使用这些，未尝深入，so在开发中总是不小心踩坑，比如Object.assign方法，Promise对象，正则零宽度正回顾后发断言等等不支持。
 
 ![](http://or0g12e5e.bkt.clouddn.com/2018-08-11-112400.jpg)
 因此有必要搞明白些。
