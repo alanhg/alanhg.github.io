@@ -19,7 +19,7 @@ date: 2018-05-30 22:33:12
 curl  https://get.acme.sh | sh
 
 ```
-### Nginx配置,特定路径支持对外访问
+### NGINX配置,特定路径支持对外访问
 在生成证书时，CA会check网站下`.well-known/acme-challenge/`的文件来完成证书发放，所以我们需要该路径下文件支持对外访问。
 
 以下为NGINX容器下配置。
