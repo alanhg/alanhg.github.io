@@ -19,21 +19,10 @@ date: 2018-05-30 22:33:12
 curl  https://get.acme.sh | sh
 
 ```
-### 生成证书
+### Nginx配置,特定路径支持对外访问
+在生成证书时，CA会check网站下`.well-known/acme-challenge/`的文件来完成证书发放，所以我们需要该路径下文件支持对外访问。
 
-```
-acme.sh  --issue  -d tool.alanhe.me --webroot  /var/www/toolkit
-
-```
-
-### copy 证书到 NGINX
-
-### 注意
-- `/etc/nginx/ssl`文件夹可能不存在，如果没有需要手动创建`mkdir /etc/nginx/ssl`
-
-- 因为CA会check网站下`.well-known/acme-challenge/`的文件来完成证书发放，所以我们需要该路径下文件支持对外访问。
 以下为NGINX容器下配置。
-- 执行下面命令，证书是自动copy到ssl，不需要手动去做
 - 当最终CA完成check后,wellknow文件夹下是会被删除，所以我们看不到，但是还是保持该路径支持访问，因为证书更新还需要保持能够请求
 
 ```
@@ -43,14 +32,27 @@ location ^~ /.well-known/acme-challenge/ {
     }
 ```
 
-配置完成后，我们就可以执行证书命令
+### 生成证书
+
+```
+acme.sh  --issue  -d tool.alanhe.me --webroot  /var/www/toolkit
+
+```
+
+### copy 证书到 NGINX下
+
+### 注意
+- `/etc/nginx/ssl`文件夹可能不存在，如果没有需要手动创建`mkdir /etc/nginx/ssl`
+- 执行下面命令，证书是自动copy到ssl，不需要手动去做
+
+可以执行证书命令
 
 ```
 acme.sh  --installcert  -d  tool.alanhe.me --key-file   /etc/nginx/ssl/tool.alanhe.me.key --fullchain-file /etc/nginx/ssl/fullchain.cer --reloadcmd  "service nginx force-reload"
 ```
 没意外的话，终端会显示OK，接下来就是NGINX配置下证书即可。
 
-### nginx配置
+### NGINX证书配置
 
 ```
 server {
