@@ -19,7 +19,7 @@ tags:
 
 ```shell
 #!/usr/bin/expect
-# vpn to lenovo
+# vpn to xxx
 spawn sudo openconnect 1.1.1.1
 expect "Password" {send "xxxxxxxx\r"}
 expect "Enter 'yes' to accept" {send "yes\r"}
