@@ -1,9 +1,10 @@
 ---
 title: 利用Shell简化OpenConnect操作
-date: 2018-09-15 13:02:33
 tags:
-- OpenConnect
-- Shell
+  - OpenConnect
+  - Shell
+abbrlink: a5a17446
+date: 2018-09-15 13:02:33
 ---
 > 在家经常需要VPN到公司，每次操作还是挺繁琐的,所以就想着搞个shell简化操作，这里mark下。
 
