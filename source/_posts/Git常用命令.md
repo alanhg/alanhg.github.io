@@ -1,5 +1,5 @@
 ---
-title: git常用命令
+title: Git常用命令
 abbrlink: 423abe9e
 date: 2017-05-05 23:22:37
 tags:
@@ -9,10 +9,9 @@ tags:
 ---
 ![What is git and why should I use it? - Quora](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-10-161721.jpg)
 
-> 想玩好Github开源项目，不懂git不行，所以这里记录下，在使用中，用到的一些命令，方便自己以后去反复记忆，同时也希望能帮到一些朋友。
+> 想玩好Github开源项目，不懂Git不行，所以这里记录下，在使用中，用到的一些命令，方便自己以后去反复记忆，同时也希望能帮到一些朋友。
 主要的命令记住，方便操作，其余的会查询即可。
 以实际例子来说明，我在实际使用中用到的一些命令
-
 
 ## Getting and Creating Projects
 ```bash
@@ -165,6 +164,10 @@ $ git remote rm origin
 $ git remote add origin git@github.com:alanhg/alanhg.github.io.git
 
 ```
+
+### Pull is not possible because you have unmerged files.
+这是因为pull拉取上游新代码时，会进行merge，有未merge的文件就会提示以上信息，要么处理了冲突`git add -u, git commit`,要么放弃本地的文件修改，执行`git reset --hard FETCH_HEAD`
+
 
 ## 辅助资料
 
