@@ -168,6 +168,12 @@ $ git remote add origin git@github.com:alanhg/alanhg.github.io.git
 ### Pull is not possible because you have unmerged files.
 这是因为pull拉取上游新代码时，会进行merge，有未merge的文件就会提示以上信息，要么处理了冲突`git add -u, git commit`,要么放弃本地的文件修改，执行`git reset --hard FETCH_HEAD`
 
+### 分支部分提交导入其他分支
+有时我们需要将一个分支的部分提交导入到另一个分支【这些提交在该分支下，可能不见得是最新的紧挨着的几次提交】，这个时候就可以使用cherry pick解决
+我们记录下来需要导入的commitID,checkout到目标分支，执行'git cherry-pick commitID'，注意可能会有冲突，跟MR一样处理即可。
+
+注意比如我们想导入N次提交，那么最终cherry pick过来后也会是4次提交。
+
 
 ## 辅助资料
 
