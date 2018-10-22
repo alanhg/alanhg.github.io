@@ -67,7 +67,7 @@ VCS弹出框|⌃ + V
 插入自定义动态代码|⌘ + J
 运行/Debug| ⌃ + R / D
 Debug到下一步/进入| F8 / F7
-
+导入类，逻辑反转(光标放在If上)|⌥+Enter
 官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 ## iTerm2
