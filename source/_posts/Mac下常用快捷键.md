@@ -50,6 +50,7 @@ _因本人是Mac党及角色为开发者，所以整理涵盖的软件及技能�
 操作|快捷键|
 ---|---|
 跳转到定义处|⌘ + B  
+查询使用情况| ⌥ +F7
 导航返回|⌘+[ 
 抽离方法 |⌥⌘M
 展开/折叠代码块|⌘ + 加号/⌘ + 减号
@@ -68,6 +69,8 @@ VCS弹出框|⌃ + V
 运行/Debug| ⌃ + R / D
 Debug到下一步/进入| F8 / F7
 导入类，逻辑反转(光标放在If上)|⌥+Enter
+
+
 官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 ## iTerm2
@@ -78,7 +81,21 @@ Debug到下一步/进入| F8 / F7
 上一个面板|⌘ + [
 下一个面板|⌘ + ]
 进入或退出全屏|⌘ + Enter
-搜索命令历史|ctrl + r
+搜索命令历史|⌃ + r
+
+## Navicat
+
+操作|快捷键|
+---|---|
+新的查询|⌘ + Y
+新的对象(比如新的查询)|⌘ + N
+设计对象(比如设计表)|⌘ + D
+执行|⌘ + R
+放大|⌘ + +
+缩小|⌘ + -
+关闭Tab|⌘ + W
+
+文档:[戳这里](https://www2.navicat.com/manual/online_manual/en/navicat/mac_manual/KeyShortcut.html)
 
 
 ## 印象笔记
