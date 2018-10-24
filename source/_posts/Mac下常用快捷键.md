@@ -69,7 +69,7 @@ VCS弹出框|⌃ + V
 运行/Debug| ⌃ + R / D
 Debug到下一步/进入| F8 / F7
 导入类，逻辑反转(光标放在If上)|⌥+Enter
-
+编辑器-放大缩小字体[自定义](https://github.com/alanhg/mac-question/issues/17)|⌥ + ⇧+ =/⌥ + ⇧+ - 
 
 官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
