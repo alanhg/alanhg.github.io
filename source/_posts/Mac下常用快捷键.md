@@ -120,12 +120,12 @@ Debug到下一步/进入| F8 / F7
 操作|快捷键|
 ---|---|
 上传待处理照片`自定义`|⌥  ⌘  U
-唤起Alfred|⌥  Space
 
 ## Alfred
 
 操作|快捷键|
 ---|---|
+唤起Alfred|⌥  Space
 设定|⌘ ,
 
 ![](http://or0g12e5e.bkt.clouddn.com/2018-09-08-081439.png)
