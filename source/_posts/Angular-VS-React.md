@@ -1,9 +1,10 @@
 ---
 title: Angular VS React【译】
-date: 2018-10-28 22:41:41
 tags:
-- 译
-- medium
+  - 译
+  - medium
+abbrlink: a241c91b
+date: 2018-10-28 22:41:41
 ---
 ![](http://or0g12e5e.bkt.clouddn.com/2018-10-28-030052.jpg)
 

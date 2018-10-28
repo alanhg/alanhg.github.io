@@ -28,7 +28,6 @@ date: 2018-09-09 13:44:31
 ---|---|
 切换APP|⌘  TAB
 切换输入法|⌃   Space
-唤起Alfred|⌥  Space
 中断Shell|⌃  C 
 
 ## Chrome
@@ -117,11 +116,17 @@ Debug到下一步/进入| F8 / F7
 )
 
 ## iPic
+
 操作|快捷键|
 ---|---|
 上传待处理照片`自定义`|⌥  ⌘  U
----
+唤起Alfred|⌥  Space
 
+## Alfred
+
+操作|快捷键|
+---|---|
+设定|⌘ ,
 
 ![](http://or0g12e5e.bkt.clouddn.com/2018-09-08-081439.png)
 
