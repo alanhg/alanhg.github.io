@@ -94,6 +94,12 @@ Debug到下一步/进入| F8 / F7
 打开最近项目`自定义`|⌘  ⇧  P
 扩展选择|⌥ ↑
 
+### 修改
+
+操作|快捷键|
+---|---|
+移动|  F6 
+
 官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 ## iTerm2
