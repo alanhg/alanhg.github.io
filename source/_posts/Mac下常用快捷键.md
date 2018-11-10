@@ -32,6 +32,7 @@ date: 2018-09-09 13:44:31
 切换APP|⌘  TAB
 切换输入法|⌃   Space
 中断Shell|⌃  C 
+应用全屏|⌘ ⌃ F
 
 ## Chrome
 
@@ -111,6 +112,10 @@ Debug到下一步/进入| F8 / F7
 下一个面板|⌘  ]
 进入或退出全屏|⌘  Enter
 搜索命令历史|⌃  R
+新标签页|⌘  T
+放大字体|⌘ +
+缩小字体|⌘ -
+还原缺省字体|⌘ 0
 
 ## Navicat
 
@@ -123,7 +128,6 @@ Debug到下一步/进入| F8 / F7
 放大|⌘  +
 缩小|⌘  -
 关闭Tab|⌘  W
-
 文档:[戳这里](https://www2.navicat.com/manual/online_manual/en/navicat/mac_manual/KeyShortcut.html)
 
 
