@@ -1,9 +1,10 @@
 ---
 title: 【译】JavaScript的一些核心概念
-date: 2018-11-11 23:24:19
 tags:
-- 译
-- JavaScript
+  - 译
+  - JavaScript
+abbrlink: 3731f099
+date: 2018-11-11 23:24:19
 ---
 [原文链接](https://medium.freecodecamp.org/learn-these-core-javascript-concepts-in-just-a-few-minutes-f7a16f42c1b0)
 
