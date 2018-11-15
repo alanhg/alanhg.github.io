@@ -55,6 +55,8 @@ date: 2018-09-09 13:44:31
 
 ## Intellij IDEA
 
+`keymap选择的是Mac OS X 10.5+`
+
 ### 导航
 
 操作|快捷键|
