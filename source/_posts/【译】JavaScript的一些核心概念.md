@@ -53,11 +53,11 @@ IIFE（立即执行函数），正如其名，就是一经创建就立即出发�
 
 #### ES5
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-081606.jpg)
+![](http://static.1991421.cn/2018-11-11-081606.jpg)
 
 ### ES6
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-081654.jpg)
+![](http://static.1991421.cn/2018-11-11-081654.jpg)
 
 ## MVC
 Model-view-controller是一个设计模式，而不是一门编程语言。如今几乎85%的WEB应用都遵循这个模式，其实还有其它的设计模式，但是这个更为基础和易于理解。
@@ -72,11 +72,11 @@ Model-view-controller是一个设计模式，而不是一门编程语言。如�
 
 #### ES5
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-082119.jpg)
+![](http://static.1991421.cn/2018-11-11-082119.jpg)
 
 #### ES6
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-082131.jpg)
+![](http://static.1991421.cn/2018-11-11-082131.jpg)
 
 需要说明下，通常的最佳实践是，我们会把View,Model和Controller拆分到不同的文件夹及文件。为了较好的描述，这里就没有做拆分。设计模式的作用是简化开发流程，构建出易于维护的协作开发环境。
 
@@ -94,14 +94,14 @@ Model-view-controller是一个设计模式，而不是一门编程语言。如�
 
 #### ES5
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-083413.jpg)
+![](http://static.1991421.cn/2018-11-11-083413.jpg)
 
 
 
 
 #### ES6
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-083455.jpg)
+![](http://static.1991421.cn/2018-11-11-083455.jpg)
 
 
 为了使用await，我们必须包含在async函数中，从而告知JS，我们使用了promise。如上例子，我们在等两样结果：response和users。在我们转换response到JSON格式钱，我们需要确保拿到response，否则我们并不能转换response，否则这将是个错误。
@@ -119,11 +119,11 @@ Model-view-controller是一个设计模式，而不是一门编程语言。如�
 
 #### ES5
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-083932.jpg)
+![](http://static.1991421.cn/2018-11-11-083932.jpg)
 
 #### ES6
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-083946.jpg)
+![](http://static.1991421.cn/2018-11-11-083946.jpg)
 
 showName是一个闭包，因为它拓展了函数showInfo的行为，并且也具备权限访问carType变量。
 
@@ -142,11 +142,11 @@ showName是一个闭包，因为它拓展了函数showInfo的行为，并且也�
 
 #### ES5
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-145155.jpg)
+![](http://static.1991421.cn/2018-11-11-145155.jpg)
 
 #### ES6
 
-![](//or0g12e5e.bkt.clouddn.com/2018-11-11-145213.jpg)
+![](http://static.1991421.cn/2018-11-11-145213.jpg)
 
 
 注意，这里是等待着一个事件发生，然后才触发一个动作执行。我们传递`fireUpEngines()`函数作为一个参数到`pressButton()`函数，当用户点击按钮，触发火箭发射。
