@@ -9,7 +9,7 @@ tags:
 ---
 > HTTP是无状态协议，维持前后端的用户状态，Session是一种方案，Express下如何去做呢，看下文
 
-![](//static.1991421.cn/2018-06-21-035100.jpg)
+![](http://static.1991421.cn/2018-06-21-035100.jpg)
 
 1. 安装Session中间件
 `npm i express-session --save`

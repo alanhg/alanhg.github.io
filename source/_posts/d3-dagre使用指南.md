@@ -11,7 +11,7 @@ date: 2017-11-04 19:54:27
 
 
 摘录一篇博文中的榜单，作者将这些流程图类库进行了总结，可以看出D3还是很厉害的。
-![Score board](//static.1991421.cn/blog/2017-11-04-121118.png)
+![Score board](http://static.1991421.cn/blog/2017-11-04-121118.png)
 博文链接，[点击这里](https://www.erp5.com/javascript-10.Flow.Chart)
 
 决定用D3之后，如果直接D3来写，未免过于辛苦，查了一遍，找到了基于D3的类库-dagre-d3.在使用中，随着不断的深入，对于这个类库有了充分的了解，百度还是谷歌，觉得资料都太少了，尤其中文，
@@ -29,7 +29,7 @@ date: 2017-11-04 19:54:27
 
 这里直接上一个简单的demo，说明下
 
-![](//static.1991421.cn/blog/2017-11-04-142637.png)
+![](http://static.1991421.cn/blog/2017-11-04-142637.png)
 
 [完整源码看这里](https://github.com/alanhg/angular-demo)
 

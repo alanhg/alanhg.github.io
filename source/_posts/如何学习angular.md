@@ -7,7 +7,7 @@ date: 2017-10-23 21:21:20
 ---
 # 如何学习Angular ？？？
 
-![Angular](//static.1991421.cn/blog/2017-10-23-angular.png)
+![Angular](http://static.1991421.cn/blog/2017-10-23-angular.png)
 
 > 数码产品买新不买旧，语言框架一定程度上我也这么认为，最新技术，一定要有所了解和掌握，去年Google发布了Angular,也就是我们之前说的2，当然现在请不要叫2，否则你就很二，也烦不要叫AngularJS，官方已经声明，AngularJS指的是1，以后就是Angular,因为它并不只支持js写法，可以使用TS、JS、Dart三种语言写法，所以叫Angular，当然对于书写语言，我遵从官方推荐的语言写法-TypeScript。
 

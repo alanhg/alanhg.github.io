@@ -25,7 +25,7 @@ date: 2017-07-22 18:10:24
 升级版本到`1.3.1`
 再次进行AOT打包,OK啦，如图
 
-![ng-bundle](//static.1991421.cn/ng-bundle.jpg)
+![ng-bundle](http://static.1991421.cn/ng-bundle.jpg)
 
 ## 说明
 + 由于AOT打包是很吃内存的，如果构建打包中出现内存溢出，错误，请提高内存设定，了解做法[看这里](http://1991421.cn/2017/07/22/7fa2b445/)

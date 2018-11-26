@@ -347,6 +347,6 @@ export class TokenInterceptor implements HttpInterceptor {
 
 ## 仍有疑问???不够详细???
 
-![仍有疑问???](//static.1991421.cn/blog/2017-10-26-question_72px_1094871_easyicon.net.png)
+![仍有疑问???](http://static.1991421.cn/blog/2017-10-26-question_72px_1094871_easyicon.net.png)
 
 ### 欢迎在GitHub/angular-demo上提票和查看以上问题的最新解答[点击这里](https://github.com/alanhg/angular-demo/issues)

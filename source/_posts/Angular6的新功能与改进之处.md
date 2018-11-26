@@ -5,7 +5,7 @@ date: 2018-02-14 00:08:28
 tags:
 - Angular
 ---
-![Angular](//static.1991421.cn/blog/2018-02-13-160906.jpg)
+![Angular](http://static.1991421.cn/blog/2018-02-13-160906.jpg)
 > 按计划Angular6将会在3月底发正式，当前最新版是`6.0.0-beta.3`.
 
 当然Angular6较之5将会使开发更容易，体积更小，速度更快。

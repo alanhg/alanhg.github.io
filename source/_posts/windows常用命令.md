@@ -7,7 +7,7 @@ tags:
 abbrlink: 843f3569
 date: 2017-09-12 09:35:51
 ---
-![command-shot](//static.1991421.cn/blog/2017-12-07-135536.png)
+![command-shot](http://static.1991421.cn/blog/2017-12-07-135536.png)
 > windows下的cmd对比Linux下的bash及OSX下的terminal都相差深远，但平时还是会用到，这里将常用命令记录下。
 
 ## 环境变量

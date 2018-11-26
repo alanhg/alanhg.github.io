@@ -7,7 +7,7 @@ tags:
 - command
 - 指令集
 ---
-![What is git and why should I use it? - Quora](//static.1991421.cn/blog/2017-09-10-161721.jpg)
+![What is git and why should I use it? - Quora](http://static.1991421.cn/blog/2017-09-10-161721.jpg)
 
 > 想玩好Github开源项目，不懂Git不行，所以这里记录下，在使用中，用到的一些命令，方便自己以后去反复记忆，同时也希望能帮到一些朋友。
 主要的命令记住，方便操作，其余的会查询即可。
@@ -154,7 +154,7 @@ $ git reset --merge
 
 ```
 ### 每次push都提示输入用户名及密码
-![](//static.1991421.cn/2018-07-07-031614.png)
+![](http://static.1991421.cn/2018-07-07-031614.png)
 出现这个的原因是远程库我们是以HTTPS形式设定的，修改为SSH即可
 ```
 # 查看远程库协议

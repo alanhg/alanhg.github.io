@@ -43,12 +43,12 @@ ifttt是个自动化神器，辅助完成推特中的游戏截图推动到iOS相
 5. 发推，查看手机相册
 	
 - applets配置如下图	
-![](//static.1991421.cn/2018-10-04-ifttt.com_applets_86419437d-if-new-tweet-by-alanhe421-with-hashtag-nintendoswitch-then-add-photo-to-album_edit.png)
+![](http://static.1991421.cn/2018-10-04-ifttt.com_applets_86419437d-if-new-tweet-by-alanhe421-with-hashtag-nintendoswitch-then-add-photo-to-album_edit.png)
 - ifttt活动-每次Switch发推即触发
-![](//static.1991421.cn/2018-10-04-041122.png)
+![](http://static.1991421.cn/2018-10-04-041122.png)
 
 ## 写在最后
 折腾了下，以后想要手机截图就只需要Switch发推即可,另外之前一直吃灰的Echo Dot也可以用了。。。
 贴张游戏截图
-![](//static.1991421.cn/2018-10-04-041833.png)
+![](http://static.1991421.cn/2018-10-04-041833.png)
 

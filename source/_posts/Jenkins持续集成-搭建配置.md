@@ -18,7 +18,7 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 
 下载`jdk-8u152-linux-x64.tar.gz`包
 
-![](//static.1991421.cn/blog/2017-12-30-063142.png)
+![](http://static.1991421.cn/blog/2017-12-30-063142.png)
 
 ### 安装
 
@@ -43,7 +43,7 @@ export JAVA_HOME CLASSPATH PATH
 
 `tar -xzvf apache-tomcat-9.0.2.tar.gz`
 
-![](//static.1991421.cn/blog/2017-12-30-063233.png)
+![](http://static.1991421.cn/blog/2017-12-30-063233.png)
 
 ### Tomcat服务化
 
@@ -94,38 +94,38 @@ http://192.168.1.81/jenkins/
 ### 源码管理
 
 源码管理选择Git,下面的认证信息是我专门再GitLab上创建的CI账户，由于我是内网测试部署，所以构建分支是dev分支。
-![](//static.1991421.cn/blog/2018-01-20-061636.png)
+![](http://static.1991421.cn/blog/2018-01-20-061636.png)
 
 ### 构建触发器
 注意这里，我选的是GitLab-push触发构建，也就是GitLab的Webhook,这里的地址，要在对应的GitLab仓库下进行配置
 
-![](//static.1991421.cn/blog/2018-01-20-061800.png)
+![](http://static.1991421.cn/blog/2018-01-20-061800.png)
 
-![](//static.1991421.cn/blog/2018-01-20-062038.png)
+![](http://static.1991421.cn/blog/2018-01-20-062038.png)
 
 配置钩子后，点击测试，确认OK
 
-![](//static.1991421.cn/blog/2018-01-20-062114.png)
+![](http://static.1991421.cn/blog/2018-01-20-062114.png)
 
 
 ### 构建环境
 我这里是前端Node构建，所以选择对应需要的Node版本
 
-![](//static.1991421.cn/blog/2018-01-20-062158.png)
+![](http://static.1991421.cn/blog/2018-01-20-062158.png)
 
 ### 构建
 我这里是先执行安装类包和构建打包，然后通过SSH传输到测试服务器的目标路径下
 
-![](//static.1991421.cn/blog/2018-01-20-062249.png)
+![](http://static.1991421.cn/blog/2018-01-20-062249.png)
 
 ### 构建后
 实现邮件发送
-![](//static.1991421.cn/blog/2018-01-20-062524.png)
+![](http://static.1991421.cn/blog/2018-01-20-062524.png)
 
 
 ## 写在最后
 
-![](//static.1991421.cn/blog/2018-01-20-064519.png)
+![](http://static.1991421.cn/blog/2018-01-20-064519.png)
 
 上述讲述的只是一部分，持续集成是个持续推进的事，是个理念，更多的需要根据实际情况去调整，配置。之前看过一篇文章讲述的非常好，固化的步骤，尽可能的交与程序去做，这样更为高效，也更为安全，人工必有失误。
 

@@ -7,7 +7,7 @@ tags:
 abbrlink: f84c18e6
 date: 2017-08-19 09:57:02
 ---
-![vsftpd](//static.1991421.cn/blog/2017-08-26-082519.jpg)
+![vsftpd](http://static.1991421.cn/blog/2017-08-26-082519.jpg)
 
 > 部署web,需要进行文件传输，单文件传输的话，使用sz,rz即可实现，多文件还是用ftp较为便捷,
 vsftpd是linux环境下的老牌服务端软件，正如它自己的话-Probably the most secure and fastest FTP server for UNIX-like systems.

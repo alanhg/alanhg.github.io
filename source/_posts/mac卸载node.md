@@ -14,7 +14,7 @@ date: 2017-11-29 23:17:53
 如果nvm下管理的node版本，那么卸载node很简单，执行`nvm uninstall version`即可，如果是利用brew包管理器进行的安装，直接执行`brew uninstall node`即可。
 如果是直接官网下载pkg包进行的安装，那么删除就麻烦了，请往下看。
 
-![nvm ls](//static.1991421.cn/blog/2017-11-29-152926.jpg)
+![nvm ls](http://static.1991421.cn/blog/2017-11-29-152926.jpg)
 
 注意执行`nvm ls`，system就是自己系统安装的node
 
@@ -56,7 +56,7 @@ _注意_:/usr/local/lib 和 /usr/local/bin 这两个文件夹，全局安装的n
 
 当一切都执行OK后，再看`nvm ls`,发现system版本不存在啦。
 
-![nvm ls](//static.1991421.cn/blog/2017-11-29-153057.png)
+![nvm ls](http://static.1991421.cn/blog/2017-11-29-153057.png)
 
 ## nvm command not found
 执行上面的卸载后，发现存在这个问题

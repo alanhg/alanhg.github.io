@@ -10,7 +10,7 @@ date: 2017-07-22 17:07:56
 ## 问题
 最近在ng开发，牵扯到构建打包，在进行JIT打包，一切正常，但是当AOT打包时，会报`JavaScript heap out of memory`及内存溢出,如下图
 
-![out of memroy](//static.1991421.cn/JavaScript%20heap%20out%20of%20memory.jpg)
+![out of memroy](http://static.1991421.cn/JavaScript%20heap%20out%20of%20memory.jpg)
 
 经查询，可以通过设定较高的空间内存来解决这个问题。
 
