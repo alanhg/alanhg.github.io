@@ -8,16 +8,16 @@ date: 2017-09-24 22:47:26
 ---
 > ng在开发中是对所有的资源进行模块化，随着web的发展，系统会越来越庞大，为了提升性能，往往会使用懒加载，但由于设计原因，可能会出现以下的设计情况
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-24-144753.jpg)
+![](//static.1991421.cn/blog/2017-09-24-144753.jpg)
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-24-144849.jpg)
+![](//static.1991421.cn/blog/2017-09-24-144849.jpg)
 
 具体的懒加载代码，比如如下:
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-24-145008.jpg)
+![](//static.1991421.cn/blog/2017-09-24-145008.jpg)
 
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-24-145032.jpg)
+![](//static.1991421.cn/blog/2017-09-24-145032.jpg)
 
 这种配置，运行的话，会出现以下错误
 

@@ -10,7 +10,7 @@ tags:
 
 ## 下载maven包
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-03-04-072623.png)
+![](//static.1991421.cn/blog/2018-03-04-072623.png)
 解压，放在比如该目录`/Library/apache-maven-3.5.2`
 
 ## 打开终端如iterm2,执行以下指令，配置zshrc文件
@@ -28,4 +28,4 @@ export PATH=$M2:$PATH
 ```
 退出编辑器，关闭终端，重启终端
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-03-04-072933.png)
+![](//static.1991421.cn/blog/2018-03-04-072933.png)

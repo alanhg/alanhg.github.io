@@ -11,19 +11,19 @@ date: 2017-07-30 20:12:40
 ## 问题
 虽然搞得是混合开发，但是最终打包安卓应用的话还是需要安卓环境的，安卓SDK可以单独下载配置，但是利用AndroidStudio进行管理配置更为方便，但是当我启动软件，发现没有SDK配置选项。
 
-![fail](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-121637.jpg)
+![fail](//static.1991421.cn/blog/2017-07-30-121637.jpg)
 
 查看官网介绍，发现理论上应该是下图的界面
-![official](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-121910.jpg)
+![official](//static.1991421.cn/blog/2017-07-30-121910.jpg)
 
 ## 解决
 搜了半天，终于找到解决方案，进入插件管理
 `Configuration > Plugin > Android Support Plugin`,该插件处于enable状态，点击OK
-![Android Support Plugin](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-130152.jpg)
+![Android Support Plugin](//static.1991421.cn/blog/2017-07-30-130152.jpg)
 
 重启IDE即可
 
-![successful](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-121403.jpg)
+![successful](//static.1991421.cn/blog/2017-07-30-121403.jpg)
 
 ## 分析
 

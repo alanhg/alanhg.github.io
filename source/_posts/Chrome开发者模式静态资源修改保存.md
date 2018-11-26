@@ -1,8 +1,9 @@
 ---
 title: Chrome开发者模式静态资源修改保存
-date: 2018-10-22 23:23:25
 tags:
-- Chrome
+  - Chrome
+abbrlink: 94e48ed
+date: 2018-10-22 23:23:25
 ---
 > 有这样一个场景，我们Chrome下打开开发者模式修改某网页的前端资源，进而达到某个效果，但是刷新即丢失，有办法可以保存吗？yes!Chrome 65更新了一个功能叫local overrides
 

@@ -7,7 +7,7 @@ date: 2017-11-26 20:54:50
 ---
 > zsh是个强大的Shell,但是配置过于复杂，很多人望而却步，直到有一天，一个大神开发出了一个让你快速上手的项目，就是这里的`oh my zsh`,想了解这个的去[官方仓库](https://github.com/robbyrussell/oh-my-zsh)。
 
-![oh-my-zsh](http://or0g12e5e.bkt.clouddn.com/blog/2017-11-26-132719.jpg)
+![oh-my-zsh](//static.1991421.cn/blog/2017-11-26-132719.jpg)
 
 安装oh-my-zsh后，发现中文文件名会是乱码，肯定是字符集的问题，检索了会儿，解决方案如下
 

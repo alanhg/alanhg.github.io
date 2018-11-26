@@ -6,7 +6,7 @@ tags:
 abbrlink: 46c2b223
 date: 2017-09-20 13:18:23
 ---
-![](http://or0g12e5e.bkt.clouddn.com/blog/2017-09-20-052956.jpg)
+![](//static.1991421.cn/blog/2017-09-20-052956.jpg)
 
 ## 请求乱码
 

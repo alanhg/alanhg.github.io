@@ -8,7 +8,7 @@ tags:
 ---
 > 由于业务需要，进行了反编译的学习，有几点收获,这里总结下。
 
-![Android](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-05-055903.jpg)
+![Android](//static.1991421.cn/blog/2018-01-05-055903.jpg)
 
 ## 什么是反编译
 APP开发是将项目代码打包成一个APP，如果是安卓版就是个APK包，最终通过商店或者其它渠道，安装在用户的手机上。
@@ -39,7 +39,7 @@ Android还具有一定的可行性，当然目前的APP一般都是做了代码�
 
 网址:[这里](https://github.com/skylot/jadx/releases),下载最新版的zip包即可，注意不要选择源码。
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-04-145125.png)
+![](//static.1991421.cn/blog/2018-01-04-145125.png)
 
 ### 环境变量配置
 
@@ -54,13 +54,13 @@ $ jadx-gui
 ```
 点击文件-打开文件，选择目标APK，等待工具自动执行，会看到工具将项目自动反编译成功，选择另存所有文件到某个地方即可。
 
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-04-145724.png)
+![](//static.1991421.cn/blog/2018-01-04-145724.png)
 
 
 ### 利用IDE打开上一步另存出的项目CODE
 
 如图为某瓣APP反编译出来的项目CODE
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-01-04-145604.png)
+![](//static.1991421.cn/blog/2018-01-04-145604.png)
 
 ### 分析CODE
 

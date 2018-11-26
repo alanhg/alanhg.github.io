@@ -200,7 +200,7 @@ pm2-server-monit monitor your server health
 
 其实这个主要看终端窗体大小，如下图
 
-![pm2 list](http://or0g12e5e.bkt.clouddn.com/blog/2017-08-23-145913.jpg)
+![pm2 list](//static.1991421.cn/blog/2017-08-23-145913.jpg)
 
 你会看到两次执行，出来的窗体显示信息不同，实际原因是第一次执行时候，我的终端窗体很窄，拉大后再执行命令就显示下部的样子，所以想显示完整的应用信息，需要确保终端窗体大一些。
 

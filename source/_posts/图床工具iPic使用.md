@@ -20,7 +20,7 @@ date: 2017-07-22 20:06:05
 ## iPic使用后
 如下即利用iPic上传图片效果
 
-![use-iPic](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-22-121516.jpg)
+![use-iPic](//static.1991421.cn/blog/2017-07-22-121516.jpg)
 
 这样以后编写blog,就可以拖拽图片到iPic，或者直接iPic发送截图到目标图床，上传成功，得到的链接会自动
 赋到系统剪贴板，这样子，只需要粘贴到md文件中。

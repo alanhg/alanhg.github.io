@@ -5,7 +5,7 @@ tags:
 abbrlink: 24e981e7
 date: 2017-07-25 12:18:09
 ---
-![It’s finally here. And it’s beautiful.](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-29-1-Ac4K68j43uSbvHnKZKfXPw.jpeg)
+![It’s finally here. And it’s beautiful.](//static.1991421.cn/blog/2017-07-29-1-Ac4K68j43uSbvHnKZKfXPw.jpeg)
 
 原文网址[webpack-3-official-release](https://medium.com/webpack/webpack-3-official-release-15fd2dd8f07b)
 
@@ -31,7 +31,7 @@ webpack团队宣布，我们发布了`webpack3.0.0`,你如今可以下载或者�
 `作用域提升`是webpack3的旗舰级功能，webpack的一个取舍就是当构建打包的时候，每个模块都打包再单独的函数闭包中去。这些包装函数使得JS在浏览器下运行时较慢的。
 相比之下，像Closure Compiler和RollupJS'hoist'这样的工具可以将所有模块的作用域连接成一个闭包，并使得你的代码能够有更快的执行效率。
 
-![体积大小对比](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-29-124018.jpg)
+![体积大小对比](//static.1991421.cn/blog/2017-07-29-124018.jpg)
 
 如今随着webpack3的到来，你可以添加下面的插件到你的配置文件中，从而开启这个功能：
 
@@ -46,7 +46,7 @@ module.exports = {
 
 为了解是什么触发的这些回退，我们针对CLI添加一个参数`--display-optimization-bailout`,这个标记将告诉你是什么导致的回退操作。
 
-![fallback](http://or0g12e5e.bkt.clouddn.com/blog/2017-07-30-074058.jpg)
+![fallback](//static.1991421.cn/blog/2017-07-30-074058.jpg)
 
 因为作用域提升将会删除一些函数，所以你将会看到较小的体积减少。然而，显著的提升是JS在浏览器中的运行速度。如果你有升级前后显著的对比数据，
 欢迎回复一些数据，我们很荣幸去分享这些。

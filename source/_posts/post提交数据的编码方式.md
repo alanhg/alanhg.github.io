@@ -7,7 +7,7 @@ abbrlink: 5dd92c42
 date: 2017-10-16 20:42:54
 ---
 > Postman是一款强大的API调试工具，在执行post请求时候会发现body有4种格式选项，那么这四种各是什么含义，及使用场景呢，各方检索后，总结如下
-![postman-post](http://or0g12e5e.bkt.clouddn.com/blog/2017-10-16-125105.jpg)
+![postman-post](//static.1991421.cn/blog/2017-10-16-125105.jpg)
 
 虽然Postman中看到的是form-data，x-www-form-urlencoded，raw，binary,但真实提交的数据格式并不是这4种方式，而是multipart/form-data，application/x-www-form-urlencoded，application/json，text/xml。
 

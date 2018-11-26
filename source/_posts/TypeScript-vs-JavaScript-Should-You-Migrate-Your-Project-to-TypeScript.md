@@ -11,7 +11,7 @@ date: 2018-06-30 22:09:37
 > 16年9月,Angular2首个正式版放出，官方是推荐使用TypeScript进行开发的，由此，玩Angular的开发者大多都选择TypeScript。除了Angular框架，其它的框架，如React,Vue实际上也都相继支持TS开发，TS现在的确是挺火的。但TS好在哪呢，与JS差异在哪，解决的痛点是什么呢。
 最近看到篇文章写的很棒，这里译一下，兴许能帮到大家。
 
-![](http://or0g12e5e.bkt.clouddn.com/2018-07-01-025045.jpg)
+![](//static.1991421.cn/2018-07-01-025045.jpg)
 
 在编程领域，TypeScript(TS)和JavaScript(JS)是两种流行的开发语言，但两者的区别是什么，什么情况下适用?在这篇文章里，我们对比两门语言，看看两者如何，讨论下它们的主要区别，和彼此的优缺点。
 
@@ -61,7 +61,7 @@ let password = getPassword('false'); // throws: error TS2345: Argument of type '
 假如上面的getPassword(...)函数属于一个类库，我如何知道函数的传参类型呢，有jsdoc，许多IDE，编辑器，比如VSCode都支持。也有一些类库的文档，比如Dash这种工具。但是这些都没有提供如TypeScript这样的体验。
 考虑fetch API 这个例子。下面的截图描述了，我们用VSCode Peek Definition这个功能。用这些工具，我们可以发现热输入参数的类型和返回参数的类型。这些工具是好于通过传统的JavaScript和jsdocs的。
 
-![](http://or0g12e5e.bkt.clouddn.com/2018-07-01-032550.jpg)
+![](//static.1991421.cn/2018-07-01-032550.jpg)
 
 ## 误解
 对于可能选择TypeScript的人，会有许多的误解，这里选择部分来说下。

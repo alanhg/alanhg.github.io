@@ -6,7 +6,7 @@ tags:
 abbrlink: 29dc6fe8
 date: 2018-07-07 10:36:48
 ---
-![](http://or0g12e5e.bkt.clouddn.com/2018-07-07-024107.png)
+![](//static.1991421.cn/2018-07-07-024107.png)
 
 > 这里将平时使用的docker命令记录下，方便以后忘了的话，快速查询
 

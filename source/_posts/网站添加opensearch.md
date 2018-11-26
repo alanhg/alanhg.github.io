@@ -48,13 +48,13 @@ res.json(["fir", ["firefox", "first choice", "mozilla firefox"]]);
 ## 具体效果
 
 ### Firefox下
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-19-131050.png)
+![](//static.1991421.cn/blog/2018-02-19-131050.png)
 
 ### Chrome下
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-19-134323.png)
+![](//static.1991421.cn/blog/2018-02-19-134323.png)
 
 ### Edge下
-![](http://or0g12e5e.bkt.clouddn.com/blog/2018-02-24-050C8251FCECF01DFA151A8D0C235808.png)
+![](//static.1991421.cn/blog/2018-02-24-050C8251FCECF01DFA151A8D0C235808.png)
 
 _注意_ edge下访问网页，自动会识别搜索支持，但是发现edge下只能改变缺省检索引擎，但是输入关键词，所带的suggestions提示仍然是bing的，真是醉了。。
 
