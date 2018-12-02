@@ -110,6 +110,13 @@ Debug到下一步/进入| F8 / F7
 ---|---|
 移动|  F6 
 
+### 工具窗
+
+操作|快捷键|
+---|---|
+Terminal| ⌥ F12
+
+
 官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 ## iTerm2
