@@ -1,11 +1,12 @@
 ---
 title: React下的Redux使用
-date: 2018-12-04 23:44:03
 tags:
-- React
-- Redux
-- react-redux
-- frontend
+  - React
+  - Redux
+  - react-redux
+  - frontend
+abbrlink: f47dd8fc
+date: 2018-12-04 23:44:03
 ---
 ![](http://static.1991421.cn/2018-12-02-090726.jpg)
 

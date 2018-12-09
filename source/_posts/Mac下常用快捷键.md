@@ -105,6 +105,7 @@ Debug到下一步/进入| F8 / F7
 编辑器-放大缩小字体[自定义](https://github.com/alanhg/mac-question/issues/17)|⌥  ⇧ =/⌥  ⇧ - 
 打开最近项目`自定义`|⌘  ⇧  P
 扩展选择|⌥ ↑
+包围(代码用if try等包裹)|⌥ ⌘ T
 
 ### 修改
 
