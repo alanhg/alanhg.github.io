@@ -36,6 +36,8 @@ date: 2018-09-09 13:44:31
 
 ## Chrome
 
+官方文档:[戳这里](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
+
 操作|快捷键|
 ---|---|
 新开标签页|⌘ T 
@@ -51,11 +53,11 @@ date: 2018-09-09 13:44:31
 显示当前网页的 HTML 源代码（不可修改）|⌘  Option  U
 在无痕模式下打开新窗口|⌘  Shift  N
 
-官方文档:[戳这里](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
-
 ## Intellij IDEA
 
 `keymap选择的是Mac OS X 10.5+`
+
+官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 ### 导航
 
@@ -119,9 +121,6 @@ Debug到下一步/进入| F8 / F7
 ---|---|
 Terminal| ⌥ F12
 
-
-官方文档:[戳这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
-
 ## iTerm2
 操作|快捷键|
 ---|---|
@@ -138,6 +137,8 @@ Terminal| ⌥ F12
 
 ## Navicat
 
+文档:[戳这里](https://www2.navicat.com/manual/online_manual/en/navicat/mac_manual/KeyShortcut.html)
+
 操作|快捷键|
 ---|---|
 新的查询|⌘  Y
@@ -147,11 +148,11 @@ Terminal| ⌥ F12
 放大|⌘  +
 缩小|⌘  -
 关闭Tab|⌘  W
-文档:[戳这里](https://www2.navicat.com/manual/online_manual/en/navicat/mac_manual/KeyShortcut.html)
 
 
 ## 印象笔记
 
+官方文档:[戳这里](https://help.yinxiang.com/hc/articles/63059)
 操作|快捷键|
 ---|---|
 搜索笔记|⌥  ⌘  F
@@ -162,8 +163,7 @@ Terminal| ⌥ F12
 下划线|⌘  U
 待办事项|⇧  ⌘  T
 删除笔记|⌘  ⌫ 
-官方文档:[戳这里](https://help.yinxiang.com/hc/articles/63059
-)
+
 
 ## iPic
 
