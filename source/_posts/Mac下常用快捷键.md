@@ -160,6 +160,7 @@ Terminal| ⌥ F12
 ## 印象笔记
 
 官方文档:[戳这里](https://help.yinxiang.com/hc/articles/63059)
+
 操作|快捷键|
 ---|---|
 搜索笔记|⌥  ⌘  F
