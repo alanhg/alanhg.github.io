@@ -100,4 +100,9 @@ searchMovies();
 
 插件托管进[alfred-workflows](https://github.com/alanhg/alfred-workflows)
 
+## 相关链接
+
+* https://www.alfredapp.com/help/workflows/inputs/script-filter/json/
+* https://www.cnblogs.com/MuYunyun/p/7323128.html
+* https://www.alfredforum.com/topic/3873-script-filter-icon-from-url/
 
