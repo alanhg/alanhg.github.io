@@ -1,14 +1,15 @@
 ---
 title: 写个Alfred Workflow，方便看电视剧
-date: 2019-01-13 12:22:12
 tags:
-- Alfred
-- Workflow
+  - Alfred
+  - Workflow
+abbrlink: 45229d23
+date: 2019-01-13 12:22:12
 ---
 
 > Alfred鼎鼎大名，有人说，Mac自带Spotlight,不也一样吗？不一样，Alfred最厉害的是workflow，利用它你可以查询GitHub项目，查API文档，查单词，查IP等等。
 
-当然除了网上一些的workflow之外，我们往往也都有自己的个性化需求，这时就可以自己尝试写几个。我就有这样的需求，所以花了点时间，把玩了下，这里以一个电视剧检索插件为例，记录下编写中要点，兴许帮到写朋友。
+当然除了网上一些的workflow之外，我们往往也都有自己的个性化需求，这时就可以自己尝试写几个。我就有这样的需求，所以花了点时间，把玩了下，这里以一个电视剧检索插件为例，记录下编写中要点。
 
 ## 初始化Workflow
 打开Alfred设定，点击左下角的加号，选择blank Workflow
@@ -41,15 +42,15 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 const fs = require('fs');
 const url = 'http://ly6080.com.cn'
-var keyword = process.argv[2];
+const keyword = process.argv[2];
 console.error(keyword);
 
 async function searchMovies() {
     const res = await axios.get(url + '/index.php?m=vod-search&wd=' + encodeURI(keyword));
-    var $ = cheerio.load(res.data);
-    var arr = $('.index-area').find('li');
-    var result_array = [];
-    for (var i = 0; i < arr.length; i++) {
+    const $ = cheerio.load(res.data);
+    const arr = $('.index-area').find('li');
+    const result_array = [];
+    for (let i = 0; i < arr.length; i++) {
         const item = arr.eq(i);
         const actors = [];
         item.find('.actor').each(function (i, elem) {
@@ -73,8 +74,6 @@ async function searchMovies() {
     console.log(JSON.stringify({ items: result_array }));
 }
 searchMovies();
-
-
 ```
 
 ### 说明
