@@ -1,9 +1,10 @@
 ---
 title: Surge Mac 3.0使用
-date: 2019-02-09 15:14:20
 tags:
-- Surge
-- Shadowsocks
+  - Surge
+  - Shadowsocks
+abbrlink: 1f6ba7db
+date: 2019-02-09 15:14:20
 ---
 > 最近入手了surge for Mac，还挺贵的
 购买的动机是希望对网络请求有更好的管理，比如我想实现Mail客户端下，发送Gmail邮件走代理，而发送其它邮件不走代理。这个如果不用Surge能做到吗？可以，但是麻烦些，比如使用ShadowSocks配合Proxier。
@@ -30,6 +31,13 @@ Surge配置还是挺复杂的，最好是先利用一个模板初始化，然后
 ![](http://static.1991421.cn/2019-02-09-070439.png)
 
 配置完成后，点击代理服务器，连接成功，访问Google，OK，另外比如mail中， 当我们发送邮件到Gmail也显示为代理了，但是比如163就还是直连。
+
+## 策略组[Policy Group]
+这里，我增加策略组，如下配置，这样每隔600毫秒，会去ping一下google，选择延迟最小的代理服务。比如哪天澳门的挂了，就会自动切换到US
+
+![](http://static.1991421.cn/2019-02-12-132840.png)
+
+![](http://static.1991421.cn/2019-02-12-132912.png)
 
 
 ## 写在最后
