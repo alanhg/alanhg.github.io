@@ -209,5 +209,5 @@ date: 2019-02-17 17:22:49
 有些开发似乎不care这两者区别，dependencies与devDependencies，随便放，开发上线都无伤大雅.但是这样做并不好。
 
 当我们正确维护了package.json文件中的依赖关系之后，我们有两点收益
-1. 在生产部署时，我们执行`npm install --production`，不会安装devDependencies下的任何包，`这样整个包体积就会很小，包少，部署速度自然也会快`。
+1. 在生产部署时，我们执行`npm install --production`或者环境变量`NODE_ENV`设定为`production`，不会安装devDependencies下的任何包，`这样整个包体积就会很小，包少，部署速度自然也会快`。
 2. 通过文件，我们很清楚开发与生产依赖，降低了维护成本
