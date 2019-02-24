@@ -1,9 +1,10 @@
 ---
 title: dependencies vs devDependencies
-date: 2019-02-17 17:22:49
 tags:
-- npm
-- node
+  - npm
+  - node
+abbrlink: 7b904316
+date: 2019-02-17 17:22:49
 ---
 > npm是 Node.js 平台的包管理工具,实际开发中我们并不是从零做起，往往需要安装大量的包用于开发及生产使用，这时，我们就需要安装包，并且将其配置在package.json文件中，明确其依赖。在package.json文件中，有两个依赖声明位置dependencies和devDependencies。那么针对一个包，我们到底是安装到dependencies还是devDependencies呢，本文旨在把这点差异明确下。
 
@@ -203,5 +204,10 @@ tags:
 - 比如@types这些，只是在开发阶段需要，实际编译打扰后是JS，根本不是必须，所以在devDependencies
 - 比如babel，webpack相关包，karma等这些转译器，构建工具，测试框架等，按照官方说明，都应该在devDependencies
 
-## 写在最后
-似乎不care这两者区别，dependencies与devDependencies，随便放，开发上线都无伤大雅，但还是那句话，遵从官方规则，能规范些，这样维护起来更为方便点，不是吗？
+### 写在最后
+
+有些开发似乎不care这两者区别，dependencies与devDependencies，随便放，开发上线都无伤大雅.但是这样做并不好。
+
+当我们正确维护了package.json文件中的依赖关系之后，我们有两点收益
+1. 在生产部署时，我们执行`npm install --production`，不会安装devDependencies下的任何包，`这样整个包体积就会很小，包少，部署速度自然也会快`。
+2. 通过文件，我们很清楚开发与生产依赖，降低了维护成本
