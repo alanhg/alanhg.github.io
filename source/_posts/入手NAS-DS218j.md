@@ -23,7 +23,9 @@ tags:
 关于如何实现，可参考官网 [如何使用 Time Machine 将文件从 Mac 备份至 Synology NAS
 ](https://www.synology.com/zh-cn/knowledgebase/DSM/tutorial/Backup/How_to_back_up_files_from_Mac_to_Synology_NAS_with_Time_Machine#t1)
 
-最终的效果就是，在家里时，每小时定时就会进行备份，这样`妈妈再也不用担心我的电脑出问题了`，注意这个备份是局域网服务
+最终的效果就是，在家里时，每小时定时就会进行备份，这样`妈妈再也不用担心我的电脑出问题了`，因为有了备份，也不怕升级系统出故障，回不来的问题。
+
+`注意这个备份是局域网服务。`
 
 ![](http://static.1991421.cn/2019-04-06-040811.png)
 
