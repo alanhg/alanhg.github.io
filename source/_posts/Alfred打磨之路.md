@@ -1,10 +1,11 @@
 ---
 title: Alfred打磨之路
-date: 2019-04-06 11:18:52
 tags:
-- Alfred
-- Workflow
-- 利器
+  - Alfred
+  - Workflow
+  - 利器
+abbrlink: b908e228
+date: 2019-04-06 11:18:52
 ---
 > 入手Alfred已经有几个年头，真心觉得实乃利器一枚，这里梳理总结下目前的常用点，方便自己回顾，兴许也可帮助部分同道中人。
 > 
