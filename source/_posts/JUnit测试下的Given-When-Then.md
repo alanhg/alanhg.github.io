@@ -1,10 +1,11 @@
 ---
-title: JUnit测试下的Given-When-Then
-date: 2019-04-21 23:01:36
+title: 【译】JUnit测试下的Given-When-Then
 tags:
-- JUnit
-- 测试
-- 翻译
+  - JUnit
+  - 测试
+  - 翻译
+abbrlink: 71b0d191
+date: 2019-04-21 23:01:36
 ---
 > 个人测试方面太过短板，没有形成一套良好的测试方法，测试技巧及常用JAVA，JS技术相关的测试框架使用，也很薄若。所以需要大量学习，大量实践。
 
