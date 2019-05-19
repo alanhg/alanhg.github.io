@@ -195,7 +195,7 @@ redux-saga-test提供了一个便携的方法去断言effects。相较于`expect
 
 如果你使用Jest作为测试框架，并且选择了redux-saga-test去辅助测试。那么你将需要提供一个deepEqual函数来帮助fromGenerator，这个函数相当于jest中的equals。你可以在fromGenerator上提供一个全局包装器，这样你的测试可以导入，减轻了在每个测试文件中重复执行该操作的事。
 
-```
+```javascript
 describe('with redux-saga-test', () => {
   const generator = loadUserSaga(loadUser('sam'));
   const expect = fromGenerator(assertions, generator);
@@ -286,7 +286,7 @@ it('works as an integration test', () => {
 
 expectSaga函数可以被reducer或者一些其它静态状态增强，所以它可以运行在一个集成测试，用这个办法，你可以在saga执行完后，对最终状态进行断言。
 
-```
+```javascript
 it('works as an integration test with reducer', () => {
   return expectSaga(loadUserSaga, loadUser('sam'))
     .withReducer(reducer)
