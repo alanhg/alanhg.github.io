@@ -1,16 +1,15 @@
 ---
 title: Redux Saga测试库比较
-tags:
-  - Redux
-  - generator
-  - JavaScript
-abbrlink: a5ff9a78
 date: 2019-05-19 22:30:38
+tags:
+- Redux
+- generator
+- JavaScript
 ---
 
 原文地址:[Evaluating Redux Saga Test Libraries](https://blog.scottlogic.com/2018/01/16/evaluating-redux-saga-test-libraries.html)
 
-> 最近项目中使用Redux-saga来解决复杂的异步操作逻辑。发现redux-saga的官网并不怎么友好，建议还是多看其它资料。偶然看到这篇文章不错，姑且一翻，兴许帮到些朋友。
+> 最近项目中使用Redux-saga来解决复杂的异步操作逻辑。有些地方不是很懂，偶然看到这篇文章不错，这里姑且一翻，兴许帮到些朋友。
 
 ![](http://static.1991421.cn/2019-05-19-142842.jpg)
 
