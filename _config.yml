@@ -95,7 +95,7 @@ clean_css:
 
 #Minify JavaScript files with UglifyJS
 uglify:
-  mangle: true
+  mangle: false
   output:
   compress:
   exclude:
