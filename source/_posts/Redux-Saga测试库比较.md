@@ -1,10 +1,11 @@
 ---
 title: 【译】Redux Saga测试库比较
-date: 2019-05-19 22:30:38
 tags:
-- Redux
-- generator
-- JavaScript
+  - Redux
+  - generator
+  - JavaScript
+abbrlink: f2a89f2b
+date: 2019-05-19 22:30:38
 ---
 
 原文地址:[Evaluating Redux Saga Test Libraries](https://blog.scottlogic.com/2018/01/16/evaluating-redux-saga-test-libraries.html)
