@@ -11,7 +11,7 @@ date: 2017-07-04 22:33:54
 Travis CI is a hosted, distributed[2] continuous integration service used to build and test software projects hosted at GitHub.
 
 ## 背景
-在github上部署了个人blog，为了便于在不同工作台上进行blog，所以将blog平台源码作为blog仓库分支也托管上，目前仓库下有master(静态页)，source(源码)。
+> 在github上部署了个人blog，为了便于在不同工作台上进行blog，所以将blog平台源码作为blog仓库分支也托管上，目前仓库下有master(静态页)，source(源码)。
 
 ## CI化之前
 每次增加新blog后，需要依次执行以下动作
