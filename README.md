@@ -4,6 +4,9 @@
 
 @he,20170506
 
+## production url
+- https://alanhg.github.io
+- https://1991421.cn
 
 ## Get Started
 
