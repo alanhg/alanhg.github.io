@@ -1,8 +1,9 @@
 ---
 title: Angular6升级至7
-date: 2019-05-26 17:20:56
 tags:
-- Angular
+  - Angular
+abbrlink: ac1f4e2e
+date: 2019-05-26 17:20:56
 ---
 ![](http://static.1991421.cn/2019-05-26-092129.jpg)
 
