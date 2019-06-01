@@ -1,9 +1,10 @@
 ---
 title: 绘图利器PlantUML使用学习
-date: 2019-05-26 22:06:31
 tags:
-- PlantUML
-- UML
+  - PlantUML
+  - UML
+abbrlink: 784e2d34
+date: 2019-05-26 22:06:31
 ---
 > 最近同事推荐了一个工具`PlantUML`，利用文本来绘制程序的复杂逻辑。体验下觉得不错，这里学习记录下。
 
