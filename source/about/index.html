@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-transform"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-  <script type="text/javascript" src="https://cdn.staticfile.org/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/2.1.3/jquery.min.js"></script>
 
     <link href="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
 
@@ -20,17 +20,16 @@
 
     <link href="https://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet"
           type="text/css"/>
-   
+
 
     <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css"/>
 
 
-
-<link href="https://cdn.staticfile.org/remodal/1.1.1/remodal.min.css" rel="stylesheet"
+    <link href="https://cdn.staticfile.org/remodal/1.1.1/remodal.min.css" rel="stylesheet"
           type="text/css"/>
 
-<script src="https://cdn.staticfile.org/remodal/1.1.1/remodal.min.js"></script>
-<link href="https://cdn.staticfile.org/remodal/1.1.1/remodal-default-theme.css" rel="stylesheet"
+    <script src="https://cdn.staticfile.org/remodal/1.1.1/remodal.min.js"></script>
+    <link href="https://cdn.staticfile.org/remodal/1.1.1/remodal-default-theme.css" rel="stylesheet"
           type="text/css"/>
     <meta name="keywords" content="Hexo, NexT"/>
 
@@ -134,26 +133,26 @@
     <p><a href="https://twitter.com/alanhe421" target="_blank">Twitter</a></p>
     <p><a href="https://github.com/alanhg" target="_blank">Github</a></p>
     <p><a id="project" name="project" href="#modal">My project</a></p>
-    <p><a href="http://1991421.cn">Return to home</a></p>
+    <p><a href="/">Return to home</a></p>
 </div>
 <canvas></canvas>
 
 <div class="remodal" data-remodal-id="modal">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <h1>Project</h1>
-  <p>
-   <a href="https://github.com/alanhg/codetracker" target="_blank">CodeTracker</a>
-   <a href="https://github.com/alanhg/toolkit" target="_blank">ToolKit</a>
-  </p>
-  <br>
-  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
-  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1>Project</h1>
+    <p>
+        <a href="https://github.com/alanhg/codetracker" target="_blank">CodeTracker</a>
+        <a href="https://github.com/alanhg/toolkit" target="_blank">ToolKit</a>
+    </p>
+    <br>
+    <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
 </div>
 
 <script>
     document.addEventListener('touchmove', function (e) {
         e.preventDefault()
-    })
+    });
     var c = document.getElementsByTagName('canvas')[0],
         x = c.getContext('2d'),
         pr = window.devicePixelRatio || 1,
@@ -165,39 +164,42 @@
         r = 0,
         u = m.PI * 2,
         v = m.cos,
-        z = m.random
-    c.width = w * pr
-    c.height = h * pr
-    x.scale(pr, pr)
-    x.globalAlpha = 0.6
+        z = m.random;
+    c.width = w * pr;
+    c.height = h * pr;
+    x.scale(pr, pr);
+    x.globalAlpha = 0.6;
+
     function i() {
-        x.clearRect(0, 0, w, h)
-        q = [{x: 0, y: h * .7 + f}, {x: 0, y: h * .7 - f}]
+        x.clearRect(0, 0, w, h);
+        q = [{x: 0, y: h * .7 + f}, {x: 0, y: h * .7 - f}];
         while (q[1].x < w + f) d(q[0], q[1])
     }
+
     function d(i, j) {
-        x.beginPath()
-        x.moveTo(i.x, i.y)
-        x.lineTo(j.x, j.y)
+        x.beginPath();
+        x.moveTo(i.x, i.y);
+        x.lineTo(j.x, j.y);
         var k = j.x + (z() * 2 - 0.25) * f,
-            n = y(j.y)
-        x.lineTo(k, n)
-        x.closePath()
-        r -= u / -50
+            n = y(j.y);
+        x.lineTo(k, n);
+        x.closePath();
+        r -= u / -50;
         x.fillStyle = '#' + (v(r) * 127 + 128 << 16 | v(r + u / 3) * 127 + 128 << 8 | v(r + u / 3 * 2) * 127 + 128).toString(16)
-        x.fill()
-        q[0] = q[1]
+        x.fill();
+        q[0] = q[1];
         q[1] = {x: k, y: n}
     }
+
     function y(p) {
-        var t = p + (z() * 2 - 1.1) * f
+        var t = p + (z() * 2 - 1.1) * f;
         return (t > h || t < 0) ? y(p) : t
     }
-    document.onclick = i
-    document.ontouchstart = i
-    i()
 
-    
+    document.onclick = i;
+    document.ontouchstart = i;
+    i();
+
 </script>
 
 </body>
