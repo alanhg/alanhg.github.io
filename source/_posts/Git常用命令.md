@@ -174,6 +174,19 @@ $ git remote add origin git@github.com:alanhg/alanhg.github.io.git
 
 注意比如我们想导入N次提交，那么最终cherry pick过来后也会是4次提交。
 
+###   unable to write sha1 filename Permission denied
+
+最近Team使用[Modelio](https://www.modelio.org)编辑的UML，在执行git add 操作即报错。
+
+错误提示为权限问题，so首先想到的方案就是使用管理员运行终端，或者将.git目录下的文件修改权限chmod 777。但这两种办法均没有解决。试了下单个ADD 文件，发现部分行，进而推断应该是部分文件有点特殊，难道是文件在编辑状态的问题？so关闭了正在编辑运行的modelio，果然好使了。
+
+推断是软件编辑文件的情况下，部分文件会被锁住，add操作会导致部分文件修改，而这些文件不可以被编辑，所以就报错了。
+
+### You have unstaged changes
+该错误的意思就是有没有commit或者stash的修改，需要做的是git add，commit或者stash这些修改
+
+### Cannot pull with rebase: You have unstaged changes.↵Please commit or stash them.
+在执行`git pull --rebase --autostash`时候，报如上错误，原因是有些修改commit或者stash，这样是没办法正常pull代码。
 
 ## 辅助资料
 
