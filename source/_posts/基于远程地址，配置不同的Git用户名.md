@@ -1,8 +1,9 @@
 ---
 title: 基于远程地址，配置不同的Git用户名
-date: 2019-07-06 22:22:04
 tags:
-- Git
+  - Git
+abbrlink: 115de663
+date: 2019-07-06 22:22:04
 ---
 > 日常混迹GitHub，使用的提交名称是alanhg,工作中是qhe,每次clone下来公司的项目，总是要执行下`git config user.name=qhe`，关键是很多时候还忘了，一看提交记录，名称是alanhg。繁琐至极，有人说，干嘛不`git config --global`?，答案，我不想,我就想分开。
 
