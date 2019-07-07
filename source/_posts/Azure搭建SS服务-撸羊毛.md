@@ -1,9 +1,10 @@
 ---
 title: ' Azure搭建SS服务-撸羊毛'
-date: 2019-07-07 09:56:46
 tags:
-- Azure
-- ShadowSocks
+  - Azure
+  - ShadowSocks
+abbrlink: '88194639'
+date: 2019-07-07 09:56:46
 ---
 > 一直挺喜欢看YouTube视频，不过现在广告太多太频繁。想着找个办法干掉广告。网页版的还好有AdBlock，但手机，iPad一般都是APP观看广告就一大堆了，尝试用Surge，但需要一直维护规则。OK，看来只有会员一条道路了。
 
