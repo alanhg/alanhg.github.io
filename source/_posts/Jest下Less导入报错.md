@@ -1,11 +1,10 @@
 ---
 title: Jest下Less导入报错
-tags:
-  - Jest
-  - JavaScript
-  - LESS
-abbrlink: d6bb1337
 date: 2019-08-04 21:22:24
+tags:
+- Jest
+- JavaScript
+- LESS
 ---
 > 最近前端项目UT报错，一开始一脸懵逼，一点点的剥丝抽茧，搞明白了。这里MARK下。
 
@@ -56,20 +55,20 @@ Test suite failed to run
 
 2. 挂了的UT是Main组件，为何
 
-因为确定了是组件导入less的问题，然后这点就好分析了。Main组件中会导入路由配置，而路由配置文件中是有导入主要的组件的，so，UT跑时，会执行这些导入，进而就报了错。
+	因为确定了是组件导入less的问题，然后这点就好分析了。Main组件中会导入路由配置，而路由配置文件中是有导入主要的组件的，so，UT跑时，会执行这些导入，进而就报了错。
 
 3. 运行OK，UT却不OK，Jest配置？
 既然运行不报错，so说明code是可以的。于是看了下当前的jest配置，恍然大悟
 
 ![](http://static.1991421.cn/2019-08-04-125119.jpg)
 
-对于绝对路径app导入的模块，并不会走`identity-obj-proxy`,而出错的行就是app路径导入，so，less没有成功mock。
+	对于绝对路径app导入的模块，并不会走`identity-obj-proxy`,而出错的行就是app路径导入，so，less没有成功mock。
 
-我尝试添加如下规则。
+	我尝试添加如下规则。
 
 ![](http://static.1991421.cn/2019-08-04-130129.jpg)
 
-重跑UT，过了。
+	重跑UT，过了。
 
 ## 最佳解决办法
 虽然以上面的加配置方案可以解决，但最佳方案呢？这点值得思考。
@@ -88,11 +87,16 @@ Test suite failed to run
 
 ## 牵扯到的知识点梳理
 1. CSS模块化
+
 CSS模块化是现在非常成熟的一种css样式管理方案，为什么说是管理，因为有了它，其实解决了一直比较烦的CSS冲突问题。同时CSS模块化又提供了全局样式的口子。那么管理起来就比较优雅。
 
-2. import styles from 'index.less'，这种导入方式，让CSS的使用变成了JS的使用方式，那么假如我们移动位置，假如我们重命名CSS，那么就可以自动修改。这种一统了CSS和JS。棒不棒。
+2. import styles from 'index.less'
 
-3. jest中的`identity-obj-proxy`,这个模块是为了解决我们UT测试的组件中对于非JS资源的使用，比如CSS，PNG，SVG等。在测试中，很多东西都需要mock，test永远是以最低的造假成本和最真实的测试点从而去check我们的核心logic。
+这种导入方式，让CSS的使用变成了JS的使用方式，那么假如我们移动位置，假如我们重命名CSS，那么就可以自动修改。这种一统了CSS和JS。棒不棒。
+
+3. jest中的`identity-obj-proxy`
+
+这个模块是为了解决我们UT测试的组件中对于非JS资源的使用，比如CSS，PNG，SVG等。在测试中，很多东西都需要mock，test永远是以最低的造假成本和最真实的测试点从而去check我们的核心logic。
 
 ## 总结
 讲到这里，这个问题也解决了，也搞明白了。开心。前端坑还是不少的。不过万法不离其宗。与君共勉。
