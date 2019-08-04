@@ -1,10 +1,11 @@
 ---
 title: Jest下Less导入报错
-date: 2019-08-04 21:22:24
 tags:
-- Jest
-- JavaScript
-- LESS
+  - Jest
+  - JavaScript
+  - LESS
+abbrlink: d6bb1337
+date: 2019-08-04 21:22:24
 ---
 > 最近前端项目UT报错，一开始一脸懵逼，一点点的剥丝抽茧，搞明白了。这里MARK下。
 
