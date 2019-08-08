@@ -1,9 +1,10 @@
 ---
 title: OOBootcamp培训收获
-date: 2019-08-08 21:40:56
 tags:
-- 随笔
-- TW
+  - 随笔
+  - TW
+abbrlink: c6a2fc5d
+date: 2019-08-08 21:40:56
 ---
 ## OOBootcamp培训收获
 
