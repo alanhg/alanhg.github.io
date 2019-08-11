@@ -98,4 +98,4 @@ document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="http://
 ## 相关文档
 - [使用 Google Fonts 为网页添加美观字体](https://www.ibm.com/developerworks/cn/web/1505_zhangyan_googlefont/index.html)
 - [苹方字体](https://zh.wikipedia.org/zh-hans/%E8%8B%B9%E6%96%B9)
-- [](https://zhuanlan.zhihu.com/p/47737638)
+- [图标字体的制作与应用](https://zhuanlan.zhihu.com/p/47737638)
