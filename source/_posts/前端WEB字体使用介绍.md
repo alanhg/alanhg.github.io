@@ -1,10 +1,11 @@
 ---
 title: 前端WEB字体使用介绍
-date: 2019-08-11 11:48:21
 tags:
-- Frontend
-- WebFonts
-- CSS
+  - Frontend
+  - WebFonts
+  - CSS
+abbrlink: 8e1d6bad
+date: 2019-08-11 11:48:21
 ---
 > 最近在做的一个WEB项目，刚拿到UI设计师给出的效果图,于是花几天时间，对整个项目的样式做了规划和调节。其中字体方面使用的并不是系统默认字体，而是`lato-regular，lato-bold`,so需要做下字体的导入设定了。这块虽不难，但之前并没有系统梳理过，so，这里查查资料，结合之前的使用，总结一番。
 
@@ -13,7 +14,7 @@ tags:
 ### font-family属性
 网页中关于字体设定，我们会使用`font-family`或`font(简写属性)`属性，CSS中关于font-family属性介绍如下
 
-```The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.```
+> The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
 
 大致意思就是对于目标元素，字体会使用我们标明的字体集，并且按照设定的字体优先级。
 
