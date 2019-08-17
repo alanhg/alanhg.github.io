@@ -11,11 +11,11 @@ override: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
-  enable: false
+  enable: true
 
-  # Redefine custom file paths. Introduced in NexT v6.0.2. If commented, will be used default custom file paths.
-  # For example, you want to put your custom styles file outside theme directory in root `source/_data`, set `styles: source/_data/styles.styl`
-  #custom_file_path:
+# Redefine custom file paths. Introduced in NexT v6.0.2. If commented, will be used default custom file paths.
+# For example, you want to put your custom styles file outside theme directory in root `source/_data`, set `styles: source/_data/styles.styl`
+#custom_file_path:
   # Default paths: layout/_custom/*
   #head: source/_data/head.swig
   #header: source/_data/header.swig
@@ -35,21 +35,21 @@ cache:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
-  apple_touch_icon: /images/apple-touch-icon.png
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set rss to false to disable feed link.
-# Leave rss as blank to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
+# Leave rss as blank to use site's feed link, and install dependencies hexo-generator-feed by `npm install hexo-generator-feed --save`.
 # Set rss to specific value if you have burned your feed already.
-#  rss:false
+rss:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2016
+  #since: 2015
 
   # Icon between year and copyright info.
   icon:
@@ -100,7 +100,7 @@ creative_commons:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/alanhg
+  permalink: https://github.com/yourname
   title: Follow me on GitHub
 
 
@@ -128,7 +128,7 @@ exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification: X2kZZYv5HVaZzDyVf-pFnNdRG2BQGA50qxmGwDGyiG4
+#google_site_verification:
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -143,7 +143,7 @@ google_site_verification: X2kZZYv5HVaZzDyVf-pFnNdRG2BQGA50qxmGwDGyiG4
 #baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: true
+baidu_push: false
 
 
 # ---------------------------------------------------------------
@@ -153,19 +153,18 @@ baidu_push: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # Usage: `Key: /link/ || icon`
 # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
-# Value before `||` delimeter is the target link.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+# Value before `||` delimiter is the target link.
+# Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, question icon will be loaded.
 # External url should start with http:// or https://
 menu:
   home: / || home
-#  about: /about/ || user
-  tags: /tags/ || tags
-  books: /books || book
- # categories: /categories/ || th
+  #about: /about/ || user
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
   archives: /archives/ || archive
-  # schedule: /schedule/ || calendar
-#  sitemap: /sitemap.xml || sitemap
-  # commonweal: /404/ || heartbeat
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -178,8 +177,8 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-# scheme: Muse
-scheme: Mist
+scheme: Muse
+#scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -195,13 +194,14 @@ site_state: true
 # Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+# Value before `||` delimiter is the target permalink.
+# Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/alanhg || github
-  E-Mail: mailto:qianghe421@163.com || envelope
+  #GitHub: https://github.com/yourname || github
+  #E-Mail: mailto:yourname@gmail.com || envelope
+  #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/alanhe421 || twitter
+  #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -217,20 +217,17 @@ social_icons:
 # Blog rolls
 links_icon: link
 links_title: Links
-#links_layout: block
-links_layout: inline
+links_layout: block
+#links_layout: inline
 links:
   #Title: http://example.com
-  ruanyifeng: http://www.ruanyifeng.com/blog
-  liuyichao: http://createyl.me
-  Morning: https://lingchenxuan.com
-  Jake: https://czjake.com
+
 # Sidebar Avatar
 avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: /img/avatar.png
+  url: #/images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -314,7 +311,7 @@ excerpt_description: true
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 150
 
 # Read more button
@@ -350,6 +347,9 @@ codeblock:
     # Style: only 'flat' is currently available, leave it blank if you prefer default theme
     style:
 
+# Use icon instead of the symblo # to indicate the tag at the bottom of the post
+tag_icon: false
+
 # Wechat Subscriber
 wechat_subscriber:
   enable: false
@@ -360,19 +360,19 @@ wechat_subscriber:
 reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
-  enable: true
+  enable: false
   animation: false
   #comment: Donate comment here
 
 reward:
-wechatpay: /img/wechat-reward.jpg
-#alipay: /images/alipay.png
-#bitcoin: /images/bitcoin.png
+  #wechatpay: /images/wechatpay.png
+  #alipay: /images/alipay.png
+  #bitcoin: /images/bitcoin.png
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: true
+  enable: false
   title: # custom header, leave empty to use the default one
   display_in_home: false
   params:
@@ -423,7 +423,7 @@ cheers: true
 # TagCloud settings for tags page.
 tagcloud:
   # If true, font size, font color and amount of tags can be customized
-  enable: true
+  enable: false
   # All values below are same as default, change them by yourself
   min: 12 # min font size in px
   max: 30 # max font size in px
@@ -528,10 +528,6 @@ math:
       copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
       copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
 
-# Han Support
-# Dependencies: https://github.com/theme-next/theme-next-han
-han: false
-
 # Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
 # For more information: https://github.com/vinta/pangu.js
@@ -605,8 +601,8 @@ calendar:
 
 # Disqus
 disqus:
-  enable: true
-  shortname: qianghe
+  enable: false
+  shortname:
   count: true
   lazyload: false
 
@@ -643,29 +639,13 @@ valine:
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  language: en # language, available values: en, zh-cn
+  language: # language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 #livere_uid: your uid
-
-# Gitment
-# Introduction: https://github.com/imsun/gitment
-gitment:
-  enable: false
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-  count: true # Show comments count in post meta area
-  lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github Username
-  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
-  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 # Gitalk
 # Demo: https://gitalk.github.io
@@ -827,7 +807,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: true
+  enable: false
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -862,7 +842,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: true
+  enable: false
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -952,7 +932,7 @@ mermaid:
 
 # Use velocity to animate everything.
 motion:
-  enable: false
+  enable: true
   async: false
   transition:
     # Transition variants:
@@ -1038,10 +1018,10 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 2.1.3
+  # Internal version: 3.4.1
   # Example:
-  # jquery: //cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js
-  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   jquery:
 
   # Internal version: 2.1.5 & 3.5.7
@@ -1078,11 +1058,11 @@ vendors:
   velocity:
   velocity_ui:
 
-  # Internal version: 4.6.2
+  # Internal version: 4.7.0
   # See: https://fontawesome.com
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
   fontawesome:
 
   # Internal version: 2.10.4
@@ -1129,13 +1109,6 @@ vendors:
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   canvas_ribbon:
 
-  # Internal version: 3.3.0
-  # See: https://github.com/ethantw/Han
-  # Example:
-  # han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css
-  # han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  han:
-
   # Internal version: 4.0.7
   # See: https://github.com/vinta/pangu.js
   # Example:
@@ -1168,12 +1141,6 @@ vendors:
   # Example:
   # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
   reading_progress:
-
-  # leancloud-storage
-  # See: https://www.npmjs.com/package/leancloud-storage
-  # Example:
-  # leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
-  leancloud:
 
   # valine
   # See: https://github.com/xCss/Valine
