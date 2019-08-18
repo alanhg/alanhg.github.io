@@ -1,10 +1,10 @@
 ---
 title: TypeScript下的类型转换
-tags:
-  - TypeScript
-  - JavaScript
-abbrlink: 61b15ad0
 date: 2019-08-18 16:33:21
+tags:
+- TypeScript
+- JavaScript
+
 ---
 > 故事的起因是，同事在项目中遇到的一个问题。
 > 
@@ -22,9 +22,9 @@ date: 2019-08-18 16:33:21
 
 ![](http://static.1991421.cn/2019-08-18-074328.png)
 
-看到输出，我们应该明白，as并没有做到类型转换，我们原本希望属性减少，不会有height属性，然而并没有。
+看到输出，我们应该明白，as并没有做到类型转换，类型转换中，多余的参数[height]并没有被删除。
 
-解决方案可以是增加delete操作
+我所提供的解决方案是增加delete操作
 
 ![](http://static.1991421.cn/2019-08-18-074833.png)
 
