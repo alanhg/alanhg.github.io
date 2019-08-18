@@ -1,10 +1,10 @@
 ---
 title: TypeScript下的类型转换
-date: 2019-08-18 16:33:21
 tags:
-- TypeScript
-- JavaScript
-
+  - TypeScript
+  - JavaScript
+abbrlink: 61b15ad0
+date: 2019-08-18 16:33:21
 ---
 > 故事的起因是，同事在项目中遇到的一个问题。
 > 
