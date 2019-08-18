@@ -92,6 +92,21 @@ TS本身是不支持类型转换的， 但本身这种场景却是存在的。
 
 so,我们可以明白TS本身只是多了一个类型系统，通过类型断言，类型推断，能够提前发现一些明显的错误。
 
+## Java下的类型转换
+上面我们一直在说TS，这里来看看Java，横向对比有助于我们理解。那Java下的类型转换是什么样。
+
+### 介绍
+
+> There are two casting directions: narrowing (larger to smaller type) and widening (smaller to larger type). Widening can be done automatically (for example, int to double), but narrowing must be done explicitly (like double to int)
+
+### 上例子
+
+![](http://static.1991421.cn/2019-08-18-142340.png)
+
+我们还延续上面的例子，图上，我们将子类对象类型转换为父类对象，打印对象，会发现属性果然没有了height。so，Java下的类型转换，对应的属性会变化。
+
+当然，你会发现，第一句打印也没有height了，为什么，因为我们做转换的时候，是对象引用，我们改变了原对象。
+
 ## 写在最后
 
 在逐步学习中会发现，TypeScript与Java等高级语言还是不同的。so,我们需要结合背景，使用场景对其理解和学习。
