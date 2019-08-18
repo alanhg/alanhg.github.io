@@ -1,11 +1,11 @@
 ---
 title: 编写Alfred Workflow实现一键切换Maven设定
-date: 2019-08-18 23:32:29
 tags:
-- Maven
-- Alfred
-- Alfred Workflow
-
+  - Maven
+  - Alfred
+  - Alfred Workflow
+abbrlink: 5a73137b
+date: 2019-08-18 23:32:29
 ---
 > 因为公司项目需要使用公司的内部Maven资源，在家里并不需要，这样来回切换设置，很耗时。本着自动化的思想，考虑做个脚本来切换源。
 
