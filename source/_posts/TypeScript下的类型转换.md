@@ -1,10 +1,10 @@
 ---
 title: TypeScript下的类型转换
-tags:
-  - TypeScript
-  - JavaScript
-abbrlink: 61b15ad0
 date: 2019-08-18 16:33:21
+tags:
+- TypeScript
+- JavaScript
+
 ---
 > 故事的起因是，同事在项目中遇到的一个问题。
 > 
@@ -103,3 +103,4 @@ so,我们可以明白TS本身只是多了一个类型系统，通过类型断言
 ## 相关文档
 - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese)
 - [TypeScript](https://www.tslang.cn/docs/handbook/basic-types.html)
+- [Tyepscript cast object to parent object](https://stackoverflow.com/questions/41528375/tyepscript-cast-object-to-parent-object)
