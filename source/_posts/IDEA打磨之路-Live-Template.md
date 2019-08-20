@@ -1,5 +1,5 @@
 ---
-title: IDEA打磨之路-Live Template
+title: IDEA打磨之路-Live Templates
 date: 2019-08-20 23:18:00
 tags:
 - IDEA
