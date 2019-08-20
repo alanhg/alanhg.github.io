@@ -14,7 +14,7 @@ date: 2019-08-20 23:18:00
 ## Live Templates是什么
 > By using live templates, you can insert frequently-used constructions into your code. For example, loops, conditions, various declarations, or print statements.
 
-意思就是利用`live templaces`可以快速插入常用的代码块。
+意思就是利用`live templates`可以快速插入常用的代码块。
 
 ## 秀一把
 
@@ -24,15 +24,15 @@ date: 2019-08-20 23:18:00
 
 如何做呢，继续看。
 
-## 添加Live Template
+## 添加Live Templates
 
-### 打开setting-live template
+### 打开setting-live templates
 
 ![](http://static.1991421.cn/2019-08-20-153402.png)
 
 _`setting打开 快捷键:command shift A`_
 
-### 添加Live Template
+### 添加Live Templates
 
 ![](http://static.1991421.cn/2019-08-20-153518.png)
 
