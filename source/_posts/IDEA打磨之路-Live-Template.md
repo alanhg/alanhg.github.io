@@ -1,12 +1,12 @@
 ---
 title: IDEA打磨之路-Live Templates
-date: 2019-08-20 23:18:00
 tags:
-- IDEA
-- WebStorm
-- Intellij
-- Live Template
-
+  - IDEA
+  - WebStorm
+  - Intellij
+  - Live Template
+abbrlink: 7bccdda3
+date: 2019-08-20 23:18:00
 ---
 > IDEA的成功毋庸置疑，18年的时候份额就增长到了50%以上，好在哪呢?作为开发者来说就是太贴心了，很多设计，很多小功能都真正的解决了痛点，提高了效率。
 > 最近花了些时间对其中的一项功能-Live Template进行了研究和打磨，这里对此稍微总结和share下。
