@@ -9,8 +9,8 @@ date: 2019-08-18 23:32:29
 ---
 > 因为公司项目需要使用公司的内部Maven资源，在家里并不需要，这样来回切换设置，很耗时。本着自动化的思想，考虑做个脚本来切换源。
 
-## 脚本化
-在网上看到一位道友的文章，给了启发。这里贴下。
+## 脚本化-初步方案
+在网上看到一位道友的文章-脚本切换，给了启发。这里贴下脚本化。
 
 ```bash
 #!/bin/bash
@@ -41,7 +41,9 @@ done
 如上，即可实现交互式执行脚本来做切换。但这种方案还是需要每次执行下脚本。
 有办法做到一键切换吗？有的！Alfred就可以。
 
-## 打造Alfred Workflow
+## 打造Alfred Workflow-进阶方案
+
+如何做呢？
 
 ###  添加input keyword
 
@@ -67,6 +69,10 @@ else
         ln -sfn ${base_dir}/${setting_work} ${base_dir}/settings.xml
 fi
 ```
+#### mvn setting默认配置
+这里贴下maven默认的settings.xml配置
+[戳这里](https://gist.github.com/alanhg/3f52e12a45eb09778d569cb9b26d058d)
+
 ### 添加notification
 为了提升体验，每次切换成功后，通知下。
 
