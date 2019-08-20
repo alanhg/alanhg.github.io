@@ -36,6 +36,11 @@ _`setting打开 快捷键:command shift A`_
 
 ![](http://static.1991421.cn/2019-08-20-153518.png)
 
+#### 项说明
+- abbreviation:缩写词，即输入指定字符的时候，提示该模版
+- description:提示时候，IDE会显示描述，方便我们知道模版的用途
+- template:我们最后想插入的代码块，包含指定的一些变量
+
 ### 应用范围设定
 
 即是在哪些环境下，输入简写字符，IDE才提示这套模版。比如这里，我是TypeScript下才使用，便只选择TS
