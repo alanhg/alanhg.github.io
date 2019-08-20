@@ -81,7 +81,7 @@ _`setting打开 快捷键:command shift A`_
 当进行变量设定后，那一个模版就完成了，点击确定，就可以使用了。
 
 
-## 总结
+## 写在最后
 
 一个简单的LiveTemplae就OK了。Code时，liveTemplate可以部分提高我们的生产力，对此我觉得应该做到以下两点。
 
