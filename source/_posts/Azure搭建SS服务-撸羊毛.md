@@ -15,6 +15,7 @@ date: 2019-07-07 09:56:46
 - `visa双币卡`，因为要绑定支付
 - 好使点的`终端`，部署SS需要，比如Mac下，我用的iterm2
 - `微软账户`，如果没有，在登录azure时会提示先注册
+- 可能需要上谷歌：[戳这里](https://order.shadowsocks.website/aff.php?aff=27252)
 
 ## 登录国际azure官网
 
