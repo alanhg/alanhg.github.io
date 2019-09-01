@@ -1,12 +1,11 @@
 ---
 title: 项目中Less与CSS modules的实践
-tags:
-  - CSS
-  - CSS Modules
-  - Less
-  - FrontEnd
-abbrlink: 32c4cd52
 date: 2019-09-01 22:46:00
+tags:
+- CSS
+- CSS Modules
+- Less
+- FrontEnd
 ---
 > 最近接手的项目前端，关于样式这块用到了Less和CSS modules，这里梳理总结一番。
  
@@ -26,7 +25,7 @@ show实际代码之前，有必要先从背景上了解下两者。
 原因有两个
 
 1. UI组件库我们选择了antd，antd本身使用的是LESS,尽可能与其保持一致有利于我们UI整体的掌控
-2. 写法上，个人习惯了less
+2. 写法上，个人习惯了Less
 
 ## Less优势
 
@@ -121,8 +120,7 @@ footer.less
 
 ![](http://static.1991421.cn/2019-09-01-134344.png)
 
-浏览器解析最终效果
-
+#### 最终效果
 
 
 ### global
@@ -151,6 +149,7 @@ footer.less
             <FormattedMessage id={'tip'} />
           </div>
 ```
+#### 最终效果
 
 ## 样式整体规划设计
 因为有了less和css modules的加持，对于项目整体的样式，我进行了下规划设计
@@ -196,7 +195,7 @@ h1[class='say hello'] {
 看到这里你应该就明白了，它实质上是利用了CSS属性选择器做到了CSS模块化，对比CSS module的CSS类名方案，其实会发现两者异曲同工。
 
 ## 写在最后
-假如不采用css modules方案，利用BEM等也不不能解决问题。但不可否认，这个方案更优雅。基于以上的设定，我们的样式就不会出现意外影响，混乱不堪的局面。
+假如不采用CSS Modules方案，利用BEM等也不不能解决问题。但不可否认，这个方案更优雅。基于以上的设定，我们的样式就不会出现意外影响，混乱不堪的局面。
 
 当然好的工具是一方面，更重要的是使用工具的Team，形成统一的认知。so，加油！
 
