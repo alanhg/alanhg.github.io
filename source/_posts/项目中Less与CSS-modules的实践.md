@@ -1,11 +1,12 @@
 ---
 title: 项目中Less与CSS modules的实践
-date: 2019-09-01 22:46:00
 tags:
-- CSS
-- CSS Modules
-- Less
-- FrontEnd
+  - CSS
+  - CSS Modules
+  - Less
+  - FrontEnd
+abbrlink: 32c4cd52
+date: 2019-09-01 22:46:00
 ---
 > 最近接手的项目前端，关于样式这块用到了Less和CSS modules，这里梳理总结一番。
  
