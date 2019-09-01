@@ -1,12 +1,11 @@
 ---
 title: 项目中Less与CSS modules的实践
-tags:
-  - CSS
-  - CSS Modules
-  - Less
-  - FrontEnd
-abbrlink: 32c4cd52
 date: 2019-09-01 22:46:00
+tags:
+- CSS
+- CSS Modules
+- Less
+- FrontEnd
 ---
 > 最近接手的项目前端，关于样式这块用到了Less和CSS modules，这里梳理总结一番。
  
@@ -107,7 +106,7 @@ webpack中需要增加对应的rule
 
 footer.less
 
-```css
+```
 .footer {
   background-color: rgb(0, 0, 0);
   color: #999999;
