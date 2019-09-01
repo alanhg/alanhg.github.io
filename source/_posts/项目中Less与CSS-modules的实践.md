@@ -106,7 +106,7 @@ webpack中需要增加对应的rule
 
 footer.less
 
-```
+```css
 .footer {
   background-color: rgb(0, 0, 0);
   color: #999999;
@@ -126,7 +126,7 @@ footer.less
 ### global
 全局样式的书写只要加上:gloabl选择器即可。另外在解析时，不会改变类名称
 
-```
+```css
 :global {
   .table-tip {
     font-family: @font-bold;
