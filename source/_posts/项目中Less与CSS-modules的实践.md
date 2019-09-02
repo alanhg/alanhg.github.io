@@ -1,11 +1,12 @@
 ---
 title: 项目中Less与CSS modules的实践
-date: 2019-09-01 22:46:00
 tags:
-- CSS
-- CSS Modules
-- Less
-- FrontEnd
+  - CSS
+  - CSS Modules
+  - Less
+  - FrontEnd
+abbrlink: 32c4cd52
+date: 2019-09-01 22:46:00
 ---
 > 最近接手的项目前端，关于样式这块用到了Less和CSS modules，这里梳理总结一番。
  
@@ -48,7 +49,6 @@ less的优势，也正是css本身无法解决的痛点，正如上面所介绍�
 - TypeScript`~3.3.1`
 - React`16.4.2`
 - Webpack`4.17.1`
-
 
 了解了背景前提，开搞。
 
@@ -122,6 +122,7 @@ footer.less
 
 #### 最终效果
 
+![](http://static.1991421.cn/2019-09-02-115014.png)
 
 ### global
 全局样式的书写只要加上:gloabl选择器即可。另外在解析时，不会改变类名称
@@ -150,6 +151,7 @@ footer.less
           </div>
 ```
 #### 最终效果
+![](http://static.1991421.cn/2019-09-02-114926.png)
 
 ## 样式整体规划设计
 因为有了less和css modules的加持，对于项目整体的样式，我进行了下规划设计
