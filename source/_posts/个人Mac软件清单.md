@@ -22,13 +22,11 @@ Dash| 文档检索
 Moom| 窗口管理
 印象笔记|知识管理
 Bartendar| 系统状态栏管理
-IDEA|IDE
-WebStorm|IDE
+IDEA/WebStorm|IDE
 iPic| 图床上传
 Fantastic2| 日历
 Surge| 网络分析，也可爱国
 1Password| 密码管理
-搜狗拼音 | 输入法
 Telegram | 安全通信
 微信 | 办公IM
 Chrome | 浏览器 And 前端开发调试神器
