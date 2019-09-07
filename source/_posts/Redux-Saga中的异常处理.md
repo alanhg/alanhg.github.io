@@ -1,10 +1,9 @@
 ---
 title: Redux-Saga中的异常处理
-tags:
-  - Redux
-  - Redux-Saga
-abbrlink: 6c2890d4
 date: 2019-09-07 22:18:17
+tags:
+- Redux
+- Redux-Saga
 ---
 > `Redux-Saga`是一个用于管理应用程序 Side Effect（副作用，例如异步获取数据，访问浏览器缓存等）的 library，它的目标是让副作用管理更容易，执行更高效，测试更简单，在处理故障时更容易。
 > 
@@ -70,7 +69,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 
-```javscript
+```javascript
 import { call } from 'redux-saga/effects';
 
 export function safe(sagaFn) {
@@ -121,7 +120,8 @@ export function safe(sagaFn) {
     }
   };
 }
-``
+```
+
 然后在effects中调用
 
 ```javascript
@@ -132,6 +132,7 @@ function* mySaga() {
 }
 
 ```
+
 #### 效果
 即使第一个effects出现问题，并不会影响第二个的执行
 
