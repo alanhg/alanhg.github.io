@@ -1,5 +1,6 @@
 ---
 title: ' Apple mail创建邮件模版'
+abbrlink: 8880f02
 date: 2019-09-08 15:32:43
 tags:
 ---
