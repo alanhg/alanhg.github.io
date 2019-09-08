@@ -143,12 +143,27 @@ function* mySaga() {
 
 如上，对于单个effect增加safe函数，挺方便。但有没有一劳永逸的办法呢？毕竟safe很多的话，一眼望去不都是重复代码嘛！说好的[DRY](http://www.ruanyifeng.com/blog/2013/01/abstraction_principles.html)！
 
-觉得肯定可以解决，只是具体是框架层面支持还是，我们完全写个函数就可以解决。
+经过询问大神及查看Saga源码，找到了办法
 
-how,我也不知道 ，期待高手指点迷津吧。
+```javascript
+const effectMiddleware = next => effect => {
+    if (effect.type === 'FORK') {
+        effect.payload.args[1] = safe(effect.payload.args[1]);
+    }
+    return next(effect);
+};
+
+export const sagaMiddleware = createSagaMiddleware({
+    effectMiddlewares: [effectMiddleware]
+});
+```
+
+如上进行设定，对于单个effect就不需要加safe了，一劳永逸。
 
 ## 写在最后
-轮子虽好，但都有这样那样的问题，我们除了熟悉轮子解决我们的业务问题外，更多的是思考其背后的原理和适当造些更趁手的轮子吧。加油！
+1. 我们是可以增加safe确保报错不影响其它saga执行，但是想想，为什么会报错，异常就一定是不安全，而不报错就是安全了吗？我们容错的同时，其实是掩盖了问题，从而降低了应用的安全性，假如不加safe，我们利用程序解决了这个不该爆发的错误不是更好吗？这点值得我们想想。
+
+2. 不论是saga还是其它类库，轮子虽好，但都有这样那样的问题，我们除了熟悉轮子解决我们的业务问题外，更多的是思考其背后的原理和适当造些更趁手的轮子吧。加油！
 
 ## 相关文档
 
