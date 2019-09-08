@@ -1,6 +1,5 @@
 ---
 title: ' Apple mail创建邮件模版'
-abbrlink: 8880f02
 date: 2019-09-08 15:32:43
 tags:
 ---
@@ -30,4 +29,4 @@ tags:
 对比之前的办法，谈不上多大的变化，但节约了时间，开心！
 
 ## 参考文档
-- [How to Create Email Templates in Apple Mail macOS Mojave](How to Create Email Templates in Apple Mail macOS Mojave)
+- [How to Create Email Templates in Apple Mail macOS Mojave](https://ericleeclark.com/create-email-templates-in-apple-mail-mojave/)
