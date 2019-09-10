@@ -1,10 +1,11 @@
 ---
 title: TSLint并不check TypeScript错误
-date: 2019-09-10 23:04:32
 tags:
-- TSLint
-- TypeScript
-- Husky
+  - TSLint
+  - TypeScript
+  - Husky
+abbrlink: 28a51056
+date: 2019-09-10 23:04:32
 ---
 > 这篇文章想说的就是标题这一句话。但是强烈建议你还是看下去，因为搞明白会更有意思。
 > TSLint是TypeScipt代码静态分析工具，它解决的是代码规范。提交代码时，前端往往都会跑一遍Lint，检测代码风格，确保统一。但跑过了TSlint就一定构建没问题了吗？？？。
@@ -28,7 +29,7 @@ lint错，在提交时都会被check，简单的还会被自动修复。如果�
 ## TS错误
 
 假如我定义这样一个接口类型，三个属性。
-```
+```typescript
 interface IStudent {
   name: string;
   sex: 'male' | 'female';
