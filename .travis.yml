@@ -1,5 +1,8 @@
 language: node_js
 node_js: stable
+addons:
+  ssh_known_hosts:
+    - 1991421.cn:29554
 install:
 - npm install
 script:
@@ -12,6 +15,8 @@ after_script:
 - git add .
 - git commit -m "update"
 - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+- ssh -p 29554 root@1991421.cn "cd /var/www/alanhg.github.io;npm install --production;hexo g"
+
 branches:
   only:
   - source
