@@ -79,8 +79,8 @@ footer:
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.beian.miit.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp: 京ICP备18058709号-1
 
   # Any custom text can be defined here.
   #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
@@ -198,7 +198,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-#GitHub: https://github.com/yourname || github
+GitHub: https://github.com/alanhg || github
 #E-Mail: mailto:yourname@gmail.com || envelope
 #Weibo: https://weibo.com/yourname || weibo
 #Google: https://plus.google.com/yourname || google
@@ -226,6 +226,7 @@ links:
   liuyichao: http://createyl.me
   Morning: https://lingchenxuan.com
   Jake: https://czjake.com
+  Jason: https://atjason.com
 # Sidebar Avatar
 avatar:
   # In theme directory (source/images): /images/avatar.gif
@@ -1139,13 +1140,13 @@ vendors:
   # See: https://github.com/theme-next/theme-next-bookmark
   # Example:
   # bookmark: //cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js
-  bookmark:
+  bookmark: /lib/bookmark.min.js
 
   # Internal version: 1.1
   # See: https://github.com/theme-next/theme-next-reading-progress
   # Example:
   # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
-  reading_progress:
+  reading_progress: /lib/reading_progress.min.js
 
   # valine
   # See: https://github.com/xCss/Valine
