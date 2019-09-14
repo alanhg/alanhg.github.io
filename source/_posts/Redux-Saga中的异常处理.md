@@ -10,27 +10,26 @@ date: 2019-09-07 22:18:17
 > 
 > 不可避免的是，effects中可能会出现异常，比如一个call API请求，对于异常我们又该如何处理呢。这篇文章聚焦于将这点。
     
-## 异常不处理的结果?
+## 异常不处理?
 
 贴一个effects，连续`三次`call后端。
 
 ![](http://static.1991421.cn/2019-08-04-141523.jpg)
 
-假如`第二次`请求即getBooks出错，还会打印step 2吗？
+假如`第二次`请求`getBooks`出错，还会打印`step 2`吗？
 
 ![](http://static.1991421.cn/2019-08-04-141608.jpg)
 
-事实是不会，也就是请求异常，整个程序effects执行就会中断。
+如上没有打印，也就是请求异常，整个程序effects执行就会中断。
 
 ## 单个请求异常处理
-在effects中对于异常，我们需要使用trycatch
+在effects中对于异常，我们需要使用try catch
 
 ![](http://static.1991421.cn/2019-08-11-041815.jpg)
 
 ![](http://static.1991421.cn/2019-08-11-041733.jpg)
 
-如上，getBooks请求进行了异常捕捉，这样做就可以吞掉这个错误，进而可以正常执行接下来的请求了。
-
+如上，getBooks请求进行了异常捕捉，这样做就可以吞掉这个错误，进而可以正常执行接下来的请求了。所以控制台对于step1,step2,step3都正常打印
 
 ### 什么算异常？
 对于一个后端请求，200，400，404，500都是常见response code，那么什么请求才会在异常中要捕获？
@@ -65,7 +64,6 @@ module.exports = function settle(resolve, reject, response) {
 
 ## 单个Effects异常处理
 单个请求报错，effetcts也会挂掉，进而整个Saga树挂掉，整个App可能崩溃，那么为了确保WEB安全，我们需要让effects健壮些，so我们来做个wrapper。
-
 
 
 ```javascript
@@ -162,6 +160,13 @@ export const sagaMiddleware = createSagaMiddleware({
 `effectMiddlewares`这个配置项是`1.0.0`引入的新特性，假如要用，就需要升级了。
 
 1.0.0新特性查看，[戳这里](https://github.com/redux-saga/redux-saga/releases/tag/v1.0.0)
+
+
+### 单个effect的type是fork?
+- 是的，查看saga源码，会知道effect 的type有15种[TAKE,PUT,ALL,FORK等]
+- 我们takeEvery或者takeLatest实际上就是发起了Fork类型的effect
+
+![](http://static.1991421.cn/2019-09-14-154208.jpg)
 
 ## 写在最后
 1. 我们是可以增加safe确保报错不影响其它saga执行，但是想想，为什么会报错，异常就一定是不安全，而不报错就是安全了吗？我们容错的同时，其实是掩盖了问题，从而降低了应用的安全性，假如不加safe，我们利用程序解决了这个不该爆发的错误不是更好吗？这点值得我们想想。
