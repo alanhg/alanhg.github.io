@@ -28,13 +28,13 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-- CNAME
-- 404.html
-- about/*.html
-- README.md
-- CHANGELOG.md
-- robots.txt
-- opensearch.xml
+  - CNAME
+  - 404.html
+  - about/*.html
+  - README.md
+  - CHANGELOG.md
+  - robots.txt
+  - opensearch.xml
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -90,8 +90,8 @@ abbrlink:
 
 #Minify CSS files with clean-css.
 clean_css:
-    exclude:
-      - '*.min.css'
+  exclude:
+    - '*.min.css'
 
 #Minify JavaScript files with UglifyJS
 uglify:
@@ -103,16 +103,16 @@ uglify:
 
 #Minify images with imagemin.
 imagemin:
-  enable     : true
-  interlaced : false
-  multipass  : false
+  enable: true
+  interlaced: false
+  multipass: false
   optimizationLevel: 2
-  pngquant   : false
+  pngquant: false
   progressive: false
 
 #Generate sitemap.
 sitemap:
-    path: sitemap.xml
+  path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
 
@@ -145,3 +145,9 @@ feed:
   limit: 20
   hub:
   content:
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
