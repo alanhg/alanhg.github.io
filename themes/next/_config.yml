@@ -222,6 +222,7 @@ links_title: Links
 links_layout: inline
 links:
 #Title: http://example.com
+  medium: https://medium.com/@alanhg
   ruanyifeng: http://www.ruanyifeng.com/blog
   liuyichao: http://createyl.me
   Morning: https://lingchenxuan.com
