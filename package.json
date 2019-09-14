@@ -30,8 +30,8 @@
     "hexo-renderer-marked": "^1.0.1",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.3.3",
-    "hexo-uglify": "0.0.5",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-symbols-count-time": "0.5.1",
+    "hexo-uglify": "0.0.5"
   },
   "devDependencies": {
     "moment": "^2.24.0"
