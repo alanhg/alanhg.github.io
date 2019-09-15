@@ -1,10 +1,11 @@
 ---
 title: Webpack HMR介绍
-date: 2019-09-15 23:21:05
 tags:
-- Webpack
-- HMR
-- React
+  - Webpack
+  - HMR
+  - React
+abbrlink: db33588b
+date: 2019-09-15 23:21:05
 ---
 > Webpack有个HMR功能，这个特性在1.x的时候就有了。但我一直没有去特意关注过，最近因为在改进开发体验,牵扯到改动这里。所以决定梳理下这个，也以此加深对Webpack的理解。
 
