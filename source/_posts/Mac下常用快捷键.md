@@ -3,6 +3,8 @@ title: Mac下常用快捷键
 tags:
   - keymap
   - shortcut
+  - Intellij IDEA
+  - Mac
 abbrlink: '39361180'
 date: 2018-09-09 13:44:31
 ---
