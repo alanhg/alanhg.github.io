@@ -80,3 +80,5 @@ $ git submodule deinit {MOD_NAME}
 # 删除.gitmodules中记录的模块信息（--cached选项清除.git/modules中的缓存）
 $ git rm --cached {MOD_NAME} 
 ```
+## 参考文档
+- [Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
