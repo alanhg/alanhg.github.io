@@ -1,7 +1,8 @@
 ---
 title: git submodule 使用说明
 tags:
-  - git
+  - Git
+  - Submodules 
 abbrlink: 827afe6e
 date: 2017-07-09 22:48:39
 ---
