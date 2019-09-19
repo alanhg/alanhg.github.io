@@ -16,6 +16,11 @@ date: 2018-09-15 13:02:33
 ## Shell自动化
 这里输入的值除了最后一次密码无法脚本化【需要手动手机动态Code】，其余都可以。这里我使用[expect](https://linux.die.net/man/1/expect)去解决这些交互输入。
 
+### expect安装
+
+执行命令`brew install expect`
+
+### 自动化脚本
 具体脚本如下，vpn.sh
 
 ```shell
