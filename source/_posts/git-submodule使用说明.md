@@ -17,8 +17,8 @@ date: 2017-07-09 22:48:39
 # 添加子模块
 $ git submodule add https://github.com/alanhg/Angular-group.git
 
-# 设定映射路径
-$ git submodule add https://github.com/alanhg/Angular-group.git /lib
+# 设定映射路径lib
+$ git submodule add https://github.com/alanhg/Angular-group.git lib
 
 ```
 
