@@ -4,6 +4,7 @@ tags:
   - Redux
   - generator
   - JavaScript
+  - Redux-Saga
 abbrlink: f2a89f2b
 date: 2019-05-19 22:30:38
 ---
