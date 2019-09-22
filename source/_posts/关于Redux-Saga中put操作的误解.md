@@ -1,15 +1,16 @@
 ---
 title: 关于Redux-Saga中put操作的误解
-tags:
-  - Redux-Saga
-abbrlink: 44039f52
 date: 2019-09-22 21:28:13
+tags:
+- Redux-Saga
 ---
 > 关于saga中的effects，我们正常使用似乎也没什么问题。但昨天CodeReview中的一个问题-put action是异步的吗？这样一个simple的问题，我没法给出绝对正确的答案，True or False我不确定。so，通过看saga源码，官方文档及DEMO测试，我来给出准确的答案，同时加深对于saga的了解。
 
 ![](http://static.1991421.cn/2019-09-22-112434.jpg)
 
-开始啰嗦！
+先说结论不一定，如果action没有任何中间件处理或者异步阻塞，那么是同步的，如果有，则是异步的。
+
+WHY？开始啰嗦！
 
 ## 什么是effect
 > effect即side effect，即副作用。副作用是计算机科学中的一个概念，Saga并非原创
@@ -20,7 +21,7 @@ date: 2019-09-22 21:28:13
 
 saga中将effect分了很多类型，类型分类如下
 
-```typescript
+```javascript
 export const effectTypes: {
   TAKE: 'TAKE'
   PUT: 'PUT'
@@ -106,7 +107,7 @@ function* fetchUserEffects() {
 
 reducers
 
-```
+```javascript
  case 'USER_FETCH_SUCCEEDED':
       console.log('Class: , Function: user, Line 7 (): ', action.user);
       return {
