@@ -88,7 +88,7 @@ cps| Non-blocking
 假定user信息初始化为null
 
 initState
-```json
+```javascript
 {
     'name': null,
     'age': null
