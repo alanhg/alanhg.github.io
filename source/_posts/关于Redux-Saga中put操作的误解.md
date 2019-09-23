@@ -157,7 +157,7 @@ function* fetchUserEffects() {
 
 ```
 
-如上，执行发现`effects中打印出来的user信息为空`
+如上，执行发现`effects中打印出来的user信息为空，并且先执行的effect打印`
 
 ![](http://static.1991421.cn/2019-09-22-130732.jpg)
 
@@ -166,7 +166,7 @@ function* fetchUserEffects() {
 
 ![](http://static.1991421.cn/2019-09-23-025248.jpg)
 
-会发现`effects中打印出来的user信息不空`，阻塞与非阻塞差异清楚了吧
+会发现`effects中打印出来的user信息不空，并且先执行的reducer打印`，阻塞与非阻塞差异清楚了吧
 
 ### 补充点
 
