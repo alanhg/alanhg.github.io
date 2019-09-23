@@ -140,9 +140,6 @@ export const fetchUser = (user) => (dispatch) => {
         .then((res) => {
             dispatch(setUserInfo(user));
         })
-        .catch((error) => {
-            console.log(error);
-        });
 };
 
 ```
@@ -165,9 +162,11 @@ function* fetchUserEffects() {
 ![](http://static.1991421.cn/2019-09-22-130732.jpg)
 
 #### put换成putResolve
-按照官网所讲，putResolve为阻塞的。个人觉得应该打印顺序与上面相反，BUT，修改后，发现打印结果与上述一致！
+按照官网所讲，putResolve为阻塞的，那么put改putResolve，执行如下
 
-这点无法理解，so官方询问中，等答案！猜测thunk这种情况还是无法满足阻塞条件？
+![](http://static.1991421.cn/2019-09-23-025248.jpg)
+
+会发现`effects中打印出来的user信息不空`，阻塞与非阻塞差异清楚了吧
 
 ### 补充点
 
@@ -175,7 +174,7 @@ function* fetchUserEffects() {
 我觉得这样也理所应当。把redux和effects分开的话，当我们执行完一个action，修改了store状态，redux执行了自己的监听函数,同时通知出去，so才会出现组件中先知道，当然这只是我的推断。
 
 ## 写在最后
-- 虽然还有盲区，但至少对于saga中put操作有了更多的了解，并不是put操作一定完整执行才执行下一步操作。
+- 对于saga中put操作有了更多的了解，并不是put操作一定完整执行才执行下一步操作。
 - 个人看法，渐渐搞明白技术的各个细节点，才能渐渐用好一个技术。
 - 在检索资料的时候，总会发现资料虽多，但千篇一律，尤其中文的，还是多多有自己的沉淀吧，转发或者抄袭对于个人提升丝毫无益。
 
