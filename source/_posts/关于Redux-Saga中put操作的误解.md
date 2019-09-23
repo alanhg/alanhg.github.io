@@ -26,7 +26,7 @@ saga中将effect分了很多类型，类型分类如下
 export const effectTypes: {
   TAKE: 'TAKE'
   PUT: 'PUT'
-  ALL: 'ALL
+  ALL: 'ALL‘
   RACE: 'RACE'
   CALL: 'CALL'
   CPS: 'CPS'
