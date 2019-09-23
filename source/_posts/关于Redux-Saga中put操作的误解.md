@@ -56,7 +56,7 @@ saga中有这样一对概念，什么意思呢？
 官方解释，[戳这里](https://redux-saga.js.org/docs/Glossary.html)
 
 ### put操作是阻塞还是非阻塞？
-在effects中，发起action，是用`put`函数，而put是非阻塞的，非阻塞是用`putResolve`。
+在effects中，发起action，是用`put`函数，而put是非阻塞的，阻塞是用`putResolve`。
 
 ### 除了put操作还有什么操作呢
 1. 看官网
