@@ -1,11 +1,10 @@
 ---
 title: 利用Hammerspoon做些自动化
-tags:
-  - Hammerspoon
-  - workflow
-  - 效率工具
-abbrlink: d74c4ec4
 date: 2019-09-28 16:08:52
+tags:
+- Hammerspoon
+- workflow
+- 效率工具
 ---
 > 之前知道Hammerspoon，但没玩过，最近看了下，试着写了些脚本，觉得有点意思，这里Mark下
 
@@ -22,7 +21,6 @@ date: 2019-09-28 16:08:52
 ### 上代码
 
 ```lua
-Wifi
 -- audio mute 
 -- change mvn setting 
 
