@@ -12,7 +12,7 @@ date: 2019-09-28 12:44:18
 
 先说大结论【俗称废话】，两者不一样
 
-## JSX.Element与React.ReactNode等价
+## JSX.Element与React.ReactNode等价？
 
 ![](http://static.1991421.cn/2019-09-28-040933.jpg)
 
@@ -39,7 +39,7 @@ type ReactNode = ReactChild | ReactFragment | ReactPortal | string | number | bo
 ```
 比如上面例子，如果类型定义为JSX.Element，content要是个数字就会报类型错误。
 
-## 专业点的回答
+## 技术性解释
 摘自大神的回答
 > Quote @ferdaber: A more technical explanation is that a valid React node is not the same thing as what is returned by React.createElement. Regardless of what a component ends up rendering, React.createElement always returns an object, which is the JSX.Element interface, but React.ReactNode is the set of all possible return values of a component.
 
