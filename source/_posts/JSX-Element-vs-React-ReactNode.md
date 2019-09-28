@@ -1,11 +1,12 @@
 ---
 title: JSX.Element vs React.ReactNode
-date: 2019-09-28 12:44:18
 tags:
-- source code
-- React
-- antd
-- TypeScript
+  - source code
+  - React
+  - antd
+  - TypeScript
+abbrlink: e62ac8ea
+date: 2019-09-28 12:44:18
 ---
 > 最近看antd源码关于render元素有这样两个类型定义 JSX.Element,React.ReactNode，心生疑惑，两者有何差异呢，这里Mark下。
 
