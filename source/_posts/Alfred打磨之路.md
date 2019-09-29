@@ -118,7 +118,7 @@ Dash的使用需要搭配Dash APP,搞开发的，强推，这样文档API检索�
 
 ### 不够?自己写几个
 - VPN
-> 在家经常需要登录公司VPN，每次都是重复的操作，为了爽，写了个工作流，每次打开手机，查看Code码，唤起Alfred,输入VPN 加码，回车，即可登录上内网。
+> 在家经常需要登录公司VPN，每次都是重复的操作，为了爽，写了个工作流，每次打开手机，查看Code码，唤起Alfred,输入VPN校验码，回车，即可登录上内网。
 
 ![](http://static.1991421.cn/2019-04-06-025800.png)
 
@@ -129,6 +129,9 @@ Dash的使用需要搭配Dash APP,搞开发的，强推，这样文档API检索�
 
 - Pull code from GitLab
 > 平时工作每天CodeReview，需要从好多个服务下down下来新代码，想想都心累，为了方便，索性写个循环脚本，将各个服务的代码都拉下来，这样每天只需要输入gl命令，即可。
+
+- Git clone Github repository
+> 程序员免不了多看GitHub仓库的源码，有时还需要实际run下，每次都是复制下仓库地址，打开终端，输入git clone repositoryURL。这个过程很麻烦。如今只需要复制下仓库地址，输入git指令，选择clone workflow即可。
 
 关于这几个Workflow，可以移步[这里](https://github.com/alanhg/alfred-workflows)
 
