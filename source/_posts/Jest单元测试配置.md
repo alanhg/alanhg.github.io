@@ -1,10 +1,11 @@
 ---
 title: Jest单元测试配置
-date: 2019-10-02 21:09:05
 tags:
-- Jest
-- React
-- UT
+  - Jest
+  - React
+  - UT
+abbrlink: 492248be
+date: 2019-10-02 21:09:05
 ---
 > 最近在做公司级UI组件库，对于测试这块，决定继续沿用Jest。因为追求简单，果断舍弃拷贝粘贴这个捷径，从零开始进行配置。这里Mark下。
 
@@ -14,7 +15,6 @@ tags:
 玩之前，先了解下Jest是干嘛的
 
 > Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
-
 > It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
 
 上述是官方的介绍，由此我们知道Jest不止适用于React，JS。
@@ -68,7 +68,7 @@ so，基于此，来配置测试
    目标测试框架，肯定要安
 6. ts-jest
    
-   因为我们是用TS写的前端，so需要安装这个包，假如我们用JS写UT，那就可以删除这个包。
+   因为我们是用TS写的前端项目，so需要安装这个包，假如我们用JS写的前端，那就可以删除这个包。
 
 ### jest.conf.js
 
