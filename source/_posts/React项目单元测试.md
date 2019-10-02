@@ -1,9 +1,10 @@
 ---
 title: React项目单元测试
-date: 2019-10-02 22:45:06
 tags:
-- React
-- Jest
+  - React
+  - Jest
+abbrlink: cc05befa
+date: 2019-10-02 22:45:06
 ---
 
 > 上篇文章简单介绍了Jest配置,通过简单的配置达到可以跑测试。这篇文章聚焦如何进行React项目的测试，侧重点有所不同。
