@@ -1,10 +1,11 @@
 ---
 title: Chrome日常使用插件梳理
-date: 2019-10-03 23:55:57
 tags:
-- Chrome
-- Software
-- 利器
+  - Chrome
+  - Software
+  - 利器
+abbrlink: dd6c1f5a
+date: 2019-10-03 23:55:57
 ---
 
 > 之前梳理过，自己常用的APP，常用的硬件。这次梳理下Chrome日常使用的插件，并且分享点自己的使用心得。
