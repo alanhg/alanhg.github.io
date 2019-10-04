@@ -66,6 +66,7 @@ if (process.argv[2] === 'analyzer') {
 ### Tech Stack
 
 ```json
+    "antd": "^3.23.4",
     "webpack": "4.41.0",
     "lodash": "^4.17.15"
 ```
