@@ -1,10 +1,11 @@
 ---
 title: 前端tree shaking
-date: 2019-10-04 22:01:03
 tags:
-- Frontend
-- Webpack
-- 性能优化
+  - Frontend
+  - Webpack
+  - 性能优化
+abbrlink: a18dde92
+date: 2019-10-04 22:01:03
 ---
 > 单页应用带来更流畅的前端体验，同时也带来了一些麻烦，比如SEO，又比如日益严重的体积问题。当然办法总比困难多，tree shaking便是优化体积问题的办法之一
 
