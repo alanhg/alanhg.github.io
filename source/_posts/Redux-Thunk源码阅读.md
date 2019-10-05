@@ -1,10 +1,11 @@
 ---
 title: Redux-Thunk源码阅读
-date: 2019-10-05 16:52:42
 tags:
-- source
-- Redux
-- Redux Thunk
+  - source
+  - Redux
+  - Redux Thunk
+abbrlink: e91dd993
+date: 2019-10-05 16:52:42
 ---
 
 > redux-thunk是redux解决异步的中间件。
