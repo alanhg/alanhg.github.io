@@ -94,6 +94,12 @@ v2rayProxy = vmess, xxx.xxx.com, 30544, username=xxxxxx-xx-406xe-8d63-x,tls=fals
 ### 界面上没有v2Ray配置选项？
 是的，暂时还没有，所以只能用文本编辑模式。首先支持了就是个喜大普奔的事情，别挑了，先搞起！
 
+### IOS版如何使用
+
+Surge iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。
+
+相关文档：[戳这里](https://nssurge.zendesk.com/hc/zh-cn/articles/360012743714-Surge-iOS-TestFlight-%E8%AF%B4%E6%98%8E)
+
 ## 写在最后
 昂，似乎到此为止，我们可以很轻松的访问了，并且加入代理服务器某个挂了，还可以自动切换。这些事都是Surge帮我们背后去做，我们无感。完美强大吧。
 
