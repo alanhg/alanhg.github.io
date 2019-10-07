@@ -55,6 +55,10 @@ date: 2019-10-01 23:59:47
 
 好消息是有人做了[mongo插件支持](https://github.com/dboissier/mongo4idea)使用了下，觉得至少可以满足。
 
+## DataGrip学习资料
+- [Youtube](https://www.youtube.com/watch?v=Xb9K8IAdZNg)
+- [How to Find Things in DataGrip](https://blog.jetbrains.com/datagrip/2017/04/20/how-to-find-things-in-datagrip/)
+
 ## 写在最后
 之前在DB这块使用上很不爽【有点折腾】，这次下定决心切换了App，接下来就是多玩提高熟悉度，从而提高生产力了。同时也希望DataGrip给力点，遵从民意，快点支持NoSQL数据库吧！
 
