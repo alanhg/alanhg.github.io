@@ -1,9 +1,10 @@
 ---
 title: 一键连接Cisco AnyConnect Secure Mobility Client
-date: 2019-10-06 22:57:53
 tags:
-- VPN
-- AnyConnect
+  - VPN
+  - AnyConnect
+abbrlink: e7f5bd4a
+date: 2019-10-06 22:57:53
 ---
 
 > 因为最近众所周知的原因，上不了外网了，so开始使用公司VPN，但是公司VPN连接起来总是很费时间。步骤繁琐，于是考虑如何解决。
@@ -39,14 +40,14 @@ tags:
 
 	code=`oathtool --totp -b **secret_key**`
 
-	/opt/cisco/anyconnect/bin/vpn -s connect $1.company.vpn.com << EOF | sed 		's/Password: .*/Password: ********/g'
+	/opt/cisco/anyconnect/bin/vpn -s connect $1.company.vpn.com << EOF | sed 			's/Password: .*/Password: ********/g'
 	**username**
 	**password**
 	**second_authentication_method_index**
 	$code
 	EOF
 	open -g '/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app'
-	```
+```
 
 
 3. 填写变量信息
@@ -60,7 +61,7 @@ tags:
 
 4. shell增加执行权限
 
-	```
+	```bash
 chmod +x vpn.sh
 	```
 
