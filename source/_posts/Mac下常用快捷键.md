@@ -142,6 +142,20 @@ Debug到下一步/进入| F8 / F7
 ---|---|
 Terminal| ⌥ F12
 
+## DataGrip
+
+官方文档: [戳这里](http://resources.jetbrains.com/storage/products/datagrip/docs/DataGrip_keymap.pdf)
+
+操作|快捷键|
+查看表结构|⌘ F12
+表数据检索|⌘ F
+search every where|双击⇧
+最近文件|⌘ E
+最近位置|⌘ ⇧ E
+
+### 编辑
+创建(表，字段，记录等)|⌘ N
+
 ## iTerm2
 操作|快捷键|
 ---|---|
@@ -155,20 +169,6 @@ Terminal| ⌥ F12
 放大字体|⌘ +
 缩小字体|⌘ -
 还原缺省字体|⌘ 0
-
-## Navicat
-
-文档:[戳这里](https://www2.navicat.com/manual/online_manual/en/navicat/mac_manual/KeyShortcut.html)
-
-操作|快捷键|
----|---|
-新的查询|⌘  Y
-新的对象(比如新的查询)|⌘  N
-设计对象(比如设计表)|⌘  D
-执行|⌘  R
-放大|⌘  +
-缩小|⌘  -
-关闭Tab|⌘  W
 
 ## 印象笔记
 
