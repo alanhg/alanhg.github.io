@@ -5,6 +5,7 @@ tags:
   - shortcut
   - Intellij IDEA
   - DataGrip
+  - ITerm2
   - Mac
 abbrlink: '39361180'
 date: 2018-09-09 13:44:31
@@ -35,8 +36,8 @@ date: 2018-09-09 13:44:31
 切换APP|⌘  TAB
 切换输入法|⌃   Space
 应用全屏|⌘ ⌃ F
-全屏幕截图|⌃  ⇧ 3
-屏幕选定部分截图| ⌃  ⇧ 4
+屏幕捕捉|⌘  ⇧  5
+屏幕截图| ⌘  ⇧ 3
 唤起`Alfred`|⌥  Space
 进入`Moom`窗口调整模式|⇧ ⌘ M
 `iPic`上传待处理照片`自定义`|⌥  ⌘  U
