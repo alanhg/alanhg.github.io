@@ -4,6 +4,7 @@ tags:
   - keymap
   - shortcut
   - Intellij IDEA
+  - DataGrip
   - Mac
 abbrlink: '39361180'
 date: 2018-09-09 13:44:31
@@ -146,15 +147,21 @@ Terminal| ⌥ F12
 
 官方文档: [戳这里](http://resources.jetbrains.com/storage/products/datagrip/docs/DataGrip_keymap.pdf)
 
-操作|快捷键|
+操作|快捷键
+---|---|
 查看表结构|⌘ F12
 表数据检索|⌘ F
 search every where|双击⇧
 最近文件|⌘ E
 最近位置|⌘ ⇧ E
+打开Console|⌘ ⇧ F10
 
 ### 编辑
+
+操作|快捷键
+---|---|
 创建(表，字段，记录等)|⌘ N
+提交修改|⌘ Enter
 
 ## iTerm2
 操作|快捷键|
