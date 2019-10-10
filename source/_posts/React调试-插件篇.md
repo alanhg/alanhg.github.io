@@ -53,5 +53,3 @@ maybe检测不起作用，可能是以下原因
 ## 推荐资料
 
 - [What's New with React Dev Tools 4](https://www.youtube.com/watch?v=QFKZmBMgvus)
-- [Mihail Diordiev - Debugging flux applications in production at react-europe 2016
-](https://www.youtube.com/watch?v=cbXLohVbzNI)
