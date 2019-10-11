@@ -88,7 +88,8 @@ Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可
 选择包含beta版，点击check now，安装成功后。进入配置文件中，手动添加v2ray代理
 
 ```
-v2rayProxy = vmess, xxx.xxx.com, 30544, username=xxxxxx-xx-406xe-8d63-x,tls=false
+v2rayProxy = vmess, xxx.xxx.com, 30544, username=xxxxxx-xx-406xe-8d63-x,, tls=true, ws=true, ws-path=/helloMario
+
 ```
 
 重新加载配置文件，就会看到新的代理配置了。

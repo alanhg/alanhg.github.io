@@ -1,10 +1,11 @@
 ---
 title: React调试-插件篇
-date: 2019-10-10 10:08:01
 tags:
-- React
-- Redux
-- Debug
+  - React
+  - Redux
+  - Debug
+abbrlink: a007e202
+date: 2019-10-10 10:08:01
 ---
 > React组件调试，除了万能油console之外，可以利用react-devtools及Redux DevTools辅助工具。因为Team总会来新人，为了快速入门，这里小结一番。
 
