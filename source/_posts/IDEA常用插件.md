@@ -1,10 +1,11 @@
 ---
 title: Intellij IDEA常用插件
-date: 2019-10-13 22:17:53
 tags:
-- Intellij IDEA
-- Plugins
-- 插件
+  - Intellij IDEA
+  - Plugins
+  - 插件
+abbrlink: f80c2b95
+date: 2019-10-13 22:17:53
 ---
 # IDEA常用插件
 > Jetbrains系列产品大行其道，原因是用起来确实高效。从本身IDE的功能强大，到快捷键的丰富支持，再到插件生态的丰富等等。一切铸就了它无愧是当前最强IDE。
