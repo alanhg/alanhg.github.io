@@ -2,7 +2,7 @@
 title: Mac下常用快捷键
 tags:
   - keymap
-  - shortcut
+  - Shortcut
   - Intellij IDEA
   - DataGrip
   - ITerm2
@@ -163,7 +163,9 @@ search every where|双击⇧
 操作|快捷键
 ---|---|
 创建(表，字段，记录等)|⌘ N
-提交修改|⌘ Enter
+提交修改|⌘ ↩︎
+编辑最大化|⇧ ↩︎
+去到某行列|⌘ L
 
 ## iTerm2
 操作|快捷键|
