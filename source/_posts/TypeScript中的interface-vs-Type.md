@@ -12,11 +12,11 @@ date: 2019-10-15 10:05:33
 ## 官网怎么说
 
 > As we mentioned, type aliases can act sort of like interfaces; however, there are some subtle differences.
-> 
+>
 > One difference is that interfaces create a new name that is used everywhere. Type aliases don’t create a new name
-
+>
 > Because an ideal property of software is being open to extension, you should always use an interface over a type alias if possible.
-
+>
 > On the other hand, if you can’t express some shape with an interface and you need to use a union or tuple type, type aliases are usually the way to go.
 
 
