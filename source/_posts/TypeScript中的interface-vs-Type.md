@@ -92,3 +92,5 @@ type Record<T, U> = {
 
 - [Type Aliases](http://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases)
 - [Typescript 中的 interface 和 type 到底有什么区别](https://juejin.im/post/5c2723635188252d1d34dc7d)
+- [TypeScript 的 Literal 类型](https://zhuanlan.zhihu.com/p/22687214)
+- [Do not toggle rule 'interface-over-type-literal' for mapped types](https://www.bountysource.com/issues/76022535-do-not-toggle-rule-interface-over-type-literal-for-mapped-types)
