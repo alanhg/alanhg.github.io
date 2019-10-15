@@ -1,10 +1,11 @@
 ---
 title: TypeScript中的interface vs Type
-date: 2019-10-15 10:05:33
 tags:
-- TypeScript
-- TSLint
-- Source Code
+  - TypeScript
+  - TSLint
+  - Source Code
+abbrlink: f43bfd61
+date: 2019-10-15 10:05:33
 ---
 > 做TS项目，经常会用到interface，和type。一般类型定义我会使用interface,而简单且是约束值的会使用type，比如`type username='bob'|'kelly' `,另外我会通过tslint配置中的`Use an interface instead of a type literal.`来进行束缚。BUT，准确的差异在哪，到底该怎么用呢，没法闹，这里调查且总结一番。
 
@@ -25,7 +26,7 @@ tags:
 
 - Type并不是创建一个新的类型，而interface会
 - 尽可能使用interface
-- 如果不想用接口暴露很多信息，并且想用联合类型或者数组类型，通常使用Type
+- 如果不想用接口暴露很多信息，并且想用`联合类型`或者`数组类型`，通常使用Type
 
 ## interface-over-type-literal
 
