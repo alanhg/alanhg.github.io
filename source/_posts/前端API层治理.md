@@ -1,15 +1,12 @@
 ---
 title: 前端API层治理
-tags:
-  - React
-  - Axios
-  - Frontend
-abbrlink: 9bc22e6c
 date: 2019-10-16 23:03:25
+tags:
+- React
+- Axios
+- Frontend
 ---
 > 当前在做的React项目，渐渐显现了API使用乱象，于是开启了治理之路。这里记录下其中的前因后果。
-
-![](http://static.1991421.cn/2019-10-16-150440.jpg)
 
 ## 治理前
 
