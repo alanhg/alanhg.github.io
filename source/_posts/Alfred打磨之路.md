@@ -154,7 +154,18 @@ Alfred输入框，按Shift会预览当前选中的条目结果，比如我们执
 ### 终端执行结果作为下一步的输入
 比如终端执行结果会打印111，那么111可以作为参数，继续接下来的指令吗？可以的。比如bash，你需要echo输出，比如JS，你需要console.log输出即可。
 
+### 剪贴板历史触发排除特定APP
+> 因为我本人是开发者，平时经常使用IDEA，DataGrip这些开发APP，其中也有剪贴板历史，快捷键默认是`⌘ ⇧ V`，习惯性对于Alfred这种全局剪贴板热键也想设置成如此，但假如这样设置后，就会导致IDE中的失效。如何解决呢。
 
+首先，Alfred中剪贴板历史，目前只有排除特定APP复制内容的设定，没有排除特定APP触发热键的设定，所以只能绕弯子解决。
+
+1. 删除剪贴板原热键
+2. 创建热键Workflow，触发快捷键就设定为`⌘ ⇧ V`
+3. 相关APP中设定，IDEA，DataGrip不聚焦，热键才触发
+4. 创建Key Combo,设定快捷键`⌥ ⌘ ⇧ V`，这里越复杂越好
+5. 剪切板热键设定为`⌥ ⌘ ⇧ V`
+
+这样，当我们在非IDEA，DataGrip聚焦的情况下，按下`⌘ ⇧ V`，就可以触发Alfred的剪贴板历史，当在IDEA或者DataGrip中时，就可以继续使用软件本身的剪切板历史。一样的快捷键，不一样的剪切板。完美衔接！
 
 ### 其它?
 等待遇见
@@ -165,3 +176,8 @@ Alfred输入框，按Shift会预览当前选中的条目结果，比如我们执
 晒下我的用量报告
 
 ![](http://static.1991421.cn/2019-10-15-151812.jpg)
+
+## 参考资料
+
+- [Alfred Blog > Tips and Tricks](https://www.alfredapp.com/blog/category/tips-and-tricks/)
+- [Exclude applications from Clipboard Viewer](https://www.alfredforum.com/topic/11257-exclude-applications-from-clipboard-viewer/)
