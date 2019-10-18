@@ -112,6 +112,8 @@
   };
 </script>
 
+<script data-ad-client="ca-pub-6075559272985639" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 {% if theme.custom_file_path.head %}
   {% set custom_head = '../../../../../' + theme.custom_file_path.head %}
 {% else %}
