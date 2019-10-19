@@ -35,6 +35,7 @@ skip_render:
   - CHANGELOG.md
   - robots.txt
   - opensearch.xml
+  - ads.txt
 
 # Writing
 new_post_name: :title.md # File name of new posts
