@@ -57,6 +57,21 @@ date: 2019-10-03 23:55:57
 	
 	该插件可以以树形式来浏览GitHub仓库，个人还是挺喜欢的。
 
+8. [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+	这个插件，个人觉得作为所有插件的补充，利用JS来实现对制定目标网站集的个性化操作。比如，我经常上的一个电影下载网站，它加载了一些广告JS，导致进入网站，点击电影，总是先跳到一个流氓网站，烦不胜烦。于是这个插件就派上用场了。
+
+	```javascript
+(function() {
+    'use strict';
+    window.setTimeout(()=>{
+    const ads = document.querySelectorAll('a[id^="cs_ap_"],div[id^="cs_DIV_cscpvric"],iframe');
+       ads.forEach(item=>{
+         item.remove();
+       });
+       document.body.onkeydown=null;
+    },200);
+    })();
+	```
 
 ## 开发者
 
