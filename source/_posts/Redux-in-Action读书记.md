@@ -1,10 +1,11 @@
 ---
 title: Redux in Action读书记
-date: 2019-10-20 22:00:47
 tags:
-- React
-- Redux
-- 读书记
+  - React
+  - Redux
+  - 读书记
+abbrlink: 7e97fae9
+date: 2019-10-20 22:00:47
 ---
 
 > 最近花了2天时间阅读了这本技术书[《Redux in Action》](https://item.jd.com/33402169124.html)
