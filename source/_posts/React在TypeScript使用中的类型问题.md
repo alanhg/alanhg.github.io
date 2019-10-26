@@ -10,6 +10,7 @@ date: 2019-10-23 23:18:22
 
 ## children在function组件下的使用
 
+> 无状态组件，我们经常会使用函数组件进行声明，同时经常会用到children来做
 ```typescript
 import React from 'react';
 
