@@ -1,13 +1,12 @@
 ---
 title: Dictionary vs Map vs Object
-tags:
-  - JavaScript
-  - Map
-  - Dictionary
-abbrlink: e530636d
 date: 2019-10-27 15:16:11
+tags:
+- JavaScript
+- Map
+- Dictionary
 ---
-> 前端项目使用到了lodash，lodash中有个类型是Dictionary，JavaScript内置对象有Map和Object，三者区别在哪，且该如何选择？向下看！
+> 前端项目使用到了lodash，lodash中有个类型是Dictionary，JavaScript内置对象有Map和Object，三者联系区别在哪，且该如何选择？向下看！
 
 ![](http://static.1991421.cn/2019-10-27-061335.jpg)
 
@@ -114,7 +113,9 @@ o.x = 5; //fails
 o['x'] = 5; //succeeds
 ```
 
-## 三者区别
+## 三者联系与区别
+
+![](http://static.1991421.cn/2019-10-27-072248.png)
 
 1. Object与lodash的Dictionary类似，Dictionary只是值类型一致，但Object的值类型可以是任何类型
 2. Map是有序的，可迭代，而Object不是
