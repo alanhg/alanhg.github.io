@@ -1,10 +1,11 @@
 ---
 title: Dictionary vs Map vs Object
-date: 2019-10-27 15:16:11
 tags:
-- JavaScript
-- Map
-- Dictionary
+  - JavaScript
+  - Map
+  - Dictionary
+abbrlink: e530636d
+date: 2019-10-27 15:16:11
 ---
 > 前端项目使用到了lodash，lodash中有个类型是Dictionary，JavaScript内置对象有Map和Object，三者联系区别在哪，且该如何选择？向下看！
 
