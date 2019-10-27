@@ -1,9 +1,10 @@
 ---
 title: 将VSC打造成配合IDEA的工具
-date: 2019-10-27 20:17:46
 tags:
-- 利器
-- VSC
+  - 利器
+  - VSC
+abbrlink: b3693c98
+date: 2019-10-27 20:17:46
 ---
 > 目前使用最多的IDE是Intellij IDEA，和WebStorm，数据库软件近期也从Navicat切换到了DataGrip，目的就是维持一套操作习惯，一招吃天下。但IDEA，和WS都太重了，有时候简单的编辑一个网页，打开IDEA或者WS启动也很慢。
 > 
