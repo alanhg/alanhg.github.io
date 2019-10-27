@@ -1,10 +1,9 @@
 ---
 title: 将VSC打造成配合IDEA的工具
-tags:
-  - 利器
-  - VSC
-abbrlink: b3693c98
 date: 2019-10-27 20:17:46
+tags:
+- 利器
+- VSC
 ---
 > 目前使用最多的IDE是Intellij IDEA，和WebStorm，数据库软件近期也从Navicat切换到了DataGrip，目的就是维持一套操作习惯，一招吃天下。但IDEA，和WS都太重了，有时候简单的编辑一个网页，打开IDEA或者WS启动也很慢。
 > 
@@ -24,7 +23,7 @@ date: 2019-10-27 20:17:46
 
 ## 写在最后
 1. 目前插件安装的并不多，原因是VSC在我的生产工具集中定位如此，同时插件过多也会导致VSC不再`轻`,这要控制
-2. 经过打磨和熟悉，现在MD编辑我会用专门的Macdown，简单的HTML，JSON文件,PlantUML,轻量级项目，我会用VSC就进行快速修改编辑，而大点的项目则会直接启动IDEA或者WS，so，完美的工具集。
+2. 经过打磨和熟悉，现在MD编辑我会用专门的Macdown，简单的HTML、JSON文件、PlantUML、轻量级项目，我会用VSC就进行快速修改编辑，而大点的项目则会直接启动IDEA或者WS，so，完美的工具集。
 
 ![](http://static.1991421.cn/2019-10-27-121315.png)
 
