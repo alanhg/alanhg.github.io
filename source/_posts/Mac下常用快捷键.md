@@ -42,9 +42,10 @@ date: 2018-09-09 13:44:31
 唤起`Alfred`|⌥  Space
 进入`Moom`窗口调整模式|⇧ ⌘ M
 `iPic`上传待处理照片`自定义`|⌥  ⌘  U
-打开JetBrains ToolBox App|⌥  ⌘  T
+打开JetBrains ToolBox App|⌥  ⌘  J
 打开Calendar|⌥  ⌘  X
-显示或隐藏欧陆词典窗口|⇧ ⌘  1
+显示或隐藏欧陆词典窗口`自定义`|⇧ ⌘  1
+打开表情符号弹窗|⌃ ⌘ Space
 
 ## Chrome
 
