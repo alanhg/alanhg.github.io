@@ -44,6 +44,6 @@ IFTTT Keep Google Voice Active [地址](https://ifttt.com/applets/131839p-keep-g
 
 ## 相关资料
 
-- \\https://www.makeuseof.com/tag/deactivate-delete-telegram-account/
+- [How to Deactivate or Delete Your Telegram Account](https://www.makeuseof.com/tag/deactivate-delete-telegram-account/)
 - [使用IFTTT让Google Voice自动回复短信来保号](https://www.vpsdawanjia.com/1452.html)
 
