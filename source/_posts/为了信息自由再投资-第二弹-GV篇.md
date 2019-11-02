@@ -1,8 +1,9 @@
 ---
 title: 为了信息自由再投资-第二弹-GV篇
-date: 2019-11-02 21:15:37
 tags:
-- Google Voice
+  - Google Voice
+abbrlink: 541862a1
+date: 2019-11-02 21:15:37
 ---
 > 部分国外服务需要电话绑定，国内手机号不支持。另一方面，比如我常使用的电报，拿国内号码注册可以，但是有安全风险，国内隐私状况你懂的。总之为了安全方便使用国外的这些优质服务，决定搞下Google Voice。
 
@@ -43,6 +44,6 @@ IFTTT Keep Google Voice Active [地址](https://ifttt.com/applets/131839p-keep-g
 
 ## 相关资料
 
-- https://www.makeuseof.com/tag/deactivate-delete-telegram-account/
+- \\https://www.makeuseof.com/tag/deactivate-delete-telegram-account/
 - [使用IFTTT让Google Voice自动回复短信来保号](https://www.vpsdawanjia.com/1452.html)
 
