@@ -183,3 +183,4 @@ Alfred输入框，按Shift会预览当前选中的条目结果，比如我们执
 
 - [Alfred Blog > Tips and Tricks](https://www.alfredapp.com/blog/category/tips-and-tricks/)
 - [Exclude applications from Clipboard Viewer](https://www.alfredforum.com/topic/11257-exclude-applications-from-clipboard-viewer/)
+- [Alfred使用教程](https://liuyanzhao.com/5611.html)
