@@ -1,13 +1,12 @@
 ---
-abbrlink: '0'
----
----
 title: Docker部署V2Ray
 tags:
   - Docker
   - V2Ray
   - WS
+abbrlink: 5df46810
 date: 2019-11-16 15:14:20
+---
 
 > 由于众所周知的原因，访问谷歌的难度越来越大，从最早的SS到今天的v2ray,VPS也在banwagong,digitalocean,vultr之间换了又换，每次都要重新部署，堪称繁琐，为了节约有限的生命，决定花点时间制作满足自己需求的docker镜像,从而实现一键部署更新。
 
