@@ -1,4 +1,7 @@
 ---
+abbrlink: '0'
+---
+---
 title: Docker部署V2Ray
 tags:
   - Docker
