@@ -3,9 +3,7 @@ title: Git常用命令
 abbrlink: 423abe9e
 date: 2017-05-05 23:22:37
 tags:
-- git
-- command
-- 指令集
+- Git
 ---
 ![What is git and why should I use it? - Quora](http://static.1991421.cn/blog/2017-09-10-161721.jpg)
 
