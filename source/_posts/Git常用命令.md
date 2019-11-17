@@ -188,6 +188,17 @@ $ git remote add origin git@github.com:alanhg/alanhg.github.io.git
 ### Cannot pull with rebase: You have unstaged changes.↵Please commit or stash them.
 在执行`git pull --rebase --autostash`时候，报如上错误，原因是有些修改commit或者stash，这样是没办法正常pull代码。
 
+### Git:Merging状态
+在IDEA中，比如要合并分支【merge sprint with featue/a】，有时会出现冲突，处理冲突完成后，commit失败，同时分支状态提示为Git:Merging sprit。这时终端执行 `git status`,提示当前状态是`sprint | merge`，这个状态是什么意思呢，其实含义是在MR冲突解决后，`自动commit失败`，这时需要手动进行修改解决，然后重新执行commit，这样状态，提交成功后才会恢复为`sprint`.当然也可以放弃MR`git merge --abort`
+
+#### 注意细节
+
+1. MR本身就是一次commit，而commit的作用就是将本地的变动提交到暂存区。
+2. MR时的commit失败，只是意味着commit失败，MR代码合并的修改已经完成，这个时候本地根据commit错误进行修改，然后再次进行commit。
+3. 一次MR最终成功的标志是MR后的commit提交成功，不包含push，push只是将MR这次的提交推到了上游。
+4. commit的message轻易不要修改，因为Git能认识到这是一次MR commit，靠的就是commit message的头部格式。
+
+
 ## 辅助资料
 
 + [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
