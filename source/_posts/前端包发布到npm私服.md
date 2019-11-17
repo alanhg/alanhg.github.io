@@ -1,9 +1,10 @@
 ---
 title: 前端包发布到npm私服
-date: 2019-11-17 18:34:18
 tags:
-- Nexus
-- Npm
+  - Nexus
+  - Npm
+abbrlink: '68614738'
+date: 2019-11-17 18:34:18
 ---
 > 之前Team一直以Git Submodule的形式共享前端基础模块资源，但存在弊端，于是趁着周末研究下Nexus npm，将前端资源切换到npm形式进行维护管理
 
