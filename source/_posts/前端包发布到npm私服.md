@@ -46,7 +46,7 @@ docker run -d --restart=unless-stopped  --name nexus -p 8081:8081 -p 5000:5000 -
 
 ## 前端包配置
 
-### packgae.json
+### package.json
 
 
 ```
@@ -68,7 +68,7 @@ registry=http://localhost:8081/repository/npm/
 ### 发布
 
 ```
-$ npm login --registry=http://localhost:8081/repository/npm-company/
+$ npm adduser --registry=http://localhost:8081/repository/npm-company/
 $ npm publish
 
 ```
@@ -94,4 +94,5 @@ registry=http://localhost:8081/repository/npm
 执行`npm i alanhg-demo@0.3.0 --save`
 
 ## 写在最后
+
 搭建私服一方面是为了安全，一方面是共享了资源。so值得去做。

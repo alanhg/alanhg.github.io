@@ -74,8 +74,7 @@ $ git push
 比如直接删除`.gitmodules`文件是不行的，因为.git中还是会有相关映射记录，so需要执行以下命令才可安全删除。
 
 ```bash
-# 解除指定的子模块，将从配置文件.git/config中删除
-$ git submodule deinit {MOD_NAME}
+$ rm -rf .git/modules
  
 # 删除.gitmodules中记录的模块信息（--cached选项清除.git/modules中的缓存）
 $ git rm --cached {MOD_NAME} 
