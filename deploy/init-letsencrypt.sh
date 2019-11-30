@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(1991421.cn) # your domain name
+domains=(1991421.cn,blog.1991421.cn) # your domain name
 rsa_key_size=4096
 data_path="./certbot"
 email="qianghe421@163.com" # Adding a valid address is strongly recommended
