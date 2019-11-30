@@ -25,7 +25,7 @@ services:
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
   redis:
     image: redis
-    container_name: redix
+    container_name: redis
     command: redis-server /usr/local/etc/redis/redis.conf
     volumes:
       - ./data:/data
