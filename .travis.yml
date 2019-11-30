@@ -1,5 +1,5 @@
 language: node_js
-node_js: stable
+node_js:  '12.3.1'
 addons:
   ssh_known_hosts:
     - 1991421.cn:22
@@ -22,7 +22,7 @@ after_script:
   - git add .
   - git commit -m "update"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-  - rsync -az -vv --delete -e 'ssh -p 22' public/** root@1991421.cn:/var/www/static-html
+  - rsync -az -vv --delete  ./public/** ${USERNAME}@1991421.cn:/var/www/static-html
 branches:
   only:
     - source
