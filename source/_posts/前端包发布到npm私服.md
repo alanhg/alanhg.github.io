@@ -6,7 +6,7 @@ tags:
 abbrlink: '68614738'
 date: 2019-11-17 18:34:18
 ---
-> 之前Team一直以Git Submodule的形式共享前端基础模块资源，但存在弊端，于是趁着周末研究下Nexus npm，将前端资源切换到npm形式进行维护管理
+> 之前Team一直以`Git Submodule`的形式共享前端基础模块资源，但存在弊端，于是趁着周末研究下Nexus npm，将前端资源切换到npm形式进行维护管理
 
 ![](http://static.1991421.cn/2019-11-17-102918.png)
 
@@ -23,7 +23,7 @@ date: 2019-11-17 18:34:18
 so，决定改为npm包管理方式。目前公司搭建有nexus私服，so这里介绍下如何发布包。
 
 ## Nexus私服部署
-之前没有了解过Nexus，这里docker本地部署下
+因为之前没有了解过Nexus，这里本地部署下
 
 ```
 docker run -d --restart=unless-stopped  --name nexus -p 8081:8081 -p 5000:5000 -p 5001:5001 -p 5002:5002 -p 5003:5003 -p 5004:5004 --ulimit nofile=90000:90000 -e INSTALL4J_ADD_VM_PARAMS="-Xms2g -Xmx2g" -v /nexus-data:/nexus-data sonatype/nexus3
@@ -55,26 +55,40 @@ docker run -d --restart=unless-stopped  --name nexus -p 8081:8081 -p 5000:5000 -
   },
 ```
 
-注意是仓库为npm-company即hosted
+注意是仓库为npm-company即hosted仓库
 
 ### .npmrc
 
 ```
-registry=http://localhost:8081/repository/npm/
+# auth config
+_auth=YWRtaW46YWRtaW4xMjM
+always-auth=true
+email=hi@1991421.cn
 
 ```
-注意是仓库为npm即group
+注意: _auth为`user:password的base64编码结果`，该配置解决的是免密发布，但并不是最佳方案，因为每个人都可以发版是危险的，相对好的方式是CI服务器在合并代码之后自动发版或者手动触发发版。
+
+[Base64在线编辑](https://tool.chinaz.com/tools/base64.aspx)
 
 ### 发布
 
 ```
-$ npm adduser --registry=http://localhost:8081/repository/npm-company/
 $ npm publish
 
 ```
 ![](http://static.1991421.cn/2019-11-17-102742.png)
 
-###报错
+### 包的使用
+
+在具体开发项目中，的.npmrc文件，增加如下配置
+
+```
+registry=http://localhost:8081/repository/npm/
+
+```
+注意，仓库为npm即group仓库
+
+### 报错
 
 ```
 npm ERR! code E401
@@ -84,15 +98,13 @@ npm ERR! Unable to authenticate, need: BASIC realm="Sonatype Nexus Repository Ma
 
 出现这个错，一般是源不对，注意上面的registry
 
-## 包的使用
-在项目根路径下创建.npmrc
-
-```
-registry=http://localhost:8081/repository/npm
-```
 
 执行`npm i alanhg-demo@0.3.0 --save`
 
 ## 写在最后
 
-搭建私服一方面是为了安全，一方面是共享了资源。so值得去做。
+这里只是搭建了机制,解决了使用和维护上的问题，但另一个重要的问题是包的版本变迁，包的历史，假如还是万年不变的版本号，又或者很随意的版本号变迁，  
+每次变动的点也没有系统的说明和记录，那么仍旧是一盘散沙，我们仍然无法安全放心的使用包。
+
+于是，我们还需要借助其它的工具去做好提交信息及项目版本的管理。哭，解决一个问题，进而会发现新的问题，别怕，继续闹！
+
