@@ -33,10 +33,11 @@ date: 2019-10-01 23:59:47
 选择DataGrip的理由就是它在保障基本功能的同时，上述3个缺点都不存在。
 
 1. 功能齐全
-	DataGrip经过几年的发展，基本功能很全面。可以与Naviat一拼，另外多DB支持【PostgreSQL,MySQL,SQLite,`当然还不支持NoSQL数据库`】。
+
+	DataGrip经过几年的发展，基本功能很全面。可以与Naviat一拼，另外多DB支持【PostgreSQL,MySQL,SQLite,MongoDB`2019.3新增支持`】。
 	
-1. 价钱 
-	
+1. 价钱
+
 	License不算贵，1年1000多块，这价位与Navicat单个DB版持平了
 2. 效率
 
@@ -47,13 +48,18 @@ date: 2019-10-01 23:59:47
 3. 更新快
 	JetBrains旗下的IDE更新频繁，这点非常好。另外SDK开放，基于此可以二次开发，解决一些个性化的问题。
 	
-### 不足之处-不支持NoSQL
+### 不足之处
 
-当前不支持N哦SQL，官方论坛上关于这个呼声蛮高- [No-SQL support
+#### NoSQL支持还不够
+官方论坛上关于这个呼声蛮高- [No-SQL support
 ](https://youtrack.jetbrains.com/issue/DBE-41?_ga=2.263967756.1891671747.1569902179-110805512.1543747110)
 个人觉得解决是个早晚的事。但在解决前怎么办呢，一些人没办法只能再安别的专门软件来解决这些不支持的数据库。但毕竟要来回切，不爽啊。
 
-好消息是有人做了[mongo插件支持](https://github.com/dboissier/mongo4idea)使用了下，觉得至少可以满足。
+好消息是`2019.3`今年最后一版增加了mongo支持，好极了，以后会越来越多，但让假如是还不支持的数据库，可以尝试插件检索下。真不行也可以自己开发一个，SDK还是挺简单的。
+
+#### 导出功能还不丰富
+
+比如我想Excel导出表结构，目前还不支持
 
 ## DataGrip学习资料
 - [Youtube](https://www.youtube.com/watch?v=Xb9K8IAdZNg)
