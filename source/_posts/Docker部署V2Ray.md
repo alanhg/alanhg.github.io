@@ -122,8 +122,9 @@ $ docker-compose up -d
 2. 当服务的配置发生更改时，可使用`docker-compose up -d`命令更新配置。此时，Compose会删除旧容器并创建新容器。新容器会以不同的IP地址加入网络，名称保持不变。任何指向旧容器的连接都会被关闭，容器会重新找到新容器并连接上去。
 3. 当执行`./init-letsencrypt.sh`时，如果证书获取OK，会出现如下提示，因为系统或网络原因可能获取证书失败[这里我在centos8执行命令时报错，为此切换成了7]。
 
-![](http://static.1991421.cn/2019-11-16-111216.png)
-
+    ![](http://static.1991421.cn/2019-11-16-111216.png)
+4. docker-compose restart nginx 提示成功，不代表nginx成功启动，maybe报错
+5. 在使用 nginx docker 容器配置反向代理的时候，默认不能直接使用 localhost，因为访问它指向的是这个容器本身。
 
 ### 常用指令
 
