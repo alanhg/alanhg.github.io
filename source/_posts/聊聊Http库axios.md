@@ -57,7 +57,22 @@ Promise based HTTP client for the browser and node.js
 
    请求URL会是如此`https://bugs.chromium.org/p/chromium/issues/detail?id=1&id=2&id=3`
 
-   注意，URL的key是允许重复的
+   注意，`URL的key是允许重复的`
+
+### 请求Canceled
+Chrome观察请求，诧异到会出现`canceled`,出现这种status原因是前端主动取消请求，查看XHR API，确实提供了这样一个方法。
+
+![](http://static.1991421.cn/2019-12-19-144102.jpg)
+
+```
+The XMLHttpRequest.abort() method aborts the request if it has already been sent. When a request is aborted, its readyState is changed to XMLHttpRequest.UNSENT (0) and the request's status code is set to 0.
+```
+
+so，axios控制的请求会出现abort无非就是timeout配置超时调用了该方法。
+
+注意，这里的axios超时，造成的是xhr status是canceled，如果是服务端网关超时，status是504，这是不同的。
+
+![](http://static.1991421.cn/2019-12-19-143757.png)
 
 ## 写在最后
 
