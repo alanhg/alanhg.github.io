@@ -285,5 +285,25 @@ $ ifconfig
 $ nslookup 1991421.cn
 ```
 
+## 常见问题
+
+### 免密登陆
+
+1. 客户机生成公钥
+
+   ```bash
+   
+   $ cd ~/.ssh
+   $ ssh-keygen
+   
+   ```
+2. 目标机器添加authorized_key
+
+   ```bash
+    $ vi  ~/.ssh/authorized_keys
+   ```
+   拷贝客户机的id_rsa.pub内容到上述文件中。
+3. 退出重新登陆即可
+
 ## 相关网站
 + [Linux命令大全](http://man.linuxde.net/)
