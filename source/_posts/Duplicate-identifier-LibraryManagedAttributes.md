@@ -51,3 +51,5 @@ yarn.lock`中@types/react`版本,注意有两个
 - [yarn-deduplicate](https://github.com/atlassian/yarn-deduplicate)
 - [TypeScript Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 - https://eggjs.org/zh-cn/tutorials/typescript.html
+- [yarn selective-version-resolutions](https://yarnpkg.com/en/docs/selective-version-resolutions)
+- [package-lock.json和yarn.lock的包依赖区别](https://segmentfault.com/a/1190000017075256)
