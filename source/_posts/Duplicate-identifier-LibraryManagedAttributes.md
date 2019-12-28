@@ -1,10 +1,11 @@
 ---
 title: Duplicate identifier LibraryManagedAttributes
-date: 2019-12-24 13:43:47
 tags:
-- TypeScript
-- Yarn
-- NodeJS
+  - TypeScript
+  - Yarn
+  - NodeJS
+abbrlink: 6874b85d
+date: 2019-12-24 13:43:47
 ---
 
 
