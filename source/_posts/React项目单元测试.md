@@ -11,7 +11,7 @@ date: 2019-10-02 22:45:06
 
 ## 项目技术栈
 
-因为是个通用UI组件库，所以不牵扯redux,api等。整体技术栈比较简单
+因为是个通用UI组件库，所以不牵扯redux,api等。整体技术栈较简单
 
 - React
 - TypeScript
@@ -25,6 +25,21 @@ date: 2019-10-02 22:45:06
 
 - 对于工具函数功能正确性的测试
 - 对于组件功能的测试【UI，交互性等】
+
+## 3A原则
+- 准备`arrange `
+
+   单元测试方法的 准备 部分初始化对象并设置传递给待测试方法的数据的值
+   
+- 执行`act `
+
+  部分调用具有准备参数的待测试方法。
+  	
+- 断言`assert `
+
+ 部分验证待测试方法的执行行为与预期相同。
+
+[戳这里](https://docs.microsoft.com/zh-cn/visualstudio/test/unit-test-basics?view=vs-2015&redirectedfrom=MSDN)
 
 ## 测试配置
 	
@@ -61,6 +76,10 @@ export function renderWithIntl(node) {
     context: { intl },
     childContextTypes: { intl: intlShape }
   });
+}
+
+export function rendererWithIntl(node) {
+  return renderer.create(<IntlProvider locale='en' messages={messages}>{node}</IntlProvider>);
 }
 
 
@@ -196,6 +215,33 @@ describe('collapsed-description component test', () => {
 
 通过上述的例子，对于三个方法的区别就有了清晰的认知了。在实际使用中，还是老话，按需使用即可。
 
+
+## 快照测试
+> snapshot 快照测试第一次运行的时候会将 React 组件在不同情况下的渲染结果保存一份快照文件。后面每次运行快照测试的时候，都会和第一次比较。
+
+```typescript
+ import renderer from 'react-test-renderer';
+
+ it('should enable children elements when enable is true', () => {
+    const wrapper = renderer.create(<AuthEnable enable>
+      <button>click it</button>
+    </AuthEnable>).toJSON();
+    
+    expect(wrapper).toMatchSnapshot();
+  });
+```
+ 1. 快照测试用于防治无意间修改组件导致的结构和样式变化。
+ 2. 快照测试仅作为补充
+
+假如我们无意中修改了组件导致样式变化，则UT挂的时候会贴出具体的错误信息，方便我们排查。
+
+![](http://static.1991421.cn/2019-12-29-103412.png)
+
+### Enzyme与react-test-renderer快照测试区别
+对比发现，react-test-renderer的快照更简单易读，直接会贴出完整HTML源码。
+
+![](http://static.1991421.cn/2019-12-29-102932.png)
+
 ## 补充部分
 
 围绕着这个UI组件库的测试,基本知识点就这么多。接下来的只是基于这些知识点不断去丰富测试而已。
@@ -267,4 +313,7 @@ export default class SagaSpecFactory {
 
 - [Testing with React-Intl](https://github.com/formatjs/react-intl/blob/master/docs/Testing-with-React-Intl.md#helper-function-1)
 - [CustomComponent-test.js](https://gist.github.com/mirague/c05f4da0d781a9b339b501f1d5d33c37/)    
-- [使用jest+enzyme进行react项目测试 - 测试手法篇](http://echizen.github.io/tech/2017/02-12-jest-enzyme-method)    
+- [使用jest+enzyme进行react项目测试 - 测试手法篇](http://echizen.github.io/tech/2017/02-12-jest-enzyme-method)
+- [Snapshots: Painless Testing of React Components](https://medium.com/simply/snapshots-painless-testing-of-react-components-6bce3c4d51fc)
+- [用jest+enzyme來寫Reactjs的單元測試吧](https://github.com/Hsueh-Jen/blog/issues/1)
+- [Microsoft 单元测试基础](https://docs.microsoft.com/zh-cn/visualstudio/test/unit-test-basics?view=vs-2015&redirectedfrom=MSDN)
