@@ -1,8 +1,9 @@
 ---
 title: Restful下的Put与Patch
-date: 2019-12-29 22:50:53
 tags:
-- RESTful
+  - RESTful
+abbrlink: 82e1b49c
+date: 2019-12-29 22:50:53
 ---
 > Team在制定API时，有时很纠结要不要区分Put与Patch。既然纠结，那就搞明白。
 
