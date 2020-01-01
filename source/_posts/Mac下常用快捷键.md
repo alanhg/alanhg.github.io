@@ -148,6 +148,12 @@ Debug到下一步/进入| F8 / F7
 ---|---|
 Terminal| ⌥ F12
 
+
+### 其它
+操作|快捷键|
+---|---|
+finder中查看| ⌘ ⇧ J
+
 ## DataGrip
 
 官方文档: [戳这里](http://resources.jetbrains.com/storage/products/datagrip/docs/DataGrip_keymap.pdf)
