@@ -16,6 +16,8 @@ tags:
 ### GitHub仓库托管
 因为需要更新维护，对应做个仓库比较妥当
 
+[戳这里](https://github.com/alanhg/tslint-recommend-rule)
+
 ![](https://i.imgur.com/dK7Pk6W.png)
 
 ### 文件添加
@@ -35,7 +37,7 @@ tags:
 npm adduser
 npm publish
 ```
-当提交发布成功，即可。通过npmjs网站，我们即可看到已发布的包
+当提交发布成功，即可。通过npmjs网站，我们即可看到[已发布的包](https://www.npmjs.com/package/tslint-recommend-rule)
 
 ![](https://i.imgur.com/1ezHDc8.png)
 
