@@ -13,23 +13,23 @@ date: 2019-10-13 22:17:53
 
 ## Plugins
 
-1. JRebel for intellij
+###  JRebel for intellij
 	
 	喜欢这个插件的原因是在开发Spring应用时候，可以不用反复重启。节约了碎片化的时间。
 	
-2. Markdown Navigator
+###  Markdown Navigator
 	
 	虽然IDEA有自带的MD插件，但是我喜欢这个插件，目前的主要原因是能够一键生成和更新目录。作为一个MD文档爱好者，这点非常key。注意，插件分免费和付费版，付费版才有目录生成的功能。
 	
-3. Lombok
+###  Lombok
 	
 	节约部分代码，比如set,get方法
 
-4. PlantUML integration
+###  PlantUML integration
 	
 	对于程序中一些逻辑，有时需要画图来体现。比如流程图，时序图
 	
-5. String Manipulation
+###  String Manipulation
 	
 	经常会有字符串变量转大蛇式写法，有了这个插件可以快速实现。这个插件是补充了IDE本身对于字符串常用操作的不足。
 	
