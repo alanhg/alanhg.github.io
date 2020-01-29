@@ -8,6 +8,9 @@ date: 2019-10-23 23:18:22
 ---
 > 前端项目在TypeScript加持下可以提升代码健壮性，当然使用中难免会遇到很多类型定义上的问题，这里总结一番。
 
+__为了追求快速解决，我们会偷懒使用`// @ts-ignore`,但这个手段的弊端就是放弃了类型安全，so,能不用就不用，一定要根治了问题才好。__
+
+
 ## children在function组件下的使用
 
 > 无状态组件，我们经常会使用函数组件进行声明，同时经常会用到children来做对象透。
@@ -75,7 +78,7 @@ const routesConfig: RouteProps[] = [
 
 ## Antd Form与Redux集成
 
-> 单个组件下可能会出现antd form与redux集成的情况，如下为正确的使用顺序，注意connect在最外边。
+> 单个组件下可能会出现antd form与redux集成的情况，如下为_正确的使用顺序，注意connect在最外边_。
 
 ```typescript
 
@@ -90,6 +93,36 @@ export default connect(
 )(component);
 
 ```
+
+## ref
+> ref在做组件通讯时会使用，看网上的文章会发现，有时用ref,有时却用wrappedComponentRef，并且会遇到些坑。
+
+### 几个细节
+- ref是react官方给出的属性，wrappedComponentRef是antd的
+- redux的connect高阶组件默认并不暴露ref对象，假如需要使用，需要配置`forwardRef`
+- 因为我们要配置connect的第四个参，所以第三个必须配置，正如定义是个函数，所以需要如下的写法,否则依然会报类型错误
+
+### 例子
+如下有个组件被connect包裹，假如我们需要用该组件的ref
+```typescript
+export default connect(
+  null,
+  mapDispatchToProps,
+  () => mapDispatchToProps,
+  {
+    forwardRef: true
+  }
+)(SList);
+```
+
+```
+ <SList ref={this.solutionQuoteDiscountRef}
+          />
+```
+以上为正确配置方法，`假如不配置forwardRef，实际上this.solutionQuoteDiscountRef.current拿到的是connect组件`，所以也就谈不上可以直接调用组件的某个方法了。
+
+### 什么时候用wrappedComponentRef？
+如上，当然是antd form包裹了组件的时候就可以使用,这也是官方推荐的方式。
 
 ## 写在最后
 
