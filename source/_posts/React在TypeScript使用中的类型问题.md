@@ -167,6 +167,31 @@ this.textAreaRef.current.textAreaRef.value
 	
  ```
 
+## withRouter与injectIntl联合使用报错
+> Error:(188, 14) TS2345: Argument of type 'ComponentClass<Pick<any, string | number | symbol>, any> & { WrappedComponent: ComponentType<any>; }' is not assignable to parameter of type 'ComponentClass<RouteComponentProps<any, StaticContext, any>, any> | FunctionComponent<RouteComponentProps<any, StaticContext, any>> | (FunctionComponent<RouteComponentProps<any, StaticContext, any>> & ComponentClass<...>) | (ComponentClass<...> & FunctionComponent<...>)'.
+  Type 'ComponentClass<Pick<any, string | number | symbol>, any> & { WrappedComponent: ComponentType<any>; }' is not assignable to type 'ComponentClass<RouteComponentProps<any, StaticContext, any>, any>'.
+    Type 'Component<Pick<any, string | number | symbol>, any, any>' is not assignable to type 'Component<RouteComponentProps<any, StaticContext, any>, any, any>'.
+      Type 'Pick<any, string | number | symbol>' is missing the following properties from type 'RouteComponentProps<any, StaticContext, any>': history, location, match
+
+
+ ```typescript
+ export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(injectIntl(BDetailPage)));
+
+ ```
+
+### 解决办法
+增加类型推断，injectIntl<IProps>即可
+
+```typescript
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(injectIntl<IProps>(BDetailPage)));
+```
+
 ## 写在最后
 
 1. `// @ts-ignore`与`any`都属于开挂，尽可能少用。TypeScript的作用在于Type，在于断言。假如直接开了挂，本身的静态分析就无法发挥作用。那么紧接着就可能是严重的BUG。所以请尊重类型。明确类型的重要性。
