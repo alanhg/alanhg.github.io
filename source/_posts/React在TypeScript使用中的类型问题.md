@@ -143,6 +143,29 @@ this.textAreaRef.current.textAreaRef.value
 > Error:(125, 91) TS2341: Property 'textAreaRef' is private and only accessible within class 'TextArea'.
 
 
+## lodash中debounce使用中报错
+
+ ```typescript
+ ...
+    this.doSearch = _.debounce(this.doSearch, 700);
+...
+    this.doSearch.cancel();
+ ```
+ 如上使用，会报以下类型错误
+ > Error:(216, 21) TS2339: Property 'cancel' does not exist on type '() => Promise<void>'.
+
+ 解决办法
+
+ ```typescript
+   debouncedDoSearch: Function & _.Cancelable;
+   ...
+   this.debouncedDoSearch = _.debounce(this.doSearch, 700);
+
+  this.debouncedDoSearch.cancel();
+
+  this.debouncedDoSearch();
+	
+ ```
 
 ## 写在最后
 
