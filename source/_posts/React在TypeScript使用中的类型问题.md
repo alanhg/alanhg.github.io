@@ -124,6 +124,26 @@ export default connect(
 ### 什么时候用wrappedComponentRef？
 如上，当然是antd form包裹了组件的时候就可以使用,这也是官方推荐的方式。
 
+## Antd Button等UI组件使用ref访问表单值
+有时需要用ref直接获取当前文本框，输入框的值。使用方式如下
+
+```typescript
+...
+  textAreaRef = React.createRef<TextArea>();
+
+...
+        <TextArea rows={5} ref={this.textAreaRef} cols={8} />
+...
+
+// 获取值
+this.textAreaRef.current.textAreaRef.value
+
+```
+如上获取值是可以的，但是TS下会语法错,目前的解决方案是ignore掉，但这个并不优雅。
+> Error:(125, 91) TS2341: Property 'textAreaRef' is private and only accessible within class 'TextArea'.
+
+
+
 ## 写在最后
 
 1. `// @ts-ignore`与`any`都属于开挂，尽可能少用。TypeScript的作用在于Type，在于断言。假如直接开了挂，本身的静态分析就无法发挥作用。那么紧接着就可能是严重的BUG。所以请尊重类型。明确类型的重要性。
