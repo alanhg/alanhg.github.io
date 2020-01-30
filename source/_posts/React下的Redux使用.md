@@ -92,6 +92,37 @@ npm i react-redux --save-dev
 - Action发起动作，需要去给出新的reducer，所以要去计算，而计算的过程就是reducer
 - store这个概念是谁的？是redux的，React本来没有，在react的世界，一个组件身上无非就是两个东西，state，prop,state是组件当前状态，prop是父组件传递给子组件的参数。Redux的store最终会反映在组件的prop上供调用。connect的作用就是把数组store连接到目标组件上
 
+### 使用辅助函数
+除了本身的redux类库外，推荐增加辅助工具库来规范，优化开发体验。
+
+#### redux-actions-helper
+我的项目中使用了这个类库，利用辅助函数来对action	这块操作
+
+```typescript
+export const initSettingAction = createAction(
+  SettingActionTypes.UPDATE_SETTING,
+  (inherit: ISetting, base: ISetting) => ({
+    inherit,
+    base
+  })
+);
+
+const updateSettingReducer = (state: ISettingState, action: IAction<{ inherit: ISetting; base: ISetting }>) => ({
+  ...state,
+  ...action.payload
+});
+
+```
+
+好处如下
+
+1. 利用函数强制了action中的参数与type不同级，这点也严格遵守了flux一开始制定的标准，所有的参数都在payload节点下，payload与type同级。
+2. IAction类型定义，确保了action这块的类型安全
+
+#### Redux Toolkit
+官方现在推出了工具包，新项目可以考虑这个。
+
+[戳这里](https://github.com/reduxjs/redux-toolkit)
 
 ## 写在最后
 到此应该基础了解差不多了，文章深度没有，多是基础，毕竟内功才王道，知其所以然，剩下的只是熟练的事了。
