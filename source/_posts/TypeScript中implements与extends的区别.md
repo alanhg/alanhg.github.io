@@ -1,9 +1,10 @@
 ---
 title: TypeScript中implements与extends的区别
-date: 2020-01-30 20:37:33
 tags:
-- TypeScript
-- OOP
+  - TypeScript
+  - OOP
+abbrlink: 9b18a5df
+date: 2020-01-30 20:37:33
 ---
 > 本文聚焦implements与extends的区别，这样有益于高效准确的使用
 
