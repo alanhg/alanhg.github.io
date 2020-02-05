@@ -54,11 +54,11 @@ tags:
 ```css
 
 .ant-table-small>.ant-table-content .ant-table-header{
-    overflow-y: overlay;
+    overflow-y: overlay !important;
 }
 
 .ant-table-fixed-header>.ant-table-content>.ant-table-scroll>.ant-table-body{
-    overflow-y: overlay;
+    overflow-y: overlay !important;
 }
 ```
 
@@ -67,6 +67,8 @@ _注意_ overlay为只在`WebKit，Blink`内核浏览器下支持
 Behaves the same as auto, but with the scrollbars drawn on top of content instead of taking up space. Only supported in WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome or Opera) browsers.
 
 摘自MDN
+
+另，这里之所以开挂加 !important，是因为antd组件增加的滚动样式为行内式，为了work，必须这么做。
 
 ## 引用文档
 
