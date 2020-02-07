@@ -100,7 +100,7 @@ function* fetchUserEffects(action) {
 ![](http://static.1991421.cn/2019-12-28-102605.png)
 
 ### takeLatest
-当我们设定为takeLatest,连续发起4次`USER_FETCH`，注意到其实saga执行还是4次，但是只有最后一次完整执行。
+当我们设定为takeLatest,连续发起4次`USER_FETCH`，注意到其实saga执行还是4次，但是只有最后一次`完整执行`。
 
 ![](http://static.1991421.cn/2019-12-28-102820.png)
 
@@ -108,10 +108,12 @@ function* fetchUserEffects(action) {
 
 ![](http://static.1991421.cn/2019-12-28-102852.png)
 
-
 #### WHY ?
 
 正如上面官网介绍，假如之前的saga还在执行，则会取消，执行最新的。而我们新的点击时，老的saga还停留到delay阶段，所以会立即取消，因此才会出现上述4次打印和userInfo，但只有最后一次的userHistory。
+
+#### 关于call api
+假如第一次effects执行到一句call api,正在请求中，状态，那么当发起新的`USER_FETCH`，那么这个API请求会取消掉吗？不会！取消的意思是老的generator函数不会继续next,但当前进行的动作还是会执行完。
 
 
 ## 使用建议
