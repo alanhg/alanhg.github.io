@@ -127,6 +127,7 @@ iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。如果是Web
 
 ## 参考文档
 - https://manual.nssurge.com/
+- [Surge Mac Release Note](https://nssurge.zendesk.com/hc/zh-cn/sections/360000031193-Release-Note)
 - https://github.com/lhie1/Rules
 - [让人耳目一新的 Surge Mac 2.0](https://medium.com/@scomper/%E8%AE%A9%E4%BA%BA%E8%80%B3%E7%9B%AE%E4%B8%80%E6%96%B0%E7%9A%84-surge-mac-2-0-bb7cf735b1b8)
 - https://medium.com/@GeekQu/surge-%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%B4%B4%E5%A3%AB-d96f470fc5ce
