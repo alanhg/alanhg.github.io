@@ -27,17 +27,17 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 启动Surge,点击设定-配置文件
 
-![](http://static.1991421.cn/2019-02-09-7D0EFEF0-8104-4534-B370-75A8424A8DB5.png)
+![](https://i.imgur.com/n5fXleE.jpg)
 
 选择URL方式安装，[https://raw.githubusercontent.com/lhie1/Surge/master/Surge.conf](https://raw.githubusercontent.com/lhie1/Surge/master/Surge.conf)
 
-![](http://static.1991421.cn/2019-02-09-9B56CFD9-6F57-4F85-B3EF-D98E8E13EB5A.png)
+![](https://i.imgur.com/1QLXdmt.jpg)
 
 ## SS代理服务器配置
 
 上述配置安装后，点击代理，即可看到有代理服务器，这里按照实际的代理服务器地址进行修改即可。如图，我配置了多台SS服务。
 
-![](http://static.1991421.cn/2019-02-09-070439.png)
+![](https://i.imgur.com/07jM5Oy.jpg)
 
 配置完成后，点击代理服务器，连接成功，访问Google，OK，另外比如mail中， 当我们发送邮件到Gmail也显示为代理了，但是比如163就还是直连。
 
@@ -51,9 +51,9 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 这里，我增加策略组[比如叫group-auto-switch]，如下配置，这样每隔600毫秒，会去ping一下该地址，选择延迟最小的代理节点。比如哪天Macau的挂了，就会自动切换到US
 
-![](http://static.1991421.cn/2019-02-12-132840.png)
+![](https://i.imgur.com/wGKgsHi.jpg)
 
-![](http://static.1991421.cn/2019-06-16-040600.png)
+![](https://i.imgur.com/ZZ11Tm3.jpg)
 
 `注意，测试地址别用谷歌，听说不好`
 
@@ -63,9 +63,9 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 1. 新建策略组比如叫[group-final-select]，类型为select，策略选择，刚才的自动切换策略组，及想要的US
 2. 修改Rule规则，代理部分原来是选择的group-auto-switch,全部替换为group-final-select。
 
-![](http://static.1991421.cn/2019-06-16-042214.png)
+![](https://i.imgur.com/us5Sj0O.jpg)
 
-![](http://static.1991421.cn/2019-06-16-042335.png)
+![](https://i.imgur.com/basBHp5.jpg)
 
 注意，策略组本身也是个策略，明白这点，有益于理解。
 
@@ -78,7 +78,7 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 点击菜单栏，勾选增强模式
 
-![](http://static.1991421.cn/2019-03-31-Screen%20Shot%202019-03-31%20at%2009.45.10.png)
+![](https://i.imgur.com/WhIZ9fz.jpg)
 
 ### 增强模式下，访问公司VPN？
 平时比如我们连接公司VPN，实际上是做了系统代理，而Surge的增强模式会让所有应用都走这个代理，本身两者是冲突的。所以增强模式打开的情况下，是连不上公司VPN之类的。所以这种情况下，需要将增强模式关闭。
@@ -86,13 +86,14 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 ## iCloud同步配置文件
 Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可以方便的同步到多终端设备和备份
 
-![](http://static.1991421.cn/2019-06-16-041217.png)
+![](https://i.imgur.com/4z1TiKH.jpg)
 
 ## V2Ray支持？
 > 不久的以前确实不支持，但是Mac最新版`3.3.1`，iOS版4.1.0，已经支持，正式版还没放出.想提前使用，就要更新到beta版。
 
 ### Mac测试版
-![](http://static.1991421.cn/2019-10-05-145021.jpg)
+
+![](https://i.imgur.com/H0Sn9Dd.png)
 
 选择包含beta版，点击check now，安装成功后。进入配置文件中，手动添加v2ray代理
 
