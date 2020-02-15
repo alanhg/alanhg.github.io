@@ -80,8 +80,19 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 ![](https://i.imgur.com/WhIZ9fz.jpg)
 
-### 增强模式下，访问公司VPN？
-平时比如我们连接公司VPN，实际上是做了系统代理，而Surge的增强模式会让所有应用都走这个代理，本身两者是冲突的。所以增强模式打开的情况下，是连不上公司VPN之类的。所以这种情况下，需要将增强模式关闭。
+### 增强模式下，连接其它VPN？
+比如我远程办公时需要使用OpenConnect连接公司VPN，而Surge的增强模式会让所有应用都走代理，本身两者是冲突的。因此增强模式打开的情况下，是连不上公司VPN之类的。所以需要将增强模式关闭。
+
+而增强模式如果关闭了，Mail，或者电报如何还是利用Surge科学代理呢？
+
+1. Mail客户端可以根据增加ProcessName类型的Rule进行解决
+
+	![](https://i.imgur.com/BflPx2b.png) 
+2. Telegram通过配置Rule无法解决，但App本身提供了代理设定
+	
+	Setting => Data and Storage => Proxy
+	
+	![](https://i.imgur.com/7z6dyzO.png)
 
 ## iCloud同步配置文件
 Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可以方便的同步到多终端设备和备份
