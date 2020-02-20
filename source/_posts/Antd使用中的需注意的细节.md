@@ -8,7 +8,7 @@ tags:
 
 ## Table column中的key
 
-假如配置了dataIndex,key可以不写，因为dataIndex如果为undefined时，会去取dataIndex。
+假如配置了dataIndex,key可以不写，因为key如果为undefined时，会去取dataIndex。
 
 以下为antd部分源码
 
