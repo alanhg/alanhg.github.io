@@ -61,8 +61,7 @@ Function(text, record, index) {}
 
 antd的UI组件都是封装了RC组件库，更多只是修改了UI，column渲染逻辑主要在rc-table的源码中。
 
-源码中逻辑是这样的，在获取列单元格render函数的第一个参数值的时候，会先用dataIndex去拿，假如dataIndex不存在且不是number基本类型时，会返回当前行记录，所以render单元格render真正执行时，第一个参value就会是record。但index一定是第三个参
-
+源码中逻辑是这样的，在获取列单元格render函数的第一个参数值的时候，会先用dataIndex去拿，`假如dataIndex不存在且不是number基本类型时`，会返回当前行记录，所以render单元格render真正执行时，第一个参value就会是record。但`index一定是第三个参数`
 
 
 src/Cell/index.tsx
