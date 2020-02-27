@@ -1,5 +1,5 @@
 ---
-title: Git团队开发流程规范-2
+title: Git团队开发流程规范-MR冲突
 abbrlink: 814ab47c
 date: 2020-02-27 19:06:54
 tags:
