@@ -1,12 +1,13 @@
 ---
 title: Antd使用中的需注意的细节
-date: 2020-02-20 22:49:56
 tags:
-- Antd
-- 源码
+  - Antd
+  - 源码
+abbrlink: 4b39af4f
+date: 2020-02-20 22:49:56
 ---
 
-## Table column中的key
+## Table-column中的key
 
 假如配置了dataIndex,key可以不写，因为key如果为undefined时，会去取dataIndex。
 
@@ -24,7 +25,7 @@ columns = columns.map((column, i) => {
     return column.key || column.dataIndex || index;
   }
 ```
-##  Table 中的rowKey
+##  Table-rowKey
 假如rowKey不指定，则`默认为rowIndex`。所以假如记录确实没有任何唯一的字段，不指定。
 
 ```typescript
@@ -44,7 +45,7 @@ columns = columns.map((column, i) => {
 ```
 
 
-##  列render中的三个参数
+##  Table-列render中的三个参数
 
 antd官方文档对于render的描述是这样的
 
@@ -98,3 +99,14 @@ export function getPathValue<ValueType, ObjectType extends object>(
   return current as ValueType;
 }
 ```
+
+## TreeSelect-TreeNode中value的唯一性
+当我们构造TreeNode数据时，要注意`value必须唯一`,重复value带来的直接问题是显示出错，因为同value对应的nodeTitle不同，组件会显示后者。
+
+假如实际数据确实会有value相同，那就分析差异性，比如增加固定前后缀等，构建两者的不同。
+
+当出现了重复value时，会有warning提示，so发现这个情况一定要处理。
+
+![](https://i.imgur.com/4VczqoW.png)
+
+
