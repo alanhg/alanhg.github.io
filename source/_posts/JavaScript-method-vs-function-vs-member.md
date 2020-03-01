@@ -128,6 +128,9 @@ IDEA或者Webstorm中的生成代码功能可以提高效率，在TypeScript 类
 2. 当我们写组件类时，比如想重写钩子，就需要选择override methods,因为React.Component是个类，而不是接口，毕竟也是有完整实现的。
 
 
+## 写在最后
+到此为止，认知似乎得到了进一步的提升。
+
 ## 参考文档
 - [Method - MDN](https://developer.mozilla.org/zh-CN/docs/Glossary/Method)
 - [Implementing/Overriding Members](https://www.jetbrains.com/help/rider/Code_Generation__Implementing_Overriding_Methods.html)
