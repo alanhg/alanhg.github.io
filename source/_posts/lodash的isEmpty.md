@@ -85,3 +85,7 @@ console.log(null===undefined); // false
 	console.log(a.toString());  \\ [object Object]
 	```
 
+
+## 参考文档
+
+- [undefined与null的区别](https://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
