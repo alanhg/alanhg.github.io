@@ -81,3 +81,4 @@ console.log(typeof b.formatter); // undefined
 
 -  [Deep-cloning of Redux state](https://medium.com/@timoshenko.evgeny/deep-cloning-of-redux-state-dc9ac8ff618c) 
 -  [3 Ways to Clone Objects in JavaScript](https://www.samanthaming.com/tidbits/70-3-ways-to-clone-objects/) 
+-  [Using shouldComponentUpdate()](https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/update/using_should_component_update.html)
