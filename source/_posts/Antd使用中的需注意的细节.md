@@ -110,3 +110,9 @@ export function getPathValue<ValueType, ObjectType extends object>(
 ![](https://i.imgur.com/4VczqoW.png)
 
 
+## Form中的validator
+
+validaor中，return true or false用于标记校验是否通过，对于报错信息取决于callback(new Error()),但是注意到`假如validator执行报错，异常信息是不会被程序捕捉到的。表现出来的现象就是 form.validate一直block，程序不会继续向下走。
+控制台也不会有任何的提示信息。`
+
+
