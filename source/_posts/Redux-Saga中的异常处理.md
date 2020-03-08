@@ -88,7 +88,7 @@ export function safe(sagaFn) {
 
 ![](http://static.1991421.cn/2019-09-03-145306.png)
 
-### 单个effects异常，整个saga都不会继续run
+### 单个effects异常，整个saga监听中止
 
 ![](http://static.1991421.cn/2019-08-11-124904.jpg)
 
@@ -102,7 +102,7 @@ export function safe(sagaFn) {
 
 
 ### 造个捕捉异常轮子
-很多时候，我们为了确保系统的健壮性，需要保证，单个effects执行出现故障后，不影响其它的执行，so，增加wrapper。
+很多时候，我们为了确保业务系统的健壮性，需要保证，单个effects执行出现故障后，不造成监听中止，so，增加wrapper。
 
 ```javascript
 import { call } from 'redux-saga/effects';
