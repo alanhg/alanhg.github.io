@@ -8,7 +8,7 @@ date: 2019-09-07 22:18:17
 ---
 > `Redux-Saga`是一个用于管理应用程序 Side Effect（副作用，例如异步获取数据，访问浏览器缓存等）的 library，它的目标是让副作用管理更容易，执行更高效，测试更简单，在处理故障时更容易。
 > 
-> 不可避免的是，effects中可能会出现异常，比如一个call API请求，对于异常我们又该如何处理呢。这篇文章聚焦于将这点。
+> 不可避免的是，effects中可能会出现异常，比如一个call API请求，对于异常又该如何处理呢。这篇文章聚焦于将这点。
     
 ## 异常不处理?
 
@@ -157,7 +157,7 @@ export const sagaMiddleware = createSagaMiddleware({
 如上进行设定，对于单个effect就不需要加safe了，一劳永逸。
 
 ### 注意！
-`effectMiddlewares`这个配置项是`1.0.0`引入的新特性，假如要用，就需要升级了。
+`effectMiddlewares`这个配置项是`1.0.0`引入的新特性，要用，就需要升级了。
 
 1.0.0新特性查看，[戳这里](https://github.com/redux-saga/redux-saga/releases/tag/v1.0.0)
 
@@ -167,6 +167,11 @@ export const sagaMiddleware = createSagaMiddleware({
 - 我们takeEvery或者takeLatest实际上就是发起了Fork类型的effect
 
 ![](http://static.1991421.cn/2019-09-14-154208.jpg)
+
+### 异常信息不友好？
+是的，通过异常信息，目前只能知道action名称，具体绑定的effects中错误代码的行号信息是不清楚的。
+
+![](https://i.imgur.com/trTgd6f.png)
 
 ## 写在最后
 1. 我们是可以增加safe确保报错不影响其它saga执行，但是想想，为什么会报错，异常就一定是不安全，而不报错就是安全了吗？我们容错的同时，其实是掩盖了问题，从而降低了应用的安全性，假如不加safe，我们利用程序解决了这个不该爆发的错误不是更好吗？这点值得我们想想。
