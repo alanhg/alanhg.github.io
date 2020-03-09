@@ -157,3 +157,4 @@ iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。如果是Web
 - [让人耳目一新的 Surge Mac 2.0](https://medium.com/@scomper/%E8%AE%A9%E4%BA%BA%E8%80%B3%E7%9B%AE%E4%B8%80%E6%96%B0%E7%9A%84-surge-mac-2-0-bb7cf735b1b8)
 - https://medium.com/@GeekQu/surge-%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%B4%B4%E5%A3%AB-d96f470fc5ce
 - https://blog.nliu.work/post/20171105-surge-ssr-v2ray
+- [使用 Surge iOS 以及 Surge Mac 开启 MitM 配置 CA 证书抓包 Https 内容](https://blog.wttft.com/201809101/)
