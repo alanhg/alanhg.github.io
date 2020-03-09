@@ -134,6 +134,16 @@ iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。如果是Web
 
 相关文档：[戳这里](https://nssurge.zendesk.com/hc/zh-cn/articles/360012743714-Surge-iOS-TestFlight-%E8%AF%B4%E6%98%8E)
 
+## HTTPS内容抓包
+
+![](https://i.imgur.com/O7U6lLs.png)
+
+![](https://i.imgur.com/1Xp2e33.png)
+
+
+三步配置后，在dashboard中，即可看到解密后的请求报文和响应报文了。
+
+![](https://i.imgur.com/3arYobO.png)
 
 ## 写在最后
 昂，似乎到此为止，我们可以很轻松的访问了，并且加入代理服务器某个挂了，还可以自动切换。这些事都是Surge帮我们背后去做，我们无感。完美强大吧。
