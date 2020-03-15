@@ -60,6 +60,13 @@ chmod +x ../../.git/hooks/pre-commit
    
    自定义代码风格配置.想修改，增加规则等直接这里修改
 
+## 应用
+
+### Mac || Linux用户
+IDE中选择init.sh，单击右键执行
+
+### Windws
+手动拷贝`pre-commit `到 `../../.git/hooks/`
 
 ## 实现效果
 当提交时，有错，提交失败，并会提示具体的错误文件及行列号
