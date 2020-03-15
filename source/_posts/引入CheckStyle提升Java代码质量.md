@@ -45,11 +45,11 @@ OK，随众
 1. init.sh是作为开发初始化实施部署的，内容就是一个拷贝命令，这里`不支持Window默认的shell，当然用git bash可以`
 
 	```bash
-	#!/bin/bash -e
- 	cp pre-commit ../../.git/hooks/
- 	chmod +x ../../.git/hooks/pre-commit
-
-	```
+#!/bin/bash -e
+cp pre-commit ../../.git/hooks/
+chmod +x ../../.git/hooks/pre-commit
+```
+	
 2. pre-commit
 	
 	主要的检测靠这个，具体的代码，[戳这里](https://gist.github.com/alanhg/baa359d064b17988bb8cd89a0bbe4c2e)。__注意，文件没有后缀。名字是Git的钩子，不可改。__
@@ -78,7 +78,7 @@ OK，随众
 
 如上即为当我们安装了husky包时，实际上会创建一堆的Git钩子，而内容均是执行husky中的脚本命令，可以理解为脚本命令的参数就是husky给我们开的配置口子，这样一想，实际上与上面我们的方案是一致的。
 
-我们执行init.sh可以等价于npm i husky
+我们执行`init.sh等价于npm i husky`
 
 
 ## 强行控制代码风格有必要吗？
