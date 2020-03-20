@@ -23,12 +23,12 @@ __理论上每个包都应该有__
 
 
 ### v1.9.4
-这里我复现下当时问题， 删除lock文件，重新执行yarn install,发现包还是没有integrity参数
+这里我复现下当时问题，删除lock文件，重新执行yarn install,发现包还是没有integrity参数
 
  ![](https://i.imgur.com/m8wleBK.png)
  
 ###  v1.22.4
- 删除当前lock文件，重新执行yarn install,发现每个包都有integrity参数了
+ 当我升级到该版本，重试,发现每个包都有integrity参数了
   ![](https://i.imgur.com/X65ldCD.png)
   
 ### 结论
