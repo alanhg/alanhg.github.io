@@ -88,7 +88,9 @@ registry=http://localhost:8081/repository/npm/
 ```
 注意，仓库为npm即group仓库
 
-### 报错
+## 常见错误
+
+### Unable to authenticate, need: BASIC realm="Sonatype Nexus Repository Manager"
 
 ```
 npm ERR! code E401
@@ -100,6 +102,13 @@ npm ERR! Unable to authenticate, need: BASIC realm="Sonatype Nexus Repository Ma
 
 
 执行`npm i alanhg-demo@0.3.0 --save`
+
+### 401 or 404
+
+假如将npmrc切换为yarnrc,在执行yarn install安装包时，nexus上的私有包会安装失败，报401或者404错，原因应该是yarn与nexus私服之间的支持存在问题，当前的解决方案是使用npmrc管理私有注册源
+
+![](https://i.imgur.com/5yCXF6P.png)
+
 
 ## 写在最后
 
