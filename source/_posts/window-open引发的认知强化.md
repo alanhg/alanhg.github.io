@@ -1,5 +1,5 @@
 ---
-title: window.open引发的认知强化
+title: window.open扫盲
 date: 2020-04-02 09:27:34
 tags:
   - JavaScript
