@@ -166,11 +166,11 @@ $ lsmod | grep bbr
 
 [戳这里](https://github.com/alanhg/v2ray-docker)
 
+### 建议
 1. 登陆Vultr选择一台机器，建议日本的，系统选择`CentOS 7 x64`
 2. 狗爹等厂商购买域名，设定解析到上述购买的机器IP上
 2. 使用Filezilla登陆，将仓库文件移动上去
-3. 终端登陆，执行readme中的命令
-4. 客户端Clash,Surge等配置即可
+4. 客户端使用Clash,Surge等
 
 ## 写在最后
 
