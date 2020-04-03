@@ -12,6 +12,7 @@ date: 2019-11-16 15:14:20
 
 ![](http://static.1991421.cn/2019-11-16-131525.png)
 
+
 ## 准备条件
 - ~~网络要健康，可以上谷歌，VPS站点可能被墙~~`比如https://bandwagonhost.com/`
 
@@ -157,6 +158,19 @@ $ lsmod | grep bbr
 这里我是用Surge客户端，配置后，即可正常使用.贴下之前DO购买的美国节点与当前Vultr日本节点的延迟区别
 
 ![](http://static.1991421.cn/2019-11-16-122952.png)
+
+
+## 不想了解的=》直接上
+
+这里贴出我已经Docker封装好的配置
+
+[戳这里](https://github.com/alanhg/v2ray-docker)
+
+1. 登陆Vultr选择一台机器，建议日本的，系统选择`CentOS 7 x64`
+2. 狗爹等厂商购买域名，设定解析到上述购买的机器IP上
+2. 使用Filezilla登陆，将仓库文件移动上去
+3. 终端登陆，执行readme中的命令
+4. 客户端Clash,Surge等配置即可
 
 ## 写在最后
 
