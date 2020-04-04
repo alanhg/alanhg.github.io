@@ -1,5 +1,5 @@
 ---
-title: 为了信息自由再投资-第二弹-GV篇
+title: 为了信息自由-第二弹-GV篇
 tags:
   - Google Voice
 abbrlink: 541862a1
