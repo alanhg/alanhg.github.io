@@ -189,6 +189,14 @@ $ git remote add origin git@github.com:alanhg/alanhg.github.io.git
 ### Git:Merging状态
 在IDEA中，比如要合并分支【merge sprint with featue/a】，有时会出现冲突，处理冲突完成后，commit失败，同时分支状态提示为Git:Merging sprit。这时终端执行 `git status`,提示当前状态是`sprint | merge`，这个状态是什么意思呢，其实含义是在MR冲突解决后，`自动commit失败`，这时需要手动进行修改解决，然后重新执行commit，这样状态，提交成功后才会恢复为`sprint`.当然也可以放弃MR`git merge --abort`
 
+### the RSA host key for 'github.com' differs from the key for the IP address
+> Warning: the RSA host key for 'github.com' differs from the key for the IP address '198.18.1.89'
+Offending key for IP in /Users/xx/.ssh/known_hosts:27
+Matching host key in /Users/xx/.ssh/known_hosts:1
+Are you sure you want to continue connecting (yes/no)? ^C
+
+提交时，总会提示这样的信息，解决办法是打开known_hosts，将目标行内容删除。重新提交即可。
+
 #### 注意细节
 
 1. MR本身就是一次commit，而commit的作用就是将本地的变动提交到暂存区。
