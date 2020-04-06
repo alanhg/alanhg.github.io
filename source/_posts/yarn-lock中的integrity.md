@@ -1,9 +1,10 @@
 ---
 title: yarn.lock中的integrity
-date: 2020-03-19 23:00:57
 tags:
-- yarn
-- frontend
+  - yarn
+  - frontend
+abbrlink: ff193ef7
+date: 2020-03-19 23:00:57
 ---
 > 在提交代码时会发现yarn.lock文件有这样的diff，多了一些integrity属性，有时又会删除一些。不明所以，这里就简单梳理下该属性。
 

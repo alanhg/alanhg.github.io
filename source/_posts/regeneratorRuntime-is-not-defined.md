@@ -1,8 +1,9 @@
 ---
 title: regeneratorRuntime is not defined
-date: 2020-02-02 14:19:50
 tags:
-- TypeScript
+  - TypeScript
+abbrlink: f042b8ca
+date: 2020-02-02 14:19:50
 ---
 > 今天前端在引入@adobe/redux-saga-promise包时，启动报这个错。于是开始了解决，这里记录下
 

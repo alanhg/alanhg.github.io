@@ -1,8 +1,9 @@
 ---
 title: JS进行时间格式化
-date: 2020-02-03 23:53:35
 tags:
-- JavaScript
+  - JavaScript
+abbrlink: c44c5385
+date: 2020-02-03 23:53:35
 ---
 > 最近WEB中对于时间格式化有了个性化需求，解决的同时，这里记录下。
 

@@ -1,8 +1,9 @@
 ---
 title: window.open扫盲
-date: 2020-04-02 09:27:34
 tags:
   - JavaScript
+abbrlink: 904fa8da
+date: 2020-04-02 09:27:34
 ---
 > window.open这个方法是加载新的资源，一般我们都是打开一个新的网页URL，但是在一次codereview时，我注意到team的成员写了这么一个地址
 

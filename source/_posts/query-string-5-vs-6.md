@@ -1,9 +1,10 @@
 ---
 title: query-string@5 vs 6
-date: 2020-02-09 19:13:58
 tags:
-- query-string
-- Browser Compatibility
+  - query-string
+  - Browser Compatibility
+abbrlink: fb6a3cda
+date: 2020-02-09 19:13:58
 ---
 > query-string是前端常用的类库，用于为URL中的查询参的正反向解析。正常来说，我们使用的话，直接安装用最新版6.x即可。但之前曾遇到一次白屏事故，最后定位到是因为v6版的兼容问题。于是这篇文章就聚焦于清晰化v5,v6的区别，及对WEB的影响。
 

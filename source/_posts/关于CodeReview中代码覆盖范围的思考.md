@@ -1,9 +1,10 @@
 ---
 title: 关于CodeReview中代码覆盖范围的思考
-date: 2020-02-19 22:54:51
 tags:
-- CodeReview
-- Git
+  - CodeReview
+  - Git
+abbrlink: 896af6d1
+date: 2020-02-19 22:54:51
 ---
 
 > CR现在的代码范围是 by单独分支，by天，代码实践中是否存在代码重看呢？

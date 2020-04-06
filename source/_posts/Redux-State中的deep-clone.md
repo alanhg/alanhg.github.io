@@ -1,9 +1,10 @@
 ---
 title: Redux State中的deep clone
-date: 2020-03-07 00:02:56
 tags:
-- Redux
-- 前端性能
+  - Redux
+  - 前端性能
+abbrlink: 30eed327
+date: 2020-03-07 00:02:56
 ---
 > 最近前端出现了性能问题，页面操作会越来越卡顿，最终导致内存溢出。元凶肯定就是开发人员-我们自己,而凶器呢-deepclone
 

@@ -1,9 +1,10 @@
 ---
 title: JavaScript method vs function vs member
-date: 2020-03-01 17:01:49
 tags:
-- JavaScript
-- TypeScript
+  - JavaScript
+  - TypeScript
+abbrlink: 4b4d97e7
+date: 2020-03-01 17:01:49
 ---
 > 一直对这三个概念，模糊不清，于是决定梳理下。
 

@@ -1,9 +1,10 @@
 ---
 title: 我为什么讨厌lodash
-date: 2020-02-16 14:35:26
 tags:
-- lodash
-- JavaScript
+  - lodash
+  - JavaScript
+abbrlink: c37a2771
+date: 2020-02-16 14:35:26
 ---
 
 ![](https://i.imgur.com/zrcrYJD.jpg)

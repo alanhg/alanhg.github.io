@@ -1,9 +1,10 @@
 ---
 title: redux-saga-promise
-date: 2020-02-02 14:50:54
 tags:
-- Redux-Saga
-- Promise
+  - Redux-Saga
+  - Promise
+abbrlink: 79db3a0
+date: 2020-02-02 14:50:54
 ---
 > redux saga使得一个action发起后，我们进行大量的操作[异步，同步]，这些操作依次处理，但本身发起这个action确是个异步。
 >

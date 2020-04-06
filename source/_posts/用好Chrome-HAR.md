@@ -1,10 +1,11 @@
 ---
 title: 用好Chrome-HAR
-date: 2020-03-28 17:44:43
 tags:
-- Chrome
-- frontend
-- HAR
+  - Chrome
+  - frontend
+  - HAR
+abbrlink: ea06d85e
+date: 2020-03-28 17:44:43
 ---
 > Chrome对普通用户仅仅个网页浏览器，但对开发者而言，称之为生产力工具也不为过。
 > 

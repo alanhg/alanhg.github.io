@@ -1,10 +1,11 @@
 ---
 title: Antd表格表头与内容单元格没对齐问题
-date: 2020-02-05 18:15:08
 tags:
-- CSS
-- Compatibility
-- Browser
+  - CSS
+  - Compatibility
+  - Browser
+abbrlink: e968d6d9
+date: 2020-02-05 18:15:08
 ---
 > 最近解决样式遇到了这样的问题，具体如图。
 
