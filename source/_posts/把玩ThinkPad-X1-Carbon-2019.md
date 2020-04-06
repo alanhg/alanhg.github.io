@@ -37,9 +37,11 @@ tags:
 
 ## 软件层面打磨
 
-拿到Windows后，我开始快速的安装一系列软件，从而提升生产力。
+拿到Windows后，我开始快速的安装一系列软件，从而提升生产力。这里推荐一个[软件清单](https://github.com/Awesome-Windows/Awesome)，可以找到不错的软件尝试下。
 
 ### 必装软件
+
+以下为我个人刚需的几款软件
 
 1. 印象笔记
 2. Chrome
@@ -49,7 +51,10 @@ tags:
 6. Snipaste
 7. Visual Studio Code
 
+实际Win使用中会有很多的个性化设定，需这里不再赘述，我持续总结的[戳这里](https://github.com/alanhg/others-note/issues?q=is%3Aissue+is%3Aopen+label%3AWindows)
+
+
 ## 写在最后
 
-1. 花费了几个小时的初步配置，作为我的备机，应该还可以了，浏览网页，轻度码字完全OK。
-2.  接下来要做的就是在实际的使用中不断调教了。
+1. 花费了几个小时的初步配置，目前作为我的备机，还可以
+2. 接下来要做的就是在实际的使用中不断调教了。
