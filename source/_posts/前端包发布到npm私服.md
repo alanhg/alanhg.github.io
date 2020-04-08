@@ -110,6 +110,26 @@ npm ERR! Unable to authenticate, need: BASIC realm="Sonatype Nexus Repository Ma
 ![](https://i.imgur.com/5yCXF6P.png)
 
 
+### Failed to stream response due to: Missing blob and no handler set to recover.".
+
+最近执行安包命令,报以下错误
+
+```
+yarn install v1.22.4
+[1/5] 🔍  Validating package.json...
+[2/5] 🔍  Resolving packages...
+error An unexpected error occurred: "https://nexus.xxxcn/repository/npm/@alanhg%2fui: Failed to stream response due to: Missing blob and no handler set to recover.".
+info If you think this is a bug, please open a bug report with the information provided in "/Users/qhe/Documents/GitLab/xxx/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this ⌘.
+
+```
+
+解决办法是，登陆nexus私服，点击invalidate cache
+
+![](http://static.1991421.cn/2020/2020-04-08-235616.png)
+
+
+
 ## 写在最后
 
 这里只是搭建了机制,解决了使用和维护上的问题，但另一个重要的问题是包的版本变迁，包的历史，假如还是万年不变的版本号，又或者很随意的版本号变迁，  
