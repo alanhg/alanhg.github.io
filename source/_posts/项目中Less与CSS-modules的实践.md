@@ -78,7 +78,7 @@ webpack中需要增加对应的rule
               localsConvention: 'camelCase',
               modules: {
                 mode: 'local',
-                localIdentName: '[name]_[local]_[hash:base64:5]'
+                localIdentName: '[name]-[local]-[hash:base64:5]'
               },
               sourceMap: options.env !== 'production'
             }
@@ -98,6 +98,7 @@ webpack中需要增加对应的rule
 
 1. sourceMap配置是为了在开发环境下，方便Less调试
 2. css module的开启是在css-loader，而非less-loader中
+3.  localIdentName中定义的命名规则，我采用了烤串命名法，当然小蛇命名法也可以
 
 
 ## React项目下样式书写
@@ -122,10 +123,17 @@ footer.less
 
 #### 最终效果
 
+
 ![](http://static.1991421.cn/2019-09-02-115014.png)
 
+注意
+
+- 假如在less中，我们使用了烤串命名法比如.footer-bg，在组件中使用仍然会是驼峰 footerBg
+- 个人建议CSS模块化的样式，采用驼峰命名，这样保证了组件与less文件中的一致性。非模块化样式，即我们要global的，采用烤串命名法，两者予以区分。
+
+
 ### global
-全局样式的书写只要加上:gloabl选择器即可。另外在解析时，不会改变类名称
+全局样式的书写只要加上:gloabl选择器即可。global标明全局作用域后，编译时，不会增加hash指纹
 
 ```css
 :global {
@@ -207,5 +215,4 @@ h1[class='say hello'] {
 - [CSS Modules 模块化方案](https://zhuanlan.zhihu.com/p/20495964)
 - [BEM](https://css-tricks.com/bem-101/)
 - [Angular组件样式](https://angular.io/guide/component-styles)
-
-
+- [Case Styles: Camel, Pascal, Snake, and Kebab Case](https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841)
