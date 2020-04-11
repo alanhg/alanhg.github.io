@@ -1,5 +1,5 @@
 ---
-title: React中事件处理器命名规范【翻译】
+title: React中事件处理器命名规范【译】
 date: 2020-04-11 14:50:00
 tags:
 - React
