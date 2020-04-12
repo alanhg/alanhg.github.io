@@ -74,6 +74,23 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 这样，日常我们手动选择执行group-auto-switch，假如临时需要切换到US，只需要手动选择US即可。
 
+## 免费代理节点？
+我们下载的配置文件中的代理肯定是不能用的，那个只是个例子而已。部分同学问我为啥代理不起作用。。。。OK，那个本来就不可用。有免费的代理节点吗？OK，确实存在，请自行查找。
+
+`但免费的午餐是不靠谱的，也是有其它代价的，比如时间，比如隐私。`
+
+推荐一个✈️和自行搭建的VPS服务商
+
+### Vultr
+
+<a href="https://www.vultr.com/?ref=8363373"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+
+推荐Docker搭建V2Ray,[参考这里](https://github.com/alanhg/v2ray-docker)
+
+### shadowsocks
+有V2Ray，trojan，[戳这里](https://portal.shadowsocks.nl/aff.php?aff=27252)
+
+
 ## 增强模式
 部分应用并不走系统代理，使用增强模式可以解决此问题。
 
@@ -144,6 +161,8 @@ iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。如果是Web
 三步配置后，在dashboard中，即可看到解密后的请求报文和响应报文了。
 
 ![](https://i.imgur.com/3arYobO.png)
+
+
 
 ## 写在最后
 昂，似乎到此为止，我们可以很轻松的访问了，并且加入代理服务器某个挂了，还可以自动切换。这些事都是Surge帮我们背后去做，我们无感。完美强大吧。

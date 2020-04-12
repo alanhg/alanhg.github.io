@@ -24,6 +24,10 @@ date: 2019-11-16 15:14:20
 - [Vultr](https://www.vultr.com/)
 
 机器搞定后，就可以开始配置了。
+
+### Vultr推荐
+	
+<a href="https://www.vultr.com/?ref=8363373"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>	
 	
 ### 注意
 1. VPS具体机器时区是什么无所谓，因为V2Ray会自动转换时区，但是时间一定要准确。
