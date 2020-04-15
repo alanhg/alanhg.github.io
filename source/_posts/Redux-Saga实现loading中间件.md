@@ -2,7 +2,7 @@
 title: Redux Saga实现loading中间件
 date: 2020-04-15 23:34:00
 tags:
-- Redux Saga
+- Redux-Saga
 ---
 > 当前项目中很多处理耗时较长，单个API请求我们可以加拦截器做到loading的开启和关闭，但是假如是一个effects中包含了多个请求，同时夹杂了一些其它的逻辑，那么单纯靠API层的loading控制是不行的，并且还会出现抖动开关。so，我们需要做到saga-effects这层的loading控制。
 
