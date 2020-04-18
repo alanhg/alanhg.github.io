@@ -143,7 +143,7 @@ google_site_verification: X2kZZYv5HVaZzDyVf-pFnNdRG2BQGA50qxmGwDGyiG4
 #baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: true
+baidu_push: false
 
 
 # ---------------------------------------------------------------
