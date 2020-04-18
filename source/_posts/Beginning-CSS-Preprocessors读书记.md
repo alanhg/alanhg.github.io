@@ -1,9 +1,10 @@
 ---
 title: Beginning CSS Preprocessors读书记
-date: 2020-04-14 12:06:36
 tags:
-- Reading
-- CSS
+  - Reading
+  - CSS
+abbrlink: 4434328c
+date: 2020-04-14 12:06:36
 ---
 > 最近快速阅读一本书《Beginning CSS Preprocessors》， 书中讲解的less,sass，compass使用略显过时，但整体读下来还是有几点收获和想法的，这里Mark下。
 

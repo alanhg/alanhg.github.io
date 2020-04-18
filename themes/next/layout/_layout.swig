@@ -122,5 +122,7 @@
 {% include '_third-party/copy-code.swig' %}
 {% include '_third-party/chatra.swig' %}
 {% include '_third-party/tidio.swig' %}
+<script data-ad-client="ca-pub-6075559272985639" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>
