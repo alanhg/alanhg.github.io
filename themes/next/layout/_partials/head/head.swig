@@ -59,7 +59,12 @@
 {% if theme.vendors.fontawesome %}
   {% set font_awesome_uri = theme.vendors.fontawesome %}
 {% endif %}
+
+{% set font_uri = url_for(theme.vendors._internal + '/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') %}
+
 <link rel="stylesheet" href="{{ font_awesome_uri }}"/>
+
+<link rel="preload" as="font" href="{{font_uri}}" type="font/woff2" crossorigin="anonymous">
 
 <link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css?v={{ version }}"/>
 
