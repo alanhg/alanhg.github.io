@@ -27,7 +27,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             {% if theme.avatar.url %}
-              <img class="site-author-image" itemprop="image"
+              <img class="site-author-image" itemprop="image" loading="lazy"
                 src="{{ url_for( theme.avatar.url | default(theme.images + '/avatar.gif') ) }}"
                 alt="{{ author }}"/>
             {% endif %}
