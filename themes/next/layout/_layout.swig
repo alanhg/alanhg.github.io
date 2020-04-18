@@ -122,7 +122,14 @@
 {% include '_third-party/copy-code.swig' %}
 {% include '_third-party/chatra.swig' %}
 {% include '_third-party/tidio.swig' %}
-<script data-ad-client="ca-pub-6075559272985639" defer
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    $(document).ready(function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        script.setAttribute('data-ad-client', 'ca-pub-6075559272985639');
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+</script>
 </body>
 </html>
