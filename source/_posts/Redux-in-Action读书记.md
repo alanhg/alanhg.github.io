@@ -3,7 +3,7 @@ title: Redux in Action读书记
 tags:
   - React
   - Redux
-  - 读书记
+  - Reading
 abbrlink: 7e97fae9
 date: 2019-10-20 22:00:47
 ---
