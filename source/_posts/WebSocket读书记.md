@@ -7,6 +7,8 @@ tags:
 ---
 > 最近项目中用到了WebSocket，但个人对WS的认知太过空白，于是花了点时间阅读了相关书籍[《WebSocket》](https://www.amazon.cn/dp/B015D78JVQ/ref=sr_1_4?keywords=websocket&qid=1587293374&sr=8-4)。对于其中的一些收获，这里Mark下
 
+![](http://static.1991421.cn/2020/2020-04-19-194807.jpeg)
+
 ## WebSocket的使命
 技术的推出一定是为解决一个问题，就类似于ES推出了promise，是为了解决回调问题，XHR为了提供异步交互。WebSocket伴随着HTML5的推出，是为了让WEB与后端具备双工通讯能力。在WS之前，我们只能通过轮询解决，并且发起方只能是客户端。
 
