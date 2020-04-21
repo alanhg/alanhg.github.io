@@ -72,6 +72,10 @@ date: 2019-10-03 23:55:57
     },200);
     })();
 	```
+9. [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
+
+VPN全局代理的同时，导致无法同时打开系统SS代理，所以这种方案是，SS客户端不系统代理，浏览器配置代理到SS客户端。这样可以兼顾VPN及SS科学上网。
+
 
 ## 开发者
 
@@ -96,6 +100,14 @@ date: 2019-10-03 23:55:57
 
 	redux开发者必备，毋需多言。
  
+6. [Yet Another Jenkins Notifier](https://chrome.google.com/webstore/detail/yet-another-jenkins-notif/cimdjdaglanfkpfpoemjkfkmjgkmahpg)
+   
+   Jenkins构建消息通知
+   
+7.  [Enhanced GitHub](https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd)
+   
+   GitHub增强，增加下载功能   
+
 
 ## 插件下载-CRX
 因为众所周知的原因，我们正常是无法访问谷歌的，so更是没法进入商店下载插件了。但chrome是可以离线安装插件的。那如何找到插件的crx文件呢。
