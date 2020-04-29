@@ -5,8 +5,13 @@ tags:
 - Mac
 - Automator
 ---
-> 有这样一个需求，就是我希望在finder中快速拷贝选中的文件或者文件夹路径。当然有第三方的APP可以支持，但是为了这么一点需求，去再安装一个臃肿的APP，实在不愿意，或者Alfred解决也可以，但是Alfred是无法拓展右键菜单的，那么有没有办法可以自定义右键菜单，提供一个拷贝路径的操作呢。YES-Automator
+> 有这样一个需求，我希望在finder中快速拷贝选中的文件或者文件夹路径。
 
+## 不怎么满意的方法
+1. 当然有第三方的APP比如`Easy New File`可以支持，但是为了一点需求，而安装一个臃肿的APP，实在不愿意
+2. Alfred解决也可以，选中文件，或者文件夹，一个热键触发，搞定路径。但Alfred是无法拓展右键菜单的，我需要记忆一个快捷键。
+
+那么有没有办法可以自定义右键菜单，提供一个拷贝路径的操作呢。YES-Automator
 
 ## Automator介绍
 
@@ -24,8 +29,8 @@ Automator是可以节省很多重复操作，Alfred也类似，但是Alfred有�
 
 以上2点，Automator却可以，不得不说真香。
 
-## 制作
-知道了它能做什么，那就开搞。这里就不介绍了，因为官网写的很明白。[戳这里](https://support.apple.com/zh-mo/guide/automator/welcome/mac)
+## 制作Workflow
+知道了它能做什么，那就开搞。这里就不详细介绍了，因为官网写的很明白。[戳这里](https://support.apple.com/zh-mo/guide/automator/welcome/mac)
 
 
 ## 当前效果
