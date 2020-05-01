@@ -36,13 +36,54 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 ![](https://i.imgur.com/1QLXdmt.jpg)
 
-## SS代理服务器配置
+## 代理服务器
 
 上述配置安装后，点击代理，即可看到有代理服务器，这里按照实际的代理服务器地址进行修改即可。如图，我配置了多台SS服务。
 
 ![](https://i.imgur.com/07jM5Oy.jpg)
 
 配置完成后，点击代理服务器，连接成功，访问Google，OK，另外比如mail中， 当我们发送邮件到Gmail也显示为代理了，但是比如163就还是直连。
+
+- SS已经成为过去式，建议不要搭建或购买SS服务
+
+### V2Ray支持
+> Mac版自`3.3.1`，iOS版自`4.1.0`,已经支持
+
+#### 配置格式
+
+```
+v2rayProxy = vmess, xxx.xxx.com, 30544, username=xxxxxx-xx-406xe-8d63-x,, tls=true, ws=true, ws-path=/helloMario
+
+```
+
+### Trojan支持
+> Yes,`3.4`已经支持
+
+#### 配置格式
+
+```
+ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
+```
+
+### 免费代理节点？
+我们下载的配置文件中的代理肯定是不能用的，那个只是个例子而已。部分同学问我为啥代理不起作用。。。。OK，那个本来就不可用。有免费的代理节点吗？OK，确实存在，请自行查找。
+
+`但免费的午餐是不靠谱的，也是有其它代价的，比如时间，比如隐私。`
+
+推荐一个✈️和自行搭建的VPS服务商
+
+#### Vultr
+
+<a href="https://www.vultr.com/?ref=8363373"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+
+服务购买，[戳这里](https://www.vultr.com/?ref=8363373)
+
+推荐Docker搭建V2Ray,[参考这里](https://github.com/alanhg/v2ray-docker)
+
+#### shadowsocks
+支持Trojan，[戳这里](https://portal.shadowsocks.nl/aff.php?aff=27252)
+
+`要知道，SS时代已经过去，现在相对稳定的是V2Ray和Trojan`
 
 ## 代理规则[Policy Rules]
 ### 境外走代理，境内走直连
@@ -74,23 +115,6 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 
 这样，日常我们手动选择执行group-auto-switch，假如临时需要切换到US，只需要手动选择US即可。
 
-## 免费代理节点？
-我们下载的配置文件中的代理肯定是不能用的，那个只是个例子而已。部分同学问我为啥代理不起作用。。。。OK，那个本来就不可用。有免费的代理节点吗？OK，确实存在，请自行查找。
-
-`但免费的午餐是不靠谱的，也是有其它代价的，比如时间，比如隐私。`
-
-推荐一个✈️和自行搭建的VPS服务商
-
-### Vultr
-
-<a href="https://www.vultr.com/?ref=8363373"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
-
-推荐Docker搭建V2Ray,[参考这里](https://github.com/alanhg/v2ray-docker)
-
-### shadowsocks
-支持Trojan，[戳这里](https://portal.shadowsocks.nl/aff.php?aff=27252)
-
-`要知道，SS时代已经过去，现在相对稳定的是V2Ray和Trojan`
 
 
 ## 增强模式
@@ -121,24 +145,6 @@ Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可
 
 ![](https://i.imgur.com/4z1TiKH.jpg)
 
-## V2Ray支持
-> Mac版自`3.3.1`，iOS版自`4.1.0`,已经支持
-
-### 配置格式
-
-```
-v2rayProxy = vmess, xxx.xxx.com, 30544, username=xxxxxx-xx-406xe-8d63-x,, tls=true, ws=true, ws-path=/helloMario
-
-```
-
-## Trojan支持
-> Yes,`3.4`已经支持
-
-### 配置格式
-
-```
-ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
-```
 
 ## HTTPS内容抓包
 
