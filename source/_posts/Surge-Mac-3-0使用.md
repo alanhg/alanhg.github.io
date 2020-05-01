@@ -88,7 +88,9 @@ Surge配置还是挺复杂的，有一定的学习门槛儿，我们最好是先
 推荐Docker搭建V2Ray,[参考这里](https://github.com/alanhg/v2ray-docker)
 
 ### shadowsocks
-有V2Ray，trojan，[戳这里](https://portal.shadowsocks.nl/aff.php?aff=27252)
+支持Trojan，[戳这里](https://portal.shadowsocks.nl/aff.php?aff=27252)
+
+`要知道，SS时代已经过去，现在相对稳定的是V2Ray和Trojan`
 
 
 ## 增强模式
@@ -119,37 +121,24 @@ Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可
 
 ![](https://i.imgur.com/4z1TiKH.jpg)
 
-## V2Ray支持？
-> 不久的以前确实不支持，但是Mac最新版`3.3.1`，iOS版4.1.0，已经支持，正式版还没放出.想提前使用，就要更新到beta版。
+## V2Ray支持
+> Mac版自`3.3.1`，iOS版自`4.1.0`,已经支持
 
-### Mac测试版
-
-![](https://i.imgur.com/H0Sn9Dd.png)
-
-选择包含beta版，点击check now，安装成功后。进入配置文件中，手动添加v2ray代理
+### 配置格式
 
 ```
 v2rayProxy = vmess, xxx.xxx.com, 30544, username=xxxxxx-xx-406xe-8d63-x,, tls=true, ws=true, ws-path=/helloMario
 
 ```
 
-重新加载配置文件，就会看到新的代理配置了。
+## Trojan支持
+> Yes,`3.4`已经支持
 
-### 界面上没有v2Ray配置选项？
-是的，暂时还没有，所以`只能用文本编辑模式`。首先支持了就是个喜大普奔的事情，别挑了，先搞起！
+### 配置格式
 
-### IOS测试版
-
-iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。如果是Web邮箱注册进行的购买，按照以下操作。
-
-1. 登陆Surge网站
-2. 点击Apply TestFlight
-3. 手机访问邀请网址，会跳转到下载TestFlight app
-4. 然后选择更新surge到测试版即可
-
-内购版的就麻烦些，需要等90天，在app license栏目下，绑定邮箱，这时就会得到license key，然后按照上面步骤进行即可。
-
-相关文档：[戳这里](https://nssurge.zendesk.com/hc/zh-cn/articles/360012743714-Surge-iOS-TestFlight-%E8%AF%B4%E6%98%8E)
+```
+ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
+```
 
 ## HTTPS内容抓包
 
@@ -163,6 +152,33 @@ iOS测试版4.1.0也加入了VMess支持，需要加入TestFlight。如果是Web
 ![](https://i.imgur.com/3arYobO.png)
 
 
+## 测试版尝鲜
+
+### iOS
+
+iOS测试版想使用，需要加入TestFlight。如果是Web邮箱注册进行的购买，按照以下操作。
+
+1. 登陆Surge网站
+2. 点击Apply TestFlight
+3. 手机访问邀请网址，会跳转到下载TestFlight app
+4. 然后选择更新surge到测试版即可
+
+内购版的就麻烦些，需要等90天，在app license栏目下，绑定邮箱，这时就会得到license key，然后按照上面步骤进行即可。
+
+相关文档：[戳这里](https://nssurge.zendesk.com/hc/zh-cn/articles/360012743714-Surge-iOS-TestFlight-%E8%AF%B4%E6%98%8E)
+
+
+### Mac
+
+![](https://i.imgur.com/H0Sn9Dd.png)
+
+选择包含beta版，点击check now，安装成功后
+
+## 还有疑问？
+1. 电报 https://t.me/lhie1x,里面大牛很多
+2. 官方论坛 https://community.nssurge.com/
+3. 邮件作者 `support@nssurge.com`
+4. 博客下评论，或者直接邮件我，乐意分享我的知识
 
 ## 写在最后
 昂，似乎到此为止，我们可以很轻松的访问了，并且加入代理服务器某个挂了，还可以自动切换。这些事都是Surge帮我们背后去做，我们无感。完美强大吧。
