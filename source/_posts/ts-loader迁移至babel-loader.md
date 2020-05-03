@@ -6,11 +6,11 @@ tags:
 - TypeScript
 ---
 ## 背景
->
-关注社区的应该知道`babel 7`支持了TypeScript的转译，也就是说我们并不一定非得用之前的方案ts-loader或awesome-typescript-loader。
 
+>关注社区的应该知道`babel 7`支持了TypeScript的转译，也就是说我们并不一定非得用之前的方案ts-loader或awesome-typescript-loader。
+> 
 > 最近想解决saga报错的易读性，发现官方给出了方案`babel-plugin-redux-saga`，是个babel插件。
-
+> 
 > TSlint已经给出了roadmap，2020年只解决修复的MR，以后将只有ESLint, eslint，tslint两个社区的资源正在整合中。TSLoader这块，我理解也类似，Babel丰富的插件机制，加上目前支持了TS的转译，所以大势所趋，合并再花费精力搞这些呢。
 
 基于以上三点考虑，决定做下迁移
