@@ -94,12 +94,25 @@ webpack.js
 因为做了迁移，所以以前的一些特定情况的禁用注释也需要相应替换下，或者直接去掉。
 
 
+## 技巧
+
 ### disable的几种方式
-    
+ 
+ 个别场景下，不满足lint规则，需要跳过检查，可以这么做。
     
    1. /* eslint-disable no-var */ 单个文件，特定规则禁用
    2. // eslint-disable-next-line complexity 下一行规则禁用
    3. // eslint-disable no-var 当前行规则禁用
+
+原则：能修则修，尊重规则
+
+### 只打印错误
+
+增加`quiet`属性
+```bash
+$ eslint src/main/webapp/**/*.{ts,tsx} --quiet
+
+```
 
 ## 写在最后
 1. rule不求多，但求科学，推荐的配置，或者本身的缺省值则是业界的一些推荐规范`比如圈复杂度`，尽可能的遵从，因为要承认他们比我牛
