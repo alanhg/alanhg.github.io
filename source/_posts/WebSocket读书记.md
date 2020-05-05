@@ -1,9 +1,10 @@
 ---
 title: WebSocket读书记
-date: 2020-04-19 16:31:02
 tags:
-- WebSocket
-- Reading
+  - WebSocket
+  - Reading
+abbrlink: 2e2335ff
+date: 2020-04-19 16:31:02
 ---
 > 最近项目中用到了WebSocket，但个人对WS的认知太过空白，于是花了点时间阅读了相关书籍[《WebSocket》](https://www.amazon.cn/dp/B015D78JVQ/ref=sr_1_4?keywords=websocket&qid=1587293374&sr=8-4)。对于其中的一些收获，这里Mark下
 

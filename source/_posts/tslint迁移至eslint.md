@@ -1,9 +1,10 @@
 ---
 title: tslint迁移至eslint
-date: 2020-05-02 23:31:42
 tags:
-- tslint
-- eslint
+  - tslint
+  - eslint
+abbrlink: 51c6bd8b
+date: 2020-05-02 23:31:42
 ---
 
 > tslint已标注deprecated，根据公布的roadmap,2020年将逐步退出历史舞台。为什么要这么折腾，其实核心原因就是整合JS社区资源，tslint没有必要另起炉灶。从个人而言也是好事，至少你不需要记忆两套规则

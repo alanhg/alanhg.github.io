@@ -1,8 +1,9 @@
 ---
 title: 提升Redux Saga报错可读性
-date: 2020-05-01 16:14:12
 tags:
-- Redux-Saga
+  - Redux-Saga
+abbrlink: b476db74
+date: 2020-05-01 16:14:12
 ---
 
 > Redux-Saga假如执行中报错，实际上是很难看懂的，这点官方也有提及，解决办法就是引入babel-plugin-redux-saga，来提升可读性。

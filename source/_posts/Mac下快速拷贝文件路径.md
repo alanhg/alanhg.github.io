@@ -1,9 +1,10 @@
 ---
 title: Mac下快速拷贝文件路径
-date: 2020-04-29 21:04:02
 tags:
-- Mac
-- Automator
+  - Mac
+  - Automator
+abbrlink: f81bd89b
+date: 2020-04-29 21:04:02
 ---
 > 有这样一个需求，我希望在finder中快速拷贝选中的文件或者文件夹路径。
 

@@ -1,8 +1,9 @@
 ---
 title: 关于PayPal的使用
-date: 2020-04-30 20:49:54
 tags:
-- PayPal
+  - PayPal
+abbrlink: 47e281a3
+date: 2020-04-30 20:49:54
 ---
 > 国内我们常用的第三方支付是微信和支付宝，而国外比较流行的是PayPal.之前是为了方便购买美区Apple Store的APP，所以注册了PayPal。这里简单总结下我的些许认识。
 

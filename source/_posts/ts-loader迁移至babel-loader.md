@@ -1,9 +1,10 @@
 ---
 title: ts-loader迁移至babel-loader
-date: 2020-05-02 15:45:42
 tags:
-- Babel
-- TypeScript
+  - Babel
+  - TypeScript
+abbrlink: 4bf034c9
+date: 2020-05-02 15:45:42
 ---
 ## 背景
 
