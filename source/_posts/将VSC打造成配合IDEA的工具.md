@@ -3,6 +3,7 @@ title: 将VSC打造成配合IDEA的工具
 tags:
   - 利器
   - VSC
+  - Visual Studio Code
 abbrlink: b3693c98
 date: 2019-10-27 20:17:46
 ---
