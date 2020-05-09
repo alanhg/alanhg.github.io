@@ -81,7 +81,7 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
 推荐Docker搭建V2Ray,[参考这里](https://github.com/alanhg/v2ray-docker)
 
 #### shadowsocks
-支持Trojan，[戳这里](https://portal.shadowsocks.nl/aff.php?aff=27252)
+支持Trojan，[戳这里](https://portal.shadowsocks.nz/aff.php?aff=27252)
 
 `要知道，SS时代已经过去，现在相对稳定的是V2Ray和Trojan`
 
