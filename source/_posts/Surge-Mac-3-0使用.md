@@ -140,6 +140,8 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
 	
 	![](https://i.imgur.com/7z6dyzO.png)
 
+所以，假如需要同时连接公司VPN等，建议增强模式关闭
+
 ## iCloud同步配置文件
 Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可以方便的同步到多终端设备和备份
 
