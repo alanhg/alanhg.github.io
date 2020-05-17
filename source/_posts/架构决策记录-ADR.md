@@ -23,11 +23,10 @@ ADR全称`Architecture Decision Records`,汉化后就是`架构决策记录`，�
 ## ADR模版
 业界的前辈们已经总结了一个，当然这只是个实践的一种，具体我们可以活学活用。这个没有标准答案，有收益即可。
 
-- 模版 [戳这里](https://github.com/pmerson/ADR-template)
+- 模版 [戳这里](https://github.com/pmerson/ADR-template/blob/master/ADR-template_zh-CN.md)
 - 视频 [SATURN 2017 Talk: Architecture Decision Records in Action
 ](https://www.youtube.com/watch?time_continue=19&v=41NVge3_cYo&feature=emb_logo)
 
-个人也做了下汉化，提了PR，[还没通过](https://github.com/pmerson/ADR-template/pull/2)
 
 ## 写在最后
 
