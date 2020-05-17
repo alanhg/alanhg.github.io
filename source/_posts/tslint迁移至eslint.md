@@ -103,7 +103,7 @@ webpack.js
     
    1. /* eslint-disable no-var */ 单个文件，特定规则禁用
    2. // eslint-disable-next-line complexity 下一行规则禁用
-   3. // eslint-disable no-var 当前行规则禁用
+   3. // eslint-disable-line @typescript-eslint/naming-conventionno-var 当前行规则禁用
 
 原则：能修则修，尊重规则
 
