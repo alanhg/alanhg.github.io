@@ -27,9 +27,9 @@ date: 2019-10-04 22:01:03
 3. tree shaking的目的是为了消除无用代码（dead code）
 
 ## 辅助工具-webpack-bundle-analyzer
-为了感官意识到体积的变化，推荐安装下插件`webpack-bundle-analyzer`，插件可以分析整个前端包体积的组成，宏观感受配置的treeShaking是否起作用。
+为了方便查看影响体积的具体模块，安装插件`webpack-bundle-analyzer`，当我们不断改进优化时，也方便看到是否起作用。
 
-安装走起。
+安装走起
 
 ### package.json中增加脚本配置
 
@@ -37,7 +37,8 @@ date: 2019-10-04 22:01:03
     "build:analyzer": "node scripts/build.js analyzer",
 ```
 
-analyzer为自定义属性。
+- analyzer为自定义属性
+-  分析配置基于生产配置打包才有意义，毕竟体积的优化目的是面向生产打包
 
 ### webpack构建脚本增加插件配置
 

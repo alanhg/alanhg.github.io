@@ -15,7 +15,7 @@ ADR全称`Architecture Decision Records`,汉化后就是`架构决策记录`，�
 
 ## 当前我们是如何做的
 1. 博客，我喜欢博客去总结一些变化
-2. 公司文档-confluence
+2. 公司文档-Confluence
 3. 个人脑中
 
 如上，其实缺乏一个系统的理论和方式，so，ADR确实可以补充项目运作上的 一点短板。
