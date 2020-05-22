@@ -36,7 +36,7 @@ date: 2020-03-28 17:44:43
 
 
 ## 写在最后
-以上不过是个简单的介绍，但我更想说的是，用好Chrome，事倍功半。
+以上不过是个简单的介绍，但我更想说的是，用好Chrome，事半功倍。
 
 ## 参考资料
 - [HAR (file format)](https://en.wikipedia.org/wiki/HAR_(file_format))
