@@ -26,7 +26,8 @@ tags:
 
 - script-src
 - style-src
-- img-srcc
+- img-src
+- frame-src
 - 等等
 
 正如之前所讲，配置策略可以严格控制我们资源的类型，来源地址，协议类型。
