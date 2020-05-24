@@ -147,6 +147,9 @@ Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可
 
 ![](https://i.imgur.com/4z1TiKH.jpg)
 
+### iOS同步配置
+iOS端需要设定同步，more=》Profile Sync，从iCloud中导入Profile即可完成同步化。
+
 
 ## HTTPS内容抓包
 
