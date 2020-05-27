@@ -7,8 +7,7 @@ tags:
 ---
 > 经常需要登陆公司VPN，一直使用脚本登陆，但还是不够高效，于是为了节约时间，利用Alfred来实现一键VPN
 
-
-![](http://static.1991421.cn/2020/2020-05-26-234047.jpeg)
+![](http://static.1991421.cn/2020/2020-05-27-140109.png)
 
 
 ## workflow
@@ -17,12 +16,28 @@ workflow中的关键点有以下几步
 1. keyword获取用户输入的手机验证码
 2. 临时存储keyword到变量中，原因是还需要用户进一步选择服务器节点
 3. list filter的keyword随便输入一个且与第一步的keyword不同即可
-4. 因为脚本使用了expect，所以无法选择`Run Script`
+4. 脚本使用了expect，所以最终执行需要terminal command,无法选择`Run Script`
+5. 因为系统密码及VPN账户我走的workflow环境变量而command是不支持环境变量解析，所以增加Run Script解析变量
 
-### 注意
-- Terminal Command中是无法使用Workflow的环境变量
 
 ## shell脚本
+
+### Run Script
+
+
+
+```
+echo "/Users/qhe/Documents/Shell/vpn.sh $code {query} $MAC_PASSWORD $USERNAME $PASSWORD"
+
+```
+
+- 注意workflow中的变量和环境变量在shell解析都是$name来解析
+- 如上，这里打印出最终终端想执行的命令，包含了变量
+
+### Terminal Command
+
+只需要解析了query即可，{query}，即上一步打印的结果
+
 
 ```sh
 #!/usr/bin/expect
@@ -43,7 +58,6 @@ interact
 ```
 
 
-https://www.alfredforum.com/topic/10653-environment-variables-in-terminal-command-object/?tab=comments#comment-54559
 
 ## 写在最后
 
