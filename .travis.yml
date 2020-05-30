@@ -33,4 +33,4 @@ env:
     - GH_REF: github.com/alanhg/alanhg.github.io.git
 notifications:
   email:
-    - i@alanhe.me
+    - alan@1991421.cn

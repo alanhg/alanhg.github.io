@@ -155,6 +155,7 @@ symbols_count_time:
 
 algolia:
   appId: XI7T0UACGI
+  applicationID: XI7T0UACGI
   apiKey: fb41a459b46e7dda7af65d45ad5f8432
   adminApiKey: 75a6c3539f76c2d789d4742800062d87
   chunkSize: 5000
