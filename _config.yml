@@ -152,3 +152,11 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+
+algolia:
+  applicationID: XI7T0UACGI
+  apiKey: fb41a459b46e7dda7af65d45ad5f8432
+  indexName: my_blog
+  chunkSize: 5000
+  filter:
+    - title

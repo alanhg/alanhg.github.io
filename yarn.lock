@@ -164,6 +164,27 @@ algoliasearch@3.33.0:
     semver "^5.1.0"
     tunnel-agent "^0.6.0"
 
+algoliasearch@^3.31.0:
+  version "3.35.1"
+  resolved "https://registry.npmjs.org/algoliasearch/-/algoliasearch-3.35.1.tgz#297d15f534a3507cab2f5dfb996019cac7568f0c"
+  integrity sha512-K4yKVhaHkXfJ/xcUnil04xiSrB8B8yHZoFEhWNpXg23eiCnqvTZw1tn/SqvdsANlYHLJlKl0qi3I/Q2Sqo7LwQ==
+  dependencies:
+    agentkeepalive "^2.2.0"
+    debug "^2.6.9"
+    envify "^4.0.0"
+    es6-promise "^4.1.0"
+    events "^1.1.0"
+    foreach "^2.0.5"
+    global "^4.3.2"
+    inherits "^2.0.1"
+    isarray "^2.0.1"
+    load-script "^1.0.0"
+    object-keys "^1.0.11"
+    querystring-es3 "^0.2.1"
+    reduce "^1.0.1"
+    semver "^5.1.0"
+    tunnel-agent "^0.6.0"
+
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
   resolved "https://registry.npmjs.org/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
@@ -1688,6 +1709,14 @@ hexo-admin@^2.1.0:
     serve-static "^1.4.0"
     write-good "^0.10.0"
 
+hexo-algolia@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.npmjs.org/hexo-algolia/-/hexo-algolia-1.3.1.tgz#ee20c3f3286514562488fb77d3120c4fe25b7592"
+  integrity sha512-oJIi33ZTuVLgkLWhHXgbv2iM4gsHtJHj7GwuOV6E+RXWaAjl+Nn48351eoZKvjB/kWdKZUq58iej6Y9fAfW5GA==
+  dependencies:
+    algoliasearch "^3.31.0"
+    p-each-series "^1.0.0"
+
 hexo-algoliasearch@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/hexo-algoliasearch/-/hexo-algoliasearch-0.4.1.tgz#71e8bfdea7dcee10a85eb811b9e01e60a3ee363a"
@@ -2858,6 +2887,18 @@ os-locale@^1.4.0:
   resolved "https://registry.npmjs.org/os-locale/-/os-locale-1.4.0.tgz#20f9f17ae29ed345e8bde583b13d2009803c14d9"
   dependencies:
     lcid "^1.0.0"
+
+p-each-series@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/p-each-series/-/p-each-series-1.0.0.tgz#930f3d12dd1f50e7434457a22cd6f04ac6ad7f71"
+  integrity sha1-kw89Et0fUOdDRFeiLNbwSsatf3E=
+  dependencies:
+    p-reduce "^1.0.0"
+
+p-reduce@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/p-reduce/-/p-reduce-1.0.0.tgz#18c2b0dd936a4690a529f8231f58a0fdb6a47dfa"
+  integrity sha1-GMKw3ZNqRpClKfgjH1ig/bakffo=
 
 pako@~0.2.0:
   version "0.2.9"

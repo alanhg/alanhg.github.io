@@ -847,12 +847,6 @@ algolia_search:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
-algolia:
-  applicationID: XI7T0UACGI
-  apiKey: 619033e3313b4d5227569157e43e3f44
-  indexName: my_blog
-  chunkSize: 5000
-
 
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
@@ -1083,8 +1077,8 @@ vendors:
   # Internal version: 2.10.4
   # See: https://www.algolia.com
   # Example:
-  algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.js
-  algolia_instant_css: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css
+  algolia_instant_js: /lib/algolia/instantsearch.js
+  algolia_instant_css: /lib/algolia/instantsearch.min.css
 
   # Internal version: 1.0.2
   # See: https://github.com/HubSpot/pace

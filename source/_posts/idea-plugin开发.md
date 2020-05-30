@@ -1,10 +1,11 @@
 ---
 title: idea plugin开发
-date: 2019-06-02 20:40:41
 tags:
-- IDEA
-- Plugin
--Java
+  - IDEA
+  - Plugin
+  - Java
+abbrlink: 4dcf7a3c
+date: 2019-06-02 20:40:41
 ---
 > 工作日每天早上我们都会进行CodeReview，大致的流程是一群人看着一块屏幕，分别打开每个项目，看每次的commit，发现有问题的代码，就记录下来行号，文件名，所在项目，问题点等，但记录的过程却是很浪费时间的，也容易错。每次因为要记录，其实也造成了CodeReview的效率低。关于改良CodeReview的的效率，我们也是经过了一系列的努力的。
 >
