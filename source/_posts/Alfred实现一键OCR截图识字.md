@@ -54,6 +54,8 @@ npm install baidu-aip-sdk -g
 
 ## 当前效果
 
-![](http://static.1991421.cn/2020/2020-05-30-104926.gif)
+
+![](http://static.1991421.cn/2020/2020-05-30-114653.gif)
+
 
 
