@@ -1,5 +1,5 @@
 ---
-title: 博客搜索改用algolia
+title: 博客搜索改用Algolia
 date: 2020-05-30 22:20:57
 tags:
 - theme-next
