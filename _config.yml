@@ -156,6 +156,7 @@ symbols_count_time:
 algolia:
   appId: XI7T0UACGI
   apiKey: fb41a459b46e7dda7af65d45ad5f8432
+  adminApiKey: 75a6c3539f76c2d789d4742800062d87
   indexName: my_blog
   chunkSize: 5000
   fields:
