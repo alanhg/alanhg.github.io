@@ -1,10 +1,11 @@
 ---
 title: 阿里巴巴Java开发手册阅读
-date: 2020-05-18 04:19:03
 tags:
-- Code Style
-- Java
-- 规约
+  - Code Style
+  - Java
+  - 规约
+abbrlink: '38259457'
+date: 2020-05-18 04:19:03
 ---
 
 > 最近阿里发布了`阿里巴巴Java开发手册（泰山版）`，花了点时间阅读下，这里MARK下个人感受

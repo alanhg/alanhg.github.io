@@ -1,9 +1,10 @@
 ---
 title: Alfred实现一键登陆OpenConnect VPN
-date: 2020-05-26 22:34:28
 tags:
-- Alfred
-- Workflows
+  - Alfred
+  - Workflows
+abbrlink: 903a293e
+date: 2020-05-26 22:34:28
 ---
 > 经常需要登陆公司VPN，一直使用脚本登陆，但还是不够高效，于是为了节约时间，利用Alfred来实现一键VPN
 

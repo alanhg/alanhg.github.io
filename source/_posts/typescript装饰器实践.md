@@ -1,9 +1,10 @@
 ---
 title: TypeScript装饰器实践
-date: 2020-05-16 16:34:30
 tags:
-- TypeScript
-- 装饰器
+  - TypeScript
+  - 装饰器
+abbrlink: f255e524
+date: 2020-05-16 16:34:30
 ---
 > 当前装饰器还只是[ES提案[Stage 2]](https://github.com/tc39/proposal-decorators)，在过去，还没定下来的东西，我们无话可说。但今天，项目中使用的是TypeScript，Babel，本身存在转译，所以我们往往可以用些超越当前的特性。比如Angular2框架中就有装饰器的大量存在。
 > 

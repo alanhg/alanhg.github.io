@@ -1,10 +1,11 @@
 ---
 title: no-nested-ternary
-date: 2020-05-23 21:04:11
 tags:
-- eslint
-- JavaScript
-- Code Style
+  - eslint
+  - JavaScript
+  - Code Style
+abbrlink: 40f97b35
+date: 2020-05-23 21:04:11
 ---
 >  三元表达式在简单的判断取值中使用，还是很简洁的，但是当遇到嵌套逻辑时，可读性就变得很差，实际项目中，我是这么要求团队=》禁用。
 

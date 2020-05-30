@@ -1,10 +1,11 @@
 ---
 title: 了解emoji
-date: 2020-05-09 16:23:24
 tags:
-- emoji
-- encode
-- charset
+  - emoji
+  - encode
+  - charset
+abbrlink: 4d28b2a7
+date: 2020-05-09 16:23:24
 ---
 
 ![](http://static.1991421.cn/2020/2020-05-07-225828.jpeg)

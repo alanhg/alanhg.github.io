@@ -1,11 +1,12 @@
 ---
 title: Alfred实现一键检索印象笔记
-date: 2020-05-30 13:12:55
 tags:
-- Alfred
-- Alfred4
-- Workflow
-- 印象笔记
+  - Alfred
+  - Alfred4
+  - Workflow
+  - 印象笔记
+abbrlink: 19a8050f
+date: 2020-05-30 13:12:55
 ---
 
 

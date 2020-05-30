@@ -1,10 +1,11 @@
 ---
 title: 谷歌工程实践-CR，MR
-date: 2020-05-15 11:50:21
 tags:
-- Google
-- Style
-- Best Practice
+  - Google
+  - Style
+  - Best Practice
+abbrlink: c13c3742
+date: 2020-05-15 11:50:21
 ---
 > 最近花个把小时阅读了谷歌工程实践，当然现在只有CR，MR部分，但是仍然很有触动。这里谈下个人的感受
 
