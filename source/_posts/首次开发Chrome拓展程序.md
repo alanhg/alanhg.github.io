@@ -1,9 +1,10 @@
 ---
 title: 首次开发Chrome拓展程序
-date: 2020-05-31 22:21:25
 tags:
-- Chrome
-- Extension
+  - Chrome
+  - Extension
+abbrlink: 3b4af61d
+date: 2020-05-31 22:21:25
 ---
 > 一直没做过Chrome拓展开发，最近发现京东跟阿里一样，在一些权益上刻意为用户设绊子，浪费宝贵的时间，于是顺便做个小工具，也权当Chrome插件开发练手。
 

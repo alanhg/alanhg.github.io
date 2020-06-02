@@ -1,9 +1,10 @@
 ---
 title: 博客搜索改用Algolia
-date: 2020-05-30 22:20:57
 tags:
-- theme-next
-- hexo
+  - theme-next
+  - hexo
+abbrlink: 85b6ab00
+date: 2020-05-30 22:20:57
 ---
 > 个人博客当前使用的搜索服务是Swiftype，但有一定试用期，到期后402报错。而local search的体验很差，于是我切换到使用algolia。发现这么个服务配置，网上说法不一，多少还是踩了点坑的，这里简单Mark下。
 

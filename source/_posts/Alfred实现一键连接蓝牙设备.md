@@ -1,9 +1,10 @@
 ---
 title: Alfred实现一键连接蓝牙设备
-date: 2020-06-01 22:45:35
 tags:
-- Alfred
-- WorkFlow
+  - Alfred
+  - WorkFlow
+abbrlink: 3d021756
+date: 2020-06-01 22:45:35
 ---
 > 个人是AirPods等无线设备的强烈支持者，很多年不曾使用过有线鼠标，耳机了。但日常使用存在这样一个场景，平时AirPods是连接的iPhone，但有时比如要开会，我需要快速连接到Mac上去。当前的操作是，滚动鼠标到屏幕右上角蓝牙图标=》点击蓝牙图标，选择AirPods=》选择连接。OK，操作繁琐，于是我想做个workflow来快速连接断开蓝牙设备吧。
 
