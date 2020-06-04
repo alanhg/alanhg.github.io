@@ -19,8 +19,8 @@ date: 2019-04-21 18:11:21
 
 ## APP清单
 
-软件 | 功能 | 资费方案
-----| ---| ---
+软件 | 功能 | 资费方案|备注
+----| ---| ---|---
 Alfred| 效率神器 | 付费
 Dash| 文档检索 | 付费
 Moom| 窗口管理 | 付费
@@ -35,7 +35,7 @@ Telegram | 安全通信 | 免费
 微信 | 办公IM | 免费
 Chrome | 浏览器 And 前端开发调试神器 | 免费
 MacDown | MD编写 | 免费
-keka | 解压缩 | 免费
+keka | 解压缩 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
 Kindle |电子书 | 免费
 Things | GTD | 付费
 PostMan|网络调试 | 免费
