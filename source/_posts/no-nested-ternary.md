@@ -28,7 +28,7 @@ var foo = bar ? baz : qux === quxx ? bing : bam;
 
 1. if else
 2. switch
-3. 构建对象
+3. 策略模式，构建策略对象
 
 
 
