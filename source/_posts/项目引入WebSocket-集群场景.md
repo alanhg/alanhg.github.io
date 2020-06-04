@@ -1,10 +1,11 @@
 ---
 title: 项目引入WebSocket-集群场景
-date: 2020-06-03 22:55:08
 tags:
-- Cluster
-- Redis
-- WebSocket
+  - Cluster
+  - Redis
+  - WebSocket
+abbrlink: b9b8eefb
+date: 2020-06-03 22:55:08
 ---
 
 > 最近站点上了WebSocket,紧接面临的问题是Web服务集群下WS的通讯问题。Web服务多实例的情况下，假如A用户访问订阅了A服务的WS频道，但是B服务在后台发起了广播，实际上A用户是收不到消息的。于是问题来了,集群场景下，广播，单个用户准确发消息呢。
