@@ -18,23 +18,22 @@ date: 2020-06-01 22:45:35
 当你选中一个断开连接的设备，则设备就会连接，反之，则会断开。妈妈再也不用繁琐的操作蓝牙连接了。
 
 
-
 下载地址：[戳这里](https://github.com/alanhg/alfred-workflows/tree/master/bluetooth-manager)
 
 ## 使用注意
 
 1. 配对还是需要自己手动在系统蓝牙面板中操作，这里只列出配对的蓝牙设备 
 2. 选中一个蓝牙设备，回车即可连接或断开蓝牙设备
+3.  __支持AirPods左右耳机电量显示__
 
 ## 如何实现的呢
 
-这里不再详细去说，因为也无话可说。主要借助的是第三方类库[`blueutil`](https://github.com/toy/blueutil)，本身workflow只是执行了该命令进行设备展示和连接而已。
+这里不再详细去说，因为也无话可说。主要借助的是
+
+1. 第三方类库[`blueutil`](https://github.com/toy/blueutil)，本身workflow只是执行了该命令进行设备展示和连接而已。
+2. `hammerspoon`读取系统蓝牙设备电量信息，用于AirPods电量显示，假如不需要电量信息展示，不安装即可，我做了容错处理。
 
 
-##  当前的不足
-
-留心的同学会注意到，Apple自己的设备，或者部分第三方的蓝牙设备在系统蓝牙popup中是显示电量的，那么workflow中可以做到吗？
-
-经过一番调研，发现可以做到。大致的思路是`/Library/Preferences/com.apple.Bluetooth.plist`中会存储蓝牙连接设备的ID，电量等信息，所以有戏。上面提到的`blueutil`并不支持该功能。
-
-so,最近有空就会实现下。
+## 当前的不足
+- 为了确保及时显示蓝牙设备的电量信息，只能依赖了hammerspoon，毕竟Alfred本身是不具备访问系统信息能力的，都需要借助AppleScript，Shell，等。
+- 局限在Alfred的Script Filter设计，我必须要确保显示设备前拿到最新的电量信息。所以设定了2个关键词，用户必须要多回车一次，这也是没办法的办法。
