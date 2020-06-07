@@ -1,9 +1,9 @@
 ---
-title: 写个Alfred Workflow实现一键切换Maven设定
+title: Alfred Workflow实现一键切换Maven设定
 tags:
   - Maven
   - Alfred
-  - Alfred Workflow
+  - Workflow
 abbrlink: 5a73137b
 date: 2019-08-18 23:32:29
 ---
