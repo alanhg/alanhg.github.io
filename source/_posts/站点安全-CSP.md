@@ -41,15 +41,18 @@ date: 2020-05-11 20:31:06
 ```yml
 content-security-policy: "default-src 'self' wss: 'unsafe-inline' file: data: blob: https://*;"
 ```
+![](http://static.1991421.cn/2020/2020-06-09-203930.jpg)
 
 ### 内容格式
 那怎么配置呢，知道格式，和值即可。
+
 
 1. script-src,default-src我们可以叫做一个指令，所以我们是配置一或者多个指令，如上我只配置了`default-src`,`指令之间以分号分割`
 2.  单个指令中多个源source，source可以是域名、IP、协议，注意协议需要带冒号
 3.  unsafe-inline,unsafe-eval,none必须有单引号。
 
 所以才会出现，指令配置中，分号，单引号，冒号，空格多种写法的存在。
+
 
 
 ### 常见的安全策略
