@@ -7,7 +7,7 @@ abbrlink: 63ea9513
 date: 2020-05-11 20:31:06
 ---
 
-> 最近项目在做安全扫描，安全团队报过来了一个问题-没有满足CSP，如下图，错误提示已经很清晰了，但是源于我之前对此并没有学习过，于是开始了调查学习
+> 最近项目在做安全扫描，安全团队报过来了一个问题-没有满足CSP，如下图，错误提示已经很清晰了，但是源于我之前对此并有学习过，于是开始了调查学习
 
 ![](http://static.1991421.cn/2020/2020-05-11-203614.jpeg)
 
@@ -29,18 +29,27 @@ date: 2020-05-11 20:31:06
 - style-src
 - img-src
 - frame-src
+- default-src
 - 等等
 
 正如之前所讲，配置策略可以严格控制我们资源的类型，来源地址，协议类型。
-
 
 ### 贴下我当前的配置
 
 我当前的配置还是比较松的，只是控制了资源来源一定是自己
 
 ```yml
-content-security-policy: "default-src 'self' 'unsafe-inline' file: data: blob: https://*;"
+content-security-policy: "default-src 'self' wss: 'unsafe-inline' file: data: blob: https://*;"
 ```
+
+### 内容格式
+那怎么配置呢，知道格式，和值即可。
+
+1. script-src,default-src我们可以叫做一个指令，所以我们是配置一或者多个指令，如上我只配置了`default-src`,`指令之间以分号分割`
+2.  单个指令中多个源source，source可以是域名、IP、协议，注意协议需要带冒号
+3.  unsafe-inline,unsafe-eval,none必须有单引号。
+
+所以才会出现，指令配置中，分号，单引号，冒号，空格多种写法的存在。
 
 
 ### 常见的安全策略
