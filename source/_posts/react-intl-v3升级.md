@@ -5,7 +5,7 @@ tags:
 - react-intl
 - react
 ---
-> 趁着周末坐下react-intl的类库升级。当前最新版本是`v4.6.9`,项目使用的版本是`v2.3.18`
+> 趁着周末做下react-intl的类库升级。当前最新版本是`v4.6.9`,项目使用的版本是`v2.3.18`，这里决定升级到`v3@latest`
 
 ## 升级带来的benefit
 1. 修复已知的BUG，原先的版本当我传入`de-de`，国际化失效，当时的workaround是我将localData的key永远设定为en
