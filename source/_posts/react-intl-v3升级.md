@@ -10,11 +10,11 @@ tags:
 ## 升级带来的benefit
 1. 修复已知的BUG，原先的版本当我传入`de-de`，国际化失效，当时的workaround是我将localData的key永远设定为en
 2. 针对localeData部分，体积会减小，因为已经使用了浏览器自带的Intl相关API
-3. withRef迁移到forwardRef，这也是目前组件通用的方式，有益于统一
-4. 之前已经做了React，Redux这些主要类库的升级，Intl升级有益于整体架子将来的迭代而升级
+3. `withRef`迁移到`forwardRef`，这也是目前组件间引用传递通用的方式，有益于统一
+4. 之前已经做了React，Redux这些主要类库的升级，Intl升级有益于整体架子将来的迭代升级
 5. 之前的国际化方法，比如formatMessage返回的是Node节点，比如包含了Span标签，而v3返回的是文本，严格来说渲染也会降低浏览器的开销，毕竟少了一对节点，当然比如有些国际化地方需要简单的文本，这样就可以直接满足
 
-_虽说开源虽免费，版本须谨慎，但永恒不变，对于发展中的WEB技术和本身的产品项目都是不利的，所以还是需要渐进升级。_
+_开源虽免费，版本须谨慎，但永恒不变，对于发展中的WEB技术和本身的产品项目都是不利的，所以还是需要渐进升级。_
 
 
 ## 升级细目
@@ -38,10 +38,13 @@ v3已自带TS类型定义，之前的`@types/react-intl`需remove
 ### tsconfig.json
 
 ```json
-    "lib": ["es2015", "es2017", "dom", "es2018.intl", "esnext.intl"]
+
+"lib": ["es2015", "es2017", "dom", "es2018.intl", "esnext.intl"]
+
 ```
 
 #### typings.d.ts
+  因为我拓展全局window属性，将intl实例赋值上去，所以需要如下定义
 
 
 ```typescript
@@ -56,9 +59,8 @@ declare global {
 ```
 #### 注意
 
-- 这里之所以要加定义，是因为我在WEB初始化时，将intl的对象赋值给了Window自定义对象intl，假如不需要的skip
-- 这里比较有意思的是，TS项目中有时我们需要支持JSON，SVG等的模块导入，所以往往需要`declare module '*.svg';`,但是这种声明与上面的global声明会有冲突，解决办法就是物理分离两个d.ts文件。
-
+- 假如不需要的，skip该配置
+- `declare module '*.svg';`与`declare global`两种模块声明存在冲突，需要物理分离成两个声明文件。假如全局声明没有import,则`declare global`是可以省略的
 
 ![](http://static.1991421.cn/2020/2020-06-13-171323.jpeg)
 
