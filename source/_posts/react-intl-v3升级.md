@@ -1,9 +1,10 @@
 ---
 title: react-intl v3升级
-date: 2020-06-13 16:48:50
 tags:
-- react-intl
-- react
+  - react-intl
+  - react
+abbrlink: fe131cf3
+date: 2020-06-13 16:48:50
 ---
 > 趁着周末做下react-intl的类库升级。当前最新版本是`v4.6.9`,项目使用的版本是`v2.3.18`，这里决定升级到`v3@latest`
 
