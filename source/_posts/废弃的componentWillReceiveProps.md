@@ -29,7 +29,7 @@ tags:
 ## 项目中规避这种废弃方法的使用
 我们可以配置相应的lint规则，确保这类代码不存在，这样也减少了将来框架升级带来的改写成本。
 
-`yarn add eslint-plugin-react`
+`yarn add eslint-plugin-react -d`
 
 具体介绍，[戳这里](https://github.com/yannickcr/eslint-plugin-react)
 
