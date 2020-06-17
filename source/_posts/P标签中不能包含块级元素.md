@@ -1,0 +1,69 @@
+---
+title: P标签中不能包含块级元素
+date: 2020-06-17 09:49:44
+tags:
+- HTML
+---
+> 最近在CR时，发现有人在P标签中包含了div块级标签。这实际上是个错误。这篇文章就系统说明下。
+
+## P标签的定位
+
+> HTML <p>元素（或者说 HTML 段落元素）表示文本的一个段落。该元素通常表现为一整块与相邻文本分离的文本，或以垂直的空白隔离或以首行缩进。另外，\<p\> 是块级元素。
+
+> 短语元素（Phrasing content） 规定文本和它包含的标记。 一些Phrasing content就构成了段落.
+
+
+摘自MDN，按照文档的说法，P标签内是允许短语元素的（Phrasing content）。但是块级元素并不允许。
+
+
+## P标签中包含块级元素
+
+### HTML中直接包含
+
+浏览器并不报错，但是代码会被自动的纠正
+
+源码如下
+
+```html
+ <p>
+          <div>
+            hello world
+          </div>
+    </p>
+```
+
+浏览器解析后，会是
+
+```html
+<p>
+    </p><div>
+      hello world
+    </div>
+<p></p>
+```
+
+### JS下操作
+
+假如JS下创建，浏览器并不会纠正这类问题
+
+```html
+<script>
+      document.getElementById('“myPara”').innerHTML = ` <div>
+            hello world
+          </div>`;
+    </script>
+```
+
+### React等框架
+
+因为react还是JS，也是可以的，但是会有error报错
+
+
+![](http://static.1991421.cn/2020/2020-06-17-101621.jpeg)
+
+
+
+## 参考文档
+- [Why can't the <p> tag contain a <div> tag inside it?](https://stackoverflow.com/questions/8397852/why-cant-the-p-tag-contain-a-div-tag-inside-it)
+
+
