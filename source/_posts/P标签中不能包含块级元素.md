@@ -42,11 +42,17 @@ tags:
 <p></p>
 ```
 
-### JS下操作
+so，这里就会有BUG的风险，比如样式是`p>div`,那就会失效。
 
-假如JS下创建，浏览器并不会纠正这类问题
+### JS下创建DOM
+
+注意假如JS下创建，浏览器并不会`纠正问题`,仍会原样创建DOM元素
 
 ```html
+
+<p id="“myPara”">
+</p>
+
 <script>
       document.getElementById('“myPara”').innerHTML = ` <div>
             hello world
@@ -56,11 +62,13 @@ tags:
 
 ### React等框架
 
-因为react还是JS，也是可以的，但是会有error报错
+SPA如今很流行，但这些框架仍然是JS，因此如上也是可以P标签包含块元素的，但是会有error报错
 
 
 ![](http://static.1991421.cn/2020/2020-06-17-101621.jpeg)
 
+## 写在最后
+虽然说问题并不严重，但遵从实践标准很重要。标准化的HTML，有益于SEO，对于开发也可规避如上的问题，so注意为好。
 
 
 ## 参考文档
