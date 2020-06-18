@@ -72,6 +72,5 @@ SPA如今很流行，但这些框架仍然是JS，因此如上也是可以P标�
 
 
 ## 参考文档
-- [Why can't the <p> tag contain a <div> tag inside it?](https://stackoverflow.com/questions/8397852/why-cant-the-p-tag-contain-a-div-tag-inside-it)
-
-
+- [Why can't the \<p> tag contain a \<div> tag inside it?](https://stackoverflow.com/questions/8397852/why-cant-the-p-tag-contain-a-div-tag-inside-it)
+- 
