@@ -12,7 +12,7 @@ date: 2017-08-04 19:10:23
 
 `DDNS`就是为了解决动态IP问题的，原来可以利用DDNS给出一个固定的动态域名比如[aaaaaaa.asuscomm.com]绑定web服务，这样就可以直接用这个动态域名去访问。
 当然正常我们搭建个web的话肯定是不希望用这个域名去直接访问的怎么办的，好办，只要在自己买的域名比如alanhe.me上增加个记录
-![CNAME](http://static.1991421.cn/blog/2017-08-04-112143.jpg)
+![CNAME](https://static.1991421.cn/blog/2017-08-04-112143.jpg)
 
 如上，配置成功后，就可以使用[http://test.alanhe.me](http://test.alanhe.me)来访问自己搭建的web了。
 

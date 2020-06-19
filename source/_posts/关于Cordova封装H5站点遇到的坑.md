@@ -11,11 +11,11 @@ date: 2017-07-14 21:55:27
 
 ## 坑1-文件下载
 在实际APP中，点击下载，发现没反应，几次都不行，推断有问题，在GitHub插件pr中检索download,果然，发现有相关问题，如下图，仔细看了下，得到以下两点信息
-![inappbrowser-pr](http://static.1991421.cn/inappbrowser-pr.png)
+![inappbrowser-pr](https://static.1991421.cn/inappbrowser-pr.png)
 + 首先这个下载问题，的确是这个插件的事，本质原因是安卓手机下载，就意味着文件要存储在手机上，而这是需要授权的，所以插件必须要声明文件存储权限，然后看了下插件的源码，果然，根本没有存储权限
 + 是pr，说明已经解决，并且提交，申请合并主干了，但是由于pr是打开状态，说明还没合并主干，那么通过npm，cordova安装的都不行了，因为官方版本不行，所以只能根据提交记录找到提交记录作者的fork状态下的插件即可，然后下载下来丢到项目中对应插件下，重新添加平台，构建打包，发现，果然解决啦。
-![inappbrowser-pull](http://static.1991421.cn/inappbrowser-pull.png)
-![inappbrowser-fork](http://static.1991421.cn/inappbrowser-fork.png)
+![inappbrowser-pull](https://static.1991421.cn/inappbrowser-pull.png)
+![inappbrowser-fork](https://static.1991421.cn/inappbrowser-fork.png)
 
 解决问题的插件分支，[点击下载](https://github.com/MeirBon/cordova-plugin-inappbrowser/tree/download-permissions)
 
@@ -24,7 +24,7 @@ date: 2017-07-14 21:55:27
 `<preference name="AutoHideSplashScreen" value="false" />`
 按照配置说明是设置为false,就不会自动关闭，需要手动关闭
 但是实际配置后，添加平台，运行，发现不起作用，查看pr,果然有人提PR，
-![cordova-plugin-splashscreen-pull](http://static.1991421.cn/cordova-plugin-splashscreen-pull.png)
+![cordova-plugin-splashscreen-pull](https://static.1991421.cn/cordova-plugin-splashscreen-pull.png)
 又是open状态，没招。
 
 最终只是绕路解决，想到的方案是配置文件中将splashscreen的时效设置为0，然后手动启动和关闭，但是因为启动会自动消失，所以写定时器循环，不断的show，保证splash不消失，具体代码如下

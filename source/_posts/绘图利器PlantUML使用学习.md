@@ -8,7 +8,7 @@ date: 2019-05-26 22:06:31
 ---
 > 最近同事推荐了一个工具`PlantUML`，利用文本来绘制程序的复杂逻辑。体验下觉得不错，这里学习记录下。
 
-![](http://static.1991421.cn/2019-05-26-include_demo.gif)
+![](https://static.1991421.cn/2019-05-26-include_demo.gif)
 
 ## 插件下载
 Visual Studio Code和JetBrains公司的IDEA等都有对应的插件支持，这里贴下链接。
@@ -61,7 +61,7 @@ Visual Studio Code和JetBrains公司的IDEA等都有对应的插件支持，这�
 ### 文本换行
 比如图注释，经常文本需要换行，如何实现呢，\n即可
 
-![](http://static.1991421.cn/2019-05-26-140158.png)
+![](https://static.1991421.cn/2019-05-26-140158.png)
 
 
 ## 相关文档

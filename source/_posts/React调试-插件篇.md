@@ -9,7 +9,7 @@ date: 2019-10-10 10:08:01
 ---
 > React组件调试，除了万能油console之外，可以利用react-devtools及Redux DevTools辅助工具。因为Team总会来新人，为了快速入门，这里小结一番。
 
-![](http://static.1991421.cn/2019-10-10-013611.jpg)
+![](https://static.1991421.cn/2019-10-10-013611.jpg)
 
 _插件安装需要上Chrome商店，如果还不会科学上网，上不了谷歌。我的天，恳请您换职业。当然，b本着人道主义关怀，还是说下怎么解决在不能上谷歌的情况下如何插件安装_
 
@@ -26,7 +26,7 @@ react-devtools是fb`官方`出品插件。源码地址[戳这里](https://github
 
 ## 检测元素
 
-![](http://static.1991421.cn/2019-10-10-react-devtools.gif)
+![](https://static.1991421.cn/2019-10-10-react-devtools.gif)
 
 假如应用复杂，对于某块展示内容，我们需要快速定位对应的组件代码，那么这个功能就非常有用了。
 
@@ -39,12 +39,12 @@ maybe检测不起作用，可能是以下原因
 
 添加filter
 
-![](http://static.1991421.cn/2019-10-10-react-devtools-1.gif)
+![](https://static.1991421.cn/2019-10-10-react-devtools-1.gif)
 
 ## Redux DevTools
 该插件用于redux状态检测及调试分析。当然假如app没有应用redux，这个插件当然不需要了。
 
-![](http://static.1991421.cn/2019-10-10-013952.jpg)
+![](https://static.1991421.cn/2019-10-10-013952.jpg)
 
 1. 右侧的tab工具栏，比如diff,辅助查看每个action执行前后的状态对比
 2. 下部工具栏支持导入导出数据JSON等

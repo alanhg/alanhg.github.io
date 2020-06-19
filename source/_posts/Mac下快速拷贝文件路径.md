@@ -37,7 +37,7 @@ Automator是可以节省很多重复操作，Alfred也类似，但是Alfred有�
 ## 当前效果
 选中文件夹或者文件，右键-service中即可看到自定义的菜单项-Copy Path，完美
 
-![](http://static.1991421.cn/2020/2020-04-29-212749.png)
+![](https://static.1991421.cn/2020/2020-04-29-212749.png)
 
 这里贴出我做的，[戳这里](https://github.com/alanhg/mac-automator),下载安装即可使用
 

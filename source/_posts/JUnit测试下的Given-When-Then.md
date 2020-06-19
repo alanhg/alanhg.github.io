@@ -13,7 +13,7 @@ date: 2019-04-21 23:01:36
 
 原文链接:[点击这里](https://blog.codecentric.de/en/2017/09/given-when-then-in-junit-tests/)
 
-![](http://static.1991421.cn/2019-04-21-145500.jpg)
+![](https://static.1991421.cn/2019-04-21-145500.jpg)
 
 我们看JUnit测试，有时会觉得很奇怪。因为我们必须Mock对象和结果，这需要大量的工作要做。虽然我们现在有很多先进的工具、框架，比如Mockito，PowerMock，但是利用它们写出的代码，有时，易读性，可理解和可维护性并没有想象的那么好。
 

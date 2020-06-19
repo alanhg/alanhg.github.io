@@ -63,7 +63,7 @@ declare global {
 - 假如不需要的，skip该配置
 - `declare module '*.svg';`与`declare global`两种模块声明存在冲突，需要物理分离成两个声明文件。假如全局声明没有import,则`declare global`是可以省略的
 
-![](http://static.1991421.cn/2020/2020-06-13-171323.jpeg)
+![](https://static.1991421.cn/2020/2020-06-13-171323.jpeg)
 
 
 

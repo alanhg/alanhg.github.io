@@ -8,7 +8,7 @@ tags:
 ---
 > JAVA-web开发，如果选择Tomcat容器的话，一般是war包部署
 
-![](http://static.1991421.cn/blog/2018-03-25-061434.jpg)
+![](https://static.1991421.cn/blog/2018-03-25-061434.jpg)
 
 Jenkins进行war包部署，有两种方案，一是安装[`Deploy to container`](https://plugins.jenkins.io/deploy)插件，另一个是自行写shell脚本解决。我这里选择方案2
 原因有两个
@@ -43,7 +43,7 @@ so,废话不说开搞！
 
 ## Jenkins构建任务配置
 
-![](http://static.1991421.cn/blog/2018-05-25-035825.png)
+![](https://static.1991421.cn/blog/2018-05-25-035825.png)
 
 ## 写在最后
 shell编写脚本实现构建的具体执行细节，而Jenkins提供钩子，机制上的支持，这样配合，解决了部署，并且给了很大的自由度。如此一来，我们只需要专注于程序编写，

@@ -9,7 +9,7 @@ date: 2019-10-27 15:16:11
 ---
 > 前端项目使用到了lodash，lodash中有个类型是Dictionary，JavaScript内置对象有Map和Object，三者联系区别在哪，且该如何选择？向下看！
 
-![](http://static.1991421.cn/2019-10-27-061335.jpg)
+![](https://static.1991421.cn/2019-10-27-061335.jpg)
 
 ## lodash中的Dictionary
 
@@ -116,7 +116,7 @@ o['x'] = 5; //succeeds
 
 ## 三者联系与区别
 
-![](http://static.1991421.cn/2019-10-27-072248.png)
+![](https://static.1991421.cn/2019-10-27-072248.png)
 
 1. Object与lodash的Dictionary类似，Dictionary只是值类型一致，但Object的值类型可以是任何类型
 2. Map是有序的，可迭代，而Object不是
@@ -133,7 +133,7 @@ o['x'] = 5; //succeeds
 ## JavaScript中的堆栈
 上面讲到的类型都归属于Object类型，而对象类型的存储是在堆内存中，栈内存只是存储了地址下标。所以对象值的拷贝修改要注意，了解下这个有利于类型使用中闭坑。
 
-![](http://static.1991421.cn/2019-10-27-070346.jpg)
+![](https://static.1991421.cn/2019-10-27-070346.jpg)
 
 ## 写在最后
 搞明白了三者之间的关系，那就合理使用之。highlight一点，面对一个场景，比如简单的数据，Map,Object,Dictionary都可解决，但为了性能，可读性等，仍然要合理选择，避免挖坑。

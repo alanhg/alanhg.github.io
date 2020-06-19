@@ -9,7 +9,7 @@ date: 2019-09-15 23:21:05
 ---
 > Webpack有个HMR功能，这个特性在1.x的时候就有了。但我一直没有去特意关注过，最近因为在改进开发体验,牵扯到改动这里。所以决定梳理下这个，也以此加深对Webpack的理解。
 
-![](http://static.1991421.cn/2019-09-15-140154.jpg)
+![](https://static.1991421.cn/2019-09-15-140154.jpg)
 
 ## 上概念
 
@@ -38,7 +38,7 @@ date: 2019-09-15 23:21:05
 
 5. HMR Runtime替换模块
 
-![](http://static.1991421.cn/2019-09-15-151747.jpg)
+![](https://static.1991421.cn/2019-09-15-151747.jpg)
 
 ## Angular下如何开启HMR
 了解了HMR是什么东西，我们就来看看Angular，React,Vue下都是如何开启HMR的。
@@ -51,7 +51,7 @@ date: 2019-09-15 23:21:05
 - 如上所述，HMR是Webpack的功能，并非Angular官方提供和支持。
 - index.html宿主页面修改，是不会触发热更新，JS，CSS会，因为开发模式下，JS，CSS都会是JS模块形态
 
-![](http://static.1991421.cn/2019-09-15-142429.jpg)
+![](https://static.1991421.cn/2019-09-15-142429.jpg)
 
 ## Create React App下开启HMR
 React系，初始化前端项目一般会使用Create React App脚手架，所以列下该脚手架下如何去开启HMR。另外React项目下有个React-Hot-Loader插件，一般会用到它。那两者什么区别和关系呢

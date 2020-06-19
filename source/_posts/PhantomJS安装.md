@@ -11,7 +11,7 @@ tags:
 
 如何安装呢，这里简要说明下。
 
-![](http://static.1991421.cn/blog/2018-05-01-103648.png)
+![](https://static.1991421.cn/blog/2018-05-01-103648.png)
 
 ## Linux
 ```bash

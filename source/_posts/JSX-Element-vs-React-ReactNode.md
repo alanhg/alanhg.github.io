@@ -14,11 +14,11 @@ date: 2019-09-28 12:44:18
 
 ## JSX.Element与React.ReactNode等价？
 
-![](http://static.1991421.cn/2019-09-28-040933.jpg)
+![](https://static.1991421.cn/2019-09-28-040933.jpg)
 
 创建一个Card组件，参数content定义为JSX.Element,如果传参为数组元素，是直接报错的。改为`JSX.Element[]`或者`React.ReactNode`均OK。
 
-![](http://static.1991421.cn/2019-09-28-041055.jpg)
+![](https://static.1991421.cn/2019-09-28-041055.jpg)
 
 那是不是意味着这样就等价了呢？
 
@@ -51,17 +51,17 @@ type ReactNode = ReactChild | ReactFragment | ReactPortal | string | number | bo
 明白了差异，再重新看antd里关于这个类型的使用，似乎也就更理解了。
 比如对于常用的Table组件，render方法与renderColumnTitle采用了不同的类型定义。why？因为两者确实情况不同
 
-![](http://static.1991421.cn/2019-09-28-043512.jpg)
+![](https://static.1991421.cn/2019-09-28-043512.jpg)
 
 ### render 使用JSX.Element
 
-![](http://static.1991421.cn/2019-09-28-044507.jpg)
+![](https://static.1991421.cn/2019-09-28-044507.jpg)
 
 因为table组件最终一定返回一个组件元素，不可能是个数字，字符串等
 
 ### renderColumnTitle使用React.ReactNode
 
-![](http://static.1991421.cn/2019-09-28-044027.jpg)
+![](https://static.1991421.cn/2019-09-28-044027.jpg)
 
 如上renderColumnTitle返回的可能只是个数字，字符串等，并不是个元素对象
 

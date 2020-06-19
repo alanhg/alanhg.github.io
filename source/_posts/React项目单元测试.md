@@ -95,7 +95,7 @@ onError: () => ''
 
 ### 使用方法
 
-![](http://static.1991421.cn/2019-10-02-132743.jpg)
+![](https://static.1991421.cn/2019-10-02-132743.jpg)
 
 ### 创建enzyme-setup
 
@@ -235,12 +235,12 @@ describe('collapsed-description component test', () => {
 
 假如我们无意中修改了组件导致样式变化，则UT挂的时候会贴出具体的错误信息，方便我们排查。
 
-![](http://static.1991421.cn/2019-12-29-103412.png)
+![](https://static.1991421.cn/2019-12-29-103412.png)
 
 ### Enzyme与react-test-renderer快照测试区别
 对比发现，react-test-renderer的快照更简单易读，直接会贴出完整HTML源码。
 
-![](http://static.1991421.cn/2019-12-29-102932.png)
+![](https://static.1991421.cn/2019-12-29-102932.png)
 
 ## 补充部分
 

@@ -8,7 +8,7 @@ date: 2020-06-15 22:45:19
 > React v16.3+已标注`componentWillReceiveProps`为不提倡，17将予以删除，那么这个周期函数为什么要被废弃呢，弊端在哪里，及新的同需求新写法又是如何呢。这篇文章我来梳理下这个函数
 
 
-![](http://static.1991421.cn/2020/2020-06-15-231959.jpeg)
+![](https://static.1991421.cn/2020/2020-06-15-231959.jpeg)
 
 
 ## componentWillReceiveProps的触发时间

@@ -12,7 +12,7 @@ date: 2019-10-05 16:52:42
 > 
 > 举个例子，我们需要fetchUser拿到用户信息，然后存到redux中。如果没有thunk，我们需要在组件中fetchUser.then，然后dispatch一个action存到redux中，假如这个操作有多处需要，那么fetchUser.then这个就需要重复，存在一定的代码重复。thunk加入的话，我们可以把fetchUser.then(dispatch action)整体作为一个action进行复用。因为thunk改写了dispatchAPI，我们还是dispatch去用而已，但是已经不是个pure action了。
 
- ![](http://static.1991421.cn/2019-10-05-025840.jpg)
+ ![](https://static.1991421.cn/2019-10-05-025840.jpg)
  
  
 ## thunk引入

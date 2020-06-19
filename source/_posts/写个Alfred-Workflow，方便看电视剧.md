@@ -15,7 +15,7 @@ date: 2019-01-13 12:22:12
 打开Alfred设定，点击左下角的加号，选择blank Workflow
 
 按照提示，填写名称，分类，描述等。
-![](http://static.1991421.cn/2019-01-13-035730.png)
+![](https://static.1991421.cn/2019-01-13-035730.png)
 
 ## 添加ScriptFilter
 我这里因为需要利用脚本去实现，所以选择添加Script filter.`右键 => inputs => Script Filter`
@@ -27,7 +27,7 @@ date: 2019-01-13 12:22:12
 ```
 {query}指的是在alfred输入框中参数
 
-![](http://static.1991421.cn/2019-01-13-035809.png)
+![](https://static.1991421.cn/2019-01-13-035809.png)
 
 ### 说明
 - keyword指的是唤起Alfred，输入的关键词，比如这里我写yy，即输入yy，会进入该插件，参数上，我选择可空
@@ -85,14 +85,14 @@ searchMovies();
 ## 添加action-打开URL
 当前面得到了检索的目标影片信息后，那么就应该是打开URL了，所以选中刚才的Script Filter，右键 => Insert After => Actions => Open URL,`query就是上一步结果中的arg`
 
-![](http://static.1991421.cn/2019-01-13-040621.png)
+![](https://static.1991421.cn/2019-01-13-040621.png)
 
 ## 添加通知
 为了进一步提升体验，来个通知，右键 => Insert After => Outputs => Post Notification 
 
 ## 最终效果
 
-![](http://static.1991421.cn/2019-01-13-041740.png)
+![](https://static.1991421.cn/2019-01-13-041740.png)
 
 ## 写在最后
 以前为了看电视剧，需要打开浏览器，输入网址，搜索电视，点击观看，总共有4部，现在只需要唤起Alfred，输入`yy 超人`，选择要看的电视，回车即可以观看。节约点时间，这就再开心不过了。

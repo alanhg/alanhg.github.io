@@ -33,7 +33,7 @@ router.get("/hello", function (req, res) {
 
 执行后，结果截图
 
-![](http://static.1991421.cn/blog/2018-03-04-083842.png)
+![](https://static.1991421.cn/blog/2018-03-04-083842.png)
 当我们没有结束请求回复时，利用next可以继续进行处理。
 
 ### 例子2
@@ -59,7 +59,7 @@ router.use(function (err, req, res, next) {
 
 执行请求`http://localhost:3001/api/hello`
 结果截图
-![](http://static.1991421.cn/blog/2018-03-04-092302.png)
+![](https://static.1991421.cn/blog/2018-03-04-092302.png)
 
 异常处理其实是next使用的一种场景。
 

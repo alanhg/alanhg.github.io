@@ -10,7 +10,7 @@ tags:
 > 项目代码中，大家人云亦云的使用`takeEvery`辅助函数,实际上大错特错，应该按需使用。Saga的官方文档确实写的很差，于是翻源码，做测试，对此理解的透彻了些，这里Mark一番。
 
 
-![](http://static.1991421.cn/2019-12-28-104500.jpg)
+![](https://static.1991421.cn/2019-12-28-104500.jpg)
 
 
 ## 辅助函数
@@ -85,11 +85,11 @@ function* fetchUserEffects(action) {
 
 `  yield takeEvery('USER_FETCH', fetchUserEffects);`,连续发起4次`USER_FETCH`。
 
-![](http://static.1991421.cn/2019-12-28-101807.png)
+![](https://static.1991421.cn/2019-12-28-101807.png)
 
-![](http://static.1991421.cn/2019-12-28-101304.png)
+![](https://static.1991421.cn/2019-12-28-101304.png)
 
-![](http://static.1991421.cn/2019-12-28-101125.png)
+![](https://static.1991421.cn/2019-12-28-101125.png)
 
 注意，action发起了4次，所以可以说明没发起一次action,对应坚挺的saga就会执行一次。
 
@@ -97,16 +97,16 @@ function* fetchUserEffects(action) {
 
 当我们设定为takeLeading,连续发起4次`USER_FETCH`，注意到只有第一次的被执行。
 
-![](http://static.1991421.cn/2019-12-28-102605.png)
+![](https://static.1991421.cn/2019-12-28-102605.png)
 
 ### takeLatest
 当我们设定为takeLatest,连续发起4次`USER_FETCH`，注意到其实saga执行还是4次，但是只有最后一次`完整执行`。
 
-![](http://static.1991421.cn/2019-12-28-102820.png)
+![](https://static.1991421.cn/2019-12-28-102820.png)
 
-![](http://static.1991421.cn/2019-12-28-102834.png)
+![](https://static.1991421.cn/2019-12-28-102834.png)
 
-![](http://static.1991421.cn/2019-12-28-102852.png)
+![](https://static.1991421.cn/2019-12-28-102852.png)
 
 #### WHY ?
 

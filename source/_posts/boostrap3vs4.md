@@ -10,7 +10,7 @@ date: 2018-06-20 06:48:15
 ---
 > Bootstrap于1月19日放出了4的正式版，4带来了一些重要的改变，添加了新的组件，同时也废弃了一些。这里是Bootstrap 3与4的区别
 
-![](http://static.1991421.cn/2018-06-21-114624.png)
+![](https://static.1991421.cn/2018-06-21-114624.png)
 
 原文链接:[这里](https://www.quackit.com/bootstrap/bootstrap_4/differences_between_bootstrap_3_and_bootstrap_4.cfm)
 ## 组件差异
@@ -97,7 +97,7 @@ date: 2018-06-20 06:48:15
 |支持性|支持|不支持|
 
 ## 浏览器支持
-![](http://static.1991421.cn/2018-06-27-040213.png)
+![](https://static.1991421.cn/2018-06-27-040213.png)
 
 ## 写在最后
 以上只是列出需要关注的差异点，具体还是看官网吧。

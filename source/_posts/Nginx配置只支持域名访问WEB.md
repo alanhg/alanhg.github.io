@@ -46,7 +46,7 @@ server {
 
 ## 效果
 当我们以IP访问
-![](http://static.1991421.cn/blog/2018-06-02-045526.png)
+![](https://static.1991421.cn/blog/2018-06-02-045526.png)
 
 当我们以指定域名访问
-![](http://static.1991421.cn/blog/2018-06-02-051256.png)
+![](https://static.1991421.cn/blog/2018-06-02-051256.png)

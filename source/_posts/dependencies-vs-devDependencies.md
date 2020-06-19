@@ -8,7 +8,7 @@ date: 2019-02-17 17:22:49
 ---
 > npm是 Node.js 平台的包管理工具,实际开发中我们并不是从零做起，往往需要安装大量的包用于开发及生产使用，这时，我们就需要安装包，并且将其配置在package.json文件中，明确其依赖。在package.json文件中，有两个依赖声明位置dependencies和devDependencies。那么针对一个包，我们到底是安装到dependencies还是devDependencies呢，本文旨在把这点差异明确下。
 
-![](http://static.1991421.cn/2019-02-17-092336.png)
+![](https://static.1991421.cn/2019-02-17-092336.png)
 
 ## 官方定义
 

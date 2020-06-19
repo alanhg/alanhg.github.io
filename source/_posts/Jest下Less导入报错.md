@@ -11,7 +11,7 @@ date: 2019-08-04 21:22:24
 
 ## 错误现象
 
-![](http://static.1991421.cn/2019-08-04-121718.jpg)
+![](https://static.1991421.cn/2019-08-04-121718.jpg)
 
 ### 报错CODE
 ```bash
@@ -61,13 +61,13 @@ Test suite failed to run
 3. 运行OK，UT却不OK，Jest配置？
 既然运行不报错，so说明code是可以的。于是看了下当前的jest配置，恍然大悟
 
-![](http://static.1991421.cn/2019-08-04-125119.jpg)
+![](https://static.1991421.cn/2019-08-04-125119.jpg)
 
 	对于绝对路径app导入的模块，并不会走`identity-obj-proxy`,而出错的行就是app路径导入，so，less没有成功mock。
 
 	我尝试添加如下规则。
 
-![](http://static.1991421.cn/2019-08-04-130129.jpg)
+![](https://static.1991421.cn/2019-08-04-130129.jpg)
 
 	重跑UT，过了。
 

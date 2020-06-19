@@ -10,7 +10,7 @@ date: 2019-10-20 22:00:47
 
 > 最近花了2天时间阅读了这本技术书[《Redux in Action》](https://item.jd.com/33402169124.html)
 
-![](http://static.1991421.cn/2019-10-20-074400.png)
+![](https://static.1991421.cn/2019-10-20-074400.png)
 
 结合自己一年+的React/Redux使用，有些反思体会，这里总结一番，大都实际使用中该注意的细节点。
 
@@ -96,7 +96,7 @@ The pattern is commonly referred to as Flux Standard Actions (FSA); more details
 
 action发起 =》【middleware1,middleware2】=>reducer执行，修改store=>组件监听到store变化，执行钩子周期，进而改变视图
 
-![](http://static.1991421.cn/2019-10-20-092518.png)
+![](https://static.1991421.cn/2019-10-20-092518.png)
 
 ## Redux-Saga,Redux-Thunk何时使用
 

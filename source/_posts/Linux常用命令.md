@@ -5,7 +5,7 @@ tags:
 abbrlink: fe4ef317
 date: 2017-05-15 15:40:41
 ---
-![terminal](http://static.1991421.cn/blog/2017-08-19-040639.jpg)
+![terminal](https://static.1991421.cn/blog/2017-08-19-040639.jpg)
 > 使用文字界面来设定，对于了解Linux有一定的帮住,平时不免接触,常用命令总结如下。
 
 ## 系统

@@ -8,7 +8,7 @@ tags:
 abbrlink: f47dd8fc
 date: 2018-12-04 23:44:03
 ---
-![](http://static.1991421.cn/2018-12-02-090726.jpg)
+![](https://static.1991421.cn/2018-12-02-090726.jpg)
 
 > 最近在做一个A项目的开发，前端技术栈是React+Redux。由于之前React方便基础薄弱(接触个一个小Demo)，而redux更是新鲜事物，所以在开发中不免束手束脚，并且遇到了很多的问题。查官网，查资料，再加上实际Dev，多少有了基本的认识，这里记录下。
 
@@ -64,19 +64,19 @@ npm i react-redux --save-dev
 
 #### Action
 
-![](http://static.1991421.cn/2018-12-04-153755.png)
+![](https://static.1991421.cn/2018-12-04-153755.png)
 
 #### Reducer
 
-![](http://static.1991421.cn/2018-12-04-153837.png)
+![](https://static.1991421.cn/2018-12-04-153837.png)
 
 #### Store
-![](http://static.1991421.cn/2018-12-04-153911.png)
+![](https://static.1991421.cn/2018-12-04-153911.png)
 
 
 #### dispatch
 
-![](http://static.1991421.cn/2018-12-04-154143.png)
+![](https://static.1991421.cn/2018-12-04-154143.png)
 
 具体代码直接看[这里](https://github.com/reduxjs/redux/tree/master/examples/todos)
 
@@ -84,7 +84,7 @@ npm i react-redux --save-dev
 
 对于Redux三大支柱有不理解的，看下图
 
-![](http://static.1991421.cn/2018-12-02-134719.jpg)
+![](https://static.1991421.cn/2018-12-02-134719.jpg)
 
 
 这里解刨下

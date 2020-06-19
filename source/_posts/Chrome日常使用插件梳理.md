@@ -10,7 +10,7 @@ date: 2019-10-03 23:55:57
 
 > 之前梳理过，自己常用的APP，常用的硬件。这次梳理下Chrome日常使用的插件，并且分享点自己的使用心得。
 
-![](http://static.1991421.cn/2019-10-03-160710.jpg)
+![](https://static.1991421.cn/2019-10-03-160710.jpg)
 
 对于我所使用的插件，大致可以分为两类。
 
@@ -51,7 +51,7 @@ date: 2019-10-03 23:55:57
 	
 	注意，由于快捷键与GitHub网页快捷键存在冲突，所以需要添加排除规则
 	
-	![](http://static.1991421.cn/2019-10-03-153756.jpg)
+	![](https://static.1991421.cn/2019-10-03-153756.jpg)
 	
 7. [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
 	

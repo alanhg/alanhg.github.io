@@ -7,7 +7,7 @@ date: 2019-12-29 22:50:53
 ---
 > Team在制定API时，有时很纠结要不要区分Put与Patch。既然纠结，那就搞明白。
 
-![](http://static.1991421.cn/2019-12-29-142044.jpg)
+![](https://static.1991421.cn/2019-12-29-142044.jpg)
 
 图片源自[这里](https://blog.eq8.eu/article/put-vs-patch.html)
 

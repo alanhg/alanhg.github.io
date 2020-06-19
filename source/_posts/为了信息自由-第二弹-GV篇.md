@@ -18,9 +18,9 @@ date: 2019-11-02 21:15:37
 
 销号访问地址:[戳这里](https://my.telegram.org/auth)
 
-![](http://static.1991421.cn/2019-11-02-89BCD1BC-75C2-4A6E-AB70-B8BA8CC5FDCB.png)
+![](https://static.1991421.cn/2019-11-02-89BCD1BC-75C2-4A6E-AB70-B8BA8CC5FDCB.png)
 
-![](http://static.1991421.cn/2019-11-02-975227B6-53AB-4060-B8FE-07FBDB253CCB.png)
+![](https://static.1991421.cn/2019-11-02-975227B6-53AB-4060-B8FE-07FBDB253CCB.png)
 
 ## IFTTT使用确保GV不被回收
 > Google Voice的回收政策是这样的：如果超过6个月没有拨打或者接听电话，也没有发出或接收过短信，号码就会被回收.因此需要使用IFTTT定期拨打电话来避免该问题。
@@ -29,11 +29,11 @@ IFTTT Keep Google Voice Active [地址](https://ifttt.com/applets/131839p-keep-g
 
 注意：App安装不是必须的，Google Voice WEB也可以接听电话，但我接听时，听不清数字，根据提示可按键2，这样Gmail会收到语音邮件，点击重新播放即可。
 
-![](http://static.1991421.cn/2019-11-02-131210.png)
+![](https://static.1991421.cn/2019-11-02-131210.png)
 
 实测，上图输入电话号格式是支持多种的比如`(404) 692-2710或者4046922710`
 
-![](http://static.1991421.cn/2019-11-02-130212.png)
+![](https://static.1991421.cn/2019-11-02-130212.png)
 
 这样以来就可以确保不易被回收了，完美。
 

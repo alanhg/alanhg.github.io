@@ -9,7 +9,7 @@ tags:
 
 `jsPlumb`本身分`Tookit`付费版及`Community`社区版，因核心功能社区版都已具备，且开源社区本身的活跃度更为方便未来的开发维护等，所以选择社区版。
 
-![jsPlumb](http://static.1991421.cn/blog/2017-12-23-064750.png)
+![jsPlumb](https://static.1991421.cn/blog/2017-12-23-064750.png)
 
 ## 学习渠道
 
@@ -330,4 +330,4 @@ const connectorPaintStyle = {
 
 比如删边，其实函数名称叫`deleteConnection`,如下图:
 
-![deleteConnection](http://static.1991421.cn/blog/2017-12-23-065854.png)
+![deleteConnection](https://static.1991421.cn/blog/2017-12-23-065854.png)

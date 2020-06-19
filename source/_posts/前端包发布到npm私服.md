@@ -8,7 +8,7 @@ date: 2019-11-17 18:34:18
 ---
 > 之前Team一直以`Git Submodule`的形式共享前端基础模块资源，但存在弊端，于是趁着周末研究下Nexus npm，将前端资源切换到npm形式进行维护管理
 
-![](http://static.1991421.cn/2019-11-17-102918.png)
+![](https://static.1991421.cn/2019-11-17-102918.png)
 
 ## Git Submodule的弊端
 
@@ -29,7 +29,7 @@ so，决定改为npm包管理方式。目前公司搭建有nexus私服，so这�
 docker run -d --restart=unless-stopped  --name nexus -p 8081:8081 -p 5000:5000 -p 5001:5001 -p 5002:5002 -p 5003:5003 -p 5004:5004 --ulimit nofile=90000:90000 -e INSTALL4J_ADD_VM_PARAMS="-Xms2g -Xmx2g" -v /nexus-data:/nexus-data sonatype/nexus3
 ```
 
-![](http://static.1991421.cn/2019-11-17-101732.png)
+![](https://static.1991421.cn/2019-11-17-101732.png)
 
 ### 配置
 1. 添加三个仓库hosted,proxy, group，其中group仓库中中将hosted和proxy拖拽进去。
@@ -38,9 +38,9 @@ docker run -d --restart=unless-stopped  --name nexus -p 8081:8081 -p 5000:5000 -
 	- hosted 指的是自己的私有仓库，可以上传私有代码到上面。
 	- proxy 指的是代理镜像仓库，比如我们常用的antd，angular等第三方类库。
 
-	![](http://static.1991421.cn/2019-11-17-101653.png)
+	![](https://static.1991421.cn/2019-11-17-101653.png)
 
-	![](http://static.1991421.cn/2019-11-17-101807.png)
+	![](https://static.1991421.cn/2019-11-17-101807.png)
 
 2. Realms中添加npm Bearer Token Realm
 
@@ -76,7 +76,7 @@ email=hi@1991421.cn
 $ npm publish
 
 ```
-![](http://static.1991421.cn/2019-11-17-102742.png)
+![](https://static.1991421.cn/2019-11-17-102742.png)
 
 ### 包的使用
 
@@ -126,7 +126,7 @@ info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this 
 
 解决办法是，登陆nexus私服，点击invalidate cache
 
-![](http://static.1991421.cn/2020/2020-04-08-235616.png)
+![](https://static.1991421.cn/2020/2020-04-08-235616.png)
 
 
 

@@ -15,7 +15,7 @@ tags:
 
 	menu => mailbox=>new Mailbox
 	
-	![](http://static.1991421.cn/2019-09-08-072351.png)
+	![](https://static.1991421.cn/2019-09-08-072351.png)
 
 4. 拖拽创建的草稿到templates
 

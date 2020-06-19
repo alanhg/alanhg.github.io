@@ -12,15 +12,15 @@ date: 2017-09-29 11:11:51
 
 ## 模拟器卸载
 在xcode-components下可以看到已下载的各个系统版本的模拟器
-![](http://static.1991421.cn/blog/2017-09-29-030917.jpg)
+![](https://static.1991421.cn/blog/2017-09-29-030917.jpg)
 
 比如想删除某个版本的模拟器,直接进入`/Library/Developer/CoreSimulator/Profiles/Runtimes`,删除目标模拟器
 
-![](http://static.1991421.cn/blog/2017-09-29-030854.jpg)
+![](https://static.1991421.cn/blog/2017-09-29-030854.jpg)
 
 然后再进入xcode-components中，会发现目前模拟器已经属于未下载状态
 
-![](http://static.1991421.cn/blog/2017-09-29-031422.jpg)
+![](https://static.1991421.cn/blog/2017-09-29-031422.jpg)
 
 ## 模拟器输入法问题
 利用模拟器进行APP测试时候，发现MAC输入中文，在模拟器中还是英文对待，其实这个时候，就是模拟器系统中的设定问题了。

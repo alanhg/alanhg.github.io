@@ -7,7 +7,7 @@ date: 2019-09-22 21:28:13
 ---
 > 关于saga中的effects，我们正常使用似乎也没什么问题。但昨天CodeReview中的一个问题-put action是异步的吗？这样一个simple的问题，我没法给出绝对正确的答案，True or False我不确定。so，通过看saga源码，官方文档及DEMO测试，我来给出准确的答案，同时加深对于saga的了解。
 
-![](http://static.1991421.cn/2019-09-22-112434.jpg)
+![](https://static.1991421.cn/2019-09-22-112434.jpg)
 
 先说结论不一定，如果action没有任何中间件处理或者异步阻塞，那么是同步的，如果有，则是异步的。
 
@@ -118,7 +118,7 @@ reducers
 ```
 如上，假如是异步，似乎effects中打印出来的user信息应该是空，然而。。。
 
-![](http://static.1991421.cn/2019-09-22-095336.jpg)
+![](https://static.1991421.cn/2019-09-22-095336.jpg)
 
 结果是user信息非空，也就是说yield put一个action,reducer执行完毕且更新到store后才继续执行接下来的操作。
 
@@ -159,12 +159,12 @@ function* fetchUserEffects() {
 
 如上，执行发现`effects中打印出来的user信息为空，并且先执行的effect打印`
 
-![](http://static.1991421.cn/2019-09-22-130732.jpg)
+![](https://static.1991421.cn/2019-09-22-130732.jpg)
 
 #### put换成putResolve
 按照官网所讲，putResolve为阻塞的，那么put改putResolve，执行如下
 
-![](http://static.1991421.cn/2019-09-23-025248.jpg)
+![](https://static.1991421.cn/2019-09-23-025248.jpg)
 
 会发现`effects中打印出来的user信息不空，并且先执行的reducer打印`，阻塞与非阻塞差异清楚了吧
 

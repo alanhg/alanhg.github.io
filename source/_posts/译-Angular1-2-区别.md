@@ -17,7 +17,7 @@ date: 2018-05-22 17:55:11
 
 1. Angular 2 是重写的全新的框架，并不是Angular1.x的简单升级。
 2. 早期Angular1.x中的控制器的被Angular 2新引入的web标准组件。
-	![](http://static.1991421.cn/blog/2018-05-22-093030.jpg)
+	![](https://static.1991421.cn/blog/2018-05-22-093030.jpg)
 3. Angular 1.x使用 $scope，而在Angular 2或者4里，你将不会找到它，相反使用zone.js来做代码检测。
 4. Angular 2或4更多的聚焦移动版的支持，而在之前的1.x则受限于一定范围
 5. Angular 2 用TypeScript来开发，TypeScript有大量的语法糖及是JavaScript的超集，它具备了ES6的所有规格，然而如果是Angular1.x，并没有这样的概念。
@@ -39,7 +39,7 @@ date: 2018-05-22 17:55:11
 15. 1中的双向数据绑定"ng-model"，在2中我们使用“[(ngmodel)]”
 16. 对比2，Angular1.x更易启动，仅仅添加类库开启一个Angular1.x项目。但是2依赖4个重要文件，zone.js,system.js，shim.js,reflect-metadata和安装程序node.js，TypeScript，缺一个，我们都不能启动Angular2 项目。
 
-![](http://static.1991421.cn/blog/2018-05-23-065813.jpg)
+![](https://static.1991421.cn/blog/2018-05-23-065813.jpg)
 
 希望你作为一个读者已经理解了Angular1.x与Angular 2的差异性。
 

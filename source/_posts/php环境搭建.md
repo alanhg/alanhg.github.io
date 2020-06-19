@@ -27,11 +27,11 @@ phpstudy直接继承了
 
 ## Mac
 从 OS X 10.0.0 版本开始，PHP 作为 Mac 机的标准配置被提供。原文看[这里](http://php.net/manual/zh/install.macosx.bundled.php),但是如果直接浏览器访问，会报以下错误。
-![](http://static.1991421.cn/blog/2017-10-03-86D27F6433EFDC3E188CCD07D6519A7B.jpg)
-![](http://static.1991421.cn/blog/2017-10-03-ED7F19B676EE1E40A05ABDAC5A41C737.jpg)
+![](https://static.1991421.cn/blog/2017-10-03-86D27F6433EFDC3E188CCD07D6519A7B.jpg)
+![](https://static.1991421.cn/blog/2017-10-03-ED7F19B676EE1E40A05ABDAC5A41C737.jpg)
 所以建议仍然重新安装php,执行以下命令，然后在phpstorm下进行配置即可。
 `curl -s http://php-osx.liip.ch/install.sh | bash -s 5.6`
-![](http://static.1991421.cn/blog/2017-10-03-093521.jpg)
+![](https://static.1991421.cn/blog/2017-10-03-093521.jpg)
 再次浏览器访问页面，就OK了。
 
 ## Apache配置

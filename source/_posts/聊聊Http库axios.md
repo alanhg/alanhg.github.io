@@ -12,7 +12,7 @@ tags:
 >  项目前端技术栈对于Http请求这块经常使用Axios类库，在使用中也会遇到一些细节问题，这里就简单聊聊
 
 
-![](http://static.1991421.cn/2019-12-14-045615.jpg)
+![](https://static.1991421.cn/2019-12-14-045615.jpg)
 
 ## Axios的定位
 
@@ -29,9 +29,9 @@ Promise based HTTP client for the browser and node.js
 ### 什么状态码会抛异常
    查看Axios源码会发现，`200<=status<300`为正常，其它均会抛错.
 
-   ![](http://static.1991421.cn/2019-12-15-084119.png)
+   ![](https://static.1991421.cn/2019-12-15-084119.png)
 
-   ![](http://static.1991421.cn/2019-12-15-084249.png)
+   ![](https://static.1991421.cn/2019-12-15-084249.png)
 
    注意，100段，我们平时不会使用,300段的重定向，浏览器会解析新的资源地址继续请求，如果是200即为正常，400，500会抛错误。所以对于请求我们捕捉异常，实际上只会捕获到400和500段的。
 
@@ -40,7 +40,7 @@ Promise based HTTP client for the browser and node.js
 
    大错特错，`onerror只会在网络层异常时触发该事件，比如网络突然断了，假如应用层级别的400，500还是会进入onload，也就是说axios的异常处理的时应用层的，而xhr的异常处理的是网络层。`
 
-  ![](http://static.1991421.cn/2019-12-15-095018.png)
+  ![](https://static.1991421.cn/2019-12-15-095018.png)
 
 ### 接口返回301，页面会跳转吗？
    `不会`，页面跳转即整个页面会刷新，而XHR技术的到来是为了解决交互数据的同时无需让整个页面刷新，所以异步返回301, 浏览器会继续请求新地址资源，但因为是异步，所以只是拿到了返回结果，但整个页面所以不会刷新。
@@ -62,7 +62,7 @@ Promise based HTTP client for the browser and node.js
 ### 请求Canceled
 Chrome观察请求，诧异到会出现`canceled`,出现这种status原因是前端主动取消请求，查看XHR API，确实提供了这样一个方法。
 
-![](http://static.1991421.cn/2019-12-19-144102.jpg)
+![](https://static.1991421.cn/2019-12-19-144102.jpg)
 
 ```
 The XMLHttpRequest.abort() method aborts the request if it has already been sent. When a request is aborted, its readyState is changed to XMLHttpRequest.UNSENT (0) and the request's status code is set to 0.
@@ -72,7 +72,7 @@ so，axios控制的请求会出现abort无非就是timeout配置超时调用了�
 
 注意，这里的axios超时，造成的是xhr status是canceled，如果是服务端网关超时，status是504，这是不同的。
 
-![](http://static.1991421.cn/2019-12-19-143757.png)
+![](https://static.1991421.cn/2019-12-19-143757.png)
 
 ## 写在最后
 

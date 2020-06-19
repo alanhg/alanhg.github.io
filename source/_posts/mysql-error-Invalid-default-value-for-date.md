@@ -6,7 +6,7 @@ tags:
 abbrlink: 7c1b75b3
 date: 2017-10-04 03:34:51
 ---
-![](http://static.1991421.cn/blog/2017-10-03-201336.jpg)
+![](https://static.1991421.cn/blog/2017-10-03-201336.jpg)
 
 > 最近在进行mysql数据迁移时遇见了这个错误,推断是mysql版本差异性带来的问题，我的A、B机器MySQL版本分别是5.6和5.7
 

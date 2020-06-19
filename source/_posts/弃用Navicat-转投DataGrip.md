@@ -9,7 +9,7 @@ date: 2019-10-01 23:59:47
 
 > DB工具之前一直使用Navicat，从破解版到单个DB版，再到Essentials版，来回折腾，如今决定转投JetBrains旗下的DataGrip
 
-![](http://static.1991421.cn/2019-10-02-014747.jpg)
+![](https://static.1991421.cn/2019-10-02-014747.jpg)
 
 ## 弃用Navicat理由
 

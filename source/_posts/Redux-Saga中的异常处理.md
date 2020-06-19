@@ -14,20 +14,20 @@ date: 2019-09-07 22:18:17
 
 贴一个effects，连续`三次`call后端。
 
-![](http://static.1991421.cn/2019-08-04-141523.jpg)
+![](https://static.1991421.cn/2019-08-04-141523.jpg)
 
 假如`第二次`请求`getBooks`出错，还会打印`step 2`吗？
 
-![](http://static.1991421.cn/2019-08-04-141608.jpg)
+![](https://static.1991421.cn/2019-08-04-141608.jpg)
 
 如上没有打印，也就是请求异常，整个程序effects执行就会中断。
 
 ## 单个请求异常处理
 在effects中对于异常，我们需要使用try catch
 
-![](http://static.1991421.cn/2019-08-11-041815.jpg)
+![](https://static.1991421.cn/2019-08-11-041815.jpg)
 
-![](http://static.1991421.cn/2019-08-11-041733.jpg)
+![](https://static.1991421.cn/2019-08-11-041733.jpg)
 
 如上，getBooks请求进行了异常捕捉，这样做就可以吞掉这个错误，进而可以正常执行接下来的请求了。所以控制台对于step1,step2,step3都正常打印
 
@@ -84,21 +84,21 @@ export function safe(sagaFn) {
 
 ### effects上挂载wrapper
 
-![](http://static.1991421.cn/2019-09-03-145341.png)
+![](https://static.1991421.cn/2019-09-03-145341.png)
 
-![](http://static.1991421.cn/2019-09-03-145306.png)
+![](https://static.1991421.cn/2019-09-03-145306.png)
 
 ### 单个effects异常，整个saga监听中止
 
-![](http://static.1991421.cn/2019-08-11-124904.jpg)
+![](https://static.1991421.cn/2019-08-11-124904.jpg)
 
 如上，我们增加saga 打印信息，在组件中，我们连续调用两次同一个action
 
-![](http://static.1991421.cn/2019-08-11-125002.jpg)
+![](https://static.1991421.cn/2019-08-11-125002.jpg)
 
 查看日志，会发现其实，打印信息只有一个
 
-![](http://static.1991421.cn/2019-08-11-125044.jpg)
+![](https://static.1991421.cn/2019-08-11-125044.jpg)
 
 
 ### 造个捕捉异常轮子
@@ -133,7 +133,7 @@ function* mySaga() {
 #### 效果
 即使第一个effects出现问题，并不会影响第二个的执行
 
-![](http://static.1991421.cn/2019-09-03-150305.png)
+![](https://static.1991421.cn/2019-09-03-150305.png)
 
 ## effects统一处理?
 
@@ -166,7 +166,7 @@ export const sagaMiddleware = createSagaMiddleware({
 - 是的，查看saga源码，会知道effect 的type有15种[TAKE,PUT,ALL,FORK等]
 - 我们takeEvery或者takeLatest实际上就是发起了Fork类型的effect
 
-![](http://static.1991421.cn/2019-09-14-154208.jpg)
+![](https://static.1991421.cn/2019-09-14-154208.jpg)
 
 ### 异常信息不友好？
 是的，通过异常信息，目前只能知道action名称，具体绑定的effects中错误代码的行号信息是不清楚的。

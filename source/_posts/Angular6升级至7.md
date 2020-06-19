@@ -5,7 +5,7 @@ tags:
 abbrlink: ac1f4e2e
 date: 2019-05-26 17:20:56
 ---
-![](http://static.1991421.cn/2019-05-26-092129.jpg)
+![](https://static.1991421.cn/2019-05-26-092129.jpg)
 
 Angular7正式版于[2018年10月18号](https://github.com/angular/angular/blob/master/CHANGELOG.md)发布，距今半年时间了，再不跟，就落伍了。
 
@@ -34,7 +34,7 @@ Angular7正式版于[2018年10月18号](https://github.com/angular/angular/blob/
 
 这里直接贴出我成功升级前后的版本变化。
 
-![](http://static.1991421.cn/2019-05-26-085831.png)
+![](https://static.1991421.cn/2019-05-26-085831.png)
 
 *注意*
 - core-js升级到3会报错，所以这里还是维持2.x
@@ -45,10 +45,10 @@ Angular7正式版于[2018年10月18号](https://github.com/angular/angular/blob/
 前端的体积大小一直是个值得关注的点，毕竟体积越小，加载速度也就越快。这里贴下升级前后的体积截图。当前项目小，所以体积变化并不算明显，但还是能够看出来main变小了些，大概`减少了18%`
 
 ### 升级前-v6
-![](http://static.1991421.cn/2019-05-26-084034.png)
+![](https://static.1991421.cn/2019-05-26-084034.png)
 
 ### 升级后-v7
-![](http://static.1991421.cn/2019-05-26-085639.png)
+![](https://static.1991421.cn/2019-05-26-085639.png)
 
 
 
