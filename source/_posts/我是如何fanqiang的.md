@@ -22,13 +22,13 @@ tags:
 
 	<a href="https://www.vultr.com/?ref=8363373"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
 
-3. 购买Shadowsocks
+3. 购买ShadowSocks
     
    - 推荐机场 - https://portal.shadowsocks.nz/aff.php?aff=27252
-   	- 有香港，台湾节点，所以延迟低，300ms
-   	- 资费：20刀一年
-   
- ##  客户端
+   - 有香港，台湾节点，所以延迟低，300ms
+   - 资费：20刀一年
+
+##  客户端
  
  1. Mac
  	- [Surge](https://nssurge.com/)
