@@ -30,9 +30,11 @@ tags:
 
 ##  客户端
  
- 1. Mac
+1. Mac
+
  	- [Surge](https://nssurge.com/)
  	- [ClashX](https://github.com/yichengchen/clashX/releases)
+ 	
 2. iPhone
 	- [Surge](https://nssurge.com/)
 	- ShadowRocket
@@ -40,5 +42,6 @@ tags:
 	- [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases)
 
    	
- 以上这些兴许可以帮助些朋友 	
+   	
+以上这些兴许可以帮助些朋友 	
 
