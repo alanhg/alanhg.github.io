@@ -1,0 +1,44 @@
+---
+title: 我是如何fanqiang的
+date: 2020-06-20 18:20:51
+tags:
+- 科学上网
+---
+
+> 不能谷歌，不能正常访问GitHub，不能刷油管，我想信息获取会很闭塞，身为一个程序员，更严重。于是在如何翻墙这条道路上，一直也在摸索，毕竟强也越来越高。但办法总比问题多，还是可以一一克服的。
+> 
+> 以下为我目前的手段
+
+
+## 服务
+1. 走朋友的私服
+	朋友的私服好处是只有自己用，而且IP因为是动态的，所以真被封了，一般重启机器即可。目前走的是澳门的私服，延迟百毫秒，还可以。
+	
+2. Vultr搭建日本节点
+	
+	- v2ray+https+websocket,稳定性可以，延迟一般，500ms以上，不算多快，但好歹可以解决日常的谷歌资料查询
+	- 如何搭建，可以参考我的docker部署[脚本](https://github.com/alanhg/v2ray-docker)，可以快速解决
+	- 资费：一个月6刀，按小时计费
+
+	<a href="https://www.vultr.com/?ref=8363373"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+
+3. 购买Shadowsocks
+    
+   - 推荐机场 - https://portal.shadowsocks.nz/aff.php?aff=27252
+   	- 有香港，台湾节点，所以延迟低，300ms
+   	- 资费：20刀一年
+   
+ ##  客户端
+ 
+ 1. Mac
+ 	- [Surge](https://nssurge.com/)
+ 	- [ClashX](https://github.com/yichengchen/clashX/releases)
+2. iPhone
+	- [Surge](https://nssurge.com/)
+	- ShadowRocket
+3. Windows
+	- [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+
+   	
+ 以上这些兴许可以帮助些朋友 	
+
