@@ -29,7 +29,7 @@ date: 2020-02-09 19:13:58
 3. 使用箭头函数语法糖
 
 - const的兼容性到IE11+【包含11】
-- Object.assign的兼容性是IE不支持。
+- Object.assign,箭头函数IE不支持
 
 ## 结论
 - 不加入兼容文件的前提下，v6不支持IE，v5支持
@@ -41,7 +41,7 @@ date: 2020-02-09 19:13:58
 	```
 	
 	
-	polyfill解决的问题之一就是`Object.assign`，所以加入我们的Web目标是支持IE11，本身增加的兼容文件完全可以解决query-string的问题，如果不需要支持IE11，那更不需要担心，直接升级即可。
+polyfill解决的问题之一就是`Object.assign`，所以加入我们的Web目标是支持IE11，本身增加的兼容文件完全可以解决query-string的问题，如果不需要支持IE11，那更不需要担心，直接升级即可。
 	
 - 因为query-string v6改为使用原生`Object.assign`，所以体积肯定是进一步的缩小，当然这只是微乎其微而已，但你要知道。
 
