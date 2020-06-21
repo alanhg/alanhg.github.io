@@ -26,16 +26,17 @@ date: 2020-02-09 19:13:58
 ### ChangeLog
 这里列举下从源码上看到的6的主要变化
 
-1. 去掉[object-assign](https://github.com/sindresorhus/object-assign#readme)，使用原声Object.assign
+1. 去掉[object-assign](https://github.com/sindresorhus/object-assign#readme)，使用原生`Object.assign`
 2. 使用const
 3. 使用箭头函数语法糖
 
 - const的兼容性到IE11+【包含11】
 - Object.assign的兼容性是IE压根不支持。
 
-_**那么两个版本对于兼容性的影响就清晰了，在不加入兼容文件的前提下，v6不支持IE，v5支持。**_
+_**那么两个版本对于兼容性的影响就清晰了，在不加入兼容文件的前提下，v6不支持IE，v5支持,注意React框架的兼容性也如此，对于IE支持需要导入polyfill。**_
 
-值得注意的是`曾经的新浏览器--Edge浏览器`的首次发布时间是2015年，而query-string的v6最早是18年发布的，so把IE11当作旧浏览器不过分吧？
+
+`曾经的新浏览器--Edge浏览器`的首次发布时间是2015年，而query-string的v6最早是18年发布的，so把IE11当作旧浏览器不过分吧？
 
 ## 写在最后
 随着浏览器的大一统，在不考虑IE这个猪队友的前提下，似乎Safari，Edge，Chrome，Firefox的兼容性不是问题，但知悉兼容性仍然是前端必修课。
