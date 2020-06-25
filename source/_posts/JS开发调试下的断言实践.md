@@ -69,7 +69,9 @@ tags:
 
 ```typescript
 export const assert = (condition?: boolean, message?: string, ...data: any[]): void => {
-console.assert(condition, message, data);
+       console.assert(condition, message, data);
+       ...
+       showNotice('error');
 }
 
 ```
@@ -83,6 +85,7 @@ if( process.env.NODE_ENV === 'prod' ){
 	return ;
 }
 console.assert(condition, message, data);
+showNotice('error');
 }
 ```
 
