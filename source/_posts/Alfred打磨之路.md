@@ -229,6 +229,8 @@ Update界面=》下拉选择 `pre-releases`
 比如想搜索自己的某个workflow，后者某个snippet。输入`?`即可关键词检索，搜索范围将是Alfred中的所有设定项。
 
 
+![](https://static.1991421.cn/2020/2020-06-25-124453.gif)
+
 
 ### 还有?
 等待遇见
