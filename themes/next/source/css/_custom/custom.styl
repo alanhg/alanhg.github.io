@@ -42,3 +42,38 @@ html {
           0 41.8px 33.4px rgba(0, 0, 0, 0.086),
           0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menu .menu-item a:hover .fa {
+  animation: rotate 3s linear infinite;
+}
+
+.post-meta-item:hover .post-meta-item-icon .fa {
+  animation: rotate 3s linear infinite;
+}
+
+.posts-expand .post-tags a:nth-child(3n+1) {
+  background-color: #00cc7d;
+  color: #333;
+}
+
+.posts-expand .post-tags a:nth-child(3n+1):hover {
+  background-color: #02a868;
+}
+
+.posts-expand .post-tags a:nth-child(3n+2) {
+  background-color: #a300cc;
+  color: #fff;
+}
+
+.posts-expand .post-tags a:nth-child(3n+2):hover {
+  background-color: #8501a7;
+}
