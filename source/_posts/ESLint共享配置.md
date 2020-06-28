@@ -21,7 +21,7 @@ tags:
 
 ```
 
-具体内容，[戳这里](https://github.com/alanhg/react-eslint-recommend-rule)
+具体内容，[戳这里](https://github.com/alanhg/stacker-eslint-config-react)
 
 ### 注意点
 1. 包版本管理仍然使用`standard-version`
