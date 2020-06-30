@@ -25,11 +25,20 @@ tags:
 
 
 ## 延伸
-我们平时谈到的请求状态是围绕着请求回复成功握手，进而返回的哥哥状态。但初次之外还有些其它情况，比如上述这种，还有canceled状态，该状态一般是因为JS脚本中人工中断了请求，或者请求还在处理中，而页面刷新所造成的。
+
+
+### Canceled
+    
+  我们平时谈到的请求状态是围绕着请求回复成功握手，进而返回的哥哥状态。但初次之外还有些其它情况，比如上述这种，还有canceled状态，该状态一般是因为JS脚本中人工中断了请求，或者请求还在处理中，而页面刷新所造成的。
 
 
 ## 写在最后
 关于该问题的资料，在网上搜索发现并没有提到这种情况，因此记录下，兴许帮助些朋友。
+
+
+## 参考文档
+
+- [Chrome dev tools fails to show response even the content returned has header Content-Type:text/html; charset=UTF-8](https://stackoverflow.com/questions/38924798/chrome-dev-tools-fails-to-show-response-even-the-content-returned-has-header-con/38925237#38925237)
 
 
 
