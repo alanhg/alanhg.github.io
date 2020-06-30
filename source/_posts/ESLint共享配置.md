@@ -1,9 +1,10 @@
 ---
 title: ESLint共享配置
-date: 2020-06-27 22:05:14
 tags:
-- ESLint
-- NPM
+  - ESLint
+  - NPM
+abbrlink: e9d8d18d
+date: 2020-06-27 22:05:14
 ---
 
 > 之前的一段时间，将参与的多个WEB项目已经已经从TSLint迁移到ESLint，紧接着的问题就是共享ESLint配置，方案自然还是`npm包管理`

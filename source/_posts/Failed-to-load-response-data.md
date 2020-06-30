@@ -1,8 +1,9 @@
 ---
 title: Failed to load response data
-date: 2020-06-30 14:17:34
 tags:
-- Chrome
+  - Chrome
+abbrlink: e4eb807a
+date: 2020-06-30 14:17:34
 ---
 > 最近测试团队提出一个问题-Web有个请求`Failed to load response data`
 
