@@ -29,7 +29,6 @@ package.json
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
@@ -52,7 +51,6 @@ module.exports = function(api) {
       }
     }], '@babel/preset-react', '@babel/preset-typescript'],
     plugins: [
-      '@babel/plugin-transform-runtime',
       '@babel/plugin-syntax-dynamic-import',
       '@babel/proposal-class-properties',
       '@babel/proposal-object-rest-spread'
@@ -98,3 +96,4 @@ webpack.common.js
 * [babel-loader](https://github.com/babel/babel-loader)
 * [WebPack speedtests with ts-loader, babel 7, awesome-typescript-loader](https://www.reddit.com/r/typescript/comments/bmz5m7/webpack_speedtests_with_tsloader_babel_7/)
 * [TypeScript and Babel 7](https://devblogs.microsoft.com/typescript/typescript-and-babel-7/)
+* [@babel/preset-env 与@babel/plugin-transform-runtime 使用及场景区别](https://segmentfault.com/a/1190000021188054)
