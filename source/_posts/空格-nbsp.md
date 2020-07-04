@@ -1,8 +1,9 @@
 ---
 title: HTML空格显示问题
-date: 2020-07-03 13:51:29
 tags:
- - HTML
+  - HTML
+abbrlink: 9a159000
+date: 2020-07-03 13:51:29
 ---
 > 实际WEB中看到有些人习惯这么控制一些字符实体来空格展示`hello&nbsp;world`,个人觉得并不好，这里来简单解释下。
 

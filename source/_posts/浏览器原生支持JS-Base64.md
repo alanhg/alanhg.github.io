@@ -1,10 +1,11 @@
 ---
 title: 浏览器原生支持JS Base64
-date: 2020-07-02 14:21:32
 tags:
-- JavaScript
-- Base64
-- 
+  - JavaScript
+  - Base64
+  - null
+abbrlink: 7abb323a
+date: 2020-07-02 14:21:32
 ---
 > 最近在MR代码时发现有人这么写`btoa`,郁闷了一下，原来这个是原生的Base64编码，好吧，个人JS基础存在盲区，这里补充下。
 
