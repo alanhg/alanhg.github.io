@@ -1,9 +1,10 @@
 ---
 title: 花式console
-date: 2020-07-04 15:24:31
 tags:
-- console
-- JavaScript
+  - console
+  - JavaScript
+abbrlink: b1f43e66
+date: 2020-07-04 15:24:31
 ---
 > 技术人员习惯性查看网页console，我们会发现有些网页会输出一些炫酷的console信息，当然国内基本上都是招聘。但一直有个疑问怎么做到的呢。
 

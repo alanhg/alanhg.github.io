@@ -1,4 +1,25 @@
-// Custom styles.
+/**
+ * Custom styles.
+ */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes widenText {
+  from {
+    font-weight: normal;
+  }
+  to {
+    font-weight: 600;
+    letter-spacing: 5px
+  }
+}
+
 code {
   color: #4d8cf4;
   background-color: whitesmoke;
@@ -43,14 +64,6 @@ html {
           0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .menu .menu-item a:hover .fa {
   animation: rotate 3s linear infinite;
@@ -76,4 +89,10 @@ html {
 
 .posts-expand .post-tags a:nth-child(3n+2):hover {
   background-color: #8501a7;
+}
+
+
+.page-archive .posts-collapse .post-title:hover {
+  font-weight: 600;
+  animation: widenText 3s linear infinite;
 }
