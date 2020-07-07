@@ -33,14 +33,14 @@ date: 2020-06-20 18:20:51
  
 1. Mac
 
- 	- [Surge](https://nssurge.com/)
- 	- [ClashX](https://github.com/yichengchen/clashX/releases)
+ 	- [Surge](https://nssurge.com/) `付费`
+ 	- [ClashX](https://github.com/yichengchen/clashX/releases) `免费`
  	
 2. iPhone
-	- [Surge](https://nssurge.com/)
-	- ShadowRocket
+	- [Surge](https://nssurge.com/) `付费`
+	- ShadowRocket `付费`
 3. Windows
-	- [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+	- [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases)`免费`
 
    	
    	
