@@ -53,9 +53,10 @@ https://betaprofiles.com
 - 当前Big Sur连接Time Machine是会报错的
 
 ### 降级的正确步骤
-- 开机按住`command shift option r`
+- 开机按住`command shift option r`，进入网络装机
 - 格式化硬盘
-- 选择Time Machine-具体的日期备份-恢复
+- 选择重新安装系统
+- 启动机器，选择Time Machine-具体的日期备份-恢复
 
 ## 写在最后
 
