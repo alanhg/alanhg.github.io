@@ -1,9 +1,10 @@
 ---
-title: 'Apple新系统升级到降级之路'
-date: 2020-07-10 23:12:08
+title: Apple新系统升级到降级之路
 tags:
-- Mac
-- 搞机
+  - Mac
+  - 搞机
+abbrlink: 34eb9d13
+date: 2020-07-10 23:12:08
 ---
 > WWDC结束，我便快速的升级了iPhone,iWatch,Mac，以为会是一直升一直爽，然而心情就像过山车，先让我哭一会儿。
 
