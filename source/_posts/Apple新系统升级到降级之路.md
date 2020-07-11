@@ -12,15 +12,14 @@ tags:
 
 ## 如何升级
 
-访问该网页下载Profile，之后就会有新版提醒。
-
+访问该网页，按照提示下载安装Profile，之后就会有新版提醒，直接安装即可升级。
 
 https://betaprofiles.com
 
 ### 注意
 
 - beta版，Apple基本上两周一更新，直到秋季发布会
-- 升级前一定要备份，比如Mac进行Timemachine备份，推荐NAS方案，性价比很高，iPhone的话有iCloud备份
+- 升级前一定要备份，比如Mac进行Time Machine备份，推荐NAS方案，性价比很高，iPhone的话有iCloud备份
 
 
 ## 升级后各个设备出现的问题
@@ -43,18 +42,18 @@ https://betaprofiles.com
 
 升级一时爽，建议高频日常通勤设备不要升级测试版了，问题太多，影响日常工作生活。
 
-## Mac big sur降级
+## macOS Big Sur降级
 
 因为我的主生产力工具是Mac，但新系统的不稳定已经严重影响我的效率，所以决定降级，同时因为有TM的不间断备份，所以理论上是可以完美还原的。
 
 当然实际的降级恢复不是很顺利，因为姿势不对。
 
 ### 注意
-- 直接本机器重装系统是没用的，因为会以电脑中的最新版系统比如big sur进行安装
-- 当前big sur连接time machine是会报错的
+- 直接本机器重装系统是没用的，因为会以电脑中的最新版系统比如Big Sur进行安装
+- 当前Big Sur连接Time Machine是会报错的
 
 ### 降级的正确步骤
-- 开机按住command shift option r
+- 开机按住`command shift option r`
 - 格式化硬盘
 - 选择Time Machine-具体的日期备份-恢复
 
