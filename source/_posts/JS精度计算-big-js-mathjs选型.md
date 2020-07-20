@@ -45,6 +45,10 @@ Math.js works on any ES5 compatible JavaScript engine: node.js, Chrome, Firefox,
 
 [戳这里](https://github.com/josdejong/mathjs)
 
+### 体积优化
+
+- 如果使用中比如只是数字处理，不需要考虑别的单位计算之类的，可以具体导入某个类型的函数，比如`mathjs/main/esm/number` 而不是`mathjs`
+
 
 ## 个人看法
 
