@@ -345,6 +345,16 @@ export class TokenInterceptor implements HttpInterceptor {
 
 ```
 
+## 打包内存溢出
+
+解决办法指定NODE内存
+
+```json
+    "build": "node --max-old-space-size=8192 $(which ng) build",
+
+```
+
+
 ## 仍有疑问???不够详细???
 
 ![仍有疑问???](https://static.1991421.cn/blog/2017-10-26-question_72px_1094871_easyicon.net.png)
