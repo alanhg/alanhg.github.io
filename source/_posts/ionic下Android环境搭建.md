@@ -23,25 +23,26 @@ tags:
     $ brew install gradle
     ```
     
-3. install android sdk 选择目标版本即可
-4. SDK license 协议
+4. install android sdk 选择目标版本即可
+5. SDK license 协议
 
     ```sh
     $  ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
     ```
             
-5. 安卓手机开发者模式打开，连接电脑
+6. 安卓手机开发者模式打开，连接电脑
 
    ```bash
    $ adb devices
 
    ```
 
-6. 热加载真机启动
+7. 热加载真机启动
 
 	```
 	$ ionic cordova run android -l  
 	```
+
 
 如上即可快速搭建ionic下安卓开发调试。
 
