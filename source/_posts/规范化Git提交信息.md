@@ -18,14 +18,14 @@ tags:
 
 1. 这几个字段如何填写，网上资料很多，这里简单聊下
 	
-	- type `类别,善用类别，我曾见过白痴，从没点开过，全程填fix，我很放心，IT有这些渣子衬托我们，压力顿时小了些，关于type，点击开看下各个类别的描述，自然就懂`
+	- type `类别,善用类别，关于type，点开看下各个类别的描述，自然就懂，注意style type说的是风格而非CSS样式`
 	- scope `这里没有明确的限制，你可以写业务上的scope，或者技术范畴的scope`
 	- description `这次提交执行了什么任务，比如set btn background red 等等`
 	- long description `提交描述的加长版`
 	- closed issue `对于我们日常做项目，往往每次提交都会关联一些卡号，这里要求必须填写，比如jira ticket，比如gitlab issue`
 	
 	这里highlight一点就是type，breaking change决定版本号的变化程度,如果你有breaking
- change，大版本号加1，如果你是feat，中版本号加1，如果是fix一个bug，自然是补丁号加一。连带着想想，package包，我们为什么有些事～，有些^,有些写死版本号呢。这都是有原因的，背后实际上就是semver
+ change，大版本号加1，如果你是feat，中版本号加1，如果是fix一个bug，自然是补丁号加一。连带着想想，package包，我们为什么有些事～，有些^,有些写死版本号呢。这都是有原因的，背后实际上就是`semver`
  	
  	对于description，我看过Google对此的实践，你假设你是在给计算机下达命令，而命令的执行内容就是你提交的代码。以这种口吻去写就行了。
  	
