@@ -1,10 +1,11 @@
 ---
 title: 同一电脑多套Git配置问题
-date: 2020-08-08 12:01:18
 tags:
-- Git
-- GitHub
-- GitLab
+  - Git
+  - GitHub
+  - GitLab
+abbrlink: 4ead3715
+date: 2020-08-08 12:01:18
 ---
 > 有时存在这样的需求，GitHub个人项目的提交与GitLab公司项目的提交，我想走不同的Git配置，比如公司项目中，我想使用我的itcode `heqiangx`作为username,但是GitHub我想走个人的英文名字`Alan He`,如何解决呢，这就要做到根据仓库地址不同，自动切换Git配置信息了。
 

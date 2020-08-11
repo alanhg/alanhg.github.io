@@ -1,9 +1,10 @@
 ---
 title: ionic下Android环境搭建
-date: 2020-07-27 20:45:06
 tags:
-- Android
-- Ionic
+  - Android
+  - Ionic
+abbrlink: 908be5ee
+date: 2020-07-27 20:45:06
 ---
 
 > 环境问题说难不难，但是从来也不是那么顺利的。

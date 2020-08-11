@@ -54,6 +54,11 @@
   #}{% if theme.footer.theme.version %} v{{ version }}{% endif %}{#
 #}</div>
 {% endif %}
+<span class="post-meta-divider">|</span>
+
+<div class="theme-info">
+  <a href="https://status.alanhe.me" title="Alan He的小站">Uptime Robot</a>
+</div>
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#

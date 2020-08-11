@@ -1,9 +1,10 @@
 ---
 title: package.json中的一些使用技巧
-date: 2020-07-26 10:32:44
 tags:
-- NodeJS
-- npm
+  - NodeJS
+  - npm
+abbrlink: 5db5ae2e
+date: 2020-07-26 10:32:44
 ---
 
 [toc]

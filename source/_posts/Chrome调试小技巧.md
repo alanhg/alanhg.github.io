@@ -1,8 +1,9 @@
 ---
 title: Chrome调试小技巧
-date: 2020-07-30 23:00:13
 tags:
-- Chrome
+  - Chrome
+abbrlink: fc06d2d1
+date: 2020-07-30 23:00:13
 ---
 
 > 了解一些Chrome的小技巧，可以节约时间，提升效率，这里记录下平时摸索到的一些点。
