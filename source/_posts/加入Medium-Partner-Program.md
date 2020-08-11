@@ -35,14 +35,21 @@ tags:
 
 简单注册成功后，点击设置，选择Bank accounts and scheduling
 
+![](https://static.1991421.cn/2020/2020-08-12-061234.jpeg)
 
-点击添加银行账户，按照提示填写必要信息，主要是2部分，1是美国联系地址信息，而是Payoneer上的美国银行卡信息
+点击添加银行账户，按照提示填写必要信息，主要是2部分
+
+- 美国联系地址信息
+- Payoneer上的美国银行卡信息
 
 ### 美国地址
 
-- 关于姓名，地址，社会安全码，参考这里填写，https://www.fakenamegenerator.com，https://www.fakeaddressgenerator.com 为什么这里贴2个地址，因为fakenamegenerator我发现城市对应的🥣有些是错误的。所以我会走第二个填写地址信息
-- 电话号码使用Google voice，需要短信验证
-- 邮箱走真实的
+- 关于姓名，地址，社会安全码，走fake的，参考这里填写
+	- https://www.fakenamegenerator.com
+	- https://www.fakeaddressgenerator.com 
+	- 为什么这里贴2个地址，因为fakenamegenerator我发现城市对应的州是错误的。所以我会走第二个填写地址信息
+- 电话号码使用`Google voice`，需要短信验证
+- 邮箱`走真实的`
 
 
 ### 银行卡信息
