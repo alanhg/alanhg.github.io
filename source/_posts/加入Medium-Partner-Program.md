@@ -44,7 +44,7 @@ tags:
 
 ### 美国地址
 
-- 关于姓名，地址，社会安全码，走fake的，参考这里填写
+- 关于姓名，地址，社会安全码SSN，走fake，参考这里填写
 	- https://www.fakenamegenerator.com
 	- https://www.fakeaddressgenerator.com 
 	- 为什么这里贴2个地址，因为fakenamegenerator我发现城市对应的州是错误的。所以我会走第二个填写地址信息
