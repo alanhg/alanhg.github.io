@@ -4,10 +4,15 @@ date: 2020-08-22 14:32:16
 tags:
 - Git
 - CVS
+- ebook
 ---
 > Git已经成了开发中不可缺少的技能，Git玩的好，也是生产力。对于Git，我之前有一些人知盲区，于是碎片时间读了下[《Pro Git, Second Edition》](https://book.douban.com/subject/26208470)，不愧是GitHub官方推荐的学习资料，确是好书。
 
 这里mark下几个知识点，强化记忆
+
+
+![](https://static.1991421.cn/2020/2020-08-22-150715.jpeg)
+
 
 ## Git Commit修改
 
@@ -43,6 +48,6 @@ Rebase-变基，效果如
 ## Server端 Git Hooks
 > Git hook能够在发生某特定行为的时机，触发执行自定义的脚本。
 
-在实际的项目开发中Client端Git Hooks一直发挥着作用，比如lint代码风格 ，比如本地强制跑UT等。但是需要知道hooks本身也有server端的支持。这样可以互步了client端的不足，比如可以做提交信息合格率检测，规则拦截不合格提交，不允许提交成功等。
+在实际的项目开发中Client端Git Hooks一直发挥着作用，比如lint代码风格 ，比如本地强制跑UT等。但是需要知道hooks本身也有server端的支持。这样可以互补了client端的不足，比如可以做提交信息合格率检测，拒绝非法Push等。
 
 Server端Git Hooks配置原理与本地类似，要知道Git是分布式的。
