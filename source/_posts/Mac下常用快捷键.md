@@ -29,6 +29,7 @@ date: 2018-09-09 13:44:31
 - ⌥ ——> Option（或 Alt）
 - ⌃ ——> Control（或 Ctrl）
 - ⇪ ——> Caps Lock
+- ␣ ——> Space
 
 官方文档:[戳这里](https://support.apple.com/zh-cn/HT201236)
 
@@ -209,6 +210,11 @@ search every where|双击⇧
 编辑最大化|⇧  ↩
 单元格内回车`没错，跟上个一致`|⇧ ⏎
 去到某行列|⌘ L
+
+### 其它
+操作|快捷键
+---|---|
+文件预览`搜索支持`|⌥ ␣
 
 ## iTerm2
 操作|快捷键|
