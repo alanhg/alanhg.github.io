@@ -1,10 +1,11 @@
 ---
 title: Pro Git读书记
-date: 2020-08-22 14:32:16
 tags:
-- Git
-- CVS
-- ebook
+  - Git
+  - CVS
+  - ebook
+abbrlink: '7285054'
+date: 2020-08-22 14:32:16
 ---
 > Git已经成了开发中不可缺少的技能，Git玩的好，也是生产力。对于Git，我之前有一些人知盲区，于是碎片时间读了下[《Pro Git, Second Edition》](https://book.douban.com/subject/26208470)，不愧是GitHub官方推荐的学习资料，确是好书。
 

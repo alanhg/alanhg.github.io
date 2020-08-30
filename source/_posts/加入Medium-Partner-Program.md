@@ -1,10 +1,11 @@
 ---
 title: 加入Medium Partner Program
-date: 2020-08-12 06:04:36
 tags:
-- Medium
-- Payoneer
-- Stripe
+  - Medium
+  - Payoneer
+  - Stripe
+abbrlink: 7cc971db
+date: 2020-08-12 06:04:36
 ---
 
 
