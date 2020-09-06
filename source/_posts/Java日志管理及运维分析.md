@@ -43,6 +43,14 @@ tags:
 log.info("quoteId: {} response: {}", quoteId, JsonConverter.serializeObject(quoteWithSaleRegDTO));
 ```
 
+```yml
+logging:
+  pattern:
+    console: '%p [%d{yyyy-MM-dd HH:mm:ss,SSS}] %c{3}:[%C{1}:%M:%L] - [%t][%file:%line] - %m%n'
+```
+
+
+
 ### 注意
 - 日志也是代码的一部分，与注释相同，当量增加，维护成本也增加，所以比如方法名称，行号这些都是强相关，但又是变量，所以能自动，坚决不要手写。
 
