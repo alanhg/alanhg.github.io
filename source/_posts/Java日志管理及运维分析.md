@@ -43,15 +43,26 @@ tags:
 log.info("quoteId: {} response: {}", quoteId, JsonConverter.serializeObject(quoteWithSaleRegDTO));
 ```
 
+### 日志配置
+
+#### Console配置
+
 ```yml
 logging:
   pattern:
     console: '%p [%d{yyyy-MM-dd HH:mm:ss,SSS}] %c{3}:[%C{1}:%M:%L] - [%t][%file:%line] - %m%n'
 ```
 
+#### logstash配置
 
+```java
+logstashEncoder.setIncludeCallerData(true)
+```
+
+详细配置[戳这里](https://github.com/logstash/logstash-logback-encoder)
 
 ### 注意
+- Kibana中的日志元数据取决于logstash配置，logback配置只是解决了控制台日志打印,两者还不同
 - 日志也是代码的一部分，与注释相同，当量增加，维护成本也增加，所以比如方法名称，行号这些都是强相关，但又是变量，所以能自动，坚决不要手写。
 
 
@@ -67,12 +78,14 @@ logging:
 
 ![](https://static.1991421.cn/2020/2020-09-06-164203.jpeg)
 
+![](https://static.1991421.cn/2020/2020-09-07-082413.jpeg)
 
 ### 注意
 
 1. label进行条件的描述，这样方便理解
 2. 日志的时间区间及自动刷新也很重要，辅助快速问题发生时间段的日志
 3. 不同环境我们需要快速同步共享搜索配置，那么可以导入导出解决，这样就不必每个环境系统重新配置。
+4. callerData暴露的method，class等字段也可以进行检索筛选，但对于kibana新增的字段，需要先执行下 management=》index patterns=>Refresh field list，才可以用于筛选检索
 
 
 ## 写在最后
