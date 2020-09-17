@@ -3,6 +3,7 @@ title: 个人Mac软件清单
 tags:
   - 利器
   - Mac
+  - 搞机
 abbrlink: 479f70d9
 date: 2019-04-21 18:11:21
 ---
