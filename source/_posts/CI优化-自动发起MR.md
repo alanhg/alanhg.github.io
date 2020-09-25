@@ -119,6 +119,16 @@ echo "No new merge request opened";
  2. `except`那里之所以会利用`CI_COMMIT_MESSAGE`进行正则筛选，是因为比如UAT分支发生了SIT MR到UAT这种情况就需要避免触发MR，不然UAT又会MR到SIT，这不就是个死锁吗。
 
 
+## 自动Approve Merge Request
+如上既然已经可以利用API发起Merge Request,那么理论上也可以自动Approve Request吧。调查，发现[API](https://docs.gitlab.com/ee/api/merge_request_approvals.html#approve-merge-request)果然支持
+
+但需满足以下两点
+
+1.  `付费版` Bronze / Starter
+2. 版本要求, Introduced in GitLab Starter 10.6.
+
+因为公司使用的是社区版，所以API直接支持的路子走不通了。如果是满足该要求的，可以直接基于上一步的脚本补充即可，
+
 ## 写在最后
 
 - 看似一小步，但解决了人力成本，还是有价值的。
