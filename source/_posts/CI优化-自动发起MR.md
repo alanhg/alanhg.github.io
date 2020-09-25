@@ -127,6 +127,8 @@ echo "No new merge request opened";
 1.  `付费版` Bronze / Starter
 2. 版本要求, Introduced in GitLab Starter 10.6.
 
+_不满足硬上，你会得到404。_
+
 因为公司使用的是社区版，所以API直接支持的路子走不通了。如果是满足该要求的，可以直接基于上一步的脚本补充即可，
 
 ## 写在最后
