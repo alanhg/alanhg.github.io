@@ -64,6 +64,29 @@ Visual Studio Code和JetBrains公司的IDEA等都有对应的插件支持，这�
 ![](https://static.1991421.cn/2019-05-26-140158.png)
 
 
+### 命令行操作
+
+有时需要利用命令行实现自动化生成图片，命令如下
+
+```
+# 生成UML PNG
+java -jar  ./plantuml.jar  -o "./out-png" -progress -tpng -config "./config.txt" ./internal-quote-btn
+
+```
+
+1. jar包下载，[戳这里](https://plantuml.com/zh/download)
+2. config.txt用于图表自定义配置，比如DPI，默认生成的图表不清晰，如下配置即可。
+	
+	```
+	skinparam dpi 200
+	```
+
+## 写在最后
+个人觉得plantuml的美妙之处是你可以以代码形式快速生成图片，高效，美观，正如markdown快速排版文章一样。
+
+so,熟悉它即可提高出图生产力，奥利给。
+
+
 ## 相关文档
 
 - http://plantuml.com/zh/guide
