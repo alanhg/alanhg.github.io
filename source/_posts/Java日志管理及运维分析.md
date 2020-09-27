@@ -96,7 +96,7 @@ logstashEncoder.setIncludeCallerData(true)
 
 ## 参考资料
 - https://www.youtube.com/watch?v=gQ1c1uILyKI&t=36s&ab_channel=edureka%21
-
+- [logstash-logback-encoder](https://github.com/logstash/logstash-logback-encoder)
 
 
 
