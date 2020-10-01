@@ -214,3 +214,4 @@ setTimeout
 ](https://juejin.im/post/6844903638238756878#heading-8)
 - [微任务、宏任务与Event-Loop](https://juejin.im/post/6844903657264136200)
 - [You don’t know JavaScript until you can beat this game](https://medium.com/javascript-in-plain-english/you-dont-know-javascript-until-you-can-beat-this-game-aa7fd58befb)
+- [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=youtu.be&ab_channel=JSConf)
