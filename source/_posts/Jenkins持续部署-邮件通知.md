@@ -69,7 +69,7 @@ node() {
 ## 写在最后
 
 - 个人觉得Jenkins及周边插件的文档写的很一般，相比较而言，查看实战类的书，比看官方文档及Google更为高效些
-- 推荐我正在看的这本书
+- 推荐我正在看的这本书[《Jenkins 2: Up and Running》](https://learning.oreilly.com/library/view/jenkins-2-up/9781491979587/ch04.html#CH_Notifications_and_Reports)
 
 ## 参考文档
 - [Jenkins 2: Up and Running](https://learning.oreilly.com/library/view/jenkins-2-up/9781491979587/ch04.html#CH_Notifications_and_Reports)
