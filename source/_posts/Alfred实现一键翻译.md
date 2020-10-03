@@ -25,11 +25,11 @@ tags:
 
 感兴趣的看源码，不感兴趣的直接下载我做的即可。
 
-下载地址：[戳这里]( )
+下载地址：[戳这里](https://github.com/alanhg/alfred-workflows/tree/master/translate)
 
 ## 坑-52003错误
 
-在实际开发中遇到了个问题，吐槽下。百度的垃圾果真是出了名的，按照官网API，使用POST，报一下错，但是GET却可以。我一度以为是我姿势不对，看了几回API，对比发现是百度的锅。
+在实际开发中遇到了个问题，吐槽下。百度的垃圾果真是出了名的，按照官网API，`使用POST，报一下错，但是GET却可以`。我一度以为是我姿势不对，看了几回API，对比发现是百度的锅。
 
 ```
 data: { error_code: '52003', error_msg: 'UNAUTHORIZED USER' }
