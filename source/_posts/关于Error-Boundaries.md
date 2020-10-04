@@ -13,12 +13,17 @@ tags:
 
 > A JavaScript error in a part of the UI shouldn’t break the whole app. To solve this problem for React users, React 16 introduces a new concept of an “error boundary”.
 
-如上为官网的开篇的一段介绍，由此可以看出该技术的根本目标是希望UI层的异常不要导致整体的App的崩溃。
+如上为官网开篇的一段介绍，由此可以看出该技术的根本目标是希望UI层的异常不要导致整体的App的崩溃。
 
 注意
 
 - 仅限UI层
-- 对于这种处理实际上，可以看作我们函数中经常写的try catch
+- 对于这种处理实际上，可以看作我们函数中经常写的`try catch`
+- React开发模式打包，出现了运行异常，在显示我们既定的错误边界render外，还是会展示堆栈错误信息
+
+	![](https://static.1991421.cn/2020/2020-10-04-212106.jpeg)
+
+
 
 ### 范畴之外
 
