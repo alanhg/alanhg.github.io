@@ -16,8 +16,8 @@
         if (!(postElements.length > 0 && postElements[0].contains(event.target))) {
             return;
         }
-        const pageLink = `\n\nRead more at: ${document.location.href}`;
-        event.clipboardData.setData('text', document.getSelection() + pageLink);
-        event.preventDefault();
+        // const pageLink = `\n\nRead more at: ${document.location.href}`;
+        // event.clipboardData.setData('text', document.getSelection() + pageLink);
+        // event.preventDefault();
     });
 </script>
