@@ -5,6 +5,7 @@ tags:
 - 骨传导
 - 蓝牙耳机
 - 搞机
+- 3C数码
 ---
 > 家里有人买了[AFTERSHOKZ 韶音AS650 Air骨传导耳机](https://item.jd.com/16636418552.html?cu=true&utm_source=norefer&utm_medium=cpc&utm_campaign=t_281_20170818001&utm_term=_0_ce4e8f59e3be49989f3ca9a561d3f8fa)，一直没体验过这类耳机，于是把玩了下，这里谈下个人的使用体验，同时兴许可以帮助那些纠结买哪类型耳机的朋友们。
 
