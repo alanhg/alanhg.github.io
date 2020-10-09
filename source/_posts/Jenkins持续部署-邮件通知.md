@@ -12,7 +12,8 @@ tags:
 ### Plugin Manager
 自带的mail过于简单，为了实现邮件模版自定义，需安装以下插件
 
-- Email Extension Plugin
+- [Email Extension Plugin](https://plugins.jenkins.io/email-ext/)
+- [Config File Provider](https://plugins.jenkins.io/config-file-provider/)
 
 ### Jenkins Configuration
 Extension插件与自带的mail插件不同，需单独配置邮箱服务器
