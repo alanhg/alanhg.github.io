@@ -64,10 +64,14 @@ dns prefetching的`正确使用姿势`如下
 
 1. 对静态资源域名做`手动`dns prefetching。
 2. 对js里会发起的跳转、请求做`手动`dns prefetching。
-3. `不用`对超链接做手动dns prefetching，因为chrome会`自动`做dns prefetching。
+3. `不用`对超链接做手动dns prefetching，因为chrome会`自动`做dns prefetching。当然HTTPS的网页不会，需要手动开启下`<meta http-equiv="x-dns-prefetch-control" content="on">`
 4. 对重定向跳转的新域名做`手动`dns prefetching，比如：页面上有个A域名的链接，但访问A会重定向到B域名的链接，这么在当前页对B域名做手动dns prefetching是有意义的。
 
-推荐一篇相关好文-[预加载系列一：DNS Prefetching 的正确使用姿势](https://tech.youzan.com/dns-prefetching)
+推荐两篇相关好文
+
+- [预加载系列一：DNS Prefetching 的正确使用姿势](https://tech.youzan.com/dns-prefetching)
+- [性能优化之 DNS Prefetch](https://github.com/barretlee/performance-column/issues/3)
+
 
 ## http,https切换
 
