@@ -1,12 +1,13 @@
 ---
 title: JavaScript并发模型与事件循环
-date: 2020-09-26 16:31:03
 tags:
-- EventLoop
-- JavaScript
-- Concurrency
-- Task
-- Microtask
+  - EventLoop
+  - JavaScript
+  - Concurrency
+  - Task
+  - Microtask
+abbrlink: 8a863d27
+date: 2020-09-26 16:31:03
 ---
 
 > 最近看到一道基础题，沉痛打脸，发现对于JS的事件循环机制理解不扎实，于是梳理下，巩固基础。

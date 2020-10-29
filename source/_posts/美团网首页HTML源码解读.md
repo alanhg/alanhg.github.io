@@ -1,9 +1,10 @@
 ---
 title: 美团网首页HTML源码阅读
-date: 2020-10-10 17:21:38
 tags:
-- 源码阅读
-- Source Code
+  - 源码阅读
+  - Source Code
+abbrlink: 8e611eca
+date: 2020-10-10 17:21:38
 ---
 
 首页网址：https://www.meituan.com

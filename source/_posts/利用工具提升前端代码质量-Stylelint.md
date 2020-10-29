@@ -1,10 +1,11 @@
 ---
 title: 利用工具提升前端代码质量-StyleLint
-date: 2020-10-08 21:19:59
 tags:
-- lint
-- front end
-- less
+  - lint
+  - front end
+  - less
+abbrlink: c976b46
+date: 2020-10-08 21:19:59
 ---
 > 前端三要素，HTML，CSS，JS，无论是SPA，还是MPA，HTML相对较少，所以对于代码风格的控制更多在于JS和CSS。对于JS，我们有ESLint，而对于CSS，推荐使用StyleLint。
 

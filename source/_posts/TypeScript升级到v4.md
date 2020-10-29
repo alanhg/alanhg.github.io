@@ -1,8 +1,9 @@
 ---
 title: TypeScript升级到v4
-date: 2020-10-21 23:43:49
 tags:
-- TypeScript
+  - TypeScript
+abbrlink: a3669cff
+date: 2020-10-21 23:43:49
 ---
 > 今天花了点时间进行了TypeScript的升级，好处是可以进一步使用TS/JS的新特性，比如短路赋值运算符等。这里简单Mark下升级细节。
 

@@ -1,10 +1,11 @@
 ---
 title: 关于Error Boundaries
-date: 2020-10-04 20:27:08
 tags:
-- React
-- Frontend
-- Web
+  - React
+  - Frontend
+  - Web
+abbrlink: 93874c54
+date: 2020-10-04 20:27:08
 ---
 > React文档中讲到一个概念-Error Boundaries（错误边界），今天正好在读一本书[《Learning React》](https://book.douban.com/subject/34887887/),借着刚读完的熟悉感 + 结合实际的项目，聊下个人的实践认知。
 

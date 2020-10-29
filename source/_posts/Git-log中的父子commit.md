@@ -1,8 +1,9 @@
 ---
 title: Git log中的父子commit
-date: 2020-10-29 15:37:15
 tags:
-- Git
+  - Git
+abbrlink: 398694bb
+date: 2020-10-29 15:37:15
 ---
 > 学会看Git log也是一个必备的技能，之前对于Commit中父子关系有所疑惑，这里梳理总结下
 

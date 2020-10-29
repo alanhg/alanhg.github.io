@@ -1,9 +1,10 @@
 ---
 title: Alfred实现一键翻译
-date: 2020-10-03 09:51:01
 tags:
-- Alfred
-- Workflow
+  - Alfred
+  - Workflow
+abbrlink: db2d5274
+date: 2020-10-03 09:51:01
 ---
 > 应一个朋友的诉求，实现了基于百度翻译API的workflow，这里简单share下
 

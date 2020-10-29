@@ -1,9 +1,10 @@
 ---
 title: Jenkins持续部署-邮件通知
-date: 2020-10-02 14:31:08
 tags:
-- Jenkins
-- CD
+  - Jenkins
+  - CD
+abbrlink: '77734821'
+date: 2020-10-02 14:31:08
 ---
 > 为了生产发版后，能够及时的通知BA，Dev同学，趁着周末，研究了会儿Jenkins，这里简单Mark下。
 

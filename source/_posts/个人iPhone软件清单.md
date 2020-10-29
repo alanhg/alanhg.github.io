@@ -1,11 +1,12 @@
 ---
 title: 个人iPhone软件清单
-date: 2020-09-17 11:42:03
 tags:
-- 利器
-- 搞机
-- iPhone
-- App
+  - 利器
+  - 搞机
+  - iPhone
+  - App
+abbrlink: bb0b1412
+date: 2020-09-17 11:42:03
 ---
 
 > 梳理下个人iPhone软件，留作记录，也能为部分朋友提供参考
