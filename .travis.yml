@@ -1,5 +1,7 @@
 language: node_js
 node_js: '12.3.1'
+os: linux
+dist: trusty
 addons:
   ssh_known_hosts:
     - 1991421.cn:22
