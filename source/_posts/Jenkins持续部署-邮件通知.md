@@ -1,5 +1,5 @@
 ---
-title: Jenkins持续部署-邮件通知
+title: Jenkins持续部署-邮件通知ChangeLog
 tags:
   - Jenkins
   - CD
@@ -33,7 +33,7 @@ Managed files => Add a new Config => Extended Email Publisher Groovy Template
 - 这个配置会在服务根目录下，使用时直接 'groovy-html.template'即可
 - 这里我选择的模版基于是官方插件提供的改造的，插件模版默认不安装，所以需要手动配置，
 	- 插件模版下载[戳这里](https://github.com/jenkinsci/email-ext-plugin/tree/master/docs/templates)
-	- 我改进后的模版[戳这里](https://gist.github.com/alanhg/b577d5a30ae5b16e9404cdf6624895b3)
+	- 我改进后的模版-发送Git ChangeLog[戳这里](https://gist.github.com/alanhg/b577d5a30ae5b16e9404cdf6624895b3)
 
 ### pipeline配置
 
