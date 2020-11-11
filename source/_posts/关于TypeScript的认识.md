@@ -28,7 +28,7 @@ TS在项目中，是作为开发语言的。利用TS的类型，在开发解决�
 
 ## 推荐的工具链
 - Babel -  开发时或者打包时进行TS的转译
-	- awsome-typescript等转译工具已不提倡，babel更为强大，对于比如JS的兼容性，可以利用巴babel的插件体系进行解决
+	- awsome-typescript等转译工具已不提倡，babel更为强大，对于比如JS的兼容性，可以利用babel的插件体系进行解决
 - ESLint - 开发时或者打包时对TS/JS进行代码风格检测
 	- TSLint已经逐渐废弃，ESLint完全可以替代
 
