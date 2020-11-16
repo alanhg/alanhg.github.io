@@ -2,9 +2,7 @@
 title: Surge Mac 3.0使用
 tags:
   - Surge
-  - Shadowsocks
   - 网络调试
-  - V2Ray
 abbrlink: 1f6ba7db
 date: 2019-02-09 15:14:20
 ---
@@ -115,12 +113,22 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
 
 这样，日常我们手动选择执行group-auto-switch，假如临时需要切换到US，只需要手动选择US即可。
 
+## 系统代理
+### 系统代理与VPN并存?
+可以的，需要执行以下配置,将内网域名填写上。这样即可内网解析及代理外网解析同时work。
+
+```
+[Host]
+internal.example.com = server:syslib
+```
+
+surge官方给出了完整解答，[戳这里](https://nssurge.zendesk.com/hc/zh-cn/articles/900000519943-Surge-Mac-%E4%B8%8E-VPN-%E4%B8%80%E5%90%8C%E4%BD%BF%E7%94%A8)
 
 
 ## 增强模式
 部分应用并不走系统代理，使用增强模式可以解决此问题。
 
-比如登录Mac版电报，发现一直loading，勾选该项可以解决。当然你也可以在电报里设定下代理，但是能在一个APP中解决不是更优雅吗？
+比如登录Mac版电报，发现一直loading，勾选该项可以解决。当然你也可以在电报里设定下代理，但是能在一个APP中解决岂不更优雅？
 
 点击菜单栏，勾选增强模式
 
@@ -140,7 +148,9 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
 	
 	![](https://i.imgur.com/7z6dyzO.png)
 
-所以，假如需要同时连接公司VPN等，建议增强模式关闭
+所以，假如需要同时连接公司VPN等，增强模式需要关闭
+
+
 
 ## iCloud同步配置文件
 Surge很好的支持了iCloud，建议将配置文件放在iCloud路径下，可以方便的同步到多终端设备和备份
