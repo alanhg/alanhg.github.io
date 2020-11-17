@@ -38,11 +38,12 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Build
-      - run: hexo clean
-      - run: hexo g
-      - run: export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
-      - run: hexo algolia
-      - run: cd ./public
+        run: ｜
+          hexo clean
+#          hexo g
+#          export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
+#          hexo algolia
+#          cd ./public
       - name: Deploy GitHub Master
         run:  |
             git init
