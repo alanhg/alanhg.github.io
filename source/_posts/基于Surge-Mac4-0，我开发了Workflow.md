@@ -20,7 +20,7 @@ Surge Mac4.0，我这次没用之前的号升级license，而是选择全新购�
 资费详情，请戳[官网](https://nssurge.com/)
 
 ## 实现基础
-1. Surge提供了HTTP API，[戳这里](https://manual.nssurge.com/others/http-api.html)
+1. Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API，[API详情戳这里](https://manual.nssurge.com/others/http-api.html)
 2. Alfred Workflow，支持各种脚本语言操作，这里我使用nodejs来实现
 
 ## 效果
