@@ -35,7 +35,7 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-      - name: Install  Dependencies
+      - name: Install Dependencies
         run: yarn install
       - name: Build
         run: ｜
@@ -45,19 +45,19 @@ jobs:
           hexo algolia
           cd ./public
       - name: Deploy GitHub Master
-        run: ｜
-          git init
-          git config user.name "Alan He"
-          git config user.email "alan@1991421.cn"
-          git add .
-          git commit -m "update"
-          git push --force --quiet master:master
+        run:  |
+            git init
+            git config user.name "Alan He"
+            git config user.email "alan@1991421.cn"
+            git add .
+            git commit -m "update"
+            git push --force --quiet master:master
       - name: SSH agent
         uses: webfactory/ssh-agent@v0.2.0
         with:
           ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
-        run: ｜
-          ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
-          rsync -az -vv --delete -e 'ssh -p 22' ./** root@1991421.cn:/var/www/blog/static-html
+        run:  |
+            ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
+            rsync -az -vv --delete -e 'ssh -p 22' ./** root@1991421.cn:/var/www/blog/static-html
 
