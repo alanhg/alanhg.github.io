@@ -1,11 +1,12 @@
 ---
 title: 基于Surge Mac4.0，我开发了Workflow
-date: 2020-11-16 23:58:29
 tags:
-- Surge
-- 网络调试
-- Alfred
-- Workflow
+  - Surge
+  - 网络调试
+  - Alfred
+  - Workflow
+abbrlink: a12a6619
+date: 2020-11-16 23:58:29
 ---
 > 对Surge的使用一直有个痛点，就是比如我想切换系统代理开关状态，或者出站规则，我需要光标移动到右上角，点击，再点击，整个操作流程一点也不高效。之前曾考虑过Apple Script操作GUI来解决问题，但是编写起较为麻烦。
 > 

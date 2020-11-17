@@ -53,13 +53,16 @@ node() {
       emailext to: 'alan@1991421.cn',
       subject: "Production deployment: ${currentBuild.fullDisplayName} ${currentBuild.result}",
       body: '''${SCRIPT,template="managed:groovy-html.template"}'''
-            }
+      mimeType: 'text/html'
+      }
   }
  }
             
 ```
 
-注意，try catch在最外围
+#### 注意
+1. try catch在最外围
+2. mimeType建议明确指定，在有些版本下会造成邮件发出后是HTML文本，没有正确渲染
 
 ## 效果
 

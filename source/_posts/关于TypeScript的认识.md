@@ -1,8 +1,9 @@
 ---
 title: 关于TypeScript的认识
-date: 2020-11-10 15:28:34
 tags:
-- TypeScript
+  - TypeScript
+abbrlink: 870dca89
+date: 2020-11-10 15:28:34
 ---
 
 > 最近Team成员遇到一个问题，以为是TS编译方面的问题，并且还发我一个链接-[flatMap is not a function #1822](https://github.com/kulshekhar/ts-jest/issues/1822)
