@@ -55,8 +55,7 @@ jobs:
       - name: SSH agent
            uses: webfactory/ssh-agent@v0.2.0
            with:
-              ssh-private-key: |
-              ${{ secrets.BLOG_DEPLOY_KEY }}
+              ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
         run: ｜
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
