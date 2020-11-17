@@ -36,7 +36,9 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
       - name: Install Dependencies
-        run: yarn install
+        run: |
+          yarn install
+          npm install hexo-cli -g
       - name: Build
         run: |
           hexo clean
