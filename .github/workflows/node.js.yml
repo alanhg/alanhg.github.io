@@ -53,4 +53,5 @@ jobs:
         run: |
             ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
             cd ./public
+            cat index.html
             rsync -az -vv --delete -e 'ssh -p 22' ./** root@1991421.cn:/var/www/blog/static-html
