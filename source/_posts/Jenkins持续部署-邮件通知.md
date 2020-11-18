@@ -51,6 +51,7 @@ node() {
 
      stage ('Notify') {
       emailext to: 'alan@1991421.cn',
+      recipientProviders: [[$class: 'RequesterRecipientProvider'],[$class: 'DevelopersRecipientProvider']],
       subject: "Production deployment: ${currentBuild.fullDisplayName} ${currentBuild.result}",
       body: '''${SCRIPT,template="managed:groovy-html.template"}'''
       mimeType: 'text/html'

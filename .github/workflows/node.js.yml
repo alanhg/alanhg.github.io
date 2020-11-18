@@ -52,5 +52,4 @@ jobs:
       - name: Deploy VPS
         run: |
             ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
-            cd ./public
-            rsync -az --delete -e ./** root@1991421.cn:/var/www/blog/static-html
+            rsync -avzh --delete public/ root@1991421.cn:/var/www/blog/static-html
