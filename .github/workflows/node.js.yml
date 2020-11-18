@@ -38,7 +38,7 @@ jobs:
       - name: Install Dependencies
         run: |
           yarn install
-          npm install hexo-cli -g
+          npm install hexo-cli@1.1.0 -g
       - name: Build
         run: |
           hexo clean
