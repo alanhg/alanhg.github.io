@@ -51,6 +51,5 @@ jobs:
           ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
         run: |
-#            hexo deploy
             ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
             rsync -arvzhq --delete public/ root@1991421.cn:/var/www/blog/static-html
