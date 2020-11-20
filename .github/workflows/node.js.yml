@@ -52,4 +52,4 @@ jobs:
       - name: Deploy VPS
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
-          sudo rsync -zvr public/ root@1991421.cn:/var/www/blog/static-html/
+          rsync -zvr public/ root@1991421.cn:/var/www/blog/static-html/
