@@ -40,16 +40,16 @@ jobs:
           yarn install
           npm install hexo-cli@2.0.0 -g
       - name: Build
-        run: |
-          hexo clean
-          hexo g --silent
-          export HEXO_ALGOLIA_INDEXING_KEY=qeqfb41a459b46e7dda7af65d45ad5f8432
-          hexo algolia
-      - name: Deploy VPSda
-        uses: Pendect/action-rsyncer@v1.1.0
-        env:
-          DEPLOY_KEY: ${{secrets.BLOG_DEPLOY_KEY}}
-        with:
-          flags: '-arvzh --delete'
-          src: 'public/**'
-          dest: 'root@1991421.cn:/var/www/blog/static-html/'
+          run: |
+            hexo clean
+            hexo g --silent
+            export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
+            hexo algolia
+      - name: SSH agent
+          uses: webfactory/ssh-agent@v0.4.1
+          with:
+          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
+      - name: Deploy VPS
+          run: |
+            ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
+            rsync -arvzh public/ root@1991421.cn:/var/www/blog/static-html/
