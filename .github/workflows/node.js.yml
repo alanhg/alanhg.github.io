@@ -52,4 +52,4 @@ jobs:
       - name: Deploy VPS
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
-          scp -r public root@1991421.cn:/var/www/blog/public
+          rsync -zvr -e ssh public root@1991421.cn:/var/www/blog
