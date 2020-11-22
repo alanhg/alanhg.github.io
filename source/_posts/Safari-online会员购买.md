@@ -8,7 +8,7 @@ tags:
 
 首先官方价格还是比较贵的`Safari Books Online costs $39 per month or $399 per year.`，土豪直接上，穷人向下看。
 
-网上看到有个可行方案是ACM会员`25$-164.51RMB`来使用Safari，于是，我选择该方案。
+网上看到有个可行方案是ACM会员`25$`来使用Safari，于是，我选择该方案。
 
 ![](https://static.1991421.cn/2020/2020-11-22-185639.jpeg)
 
@@ -19,10 +19,10 @@ tags:
   
        https://services.acm.org/public/qj/proflevel/proflevel_control.cfm?level=3&country=China&form_type=Professional&promo=LEVEL
         
-   - 价格选择最低的25刀
-   - 使用PayPal支付
+   - 价格选择最低的`25刀即164.51RMB`
+   - 使用`PayPal`支付
    - 填写完毕，支付OK后，会提示进行ACM会员注册，继续填写注册，保存好密码，成功后，会返回生成的用户名，保存下
-     - ACM查看会员有效期，戳这里即可 https://myacm.acm.org
+   - ACM查看会员有效期，戳这里即可 https://myacm.acm.org
 
 
 ![](https://static.1991421.cn/2020/2020-11-22-185016.jpeg)
