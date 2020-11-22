@@ -1,8 +1,9 @@
 ---
 title: Safari online会员购买
-date: 2020-11-22 18:36:50
 tags:
-- ebook
+  - ebook
+abbrlink: 4e2517f6
+date: 2020-11-22 18:36:50
 ---
 > 噩耗，公司取消了O'Reilly的Safari online会员，于是为了继续阅读自由，只能自力更生解决问题。
 
@@ -29,8 +30,15 @@ tags:
 
 ## Safari online登录
 
-- `用户名@acm.org`即为登陆邮箱，登陆时会跳转到ACM地址，按照注册时的用户名密码填写即可
+
+- 输入账号 `带@acm.org后缀`，点击登陆会跳转到ACM站点输入用户名，这时还是输入该账号，但不要带后缀，密码还是一样。
 -  iOS，iPad，网页均可正常登陆，方式一样
+
+### 说明
+- O'Reilly对于登陆设备数没有限制，所以可以多人使用同一个账户
+
+## 相关文档
+- https://learning.acm.org/faq/oreilly-faqs
 
 ## 写在最后
 
