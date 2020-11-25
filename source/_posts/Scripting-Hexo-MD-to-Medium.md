@@ -1,10 +1,11 @@
 ---
 title: 利用Alfred Workflow，实现一键发布Hexo MD文章到Medium
-date: 2020-11-25 23:31:16
 tags:
-- Alfred
-- Workflow
-- hexojs
+  - Alfred
+  - Workflow
+  - hexojs
+abbrlink: 31a4362c
+date: 2020-11-25 23:31:16
 ---
 > 一直在自己搭建的平台书写博客，但是同时也希望能够同步发布到medium。因为medium的社区用户质量较高，积极参与其中既可以大幅度加强我的博文的热度，同时增加与社区大佬们的交流频次，当然也可以提升我贫乏的外语，好处多多。
 > 
