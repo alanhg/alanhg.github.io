@@ -12,6 +12,8 @@ date: 2020-11-25 23:31:16
 > Medium上，一直以来我是人工进行的文章发布，并且WEB编辑页面不直接支持markdown，所以对我来说effort很高，因此也就没怎么发布几篇。随着medium的不算熟悉，了解到medium提供了[API](https://github.com/Medium/medium-api-docs)，同时我又是Alfred深度爱好者，因此绝对造个轮子来做到一键发布。
 
 
+Workflow下载地址：[戳这里](https://github.com/alanhg/alfred-workflows/blob/master/medium-publisher/Medium%20Tools.alfredworkflow)
+
 ## 实现说明
 
 - Medium提供了部分API，当前支持直接创建Story，因此可以做到
@@ -32,7 +34,8 @@ date: 2020-11-25 23:31:16
 
 ![](https://static.1991421.cn/2020/2020-11-26-001257.gif)
 
-搜索任何一篇Hexo格式的MD文档，执行该action即可。
+### 使用
+搜索任何一篇Hexo格式的MD文档 => 右箭头=>执行deploy action即可。
 
 
 ## 不足
