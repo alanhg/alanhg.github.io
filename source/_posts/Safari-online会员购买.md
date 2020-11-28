@@ -35,9 +35,11 @@ date: 2020-11-22 18:36:50
 -  iOS，iPad，网页均可正常登陆，方式一样
 
 ### 说明
-- O'Reilly对于登陆设备数没有限制，所以可以多人使用同一个账户
+
+- O'Reilly对于登陆设备数`没有限制`，可以多人使用同一个账户
 
 ## 相关文档
+
 - https://learning.acm.org/faq/oreilly-faqs
 
 ## 写在最后
