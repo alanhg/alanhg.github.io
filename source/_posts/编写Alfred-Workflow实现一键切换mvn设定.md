@@ -1,5 +1,5 @@
 ---
-title: Alfred Workflow实现一键切换Maven设定
+title: Alfred实现一键切换Maven设定
 tags:
   - Maven
   - Alfred
