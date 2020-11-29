@@ -1,5 +1,5 @@
 ---
-title: 利用Alfred Workflow，实现一键发布Hexo MD文章到Medium
+title: Alfred实现一键发布Hexo MD文章到Medium
 tags:
   - Alfred
   - Workflow
