@@ -1,5 +1,5 @@
 ---
-title: Apple系统的文本替换与Alfred中的Snippet
+title: Apple系统的文本替换与Alfred的Snippet
 tags:
   - Alfred
   - Mac
