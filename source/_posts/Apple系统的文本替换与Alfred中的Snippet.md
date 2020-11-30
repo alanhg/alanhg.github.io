@@ -1,10 +1,11 @@
 ---
 title: Apple系统的文本替换与Alfred中的Snippet
-date: 2020-11-30 23:23:49
 tags:
-- Alfred
-- Mac
-- 效率
+  - Alfred
+  - Mac
+  - 效率
+abbrlink: a6dc1db3
+date: 2020-11-30 23:23:49
 ---
 > 一直以来很喜欢使用Alfred的Snippet，将常用的文本块录入，同时还支持配置一些参数，平时可以节约输入重复文本的时间。比如之前我们经常进行CR结果的一个简单总结，为了提升这点，我就做了个Snippet。但是Snippet的弊端是Alfred只存在于MacOS，那么Apple全家桶用户表示不爽。于是我不得不将一部分的文本片段放在系统，因为Apple系统本身就存在文本替换支持，只是功能性比较简单而已。两者的同时使用也就带来了混乱问题。于是，我最近思考了两者的协作问题，这里mark下。
 
@@ -18,7 +19,7 @@ tags:
 2. 功能局限性
 	- Alfred的Snippet本身支持各种变量，另外可以借助workflow，实现更强大的替换，且也可以控制最终光标的位置，总之强大
 	- Apple的文本替换就比较简单了，仅仅只是字符串替换字符串
-	- 在实际的使用中还发现一个小的问题即Mac系统上，文本替换在EN状态下输入不是所有App下都work，而在中文下目前都Work，但对比其它设备，比如iPhone，iPad则各种键盘输入法下都work
+	- 在实际的使用中还发现一个小的问题即Mac系统上，文本替换在EN状态下输入不是所有App下都work，比如MacDown，或者Chrome的地址栏，而上述App在中文下Work.对比设备，比如iPhone，iPad则EN还是中文都work
 
 ## 统一约定
 
