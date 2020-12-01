@@ -1,10 +1,11 @@
 ---
 title: rsync total size is 0 speedup is 0.00
-date: 2020-12-01 11:54:36
 tags:
-- Linux
-- CD
-- GitHub
+  - Linux
+  - CD
+  - GitHub
+abbrlink: 2dbb2dc1
+date: 2020-12-01 11:54:36
 ---
 
 > 最近在使用GitHub Actions实现自动部署静态网页到VPS时，遇到问题，即同步文件只有文件，内容为空，万脸懵逼，于是开始排查问题原因。
