@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [12.20.0]
 
     steps:
       - name: Git checkout
@@ -39,16 +39,16 @@ jobs:
         run: |
           yarn install
           npm install hexo-cli@2.0.0 -g
-      - name: SSH agent
-        uses: webfactory/ssh-agent@v0.4.1
-        with:
-          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Build
         run: |
           hexo clean
           hexo g --silent
           export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
           hexo algolia
+      - name: SSH agent
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
