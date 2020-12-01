@@ -59,3 +59,4 @@ jobs:
             to: ${{ secrets.TELEGRAM_TO }}
             token: ${{ secrets.TELEGRAM_TOKEN }}
             message: Blog deployment and update completed!
+            photo: .github/workflows/blog-logo.png
