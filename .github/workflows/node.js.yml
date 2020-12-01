@@ -53,7 +53,7 @@ jobs:
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
           rsync -az -vv --delete -e 'ssh -p 22' public root@1991421.cn:/var/www/blog
-      - name: telegram message
+      - name: Notify
         uses: appleboy/telegram-action@master
         with:
             to: ${{ secrets.TELEGRAM_TO }}
