@@ -40,9 +40,9 @@ jobs:
           yarn install
           npm install hexo-cli@2.0.0 -g
       - name: SSH agent
-          uses: webfactory/ssh-agent@v0.4.1
-          with:
-            ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Build
         run: |
           hexo clean
