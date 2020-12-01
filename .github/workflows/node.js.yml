@@ -39,17 +39,17 @@ jobs:
         run: |
           yarn install
           npm install hexo-cli@2.0.0 -g
+      - name: SSH agent
+          uses: webfactory/ssh-agent@v0.4.1
+          with:
+            ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Build
         run: |
           hexo clean
           hexo g --silent
           export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
           hexo algolia
-      - name: SSH agent
-        uses: webfactory/ssh-agent@v0.4.1
-        with:
-          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
-          rsync -avzhr -e 'ssh -o StrictHostKeyChecking=no' public root@1991421.cn:/var/www/blog
+          rsync -az -vv --delete -e 'ssh -p 22' public root@1991421.cn:/var/www/blog
