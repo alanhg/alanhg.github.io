@@ -47,7 +47,7 @@ npm install baidu-aip-sdk -g
 ```
 ### workflow配置
 
-登陆百度智能云，选择文本识别，创建应用,将高亮的三个值配置在workflow中
+登陆[百度智能云](https://console.bce.baidu.com/#/index/overview)，选择文本识别，创建应用,将高亮的三个值配置在workflow中
 
 
 ![](https://static.1991421.cn/2020/2020-05-30-105526.jpeg)

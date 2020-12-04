@@ -37,7 +37,7 @@ Surge Mac4.0，我这次没用之前的号升级license，而是选择全新购�
 
 ![](https://static.1991421.cn/2020/2020-11-17-000148.gif)
 
-workflow下载地址-[戳这里](https://github.com/alanhg/alfred-workflows/blob/master/surge/Surge.alfredworkflow)
+workflow下载地址-[戳这里](https://github.com/alanhg/alfred-workflows/blob/master/surge)
 
 - 我想说妈妈再也不用担心我操作Surge抵消了，对于IT人来说，键盘一顿操作才是王道，才是高效。
 - 据官方作者所说，后期还会开放更多API，期待ing
