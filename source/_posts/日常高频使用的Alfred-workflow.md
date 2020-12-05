@@ -44,7 +44,6 @@ tags:
 	![](https://static.1991421.cn/2020/2020-12-05-120547.gif)
 
 	
-	
 6. [JetBrains - Open Project - v3](https://github.com/bchatard/alfred-jetbrains)
 		
 	![](https://static.1991421.cn/2020/2020-12-05-113752.gif)
@@ -58,6 +57,7 @@ tags:
 8. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
 	
 	![](https://static.1991421.cn/2020/2020-05-30-114653.gif)
+	
 9. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
 	
 	![](https://static.1991421.cn/2020/2020-04-04-221152.gif)
