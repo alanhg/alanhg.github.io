@@ -39,10 +39,8 @@ tags:
 
 	
 5. [GitHub](https://github.com/gharlan/alfred-github-workflow)
-	
-	
-	![](https://static.1991421.cn/2020/2020-12-05-120547.gif)
 
+	![](https://static.1991421.cn/2020/2020-12-05-120547.gif)
 	
 6. [JetBrains - Open Project - v3](https://github.com/bchatard/alfred-jetbrains)
 		
