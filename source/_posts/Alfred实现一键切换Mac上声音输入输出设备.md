@@ -1,10 +1,11 @@
 ---
 title: Alfred实现一键切换Mac上声音输入输出设备
-date: 2020-12-06 00:44:03
 tags:
-- Mac
-- Alfred
-- Workflow
+  - Mac
+  - Alfred
+  - Workflow
+abbrlink: 986bb3dc
+date: 2020-12-06 00:44:03
 ---
 >  随着围绕着Mac生态的外设越来越多，经常需要切换声音输入输出设备，GUI操作效率太低，于是借着周末时间，做个workflow来提升切换效率。
 

@@ -1,9 +1,10 @@
 ---
 title: React componentWillUnmount的局限性
-date: 2020-12-05 16:30:03
 tags:
-- React
-- JavaScript
+  - React
+  - JavaScript
+abbrlink: 5d45162e
+date: 2020-12-05 16:30:03
 ---
 
 > componentWillUnmount意味着组件即将销毁时触发该钩子，但假如用户直接关闭浏览器tab，则该钩子时是不会被触发的。

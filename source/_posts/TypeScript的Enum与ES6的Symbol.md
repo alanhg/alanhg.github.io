@@ -1,9 +1,10 @@
 ---
 title: TypeScript的Enum与ES6的Symbol
-date: 2020-12-02 09:44:38
 tags:
-- JavaScript
-- TypeScript
+  - JavaScript
+  - TypeScript
+abbrlink: 7956c651
+date: 2020-12-02 09:44:38
 ---
 > JS的基本数据类型在ES6到来时增加了Symbol基本类型，而ES6即ES2015发布也已经5年半时间。
 > 

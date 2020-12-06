@@ -1,11 +1,12 @@
 ---
 title: 日常高频使用的Alfred workflow
-date: 2020-12-05 11:11:51
 tags:
-- Alfred
-- Workflow
-- 效率
-- 搞机
+  - Alfred
+  - Workflow
+  - 效率
+  - 搞机
+abbrlink: 5fcf3a6d
+date: 2020-12-05 11:11:51
 ---
 > 自己对于Alfred实在太爱，以至于一旦发现了自己的一个效率需求，就会研究Alfred的可行性，可行就立即寻找第三方的或者自己定制开发，直到今天，我也已经开发了16个workflow，经验贴也很多，给自己点个赞。
 
