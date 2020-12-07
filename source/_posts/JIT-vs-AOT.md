@@ -3,7 +3,7 @@ title: JIT vs AOT
 date: 2020-12-06 20:43:39
 tags:
 ---
-> 在玩Angular时候，会遇到这两个编译方式AOT，JIT，但是玩React时却不提及，难道是NG所独有的？当然No，玩java也会提及JIT。这里就聊下> 在玩Angular时候，会遇到这两个编译方式AOT，JIT，但是玩React时却不提及，难道是NG所独有的？当然No，玩java也会提及JIT.这里就聊下所两者。
+> 在玩Angular时候，会遇到这两个编译方式AOT，JIT，但是玩React时却不提及，难道是NG所独有的？当然No，玩java也会提及JIT。这里就聊下两者区别。
 
 如有错误，欢迎斧正。
 
