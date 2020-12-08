@@ -55,6 +55,8 @@ CleanMyMac X|系统管理工具|付费/试用
 EuDic 欧路词典|词典|付费
 Office 365|办公三件套|付费
 FileZilla Pro|FTP and Cloud|付费/年订阅
+Another Redis Desktop Manager|Redis客户端|免费
+
 
 ## 写在最后
 合适即可，一套玩溜了即可。
