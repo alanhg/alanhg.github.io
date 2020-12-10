@@ -11,7 +11,7 @@ tags:
 
 ## 配置方式
 
-> 这里因为我要实现同时支持Touch ID及Apple watch，因此安装以下两个库，只需要一种的，安装目标库及配置即可。
+*注意：这里因为我要实现同时支持Touch ID及Apple watch，因此安装以下两个库，只需要一种的，安装目标库及配置即可。*
 
 1. 下载这两个仓库，推荐Git Clone方式
 	- https://github.com/Reflejo/pam-touchID
@@ -19,9 +19,12 @@ tags:
 
 2. install package
 	
+	在每个仓库目录下执行
+	
 	```
 	$ sudo make install
 	```
+	
 3. 编辑sudo配置，开启授权
 
     ```
@@ -39,7 +42,7 @@ auth sufficient pam_touchid.so "reason=execute a command as root"
      执行`wq!`保存
  
  
- ## 注意
+## 注意
  
  1. 上面命令中的sudo别少
  2. 配置修改后，即刻生效，不需要重启终端或执行其它命令
@@ -47,12 +50,12 @@ auth sufficient pam_touchid.so "reason=execute a command as root"
  3. 如Mac在盒盖模式下，自然会切换到下一种认证方式，比如密码
  4. 该配置直接走的是sudo，与终端App类型无关，因此iTerm2，IDEA中的terminal均work
  
- ##  效果
+##  效果
 
  
  ![](https://static.1991421.cn/2020/2020-12-10-174011.gif)
 
-## PAM
+## PAM-科普
 好奇模块为什么都以PAM前缀，于是查了下,PAM全称[`Pluggable authentication module`](https://en.wikipedia.org/wiki/Pluggable_authentication_module)
 
 > Sun提出的一种认证机制，
