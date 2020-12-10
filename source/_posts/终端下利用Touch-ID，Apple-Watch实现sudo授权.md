@@ -34,12 +34,14 @@ tags:
     
     增加以下配置，在头部
     
-    ```
-auth sufficient pam_watchid.so "reason=execute a command as root"
-auth sufficient pam_touchid.so "reason=execute a command as root"
+    
+    ```shell
+	$ auth sufficient pam_watchid.so "reason=execute a 	command as root"
+	$ auth sufficient pam_touchid.so "reason=execute a 	command as root"
     ```
      
-     执行`wq!`保存
+    
+    执行`wq!`保存
  
  
 ## 注意
