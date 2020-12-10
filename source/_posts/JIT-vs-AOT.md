@@ -1,5 +1,6 @@
 ---
 title: JIT vs AOT
+abbrlink: af7674ce
 date: 2020-12-06 20:43:39
 tags:
 ---

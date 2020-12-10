@@ -1,9 +1,10 @@
 ---
 title: 终端下利用Touch ID，Apple Watch实现sudo授权
-date: 2020-12-10 10:48:57
 tags:
-- PAM
-- Mac
+  - PAM
+  - Mac
+abbrlink: 74e2afe6
+date: 2020-12-10 10:48:57
 ---
 
 > 一直很喜欢Mac的Touch ID及Apple watch的解锁体验，但身为开发，日常还经常会使用到shell sudo，这时也会提示输入Mac密码，于是我在想是不是也可以用Touch ID及Apple watch实现授权呢，惊喜发现还真可以。
@@ -22,26 +23,21 @@ tags:
 	在每个仓库目录下执行
 	
 	```bash
- 
 	$ sudo make install
  
 	```
-	
-3. 编辑sudo配置，开启授权
+ 
+3.  编辑sudo配置，开启授权
 
    ```bash
-   
     $ sudo vi /etc/pam.d/sudo
-   
     ```
-    
-    增加以下配置，在头部
+
+	增加以下配置，在头部
     
 	```bash
- 
 	$ auth sufficient pam_watchid.so "reason=execute a 	command as root"
 	$ auth sufficient pam_touchid.so "reason=execute a 	command as root"
- 
 	```
 
 	执行`wq!`保存
@@ -49,11 +45,11 @@ tags:
  
 ## 注意
  
- 1. 上面命令中的sudo别少
- 2. 配置修改后，即刻生效，不需要重启终端或执行其它命令
- 2. 配置文件中认证授权顺序很重要，建议如上即可
+ 1. 上面命令中的`sudo别少`
+ 2. 配置修改后，`即时生效`，不需要重启终端或执行其它命令
+ 2. 配置文件中认证授权`顺序`很重要，建议如上即可
  3. 如Mac在盒盖模式下，自然会切换到下一种认证方式，比如密码
- 4. 该配置直接走的是sudo，与终端App类型无关，因此iTerm2，IDEA中的terminal均work
+ 4. 该配置直接走的是sudo，`与终端App类型无关`，因此iTerm2，IDEA中的terminal均work
  
 ##  效果
 
