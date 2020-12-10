@@ -21,22 +21,27 @@ tags:
 	
 	在每个仓库目录下执行
 	
-	```
+	```bash
+ 
 	$ sudo make install
+ 
 	```
 	
 3. 编辑sudo配置，开启授权
 
-    ```
+   ```bash
+   
     $ sudo vi /etc/pam.d/sudo
    
     ```
     
     增加以下配置，在头部
     
-	```
+	```bash
+ 
 	$ auth sufficient pam_watchid.so "reason=execute a 	command as root"
 	$ auth sufficient pam_touchid.so "reason=execute a 	command as root"
+ 
 	```
 
 	执行`wq!`保存
