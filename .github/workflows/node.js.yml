@@ -60,12 +60,12 @@ jobs:
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
           rsync -az -vv --delete -e 'ssh -p 22' public root@1991421.cn:/var/www/blog
       - name: Deploy GitHub
-        run: |
-          cd ./public && git init && git add .
-          git config --global user.email "alan@1991421.cn"
-          git config --global user.name "Alan's 1st Bot"
-          git commit -m "Updated by Bot"
-          git push --force --quiet "https://${{ secrets.BLOG_DEPLOY_4_GITHUB_KEY }}@$GITHUB_REPO" master:master
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.BLOG_DEPLOY_4_GITHUB_KEY }}
+          branch: master
+          directory: ./public
+          force: true
       - name: Notify
         uses: appleboy/telegram-action@master
         with:
