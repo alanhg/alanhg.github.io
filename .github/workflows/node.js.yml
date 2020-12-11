@@ -62,8 +62,9 @@ jobs:
       - name: Deploy GitHub
         run: |
           cd ./public && git init && git add .
-          git add .
-          git commit -m "Updated by GitHub Bot"
+          git config --global user.email "alan@1991421.cn"
+          git config --global user.name "Alan's 1st Bot"
+          git commit -m "Updated by Bot"
           git push --force --quiet "https://${{ secrets.BLOG_DEPLOY_4_GITHUB_KEY }}@$GITHUB_REPO" master:master
       - name: Notify
         uses: appleboy/telegram-action@master
