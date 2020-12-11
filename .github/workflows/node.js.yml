@@ -30,18 +30,25 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Cache
+      - name: Cache node modules
         uses: actions/cache@v2.1.3
         with:
-          path: '**/node_modules'
+          path: |
+            **/node_modules
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: Cache Hexo public
+        uses: actions/cache@v2.1.3
+        with:
+          path: |
+            **/public
+            db.json
+          key: ${{ runner.os }}-hexo-db}}
       - name: Install Dependencies
         run: |
           yarn install
           npm install hexo-cli@2.0.0 -g
       - name: Build
         run: |
-          hexo clean
           hexo g --silent
           export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
           hexo algolia
