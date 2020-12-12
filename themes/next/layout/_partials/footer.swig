@@ -57,7 +57,7 @@
 <span class="post-meta-divider">|</span>
 
 <div class="theme-info">
-  <a href="https://status.alanhe.me" title="Alan He的小站">Uptime Robot</a>
+  <a href="https://status.alanhe.me" title="Alan He的小站" target="_blank">Uptime Robot</a>
 </div>
 
 {% if theme.footer.custom_text %}
