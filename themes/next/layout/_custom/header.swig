@@ -20,4 +20,17 @@
         // event.clipboardData.setData('text', document.getSelection() + pageLink);
         // event.preventDefault();
     });
+
+    document.onkeydown = function (e) {
+        e.stopPropagation();
+        var evt = window.event || e;
+        if (evt.metaKey && evt.keyCode === 75) {
+            $(".popup-trigger").click();
+            $(".popup").show();
+            $(".algolia-pop-overlay").remove();
+            $("body").append('<div class="search-popup-overlay algolia-pop-overlay"></div>').css("overflow", "hidden");
+            $("#algolia-search-input").find("input").focus();
+        }
+    }
+    document.getElementsByClassName('popup-trigger')[0].setAttribute('title', 'hotkey:⌘ k');
 </script>
