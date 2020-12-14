@@ -21,7 +21,7 @@ console.log(window.atob('aGVsbG8=')); // hello
 
 - "a" for "ASCII"
 -  "b" for "binary"
- 
+
 注意：ASCII只考虑了英文字符，具体可查看我之前的另一篇[文章](https://1991421.cn/2020/05/09/4d28b2a7/)
 
 ## 中文情况
@@ -31,11 +31,17 @@ console.log(window.atob('aGVsbG8=')); // hello
    console.log(decodeURIComponent(window.atob('JUU0JUI4JUFEJUU2JTk2JTg3'))); // 中文
 ```
  如上，含有中文需要进行编码，直接btoa会报错，错误信息如下
- 
+
 > t2020-07-02-135210.html:14 Uncaught DOMException: Failed to execute 'btoa' on 'Window': The string to be encoded contains characters outside of the Latin1 range.
     at
 
 Why？`ascii不支持中文啊。。。`
+
+## btoa参数类型
+
+要求传入字符串，假如传入非字符串，JS执行时会先string处理，然后编码，比如`window.btoa({ a: '中文' })`实际上相当于`window.btoa('[object Object]')`，这点需要注意。
+
+TS下书写会好些，毕竟有类型约束。
 
 ## 浏览器支持情况
 
