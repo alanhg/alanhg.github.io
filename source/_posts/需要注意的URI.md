@@ -1,0 +1,55 @@
+---
+title: 需要注意的URI
+date: 2020-12-16 09:55:53
+tags:
+- HTTP
+- URI
+- JavaScript
+---
+
+>最近WEB遇到了两个问题，一个是JS报错`SyntaxError: The URL must not contain a fragment`，一个是window.btoa报错，经过调查都是URI编码问题，平时因为更多的使用框架从而折叠这部分的认知，因此这里Mark下。
+
+## 错误截图
+
+![](https://static.1991421.cn/2020/2020-12-17-151538.jpeg)
+
+![](https://static.1991421.cn/2020/2020-12-17-151645.jpeg)
+
+
+## 相关知识点
+
+### URI，URL
+
+URI：Universal Resource Identifier
+
+URL：Universal Resource Locator
+
+URL是URI的子集，即URL一定是URI。
+
+举一个例子是URI但不是URL的: `mailto：alan@1991421.cn`
+
+# encodeURI
+
+JS中提供了对于URI进行编码的函数`encodeURIComponent与encodeURI`，原因在于一些字符在URI中有特定含义，比如`：;/?:@&=+$,# `，这些用于分割URI中各个组件的标点符号
+
+
+
+### window.btoa
+
+关于这个函数更为详细的介绍参考官网及我[之前总结的一篇](https://1991421.cn/2020/07/02/7abb323a/)
+
+这里简单说下，btoa 意思是字节字符编码为ascll，而ascll只考虑英文字符，因此如果字符中有中文，日文等就需要进行下转义。
+
+
+
+## 问题解决
+
+如上了解了背后的知识点，解决就简单了。
+
+对于URL中可能会含有中文的参数，或者window.btoa中传入的字符串参数，先进行下转义，这样即可解决该类问题。
+
+
+
+## 写在最后
+
+在前端，比如异步请求这块，一般会使用axios等成熟类库，这些库本身就帮忙处理了请求URL中参数的转义编码问题。使用这些库，虽然方便但也会折叠认知，而认知的不全面势必在遇到问题时就会手足无措，因此还是尽可能了解每个问题的来龙去脉为好。
