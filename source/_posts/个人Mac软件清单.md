@@ -43,23 +43,22 @@ date: 2019-04-21 18:11:21
 [iTerm2](https://iterm2.com/) | 终端 | 免费|
 [IINA](https://iina.io/) | 视频播放 | 免费|
 [iHosts!](https://apps.apple.com/cn/app/ihosts-etc-hosts-%E7%BC%96%E8%BE%91%E5%99%A8/id1102004240?mt=12) | host管理 | 免费|
-TeamViewer | 远程协助 | 免费|
 [Visual Studio Code](https://code.visualstudio.com/) | 轻量级文本编辑  | 免费|
-zoom.us | 会议 | 免费|
+[zoom.us](https://zoom.us/download) | 会议 | 免费|
 [OmniGraffle](https://www.omnigroup.com/omnigraffle/)| 流程图 | 付费/学生免费|
 [Snipaste](https://zh.snipaste.com/) | 截图 | 免费|
 [PicGIF Lite](https://apps.apple.com/cn/app/picgif-lite/id844918735?mt=12) | Gif制作 | 免费|
-Photoshop|平面设计|付费/试用|
-Parallels Desktop|模拟器|付费/试用|
-CleanMyMac X|系统管理工具|付费/试用|
+[Photoshop](https://creativecloud.adobe.com/apps/download/photoshop?locale=zh-cn&promoid=61PM825Y&mv=other)|平面设计|付费/试用|
+[Parallels Desktop](https://www.parallels.com/products/desktop/)|模拟器|付费/试用|
+[CleanMyMac X](https://macpaw.com/cleanmymac)|系统管理工具|付费/试用|
 [EuDic 欧路词典](https://www.eudic.net/v4/en/app/eudic)|词典|付费|
-Office 365|办公三件套|付费|
-FileZilla Pro|FTP and Cloud|付费/年订阅|
+[Office 365](https://www.microsoft.com/zh-cn/microsoft-365)|办公三件套|付费|
+[FileZilla Pro](https://filezilla-project.org/filezilla_pro.php)|FTP and Cloud|付费/年订阅|
 [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager)|Redis客户端|免费|
 
 
 ## 写在最后
-合适即可，一套玩溜了即可。
+没有绝对的最好，只有相对的合适，玩溜即可。
 
 ## 不错的资料
 - https://github.com/jaywcjlove/awesome-mac
