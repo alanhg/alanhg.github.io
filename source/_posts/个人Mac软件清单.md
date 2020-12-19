@@ -9,7 +9,7 @@ date: 2019-04-21 18:11:21
 ---
 > 得空，梳理下个人Mac电脑软件，留作记录，也能为部分朋友提供参考
 
-`持续更新`
+`持续更新调整`
 
 ## 说明
 1. _部分为付费APP，对应也有很多免费开源的，但APP最终是看产出价值，这些APP对我的工作生活有了很大的帮助，还是值得的。_
@@ -22,40 +22,40 @@ date: 2019-04-21 18:11:21
 
 软件 | 功能 | 资费方案|备注
 ----| ---| ---|---
-Alfred| 效率神器 | 付费
-Dash| 文档检索 | 付费
-Moom| 窗口管理 | 付费
-印象笔记 | 知识管理 | 付费/年订阅
-Bartendar| 系统状态栏管理 | 付费
-Intelij IDEA|IDE | 付费/学生免费
-DataGrip | DB | 付费/学生免费
-Fantastic2| 日历 | 付费
-Surge| 网络分析，也可爱国 | 付费
-1Password| 密码管理 | 付费/年订阅
-Telegram | 安全通信 | 免费
-微信 | 办公IM | 免费
-Chrome | 浏览器 And 前端开发调试神器 | 免费
-MacDown | MD编写 | 免费
+[Alfred](https://www.alfredapp.com/)| 效率神器 | 付费|
+[Dash](https://kapeli.com/dash)| 文档检索 | 付费|
+[Moom](https://manytricks.com/moom/)| 窗口管理 | 付费|
+[印象笔记](https://www.yinxiang.com/) | 知识管理 | 付费/年订阅|
+[Bartendar](https://www.macbartender.com/)| 系统状态栏管理 | 付费|
+[Intelij IDEA](https://www.jetbrains.com/idea/)|IDE | 付费/学生免费|
+[DataGrip](https://www.jetbrains.com/datagrip/) | DB | 付费/学生免费|
+[Fantastic2](https://flexibits.com/fantastical)| 日历 | 付费|
+[Surge](https://nssurge.com/)| 网络分析，代理 | 付费|
+[1Password](https://1password.com/)| 密码管理 | 付费/年订阅|
+[Telegram](https://telegram.org/) | 安全通信 | 免费|
+[微信](https://mac.weixin.qq.com/) | 办公IM | 免费|
+Chrome | 浏览器 And 前端开发调试神器 | 免费|
+MacDown | MD编写 | 免费|
 keka | 解压缩 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
-Kindle |电子书 | 免费
-Things | GTD | 付费
-PostMan|网络调试 | 免费
-iTerm2 | 终端 | 免费
-IINA | 视频播放 | 免费
-iHosts! | host管理 | 免费
-TeamViewer | 远程协助 | 免费
-Visual Studio Code | 轻量级文本编辑  | 免费
-zoom.us | 会议 | 免费
-OmniGraffle| 流程图 | 付费/学生免费
-Snipaste | 截图 | 免费
-PicGIF Lite | Gif制作 | 免费
-Photoshop|平面设计|付费/试用
-Parallels Desktop|模拟器|付费/试用
-CleanMyMac X|系统管理工具|付费/试用
-EuDic 欧路词典|词典|付费
-Office 365|办公三件套|付费
-FileZilla Pro|FTP and Cloud|付费/年订阅
-Another Redis Desktop Manager|Redis客户端|免费
+Kindle |电子书 | 免费|
+Things | GTD | 付费|
+PostMan|网络调试 | 免费|
+iTerm2 | 终端 | 免费|
+IINA | 视频播放 | 免费|
+iHosts! | host管理 | 免费|
+TeamViewer | 远程协助 | 免费|
+Visual Studio Code | 轻量级文本编辑  | 免费|
+zoom.us | 会议 | 免费|
+OmniGraffle| 流程图 | 付费/学生免费|
+Snipaste | 截图 | 免费|
+PicGIF Lite | Gif制作 | 免费|
+Photoshop|平面设计|付费/试用|
+Parallels Desktop|模拟器|付费/试用|
+CleanMyMac X|系统管理工具|付费/试用|
+EuDic 欧路词典|词典|付费|
+Office 365|办公三件套|付费|
+FileZilla Pro|FTP and Cloud|付费/年订阅|
+Another Redis Desktop Manager|Redis客户端|免费|
 
 
 ## 写在最后
