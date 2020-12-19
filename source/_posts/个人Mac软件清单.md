@@ -34,28 +34,28 @@ date: 2019-04-21 18:11:21
 [1Password](https://1password.com/)| 密码管理 | 付费/年订阅|
 [Telegram](https://telegram.org/) | 安全通信 | 免费|
 [微信](https://mac.weixin.qq.com/) | 办公IM | 免费|
-Chrome | 浏览器 And 前端开发调试神器 | 免费|
-MacDown | MD编写 | 免费|
-keka | 解压缩 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
-Kindle |电子书 | 免费|
-Things | GTD | 付费|
-PostMan|网络调试 | 免费|
-iTerm2 | 终端 | 免费|
-IINA | 视频播放 | 免费|
-iHosts! | host管理 | 免费|
+[Chrome](https://www.google.com/intl/zh-CN/chrome/) | 浏览器 And 前端开发调试神器 | 免费|
+[Typora](https://typora.io/) | MD编写 | 免费|
+[keka](https://www.keka.io/en/) | 解压缩 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
+[Kindle](https://apps.apple.com/tw/app/kindle/id405399194?mt=12) |电子书 | 免费|
+[Things](https://culturedcode.com/things/) | GTD | 付费|
+[PostMan](https://www.postman.com/downloads/)|网络调试 | 免费|
+[iTerm2](https://iterm2.com/) | 终端 | 免费|
+[IINA](https://iina.io/) | 视频播放 | 免费|
+[iHosts!](https://apps.apple.com/cn/app/ihosts-etc-hosts-%E7%BC%96%E8%BE%91%E5%99%A8/id1102004240?mt=12) | host管理 | 免费|
 TeamViewer | 远程协助 | 免费|
-Visual Studio Code | 轻量级文本编辑  | 免费|
+[Visual Studio Code](https://code.visualstudio.com/) | 轻量级文本编辑  | 免费|
 zoom.us | 会议 | 免费|
-OmniGraffle| 流程图 | 付费/学生免费|
-Snipaste | 截图 | 免费|
-PicGIF Lite | Gif制作 | 免费|
+[OmniGraffle](https://www.omnigroup.com/omnigraffle/)| 流程图 | 付费/学生免费|
+[Snipaste](https://zh.snipaste.com/) | 截图 | 免费|
+[PicGIF Lite](https://apps.apple.com/cn/app/picgif-lite/id844918735?mt=12) | Gif制作 | 免费|
 Photoshop|平面设计|付费/试用|
 Parallels Desktop|模拟器|付费/试用|
 CleanMyMac X|系统管理工具|付费/试用|
-EuDic 欧路词典|词典|付费|
+[EuDic 欧路词典](https://www.eudic.net/v4/en/app/eudic)|词典|付费|
 Office 365|办公三件套|付费|
 FileZilla Pro|FTP and Cloud|付费/年订阅|
-Another Redis Desktop Manager|Redis客户端|免费|
+[Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager)|Redis客户端|免费|
 
 
 ## 写在最后
