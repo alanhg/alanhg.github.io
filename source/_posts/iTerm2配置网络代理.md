@@ -14,11 +14,14 @@ tags:
 ## 配置
 
 1. 打开bash_profile，`vi ~/.bash_profile`
+
 2. 增加如下配置
 	```
 	export http_proxy=http://127.0.0.1:6152
 	export https_proxy=$http_proxy
+	alias disproxy='unset http_proxy https_proxy'
 	```
+	
 3. 变更生效
 	`source  ~/.bash_profile`
 
@@ -27,6 +30,10 @@ tags:
     `curl -i https://google.com`
 
 	![](https://static.1991421.cn/2020/2020-11-17-190707.jpeg)
+	
+	5.临时禁用代理
+	
+	直接执行`disproxy`即可。
 
 
 ## 写在最后
