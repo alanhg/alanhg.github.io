@@ -118,5 +118,6 @@ tree
 
 ## 参考文档
 
-- https://stackoverflow.com/questions/27264809/where-git-staged-files-are-stored
-- https://titangene.github.io/article/git-index.html
+- [Where Git staged files are stored?](https://stackoverflow.com/questions/27264809/where-git-staged-files-are-stored)
+- [深入 Git：index 檔案](https://titangene.github.io/article/git-index.html)
+
