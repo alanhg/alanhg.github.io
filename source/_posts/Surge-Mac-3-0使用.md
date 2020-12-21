@@ -19,7 +19,7 @@ date: 2019-02-09 15:14:20
 购买建议:	网页购买，`不要App内购`，因为网页购买直接可以得到license key和绑定邮箱，内购的需要90天后才可以绑定，不要小看这个邮箱，比如想加入测试或者，多设备注册就需要啊
 购买成功，OK，开搞吧。
 
-[toc]
+
 
 ## 下载
 [官方下载](https://nssurge.com)，注意Surge Mac版App Store并不提供，仅有[iOS版](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1)
@@ -80,7 +80,7 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
 
 推荐Docker搭建V2Ray,[参考这里](https://github.com/alanhg/v2ray-docker)
 
-#### shadowsocks
+#### Shadowsocks
 支持Trojan，[戳这里](https://portal.shadowsocks.nz/aff.php?aff=27252)
 
 `要知道，SS时代已经过去，现在相对稳定的是V2Ray和Trojan`
@@ -126,8 +126,12 @@ internal.example.com = server:syslib
 
 surge官方给出了完整解答，[戳这里](https://nssurge.zendesk.com/hc/zh-cn/articles/900000519943-Surge-Mac-%E4%B8%8E-VPN-%E4%B8%80%E5%90%8C%E4%BD%BF%E7%94%A8)
 
+注意：如果需要匹配多个子域名，使用`*.example.com`，但不要使用`example.com`，测试后者写法会有时不work。
+
+
 
 ## 增强模式
+
 部分应用并不走系统代理，使用增强模式可以解决此问题。
 
 比如登录Mac版电报，发现一直loading，勾选该项可以解决。当然你也可以在电报里设定下代理，但是能在一个APP中解决岂不更优雅？
