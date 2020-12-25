@@ -26,34 +26,35 @@ date: 2020-12-10 10:48:57
 	$ sudo make install
  
 	```
- 
+
 3.  编辑sudo配置，开启授权
 
    ```bash
     $ sudo vi /etc/pam.d/sudo
-    ```
+   ```
 
 	增加以下配置，在头部
-    
+   
 	```bash
-	$ auth sufficient pam_watchid.so "reason=execute a 	command as root"
 	$ auth sufficient pam_touchid.so "reason=execute a 	command as root"
-	```
-
+	$ auth sufficient pam_watchid.so "reason=execute a 	command as root"
+	
+```
+	
 	执行`wq!`保存
- 
- 
+
+
 ## 注意
- 
+
  1. 上面命令中的`sudo别少`
  2. 配置修改后，`即时生效`，不需要重启终端或执行其它命令
- 2. 配置文件中认证授权`顺序`很重要，建议如上即可
+ 2. 配置文件中认证授权`顺序`很重要，建议如上即可，个人认为在确保笔记本开盖的模式下，Touch ID比Watch ID高效，毕竟手不用离开键盘
  3. 如Mac在盒盖模式下，自然会切换到下一种认证方式，比如密码
  4. 该配置直接走的是sudo，`与终端App类型无关`，因此iTerm2，IDEA中的terminal均work
- 
+
 ##  效果
 
- 
+
  ![](https://static.1991421.cn/2020/2020-12-10-174011.gif)
 
 ## PAM-科普
