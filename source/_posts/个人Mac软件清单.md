@@ -28,14 +28,14 @@ date: 2019-04-21 18:11:21
 [印象笔记](https://www.yinxiang.com/) | 知识管理 | 付费/年订阅|
 [Bartendar](https://www.macbartender.com/)| 系统状态栏管理 | 付费|
 [Intelij IDEA](https://www.jetbrains.com/idea/)|IDE | 付费/学生免费|
-[DataGrip](https://www.jetbrains.com/datagrip/) | DB | 付费/学生免费|
+[DataGrip](https://www.jetbrains.com/datagrip/) | DataBase | 付费/学生免费|
 [Fantastic2](https://flexibits.com/fantastical)| 日历 | 付费|
 [Surge](https://nssurge.com/)| 网络分析，代理 | 付费|
 [1Password](https://1password.com/)| 密码管理 | 付费/年订阅|
 [Telegram](https://telegram.org/) | 安全通信 | 免费|
 [微信](https://mac.weixin.qq.com/) | 办公IM | 免费|
 [Chrome](https://www.google.com/intl/zh-CN/chrome/) | 浏览器 And 前端开发调试神器 | 免费|
-[Typora](https://typora.io/) | MD编写 | 免费|
+[Typora](https://typora.io/) | MarkDown编写 | 免费|
 [keka](https://www.keka.io/en/) | 解压缩 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
 [Kindle](https://apps.apple.com/tw/app/kindle/id405399194?mt=12) |电子书 | 免费|
 [Things](https://culturedcode.com/things/) | GTD | 付费|
@@ -50,11 +50,13 @@ date: 2019-04-21 18:11:21
 [PicGIF Lite](https://apps.apple.com/cn/app/picgif-lite/id844918735?mt=12) | Gif制作 | 免费|
 [Photoshop](https://creativecloud.adobe.com/apps/download/photoshop?locale=zh-cn&promoid=61PM825Y&mv=other)|平面设计|付费/试用|
 [Parallels Desktop](https://www.parallels.com/products/desktop/)|模拟器|付费/试用|
-[CleanMyMac X](https://macpaw.com/cleanmymac)|系统管理工具|付费/试用|
-[EuDic 欧路词典](https://www.eudic.net/v4/en/app/eudic)|词典|付费|
+[Eudic 欧路词典](https://www.eudic.net/v4/en/app/eudic)|词典|付费|
 [Office 365](https://www.microsoft.com/zh-cn/microsoft-365)|办公三件套|付费|
 [FileZilla Pro](https://filezilla-project.org/filezilla_pro.php)|FTP and Cloud|付费/年订阅|
 [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager)|Redis客户端|免费|
+[MarginNote 3](https://www.marginnote.com/chinese/home)|PDF阅读器，思维导图，学习卡|付费/买断|
+[Karabiner-Elements](https://karabiner-elements.pqrs.org/)|改键器|免费|
+[Docker](https://www.docker.com/)|管理容器应用|免费|
 
 
 ## 写在最后
