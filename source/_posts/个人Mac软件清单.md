@@ -32,7 +32,7 @@ date: 2019-04-21 18:11:21
 [Fantastic2](https://flexibits.com/fantastical)| 日历 | 付费|
 [Surge](https://nssurge.com/)| 网络分析，代理 | 付费|
 [1Password](https://1password.com/)| 密码管理 | 付费/年订阅|
-[Telegram](https://telegram.org/) | 安全通信 | 免费|
+[Telegram](https://telegram.org/) | 安全通信，迄今为止最棒的IM工具 | 免费|
 [微信](https://mac.weixin.qq.com/) | 办公IM | 免费|
 [Chrome](https://www.google.com/intl/zh-CN/chrome/) | 浏览器 And 前端开发调试神器 | 免费|
 [Typora](https://typora.io/) | MarkDown编写 | 免费|
@@ -52,9 +52,9 @@ date: 2019-04-21 18:11:21
 [Parallels Desktop](https://www.parallels.com/products/desktop/)|模拟器|付费/试用|
 [Eudic 欧路词典](https://www.eudic.net/v4/en/app/eudic)|词典|付费|
 [Office 365](https://www.microsoft.com/zh-cn/microsoft-365)|办公三件套|付费|
-[FileZilla Pro](https://filezilla-project.org/filezilla_pro.php)|FTP and Cloud|付费/年订阅|
+[FileZilla Pro](https://filezilla-project.org/filezilla_pro.php)|FTP|付费/年订阅|
 [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager)|Redis客户端|免费|
-[MarginNote 3](https://www.marginnote.com/chinese/home)|PDF阅读器，思维导图，学习卡|付费/买断|
+[MarginNote 3](https://www.marginnote.com)|PDF阅读器，思维导图，学习卡|付费/买断|
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/)|改键器|免费|
 [Docker](https://www.docker.com/)|管理容器应用|免费|
 

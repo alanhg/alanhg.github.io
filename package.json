@@ -1,5 +1,5 @@
 {
-  "name": "alan.he",
+  "name": "blog",
   "version": "0.0.1",
   "private": true,
   "hexo": {
@@ -12,7 +12,6 @@
     "bcrypt-nodejs": "0.0.3",
     "hexo": "^3.9.0",
     "hexo-abbrlink": "^2.0.4",
-    "hexo-admin": "^2.1.0",
     "hexo-algoliasearch": "^0.4.1",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-clean-css": "0.0.3",

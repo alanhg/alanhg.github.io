@@ -121,13 +121,6 @@ baidusitemap:
 musicId: 27591140
 auto: 0
 
-#backend
-admin:
-  username: herky
-  password_hash: $2a$10$Itby7y1KENpZBIwiv2VBD.Raa1Eiz8MnFrSsEqRivOmmduauBOCDa
-  secret: fighting
-  deployCommand: './hexo-deploy.sh'
-
 search:
   path: search.xml
   field: post
