@@ -1,5 +1,5 @@
 ---
-title: Surge Mac 3.0使用
+title: Surge Mac 3.0使用指南
 tags:
   - Surge
   - 网络调试
@@ -104,8 +104,8 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1
 ### 升级需求-临时切到某节点?
 有时，有这样的需求，虽然自动切换节点很爽，但比如我现在上Apple注册美区ID，就是想美国IP访问，但这种需求是临时的，我想到的办法是，我去编辑组策略，去掉非美国节点，这是个办法，但是有更好的办法吗？有！
 
-1. 新建策略组比如叫[group-final-select]，类型为select，策略选择，刚才的自动切换策略组，及想要的US
-2. 修改Rule规则，代理部分原来是选择的group-auto-switch,全部替换为group-final-select。
+1. 新建策略组比如叫[group-final-select]，类型为select，策略选择刚才的自动切换策略组，及想要的US代理
+2. 修改Rule规则，代理部分原来是选择的group-auto-switch,`全部替换`为group-final-select。
 
 ![](https://i.imgur.com/us5Sj0O.jpg)
 
