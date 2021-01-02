@@ -1,10 +1,11 @@
 ---
 title: 利用Surge进行HTTPS解密
-date: 2020-12-30 19:29:25
 tags:
-- Surge
-- MitM
-- HTTPS
+  - Surge
+  - MitM
+  - HTTPS
+abbrlink: c9d4b476
+date: 2020-12-30 19:29:25
 ---
 
 > 最近，我不满足光猪圈健身个人的健康数据只能由官方App查看的问题，于是利用Surge抓取了请求，现在利用postman，或自己写个App，脚本等，都可以轻松获取App数据。
