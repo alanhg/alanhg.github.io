@@ -613,7 +613,7 @@ disqus:
   enable: true
   shortname: qianghe
   count: true
-  lazyload: false
+  lazyload: true
 
 # DisqusJS
 # Alternative Disqus - Render comment component using Disqus API
