@@ -23,11 +23,11 @@ tags:
 
 为实现该功能，需要确保安装以下3个插件
 
-- https://plugins.jenkins.io/nodejs/
+- [NodeJS](https://plugins.jenkins.io/nodejs/)
 
-- https://plugins.jenkins.io/ssh-agent/
+- [SSH Agent](https://plugins.jenkins.io/ssh-agent/)
 
-- https://plugins.jenkins.io/config-file-provider/
+- [Config File Provider](https://plugins.jenkins.io/config-file-provider/)
 
   
 
