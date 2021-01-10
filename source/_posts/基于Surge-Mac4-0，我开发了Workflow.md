@@ -1,5 +1,5 @@
 ---
-title: 基于Surge Mac 4.0，我开发了Workflow
+title: Alfred实现Surge Workflow
 tags:
   - Surge
   - 网络调试
