@@ -46,9 +46,13 @@ Workflow下载地址，[戳这里](https://github.com/alanhg/alfred-workflows/tr
 
    当前我选择**alfred_workflow_cache**，但对应workflow文件夹，Alfred默认并不会创建，需要自己手动创建。
 
-5. `Giphy国内被墙`，Mac需要走系统代理才可正常使用
+5. **alfred_workflow_cache**等路径存在空格，作为quicklookurl时需要进行下编码`空格替换为%20`才可正常使用
 
-6. Giphy提供了各种平台的SDK，但这里因为是做workflow，因此使用[WEB API](https://developers.giphy.com/docs/api/endpoint#search)
+6. `Giphy国内被墙`，Mac需要走系统代理，同时Alfred也需要走[代理](https://github.com/alanhg/others-note/issues/231)，才可正常使用
+
+7. Giphy提供了各种平台的SDK，但这里因为是做workflow，因此使用[WEB API](https://developers.giphy.com/docs/api/endpoint#search)
+
+8. Giphy API Key分为Production及beta，Production Key申请审核，5个工作日内即会回信，经测试,申请门槛儿不高。
 
 
 
