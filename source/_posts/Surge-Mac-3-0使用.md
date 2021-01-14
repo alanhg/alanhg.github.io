@@ -202,8 +202,7 @@ iOS测试版想使用，需要加入TestFlight。如果是Web邮箱注册进行�
 选择包含beta版，点击check now，安装成功后
 
 ## 还有疑问？
-1. 电报 https://t.me/lhie1x,里面大牛很多
-2. 官方论坛 https://community.nssurge.com/
+1. 官方论坛 https://community.nssurge.com/
 3. 邮件作者 `support@nssurge.com`
 4. 博客下评论，或者直接邮件我，乐意分享我的知识
 
