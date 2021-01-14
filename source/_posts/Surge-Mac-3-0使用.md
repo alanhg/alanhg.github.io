@@ -203,8 +203,8 @@ iOS测试版想使用，需要加入TestFlight。如果是Web邮箱注册进行�
 
 ## 还有疑问？
 1. 官方论坛 https://community.nssurge.com/
-3. 邮件作者 `support@nssurge.com`
-4. 博客下评论，或者直接邮件我，乐意分享我的知识
+3. 邮件作者 [support@nssurge.com](mailto:support@nssurge.com)
+4. 博客下评论，或者直接邮件[我](mailto:alan@1991421.cn)，乐意分享我的知识
 
 ## 写在最后
 昂，似乎到此为止，我们可以很轻松的访问了，并且加入代理服务器某个挂了，还可以自动切换。这些事都是Surge帮我们背后去做，我们无感。完美强大吧。
