@@ -1,11 +1,11 @@
 ---
 title: JavaScript并发模型与事件循环
 tags:
-  - EventLoop
+  - 事件循环
   - JavaScript
-  - Concurrency
-  - Task
-  - Microtask
+  - 并发
+  - 宏任务
+  - 微任务
 abbrlink: 8a863d27
 date: 2020-09-26 16:31:03
 ---
@@ -71,9 +71,9 @@ children6
     每个宏任务内都维持了一个微任务堵截，为了让高优先级及任务及时执行。也即是每取出一个宏任务，执行完毕之后。检查当前宏任务是否有微任务可执行。
 
 	![](https://static.1991421.cn/2020/2020-09-26-191836.jpeg)
-4. 宏任务一般是：包括整体代码script，setTimeout，setInterval、setImmediate。
+4. 宏任务：setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering
 	
-	微任务：原生Promise(有些实现的promise将then方法放到了宏任务中)、process.nextTick、Object.observe(已废弃)、 	MutationObserver
+	微任务：process.nextTick, Promises, queueMicrotask, MutationObserver
 	
 1. setTimeout即使设置的是0，并非理解执行回调函数。只有主线程执行栈内的任务全部执行完成，栈为空才从Event Queue中顺序取出执行。
 2. Promise 对象用于表示一个异步操作的最终完成 (或失败), 及其结果值.
@@ -193,6 +193,28 @@ setTimeout
 - 宏任务打印`script end `
 - 宏任务执行完毕，查看微任务，依次打印`promise1 `,`promise1 `
 -  微任务执行完毕，定时器到时，放入event queue,取出任务，开始执行，打印`setTimeout `
+
+
+
+### 题3
+
+```javascript
+function foo() {
+ setTimeout(foo, 0);
+   }
+foo();
+
+function foo() {
+ return Promise.resolve().then(foo);
+ }
+foo();
+```
+
+片段1不会存在堆栈溢出而片段2会。
+
+#### 解析
+
+- setTimeout为宏任务，而promise为微任务，宏任务在单个循环周期中一次一个地推入堆栈，但微任务总是在执行后返回到事件循环之前清空。因此，如果以处理条目的速度向这个队列添加条目，那么永远在处理微任务，只有当微任务队列为空时，时间循环才会重新渲染页面。
 
 ## 非阻塞？
 搞清楚了JS的事件循环，并发模型，有必要再提下非阻塞。谈起nodejs，就经常会提起异步非阻塞。
