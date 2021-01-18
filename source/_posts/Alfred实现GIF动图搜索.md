@@ -1,10 +1,11 @@
 ---
 title: Alfred实现GIF动图搜索
-date: 2021-01-09 23:16:54
 tags:
-- Giphy
-- Alfred
-- Workflow
+  - Giphy
+  - Alfred
+  - Workflow
+abbrlink: f56e482b
+date: 2021-01-09 23:16:54
 ---
 
 > 微信支持添加GIF到表情包，为了丰富下自己贫瘠的表情包，需要方便的找到新的动图GIF。国外有个网站Giphy还不错，并且提供了API支持，于是花了点时间实现了搜索表情包的Workflow。

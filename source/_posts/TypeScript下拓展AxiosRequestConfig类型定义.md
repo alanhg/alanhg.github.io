@@ -1,9 +1,10 @@
 ---
 title: TypeScript下拓展AxiosRequestConfig类型定义
-date: 2021-01-11 18:13:14
 tags:
-- Axios
-- TypeScript	
+  - Axios
+  - TypeScript
+abbrlink: 7fca5d7a
+date: 2021-01-11 18:13:14
 ---
 
 

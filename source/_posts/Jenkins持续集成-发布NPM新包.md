@@ -1,10 +1,11 @@
 ---
 title: Jenkins持续集成-发布NPM新包
-date: 2021-01-07 14:54:19
 tags:
-- Node
-- NPM
-- Jenkins
+  - Node
+  - NPM
+  - Jenkins
+abbrlink: 527335fa
+date: 2021-01-07 14:54:19
 ---
 
 > 最近有需求需要Jenkins实现发布NPM新包，这里记录下配置方法。
