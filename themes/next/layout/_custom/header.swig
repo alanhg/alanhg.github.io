@@ -23,8 +23,8 @@
 
     document.onkeydown = function (e) {
         e.stopPropagation();
-        var evt = window.event || e;
-        if (evt.metaKey && evt.keyCode === 75) {
+        var evt = e;
+        if (evt.metaKey && evt.key === 'k') {
             $(".popup-trigger").click();
             $(".popup").show();
             $(".algolia-pop-overlay").remove();
