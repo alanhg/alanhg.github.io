@@ -38,14 +38,12 @@ date: 2020-06-20 18:20:51
 ##  客户端
 
 1. Mac
-
-   	- [Surge](https://nssurge.com/) `付费`
-   	- [ClashX](https://github.com/yichengchen/clashX/releases) `免费`
-
+   - [Surge](https://nssurge.com/) `付费`
+   - [ClashX](https://github.com/yichengchen/clashX/releases) `免费`
 2. iPhone
-	- [Surge](https://nssurge.com/) `付费`
-	- ShadowRocket `付费`
-	- Spectre `免费`[`内测`](https://testflight.apple.com/join/xPXxER5C)
+  - [Surge](https://nssurge.com/) `付费`
+  - ShadowRocket `付费`
+  - [Spectre](https://apps.apple.com/app/spectre-vpn/id1508712998) `免费`
 3. Windows
   - [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases)`免费`
 
