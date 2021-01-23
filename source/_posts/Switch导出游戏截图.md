@@ -3,6 +3,7 @@ title: Switch导出游戏截图
 tags:
   - 搞机
   - 游戏
+  - Nintendo Switch
 abbrlink: 4d0b6f75
 date: 2018-10-04 12:15:32
 ---
@@ -46,6 +47,16 @@ ifttt是个自动化神器，辅助完成推特中的游戏截图推动到iOS相
 ![](https://static.1991421.cn/2018-10-04-ifttt.com_applets_86419437d-if-new-tweet-by-alanhe421-with-hashtag-nintendoswitch-then-add-photo-to-album_edit.png)
 - ifttt活动-每次Switch发推即触发
 ![](https://static.1991421.cn/2018-10-04-041122.png)
+
+
+
+
+
+## 常见问题
+
+1. IFTTT Twitter绑定修改
+
+   https://ifttt.com/twitter/settings
 
 ## 写在最后
 折腾了下，以后想要手机截图就只需要Switch发推即可,另外之前一直吃灰的Echo Dot也可以用了。。。

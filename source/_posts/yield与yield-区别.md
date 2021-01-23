@@ -54,7 +54,7 @@ The **`yield*` expression** is used to delegate to another [`generator`](https:/
 
 控制台打印可以看出
 
-1. yield与yield*确实`不同`
+1. yield与yield*`不同`
 2. yield返回的sub()结果，而yield*是sub()中的每个yield委托项
 
 
