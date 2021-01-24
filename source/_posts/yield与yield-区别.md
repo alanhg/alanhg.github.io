@@ -55,7 +55,7 @@ The **`yield*` expression** is used to delegate to another [`generator`](https:/
 控制台打印可以看出
 
 1. yield与yield*`不同`
-2. yield返回的sub()结果，而yield*是sub()中的每个yield委托项
+2. yield返回的sub迭代器，而yield*是sub迭代器中的每个yield元素
 
 
 
@@ -78,9 +78,9 @@ const res = main();
 
 ![image-20210122170503864](/Users/qhe/Library/Application Support/typora-user-images/image-20210122170503864.png)
 
-## Redux-Saga
+## Redux-Saga-Sequencing
 
-- 当前，在实际开发中，与生成器打交道最多的地方是在Redux-Saga，写effects时就要用到，从效果来说yield还是yield*效果一致
+- 当前，在实际开发中，与生成器打交道最多的地方是Redux-Saga写effects时就要用到，从效果来说yield还是yield*效果一致
 
 - 官网对于yield，yield*的使用diff说明很粗糙，只是告诉你不一样。。。。
 

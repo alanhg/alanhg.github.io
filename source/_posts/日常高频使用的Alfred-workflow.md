@@ -33,12 +33,10 @@ date: 2020-12-05 11:11:51
 	
 	![](https://static.1991421.cn/2020/2020-12-05-115550.gif)
 
-	
 4. [Eudic Tools](https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools)
 
 	![](https://static.1991421.cn/2019-11-03-auto%20search%20by%20selection.gif)
 
-	
 5. [GitHub](https://github.com/gharlan/alfred-github-workflow)
 
 	![](https://static.1991421.cn/2020/2020-12-05-120547.gif)
@@ -47,12 +45,10 @@ date: 2020-12-05 11:11:51
 		
 	![](https://static.1991421.cn/2020/2020-12-05-113752.gif)
 	
-	
 7. [New File](https://github.com/alanhg/alfred-workflows/tree/master/new-file)
 	
 	![](https://static.1991421.cn/2020/2020-12-05-114541.gif)
 
-	
 8. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
 	
 	![](https://static.1991421.cn/2020/2020-05-30-114653.gif)
@@ -69,16 +65,16 @@ date: 2020-12-05 11:11:51
 	
 	![](https://static.1991421.cn/2020/2020-12-05-115956.gif)
 
-	
-12. [WeChat Plugin](https://github.com/MustangYM/WeChatExtension-ForMac)
-	
-	![](https://static.1991421.cn/2020/2020-12-05-113416.gif)
+12. [WeChat Plugin](https://github.com/TKkk-iOSer/wechat-alfred-workflow/releases/tag/v2.0)
 
-	
+    配套微信拓展安装戳[这里](https://github.com/MustangYM/WeChatExtension-ForMac)
+
+    ![](https://static.1991421.cn/2020/2020-12-05-113416.gif)
+
 13. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0)
-	
-	![](https://static.1991421.cn/2020/evernote-workflow.gif)
-	
+
+    ![](https://static.1991421.cn/2020/evernote-workflow.gif)
+
 ## 写在最后
 - 效率工具没有最好，合适即可
 - 在实际安装和使用中，兴许会遇到坑，有以下办法解决
