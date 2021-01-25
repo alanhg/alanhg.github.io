@@ -78,7 +78,7 @@ const res = main();
 
 ![image-20210122170503864](/Users/qhe/Library/Application Support/typora-user-images/image-20210122170503864.png)
 
-## Redux-Saga-Sequencing
+## Redux-Saga中使用场景
 
 - 当前，在实际开发中，与生成器打交道最多的地方是Redux-Saga写effects时就要用到，从效果来说yield还是yield*效果一致
 
@@ -87,6 +87,8 @@ const res = main();
   You can use the builtin `yield*` operator to compose multiple Sagas in a sequential way. This allows you to sequence your *macro-tasks* in a procedural style.
 
   你可以使用内置的 `yield*` 操作符来组合多个 Sagas，使得它们保持顺序。 这让你可以一种简单的程序风格来排列你的 *宏观任务（macro-tasks）*。
+  
+  
 
 ### 个人理解
 
@@ -94,16 +96,6 @@ const res = main();
   - 如果我们需要确保A effects所有的异步【包括A调用B effects，B中的异步】都按照既定的顺序进行执行，那么就要使用yield*，如果A effects中只有一个B effects，那么yield，还是yield\* 结果均相同
 
 ### 举个例子
-
-
-
-
-
-
-
-
-
-
 
 
 
