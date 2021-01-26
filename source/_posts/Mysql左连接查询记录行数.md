@@ -1,5 +1,5 @@
 ---
-title: Mysql左连接查询记录行数
+title: MySQL左连接查询记录行数
 date: 2021-01-26 14:50:19
 tags:
 - MySQL
