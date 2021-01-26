@@ -1,9 +1,11 @@
 ---
-title: 'GitHub项目更新,实现Telegram通知'
+title: 'GitHub项目Star,实现Telegram通知'
 date: 2021-01-25 23:29:33
 tags:
 - GitHub
+- GitHub Actions
 - Telegram
+- Telegram Bot
 ---
 
 > 很喜欢开源项目获得的成就感，近一年坚持做了几个开源项目，也收获了网友的一些Star，有些还加微信，提需求等，开源魅力也就在这里吧。
@@ -53,7 +55,7 @@ GitHub Action中的变量有很多中，`${{ github.event.repository.name }}`、
   - 通过@BotFather，创建Bot获取，注意Token完整格式会是这样`12345678:BBFntuCD6nRx1ZIYZ-eCyfP1UO4FeAjnz2M`
 - TELEGRAM_TO
   - 先随便给该bot发送一条信息，确保开启了聊天
-  - 访问https://api.telegram.org/bot/12345678:BBFntuCD6nRx1ZIYZ-eCyfP1UO4FeAjnz2M/getUpdates，获取其中的chatID
+  - 访问 https://api.telegram.org/bot/12345678:BBFntuCD6nRx1ZIYZ-eCyfP1UO4FeAjnz2M/getUpdates，获取其中的chatID
 
 ## 写在最后
 
