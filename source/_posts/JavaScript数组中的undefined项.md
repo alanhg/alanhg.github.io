@@ -34,7 +34,15 @@ tags:
 
 2. 遍历时有赋值的都会遍历，但没有赋值则直接跳过
 
-   比如有时需要
+   比如有时需要控制循环固定次数，可能会这么去写，注意这里的fill确保赋值数组项为undefined，假如省略这个，则遍历次数为0
+
+   ```javascript
+    new Array(10).fill().forEach((_, idx) => {
+           console.log(idx + 1);
+    });
+   ```
+
+   
 
 
 
