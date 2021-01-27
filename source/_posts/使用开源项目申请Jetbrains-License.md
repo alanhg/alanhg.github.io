@@ -19,9 +19,9 @@ tags:
 
 ## 申请
 
-申请地址 https://www.jetbrains.com/shop/eform/opensource?product=ALL，按照表单基于事实填写即可。
+申请地址[戳这里](https://www.jetbrains.com/shop/eform/opensource?product=ALL)，按照表单基于事实填写即可。
 
-我是1月22号下午申请，27号下午收到的通知邮件，也就是四个工作日的审核时间，这个审核时长仅供参考，官方告知的是1-2周。
+我是1月22号下午申请，27号下午收到的通知邮件，也就是`四个工作日`的审核时间，这个审核时长仅供参考，官方告知的是`1-2周`。
 
 
 ## 写在最后
