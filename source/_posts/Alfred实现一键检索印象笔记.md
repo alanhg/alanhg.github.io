@@ -39,13 +39,12 @@ date: 2020-05-30 13:12:55
 
 ```bash
 codesign -dv --verbose=4 /Applications/印象笔记.app
-
 ```
 
 
 ## 写在最后
 
-- 在前人基础上，2个替换就实现了印象笔记的支，还是比较简单的
+- 在前人基础上，2个替换就实现了印象笔记的支持，还是比较简单的
 - 为何Alfred能够做到印象笔记检索呢？背后的可行性是在于，Evernote本身开放了部分API，本身就提供了apple script的支持，具体可查看[Evernote开发者API](https://dev.evernote.com/doc/articles/applescript.php)。
 - 印象笔记是Evernote的中国区本土化产品，但核心的功能毕竟还是Evernote，所以也就支持了。
 
