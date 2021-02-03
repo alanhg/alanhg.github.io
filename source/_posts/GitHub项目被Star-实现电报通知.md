@@ -1,11 +1,12 @@
 ---
 title: 'GitHub项目Star,实现Telegram通知'
-date: 2021-01-25 23:29:33
 tags:
-- GitHub
-- GitHub Actions
-- Telegram
-- Telegram Bot
+  - GitHub
+  - GitHub Actions
+  - Telegram
+  - Telegram Bot
+abbrlink: 6f739775
+date: 2021-01-25 23:29:33
 ---
 
 > 很喜欢开源项目获得的成就感，近一年坚持做了几个开源项目，也收获了网友的一些Star，有些还加微信，提需求等，开源魅力也就在这里吧。

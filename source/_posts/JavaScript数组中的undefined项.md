@@ -1,9 +1,10 @@
 ---
 title: JavaScript数组中的undefined项
-date: 2021-01-27 15:29:58
 tags:
-- JavaScript
-- 基础
+  - JavaScript
+  - 基础
+abbrlink: f9d9a7c6
+date: 2021-01-27 15:29:58
 ---
 
 > 最近在开发中遇到了数组遍历次数不对的问题，原因是未初始化，由此发现数组遍历次数不见的与数组长度一致。这里就总结下这个坑。

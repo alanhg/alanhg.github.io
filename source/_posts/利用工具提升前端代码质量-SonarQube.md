@@ -1,9 +1,10 @@
 ---
 title: 利用工具提升前端代码质量-SonarQube
-date: 2021-01-28 15:15:19
 tags:
-- Sonar Qube
-- Code Review
+  - Sonar Qube
+  - Code Review
+abbrlink: 902b069f
+date: 2021-01-28 15:15:19
 ---
 
 > 最近后端项目中投入使用了SonarQube，响应他们的号召，我在前端也开始使用。随着使用的同时，也发现之前对于Sonar的认知有错，这里Mark下。

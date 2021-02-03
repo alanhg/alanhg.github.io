@@ -1,9 +1,10 @@
 ---
 title: Nintendo Switch游戏购买方案
-date: 2021-01-22 23:27:17
 tags:
-- Nintendo Switch
-- 搞机
+  - Nintendo Switch
+  - 搞机
+abbrlink: 17f9b0aa
+date: 2021-01-22 23:27:17
 ---
 > 这里总结下个人购买NS游戏的策略，本着省钱，土豪不用看
 

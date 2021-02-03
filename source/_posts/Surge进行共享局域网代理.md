@@ -1,8 +1,9 @@
 ---
 title: Surge进行共享局域网代理
-date: 2021-01-23 22:01:13
 tags:
-- Surge
+  - Surge
+abbrlink: f272c7c
+date: 2021-01-23 22:01:13
 ---
 
 > Surge进行网络代理很方便，但比如其它设备也需要网络代理，比如互联网电视、Nintendo Switch，这时如何快速解决墙的问题呢，个人总结有以下两个办法。

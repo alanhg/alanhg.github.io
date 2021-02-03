@@ -1,9 +1,10 @@
 ---
 title: 使用开源项目申请Jetbrains License
-date: 2021-01-27 17:56:25
 tags:
-- Jetbrains
-- GitHub
+  - Jetbrains
+  - GitHub
+abbrlink: a98e5e6
+date: 2021-01-27 17:56:25
 ---
 
 > 因为我司不提供JB License，但盗版又不想用，苦于囊中羞涩，因此一直使用家人的学生License，但这样做，需要每次临到期时麻烦他，因此这个方案不愿意再搞了。之前了解JB对于开源项目开发有支持计划，可以免费申请全家桶License，于是就尝试申请下，果然搞定了，这里简单记录下申请过程。
