@@ -98,7 +98,7 @@ $ yarn add es/no-regexp-lookbehind-assertions -D
 
 `.eslintrc.js`中增加以下rule
 
-```
+```javascript
 'es/no-regexp-lookbehind-assertions': ['error']
 ```
 
@@ -151,7 +151,7 @@ Webpack中增加配置
         }
 ```
 
-1. 当执行stylelint命令即可检测样式在目标浏览器下的支持情况
+1. 当执行stylelint命令` stylelint src/main/webapp/**/*.less --syntax=less`即可检测样式在目标浏览器下的支持情况
 2. postcss会自动追加部分兼容样式写法，确保了样式写在在目标浏览器下支持
 
 ## obsolete-webpack-plugin
@@ -180,7 +180,8 @@ plugins: [new ObsoleteWebpackPlugin()]
 
 ## 写在最后
 
-如上我们即可科学有效的管理前端浏览器兼容性。假如目标浏览器及版本范围出现变化，我们有条不紊的修改browserslist，检测JS，CSS，按照错误提示进行修复即可。
+- 如上我们即可有效管理前端浏览器兼容性。
+- 假如目标浏览器及版本范围出现变化，需要做的是`修改browserslist=>检测JS，CSS=>按照错误提示进行修复`即可。
 
 ## 参考链接
 
