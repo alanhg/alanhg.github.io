@@ -21,7 +21,7 @@ script1 = type=event,event-name=network-changed,script-path=wifi-changed.js
 
 wifi-changed.js脚本内容如下
 
-```
+```javascript
 /**
  * @description
  * 如果是家里WI-FI则开启直连模式
