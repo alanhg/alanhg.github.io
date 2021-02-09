@@ -45,14 +45,14 @@ date: 2019-04-21 18:11:21
 [iHosts!](https://apps.apple.com/cn/app/ihosts-etc-hosts-%E7%BC%96%E8%BE%91%E5%99%A8/id1102004240?mt=12) | host管理 | 免费|
 [Visual Studio Code](https://code.visualstudio.com/) | 轻量级文本编辑  | 免费|
 [zoom.us](https://zoom.us/download) | 会议 | 免费|
-[OmniGraffle](https://www.omnigroup.com/omnigraffle/)| 流程图 | 付费/学生免费|
+[MindMaster](https://www.edrawsoft.cn/mindmaster/)| 思维导图 | 付费 |
 [Snipaste](https://zh.snipaste.com/) | 截图 | 免费|
 [PicGIF Lite](https://apps.apple.com/cn/app/picgif-lite/id844918735?mt=12) | Gif制作 | 免费|
 [Photoshop](https://creativecloud.adobe.com/apps/download/photoshop?locale=zh-cn&promoid=61PM825Y&mv=other)|平面设计|付费/试用|
 [Parallels Desktop](https://www.parallels.com/products/desktop/)|模拟器|付费/试用|
 [Eudic 欧路词典](https://www.eudic.net/v4/en/app/eudic)|词典|付费|
 [Office 365](https://www.microsoft.com/zh-cn/microsoft-365)|办公三件套|付费|
-[FileZilla Pro](https://filezilla-project.org/filezilla_pro.php)|FTP|付费/年订阅|
+[Cyberduck](https://cyberduck.io/)|FTP|免费|
 [Another Redis Desktop Manager](https://github.com/qishibo/AnotherRedisDesktopManager)|Redis客户端|免费|
 [MarginNote 3](https://www.marginnote.com)|PDF阅读器，思维导图，学习卡|付费/买断|
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/)|改键器|免费|
