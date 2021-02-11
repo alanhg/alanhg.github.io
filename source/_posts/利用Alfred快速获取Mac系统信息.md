@@ -44,6 +44,10 @@ tags:
 
 
 
+这里推荐一本我看过的书[Learn AppleScript: The Comprehensive Guide to Scripting and Automation on Mac OS X, Third Edition](https://learning.oreilly.com/library/view/learn-applescript-the/9781430223610/)，内容还算全面，可以作为入门。
+
+
+
 ## 写在最后
 
 - 这是我写的第20个workflow了，根据自己的需求不断开发新的小工具，还是很有成就感的
