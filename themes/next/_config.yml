@@ -610,7 +610,7 @@ calendar:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: qianghe
   count: true
   lazyload: true
