@@ -1,5 +1,5 @@
 ---
-title: 利用Alfred快速获取Mac系统信息
+title: Alfred实现快速获取Mac系统信息
 date: 2021-02-11 10:40:46
 tags:
 - Mac
