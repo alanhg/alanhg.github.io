@@ -4,6 +4,8 @@ tags:
   - Mac
   - Alfred
   - Workflow
+  - Sound
+  - Mic
 abbrlink: 986bb3dc
 date: 2020-12-06 00:44:03
 ---
