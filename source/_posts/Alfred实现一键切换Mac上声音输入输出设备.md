@@ -11,12 +11,14 @@ date: 2020-12-06 00:44:03
 
 
 ## 实现基础
-调研了一番方案，最终选择了这个工具模块。
+调研了一番方案， 发现选择不多
 
-https://github.com/deweller/switchaudio-osx
 
-### 当前的不足
-当前不支持获取AirPlay类型的输出设备，目前看来作者没意向去增加支持，立个Flag，找时间研究解决下，提个PR。
+
+- 命令行模块有个方案是[switchaudio-osx](https://github.com/deweller/switchaudio-osx)，但不支持AirPlay，作者也不打算支持，改造的话需要C语言开发基础，为此放弃
+- AppleScript+Shell，好处是环境Mac内置，无依赖，直接安装运行即可
+
+最终选择了方案2，为此系统学习了下AppleScript，总算搞定，花费也就几个小时。
 
 ## 当前效果
 
