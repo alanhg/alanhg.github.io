@@ -48,6 +48,7 @@ date: 2018-09-09 13:44:31
 打开JetBrains ToolBox App`自定义`|⌥  ⌘  J
 打开Calendar`自定义`|⌥  ⌘  X
 显示或隐藏欧陆词典窗口`自定义`|⌥  ⌘  E
+打开Things`自定义`|⌥  ⌘  T
 打开表情符号弹窗|⌃ ⌘ Space
 
 ## Finder
