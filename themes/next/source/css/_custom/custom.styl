@@ -51,8 +51,21 @@ blockquote {
   height: 36px;
 }
 
+
 html {
   caret-color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    cursor: url("/images/stormtrooper-black.png"), auto;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    cursor: url("/images/stormtrooper-white.png"), auto;
+  }
 }
 
 .posts-expand .post-body img {

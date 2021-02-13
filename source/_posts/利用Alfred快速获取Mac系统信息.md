@@ -1,10 +1,11 @@
 ---
 title: Alfred实现快速获取Mac系统信息
-date: 2021-02-11 10:40:46
 tags:
-- Mac
-- Alfred
-- Workflow
+  - Mac
+  - Alfred
+  - Workflow
+abbrlink: 885fb335
+date: 2021-02-11 10:40:46
 ---
 
 > 有时需要快速查询Mac系统版本信息，或者内存信息，常规操作是点击屏幕顶部右上角Apple图标=>About This Mac=>然后在对应的Tab页寻找信息=>选择拷贝，这样做未免麻烦了些。

@@ -1,9 +1,10 @@
 ---
 title: Web中HashRouter与BrowserRouter选择
-date: 2021-02-05 18:38:50
 tags:
-- Web
-- Router
+  - Web
+  - Router
+abbrlink: 8a39edd0
+date: 2021-02-05 18:38:50
 ---
 > SPA技术下，对于WEB前端路由，有两个选项HashRouter，BrowserRouter，两个选择，有利有弊，需要根据实际情况去选择，这里就总结下。
 
@@ -33,10 +34,11 @@ tags:
 
 ## SPA路由实现原理
 
-- BrowserRouter利用H5新特性History来进行URL状态追踪
-  - 比如history.pushState向当前浏览器会话的历史堆栈中添加一个状态（state）。当前浏览器会话地址栏会替换为新的。
+- BrowserRouter利用H5新特性History来进行URL的改变及状态追踪
+  - history.pushState向当前浏览器会话的历史堆栈中添加一个状态（state）。当前浏览器会话地址栏会替换为新的。
 
-- 而HashRouter利用location.hash来进行URL状态追踪
+- 而HashRouter利用location.hash来进行URL改变及状态追踪
+  - onhashchange来进行hash改变监听
 
  注意，因为都是前端路由方案，因此URL变化并不会造成页面reload
 
