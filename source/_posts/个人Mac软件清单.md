@@ -22,23 +22,23 @@ date: 2019-04-21 18:11:21
 
 软件 | 功能 | 资费方案|备注
 ----| ---| ---|---
-[Alfred](https://www.alfredapp.com/)| 效率神器 | 付费|
-[Dash](https://kapeli.com/dash)| 文档检索 | 付费|
+[Alfred](https://www.alfredapp.com/)| 效率神器，系统主入口 | 付费|
+[Dash](https://kapeli.com/dash)| 文档检索，API查询神器 | 付费|
 [Moom](https://manytricks.com/moom/)| 窗口管理 | 付费|
 [印象笔记](https://www.yinxiang.com/) | 知识管理 | 付费/年订阅|
 [Bartendar](https://www.macbartender.com/)| 系统状态栏管理 | 付费|
-[Intelij IDEA](https://www.jetbrains.com/idea/)|IDE | 付费/学生免费|
-[DataGrip](https://www.jetbrains.com/datagrip/) | DataBase | 付费/学生免费|
-[Fantastic2](https://flexibits.com/fantastical)| 日历 | 付费|
-[Surge](https://nssurge.com/)| 网络分析，代理 | 付费|
+[Intelij IDEA](https://www.jetbrains.com/idea/)|IDE，利用插件可以覆盖日常各种前后端场景开发 | 付费/学生免费|
+[DataGrip](https://www.jetbrains.com/datagrip/) | DataBase，对比navicat更为高效，功能丰富，也支持插件开发，拓展性强。同时与IDEA设计体验一致，学习成本低。 | 付费/学生免费|
+[Fantastic2](https://flexibits.com/fantastical)| 日历应用，替代系统日历应用，支持自然语言输入，及日历文件订阅 | 付费|
+[Surge](https://nssurge.com/)| 网络分析，代理工具，主要用来解决上谷歌困难 | 付费|
 [1Password](https://1password.com/)| 密码管理 | 付费/年订阅|
 [Telegram](https://telegram.org/) | 安全通信，迄今为止最棒的IM工具 | 免费|
 [微信](https://mac.weixin.qq.com/) | 办公IM | 免费|
 [Chrome](https://www.google.com/intl/zh-CN/chrome/) | 浏览器 And 前端开发调试神器 | 免费|
-[Typora](https://typora.io/) | MarkDown编写 | 免费|
-[keka](https://www.keka.io/en/) | 解压缩 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
+[Typora](https://typora.io/) | MarkDown编写，目录功能很需要。 | 免费|
+[keka](https://www.keka.io/en/) | 解压缩，支持加密码 | 免费|[官网](https://www.keka.io/en/)免费，AppStore付费
 [Kindle](https://apps.apple.com/tw/app/kindle/id405399194?mt=12) |电子书 | 免费|
-[Things](https://culturedcode.com/things/) | GTD | 付费|
+[Things](https://culturedcode.com/things/) | GTD，好用的todolist | 付费|
 [PostMan](https://www.postman.com/downloads/)|网络调试 | 免费|
 [iTerm2](https://iterm2.com/) | 终端 | 免费|
 [IINA](https://iina.io/) | 视频播放 | 免费|
