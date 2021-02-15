@@ -185,7 +185,7 @@ iOS端需要设定同步，more=》Profile Sync，从iCloud中导入Profile即�
 
 iOS测试版想使用，需要加入TestFlight。如果是Web邮箱注册进行的购买，按照以下操作。
 
-1. 登陆Surge网站
+1. 登陆Surge网站 https://nssurge.com/account
 2. 点击Apply TestFlight
 3. 手机访问邀请网址，会跳转到下载TestFlight app
 4. 然后选择更新surge到测试版即可
