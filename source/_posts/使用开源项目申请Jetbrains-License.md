@@ -1,5 +1,5 @@
 ---
-title: 使用开源项目申请Jetbrains License
+title: 使用开源项目申请JetBrains License
 tags:
   - Jetbrains
   - GitHub
