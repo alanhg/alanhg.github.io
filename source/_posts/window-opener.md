@@ -11,7 +11,7 @@ tags:
 
 ## window.opener作用
 
-> The [`Window`](dfile:///Users/qhe/Library/Application Support/Dash/DocSets/JavaScript/JavaScript.docset/Contents/Resources/Documents/developer.mozilla.org/en-US/docs/Web/API/Window.html) interface's `**opener**` property returns a reference to the window that opened the window, either with [`open()`](dfile:///Users/qhe/Library/Application Support/Dash/DocSets/JavaScript/JavaScript.docset/Contents/Resources/Documents/developer.mozilla.org/en-US/docs/Web/API/Window/open.html), or by navigating a link with a `target` attribute.
+> The Window interface's `**opener**` property returns a reference to the window that opened the window, either with open(), or by navigating a link with a `target` attribute.
 
 即opener赋予了操作另一个文档的能力，当然不是每一个页面都可以。
 
