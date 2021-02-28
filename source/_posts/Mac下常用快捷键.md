@@ -2,7 +2,7 @@
 title: Mac下常用快捷键
 tags:
   - keymap
-  - Shortcut
+  - Shortcuts
   - Intellij IDEA
   - DataGrip
   - ITerm2
@@ -82,15 +82,18 @@ date: 2018-09-09 13:44:31
 显示当前网页的 HTML 源代码（不可修改）|⌘  Option  U
 在无痕模式下打开新窗口|⌘  Shift  N
 
+### 开发工具
 
-### 开发
+官方文档:[戳这里](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
+
 操作|快捷键|
----|---|
-打开命令行工具|⌘  ⇧  P
-暂停/继续脚本执行|F8
-越过下一个函数调用|F10
-进入下一个函数调用| F11
-跳出当前函数|⇧ F11
+---|---|---
+打开命令行工具|⌘  ⇧  P|
+暂停/继续脚本执行|F8|
+越过下一个函数调用|F10|
+进入下一个函数调用| F11|
+跳出当前函数|⇧ F11|
+添加或删除断点|⌘ B|b means breakpoint
 
 
 ## Intellij IDEA
