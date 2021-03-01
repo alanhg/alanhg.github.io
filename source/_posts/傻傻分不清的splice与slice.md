@@ -40,7 +40,7 @@ Array.prototype.splice()
 
 ## slice
 
-
+（切下的食物）薄片，片；小铲
 
 ### 单词含义
 
