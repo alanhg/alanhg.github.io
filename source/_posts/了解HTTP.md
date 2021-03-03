@@ -50,6 +50,8 @@ tags:
 2. 任何HTTP协议，比如HTTP2支持需要WEB本身容器如nginx及访问终端如chrome支持
    - 因此比如HTTP3还属于草案，如果想尝鲜既需要在容器上配置支持该协议，也需要安装比如Chrome canary开启QUIC才可以尝鲜
 3. TLS即HTTPS在HTTP1.1上也支持，并非需要一定是2
+4. 部分WEB已经支持了HTTP3，比如YouTube
+   - 测试站点是否支持3，可以使用该工具https://gf.dev/http3-test
 
 ## Chrome DevTools中的HTTP请求
 
