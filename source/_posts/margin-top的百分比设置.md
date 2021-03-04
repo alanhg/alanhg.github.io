@@ -1,8 +1,9 @@
 ---
 title: margin-top的百分比设置
-date: 2021-02-18 20:44:28
 tags:
-- CSS
+  - CSS
+abbrlink: 7710da21
+date: 2021-02-18 20:44:28
 ---
 
 > margin-top、margin-bottom、padding-top、padding-bottom的值支持百分比设定，而百分比是基于容器即父元素的宽度而非高度来计算的(refer to [logical width](https://drafts.csswg.org/css-writing-modes-4/#logical-width) of containing block)，这点平时容易忽视，这里总结下。

@@ -1,10 +1,11 @@
 ---
 title: window.opener
-date: 2021-02-27 14:51:22
 tags:
-- Chrome
-- 浏览器工作原理
-- JavaScript
+  - Chrome
+  - 浏览器工作原理
+  - JavaScript
+abbrlink: f52bd467
+date: 2021-02-27 14:51:22
 ---
 
 > window.opener并非JS新特性，但有时却被忽视了，这里总结下它的价值

@@ -1,8 +1,9 @@
 ---
 title: 了解HTTP
-date: 2021-03-03 22:57:32
 tags:
-- HTTP
+  - HTTP
+abbrlink: '16e51059'
+date: 2021-03-03 22:57:32
 ---
 > 作为前端developer总是要经常查看networks，HTTP请求不可避免要接触，但一直缺乏系统的学习，于是查询这里梳理下，加深下记忆。
 

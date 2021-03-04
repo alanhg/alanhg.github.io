@@ -1,9 +1,10 @@
 ---
 title: js中的Maximum call stack size exceeded
-date: 2021-02-24 22:32:37
 tags:
-- JavaScript
-- Chrome
+  - JavaScript
+  - Chrome
+abbrlink: 5d8a14a9
+date: 2021-02-24 22:32:37
 ---
 
 > 在实际开发中有时会遇到`Maximum call stack size exceeded`错误，顾名思义即栈溢出。但认知仅限于此是不够的，这里就针对这个话题总结下。

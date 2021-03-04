@@ -1,10 +1,11 @@
 ---
 title: 'Chrome下的MemoryCache,DiskCache'
-date: 2021-03-02 22:46:07
 tags:
-- Chrome
-- Network
-- 缓存
+  - Chrome
+  - Network
+  - 缓存
+abbrlink: a3d8c426
+date: 2021-03-02 22:46:07
 ---
 
 > Chrome DevTools下调试前端请求时，会注意到缓存分为两种MemoryCache，DiskCache，针对两者区别和Chrome是如何选择缓存介质的，这里基于我的认知总结下。

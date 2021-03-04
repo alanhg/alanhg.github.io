@@ -1,9 +1,10 @@
 ---
-title: Array.join vs Template strings vs String concatenation 
-date: 2021-02-28 18:01:04
+title: Array.join vs Template strings vs String concatenation
 tags:
-- JavaScript 
-- performance
+  - JavaScript
+  - performance
+abbrlink: 99c1b920
+date: 2021-02-28 18:01:04
 ---
 > 最近Stackoverflow上看到一个问题，[Are ES6 template literals faster than Array join at constructing long strings](https://stackoverflow.com/questions/54352451/are-es6-template-literals-faster-than-array-join-at-constructing-long-strings)，这个问题被管理员直接关闭了，因此看不到有人给出答案，但问题确实有点意思，毕竟我不确定，于是这里就测试并记录下。
 
