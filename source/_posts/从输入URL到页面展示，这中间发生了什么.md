@@ -30,3 +30,10 @@ tags:
 16. 渲染进程：DOM生成=>样式计算=>布局=>分层=>图层绘制=>分块=>光栅化=>合成绘制
 17. 渲染进程渲染完成后，向浏览器进程提交页面加载完毕
 
+
+
+##  参考资料
+
+- https://github.com/skyline75489/what-happens-when-zh_CN
+- https://time.geekbang.org/column/article/117637
+
