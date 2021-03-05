@@ -45,6 +45,8 @@ XML：E**x**tensible **M**arkup **L**anguage
 
 
 
+*注意XML & JSON大小写敏感。*
+
 ## JSON序列化与反序列化
 
 了解了JSON，XML就需要了解序列化问题，这中间也有坑存在。
