@@ -1,8 +1,10 @@
 ---
-title: Visual Studio Code常用插件
+title: Visual Studio Code插件清单
 date: 2021-03-06 21:47:15
 tags:
 - VSC
+- 利器
+- 软件
 ---
 
 > IDEA作为code开发主力，但是更适合完整项目开发，而VSC作为轻量级开发编辑器，比如有时候处理一个Nginx配置，一个HTML测试文件等，因此两者不矛盾，一个重型武器，一个轻量级冲锋枪。
