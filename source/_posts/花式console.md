@@ -3,6 +3,7 @@ title: 花式console
 tags:
   - console
   - JavaScript
+  - 代码黑科技
 abbrlink: b1f43e66
 date: 2020-07-04 15:24:31
 ---
@@ -36,7 +37,6 @@ date: 2020-07-04 15:24:31
 	console.log("%cThis will be formatted with large, blue text", "color: blue; font-size: x-large");
 	```
 
-	
 2. 比如hire这种字符画，可以使用[在线服务](https://www.kammerl.de/ascii/AsciiSignature.php)即可，比如图片转换可以使用[这个包](https://github.com/IonicaBizau/image-to-ascii),转换为ascll即可。
 
 ## 贴下我的
@@ -46,5 +46,5 @@ date: 2020-07-04 15:24:31
 ![](https://static.1991421.cn/2020/2020-07-04-154412.jpeg)
 
 
-	
+​	
 
