@@ -2,7 +2,7 @@
 title: 傻傻分不清的splice与slice
 tags:
   - JavaScript
-  - 基础函数
+  - 基础
 abbrlink: 257f589c
 date: 2021-03-01 23:11:54
 ---
