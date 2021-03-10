@@ -1,5 +1,5 @@
 ---
-title: JavaScript并发模型与事件循环
+title: JavaScript事件循环
 tags:
   - 事件循环
   - JavaScript
@@ -73,7 +73,7 @@ children6
 	![](https://static.1991421.cn/2020/2020-09-26-191836.jpeg)
 4. 宏任务：setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering
 	
-	微任务：process.nextTick, Promises, queueMicrotask, MutationObserver
+	微任务：process.nextTick(Node环境), Promises, queueMicrotask, MutationObserver
 	
 1. setTimeout即使设置的是0，并非理解执行回调函数。只有主线程执行栈内的任务全部执行完成，栈为空才从Event Queue中顺序取出执行。
 2. Promise 对象用于表示一个异步操作的最终完成 (或失败), 及其结果值.
