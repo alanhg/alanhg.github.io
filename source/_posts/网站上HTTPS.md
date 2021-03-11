@@ -7,7 +7,7 @@ tags:
 abbrlink: cb08c555
 date: 2018-05-30 22:33:12
 ---
-> 给网站加HTTPS已成一种趋势，新版Chrome访问未加密的站点会直接提示不安全。总提示不安全，另外加S的确可以加强网站信息传输的安全，so有必要搞一搞。
+> 给网站加HTTPS已成一种趋势，新版Chrome访问未加密的站点会直接提示不安全。总提示不安全，另外加S的确可以加强网站信息传输的安全，so有必要搞一搞，这里以我自己的站点为例，介绍下配置过程。
 
 ## Let’s Encrypt证书
 国内阿里云之前提供赛门铁克免费证书，但现在没了，好消息是Let’s Encrypt有免费SSL证书，不过证书有效期只有90天，别担心，有办法解决自动更新证书问题。
@@ -79,7 +79,34 @@ server {
 16 0 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null
 ```
 
+
+
+## 写在最后
+
+以上即是完整的配置过程，但每次部署难免麻烦，比如服务器更换等，于是有了更好的方式即将整套配置进行docker配置，这样每次部署只需要拉取docker配置文件，run即可。这里贴下我的博客部署[配置](https://github.com/alanhg/alanhg.github.io/tree/master/deploy)，仅供参考
+
+
+
+
+
+## HTTPS安全在哪-题外话
+
+HTTPS相对HTTP是安全了些，为什么安全，因为HTTPS对传输数据进行了加密。我们都知道TCP连接是3次握手，而建立在TCP之上的HTTP+TLS/SSL是7次握手。因为TSL连接是4次握手(双方发送机密信息，双方确认)。
+
+![](https://static.1991421.cn/2021/2021-03-11-151647.jpeg)
+
+
+
+上图来自李兵老师的《浏览器工作原理与实践》
+
+
+
+需要注意HTTPS的安全只是相对安全依然有漏洞，比如利用中间人攻击我们就可以破译部分的HTTPS站点数据
+
+
+
 ## 相关文档
+
 + [acme.sh](https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E)
 + [Let's Encrypt，免费好用的 HTTPS 证书](https://imququ.com/post/letsencrypt-certificate.html)
 + [使用 Let's Encrypt 证书](https://czjake.com/blog/article/https-certificate-letsencrypt)
