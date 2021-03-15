@@ -1,9 +1,10 @@
 ---
 title: JS下的Promise
-date: 2021-03-07 13:33:57
 tags:
-- JavaScript
-- 异步编程
+  - JavaScript
+  - 异步编程
+abbrlink: fd66732e
+date: 2021-03-07 13:33:57
 ---
 
 > 很多教程把Promise搞的过于简单或复杂，这里梳理下，强化下个人理解。
