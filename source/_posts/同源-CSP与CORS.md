@@ -2,6 +2,7 @@
 title: '同源,CSP与CORS'
 tags:
   - 浏览器安全
+  - Web安全
 abbrlink: 23a53c02
 date: 2021-03-06 15:06:44
 ---
