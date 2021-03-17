@@ -58,7 +58,8 @@ Chrome下也提供了GUI来查看渲染进程情况。如何操作呢，点击�
 
 ### 注意
 
-Chrome下，测试发现比如A标签，当不手动设定`rel='opener'`，浏览器会开启新的渲染进程。
+1. Chrome下，测试发现比如A标签，当不手动设定`rel='opener'`，浏览器会开启新的渲染进程。
+2. `opener`开启时，同站环境下，sessionstorage也会带过去，如果不想带，开启`noopener`
 
 
 
