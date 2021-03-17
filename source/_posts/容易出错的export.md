@@ -17,15 +17,15 @@ tags:
 
 如图即是有时出现的写法错误
 
-- 首先这个错误是TS编译器报的，属于编译报错，与Lint报错不同，lint报错会告诉具体违反的规则，而编译报错会是`ts(number)`，这点需要区分开来
+- 首先这个错误是TS编译器报的，属于编译报错，与Lint报错不同，lint报错会告诉具体违反的规则，而编译报错会是`ts(code)`，这点需要区分开来
 
-- 错误中code1128与本身我们所编写的程序文件无关，是编译器内部的，翻看TypeScript源码果然找到了相关语句。因此假如遇到TS编译报错看不懂，可以以此Code辅助进行相关问题检索。
+- 错误中`code-1128`与本身我们所编写的程序文件无关，是编译器内部的，翻看TypeScript源码果然找到了相关语句。因此假如遇到TS编译报错看不懂，可以以此Code辅助进行相关问题检索。
 
   ```typescript
-          Declaration_or_statement_expected: diag(1128, ts.DiagnosticCategory.Error, "Declaration_or_statement_expected_1128", "Declaration or statement expected."),
+  Declaration_or_statement_expected: diag(1128, ts.DiagnosticCategory.Error, "Declaration_or_statement_expected_1128", "Declaration or statement expected."),
   
   
-      function diag(code, category, key, message, reportsUnnecessary, elidedInCompatabilityPyramid, reportsDeprecated) {
+    function diag(code, category, key, message, reportsUnnecessary, elidedInCompatabilityPyramid, reportsDeprecated) {
           return { code: code, category: category, key: key, message: message, reportsUnnecessary: reportsUnnecessary, elidedInCompatabilityPyramid: elidedInCompatabilityPyramid, reportsDeprecated: reportsDeprecated };
       }
   
