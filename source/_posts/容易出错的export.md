@@ -48,14 +48,30 @@ export class ClassName {...}
 
 // 导出列表
 export { name1, name2, …, nameN };
+                               
+// 导出事先定义的特性作为默认值
+export { myFunction as default };
+
+// 导出单个特性作为默认值
+export default function () { ... }
+export default class { .. }
 ```
 
 
 
-注意到导出单个对象时需要声明语句，比如let、function、class等，而导出多个则是用花括号。
+注意
 
+- 导出单个对象时需要声明语句，比如let、var、const、function、class等，而导出多个则是用花括号。
 
+- 缺省导出不可以直接export let、var、const声明，如下会报错
+
+  ```typescript
+  export default let m= {}
+  ```
+
+  
 
 ## 写在最后
 
 熟记基本规范，才能高效编程。
+
