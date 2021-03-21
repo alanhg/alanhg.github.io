@@ -1,10 +1,11 @@
 ---
 title: JS扫盲之Proxy，Reflect
-date: 2021-03-16 23:38:01
 tags:
-- JavaScript
-- Metaprogramming
-- 元编程
+  - JavaScript
+  - Metaprogramming
+  - 元编程
+abbrlink: 48ec449b
+date: 2021-03-16 23:38:01
 ---
 
 > 前端开发大多时候并没有用到Proxy，但是不代表其没有价值，而是没有掌握它。于是，这里梳理下。

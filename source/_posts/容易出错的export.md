@@ -1,8 +1,9 @@
 ---
 title: 容易出错的export语句
-date: 2021-03-17 21:00:17
 tags:
-- JavaScript
+  - JavaScript
+abbrlink: 27b64631
+date: 2021-03-17 21:00:17
 ---
 
 > ES6 Module是官方推出的JS模块方案，随着babel，TypeScript，SPA的盛行，这个技术也用的再熟悉不过了，但有时还是会写错。反思错误，觉得是对其认识理解的还不够彻底，这里就Mark下。
