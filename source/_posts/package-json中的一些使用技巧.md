@@ -7,7 +7,7 @@ abbrlink: 5db5ae2e
 date: 2020-07-26 10:32:44
 ---
 
-[toc]
+
 
 
 > 对于package.json这个文件，我们并不能只知道依赖与开发依赖，丰富了解，善用package.json可以让我们的应用更改健壮，开发更高效
@@ -19,6 +19,8 @@ date: 2020-07-26 10:32:44
 package.json
 
 	```json
+	
+	```
 
   "scripts": {
     "preinstall": "node ./scripts/checkYarn.js"
@@ -31,10 +33,10 @@ package.json
 
 	```js
 	if (!/yarn\.js$/.test(process.env.npm_execpath || '')) {
-  console.warn(
+    console.warn(
     '\u001b[33mThis repository requires Yarn 1.x for scripts to work 	properly.\u001b[39m\n'
-  )
-  process.exit(1)
+    )
+    process.exit(1)
 	}
 	```
 	当使用npm install直接报错。
@@ -57,4 +59,12 @@ package.json
 注意，版本号也是个闭区间比如“10.15.0-10.16.0”。
 
 
+
+## License
+
+如果仓库设置了`private:true`，则协议字段license可以不用设定，npm会忽视该设定，如果没有，则需要进行设定为任何一个协议，比如MIT，否则打包时会报错如下。
+
+> No license field
+
+注意，有时提示的协议缺失说的并不一定是项目根路径下的package.json文件，而是系统用户目录下的等。具体是哪个文件可以根据错误提示确定即可。
 
