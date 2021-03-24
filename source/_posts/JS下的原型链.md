@@ -1,5 +1,5 @@
 ---
-title: JS扫盲下的原型链
+title: JS扫盲之原型链
 date: 2021-03-24 20:50:32
 tags:
 - JavaScript
