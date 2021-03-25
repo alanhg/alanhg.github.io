@@ -48,8 +48,6 @@ console.log(yideng.x);
 
 也就是说实际上JS做的事是将一个值分别赋给了多个变量。即a=b=c应该等价于`b=c;a=c;`
 
-
-
 因此上述代码等价代码如下
 
 ```js
@@ -123,6 +121,10 @@ console.log(user.x);
        console.log(`flashman: ${key} set from ${target[key]} to ${value}`);
        target[key] = value;
        return true;
+     },
+      get: function (target, key) {
+       console.log(`flashman: ${key} get from ${target[key]}`);
+       return target[key];
      }
    });
    
@@ -130,11 +132,15 @@ console.log(user.x);
    
    ```
 
-   以上代码打印会发现，首先被调用的set方法是flashman的
+   以上代码打印会发现，首先被调用的set方法是flashman的，同时注意，以上并不等价于`batmanProxy.name = flashmanProxy.name = superman.name;`因为flashmanProxy的get方法并没被调用
 
 3. 对象赋值是地址赋值
 
 
+
+## 写在最后
+
+问题简单但很基础，继续学习，继续搬砖。
 
 
 
