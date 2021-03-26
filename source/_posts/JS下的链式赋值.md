@@ -76,7 +76,11 @@ var user = {
   n: 1
 };
 
-user.x = user = {
+user.x = {
+  n: 2
+};
+
+user = {
   n: 2
 };
 console.log(user.x);
@@ -86,6 +90,8 @@ console.log(user.x);
 * {n：2} 作为新的user，即2
 * {n：2}赋值给1的x
 * 最后打印2的x，没有这个属性，因此undefined
+* 
+* 其实还是先user后user.x但是不一个user
 */
 
 ```
