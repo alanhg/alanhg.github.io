@@ -10,13 +10,13 @@ tags:
 
 
 ```js
-var yideng = {
+var user = {
   n: 1
 };
-yideng.x = yideng = {
+user.x = user = {
   n: 2
 };
-console.log(yideng.x);
+console.log(user.x);
 
 ```
 
@@ -25,14 +25,14 @@ console.log(yideng.x);
 错误的以为等价于如下代码
 
 ```js
-var yideng = {
+var user = {
   n: 1
   };
-yideng = {
+user = {
     n: 2
  };
-yideng.x = yideng;
-console.log(yideng.x);
+user.x = user;
+console.log(user.x);
 /**
 * {n: 2, x: {…}}
 * /
