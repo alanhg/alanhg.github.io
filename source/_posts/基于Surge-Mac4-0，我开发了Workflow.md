@@ -45,8 +45,7 @@ workflow下载地址-[戳这里](https://github.com/alanhg/alfred-workflows/blob
 
 ## 当前的不足
 
-1. 因为API提供的还不够全面，比如没有获取所有Profile的API，所以灵活切换也就没办法实现
-2. 当前workflow的安装需要自己手动安装yarn,及node_modules包，不方便装机，接下来封装成node包，实现一键安装方便些。
+1. 因为API提供的还不够全面，比如无法获取当前选中的profile
 
 ## 写在最后
 
