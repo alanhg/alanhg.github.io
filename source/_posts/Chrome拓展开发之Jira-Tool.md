@@ -25,6 +25,8 @@ quick filters实现单选
 
 
 
+[应用商店地址](https://chrome.google.com/webstore/detail/jira-tool/bifineglhieejpkhnfnfemcbpadpdooi)
+
 ## 实现
 
 完整实现代码直接查看[仓库](https://github.com/alanhg/jira-tool)即可，这里就不再说明。
@@ -45,7 +47,7 @@ quick filters实现单选
 2. 点击上传新内容，按照要求填写即可
    - 上传文件类别为zip
 
-当前因为我的应用还在审核中，因此并不确定是否需要几天，官方说法几个工作日。
+官方说法几个工作日，因为当前疫情，还是慢了点，我的应用审核花费3天
 
 
 
