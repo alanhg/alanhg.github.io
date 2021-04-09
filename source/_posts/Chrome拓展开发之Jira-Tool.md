@@ -27,7 +27,7 @@ quick filters实现单选
 
 ## 实现
 
-具体实现代码直接查看[仓库](https://github.com/alanhg/jira-tool)即可，这里就不再说明。
+完整实现代码直接查看[仓库](https://github.com/alanhg/jira-tool)即可，这里就不再说明。
 
 这里只说下Chrome拓展该功能的原理，即当网页完全加载后，追加开关按钮，对于`quick filters`中的点击事件进行事件捕获，如果点击某个filter，对其它选中的filter自动点击进行反选。
 
