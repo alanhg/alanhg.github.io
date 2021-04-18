@@ -1,10 +1,11 @@
 ---
 title: Chrome拓展程序开发之Jira Tool
-date: 2021-04-04 22:50:23
 tags:
-- Chrome
-- Extension
-- JIRA
+  - Chrome
+  - Extension
+  - JIRA
+abbrlink: e108cb19
+date: 2021-04-04 22:50:23
 ---
 
 > JIRA作为我们团队的项目管理工具是工具链中的一环。平时站会每个人也是基于JIRA上的看板来陈述自己做的事情及遇到的问题，但JIRA还是有体验差的地方，比如说Kanban board中的Quick Filters，不支持单选，每次选择都是叠加，这点并不利于我们去快速切换不同filter下的card。

@@ -1,8 +1,9 @@
 ---
 title: Webpack4升级至5
-date: 2021-03-23 23:18:48
 tags:
-- webpack
+  - webpack
+abbrlink: 80e113a4
+date: 2021-03-23 23:18:48
 ---
 
 > webpack5发布已经有5个月了，配套的插件都已基本到位，空闲时间，就着手项目升级工作。

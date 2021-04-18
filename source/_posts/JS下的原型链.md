@@ -1,9 +1,10 @@
 ---
 title: JS扫盲之原型链
-date: 2021-03-24 20:50:32
 tags:
-- JavaScript
-- JS基础
+  - JavaScript
+  - JS基础
+abbrlink: 7b94d4d0
+date: 2021-03-24 20:50:32
 ---
 
 > 原型链是JS基础知识之一，翻阅那么多的文章，不如自行总结一下，温故而知新。

@@ -1,8 +1,9 @@
 ---
 title: v8-debug安装
-date: 2021-04-11 23:27:10
 tags:
-- chrome
+  - chrome
+abbrlink: b1c340b9
+date: 2021-04-11 23:27:10
 ---
 
 > 想要深入理解JS，就需要了解v8，通过v8-debug方便去理解字节码，JS优化等等。这里记录下v8-debug的安装
