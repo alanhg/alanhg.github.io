@@ -32,7 +32,16 @@ date: 2021-01-07 14:54:19
 
   
 
-## Pipeline具体配置
+## 环境配置
+
+1. 安装NodeJS
+   - Global Tool Configuration中安装指定NodeJS，全局包安装yarn
+2. 配置文件增加NRM配置
+   - Managed Files选择Npm config file，注意auth config，确保可以deploy包到服务器
+3. GitLab credentialsId
+   - Global credentials配置GitLab账户私钥
+
+## Pipeline配置
 
 ```groovy
 
@@ -54,7 +63,6 @@ sshagent( ['gitlab']) {
 sh '''
     git config --global user.email "alan@1991421.cn"
     git config --global user.name "Alan's 2st Bot"
-		npm install -g yarn
 		yarn install
 		npm run release
 		git push origin HEAD:refs/heads/master --tags

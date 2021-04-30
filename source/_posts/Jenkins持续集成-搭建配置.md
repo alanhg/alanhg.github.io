@@ -122,6 +122,34 @@ http://192.168.1.81/jenkins/
 实现邮件发送
 ![](https://static.1991421.cn/blog/2018-01-20-062524.png)
 
+## Docker安装[`最简单方式`]
+
+以上方式较为复杂，但有益于完整理解Jenkins的部署，更为高效的部署方式是docker部署
+
+
+
+1. docker pull jenkinsci/blueocean
+
+2. docker run
+
+   ```shell
+   docker run \
+     --name jenkins-blueocean \
+     -d \
+     -p 8080:8080 \
+     -p 50000:50000 \
+     -v jenkins-data:/var/jenkins_home \
+     jenkinsci/blueocean
+   ```
+
+3. 访问http://localhost:8080/login
+
+     ```
+   $ docker exec -it jenkins-blueocean /bin/bash
+   $ cat /var/jenkins_home/secrets/initialAdminPassword
+     ```
+
+   拷贝密码到界面
 
 ## 写在最后
 
