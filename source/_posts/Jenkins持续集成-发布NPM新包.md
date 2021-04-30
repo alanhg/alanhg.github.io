@@ -35,11 +35,22 @@ date: 2021-01-07 14:54:19
 ## 环境配置
 
 1. 安装NodeJS
+
    - Global Tool Configuration中安装指定NodeJS，全局包安装yarn
+
+     ![](https://static.1991421.cn/2021/2021-04-30-165912.jpeg)
+
 2. 配置文件增加NRM配置
+
    - Managed Files选择Npm config file，注意auth config，确保可以deploy包到服务器
+
+     ![](https://static.1991421.cn/2021/2021-04-30-170717.jpeg)
+
 3. GitLab credentialsId
+
    - Global credentials配置GitLab账户私钥
+
+     ![](https://static.1991421.cn/2021/2021-04-30-165845.jpeg)
 
 ## Pipeline配置
 
