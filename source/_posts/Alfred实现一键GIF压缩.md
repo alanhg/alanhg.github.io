@@ -16,9 +16,9 @@ tags:
 
 
 
+选中文件，唤起Alfred，输入`gif`，选中Compress GIF，回车即可。
+
 Workflow下载地址，[戳这里](https://github.com/alanhg/alfred-workflows/tree/master/compress-gif)
-
-
 
 ### 注意
 
