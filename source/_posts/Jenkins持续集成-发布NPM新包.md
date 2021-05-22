@@ -89,7 +89,7 @@ sh '''
 
 
 
-[文件下载]([**jenkins-release-npm.groovy**](https://gist.github.com/alanhg/fcdf6daeb9ded0e5427578f5aafdf023#file-jenkins-release-npm-groovy))
+[文件下载]([**jenkins-release-npm.groovy**](https://gist.github.com/alanhg/fcdf6daeb9ded0e5427578f5aafdf023))
 
 ### 字段值说明
 
