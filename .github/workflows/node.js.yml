@@ -71,5 +71,5 @@ jobs:
         with:
             to: ${{ secrets.TELEGRAM_TO }}
             token: ${{ secrets.TELEGRAM_TOKEN }}
-            message: Blog deployment and update completed, see [here](https://1991421.cn).
+            message: Blog deployment and update completed, see here(https://1991421.cn).
             format: markdown
