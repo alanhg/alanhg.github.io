@@ -26,7 +26,7 @@ date: 2021-01-27 17:56:25
 
 
 
-## ## 使用限制
+## 使用限制
 
 - 可多设备同时使用，但不可多账户，比如Mac1的account是user1，Mac2的account是user2，如果同时在线则会报以下错误，如果都是自己的设备，建议账户名称设置一致，如何修改可参考[这里](https://github.com/alanhg/others-note/issues/335)
 
