@@ -87,17 +87,13 @@ sh '''
 
 ```
 
-
-
-[文件下载]([**jenkins-release-npm.groovy**](https://gist.github.com/alanhg/fcdf6daeb9ded0e5427578f5aafdf023))
+文件下载([**jenkins-release-npm.groovy**](https://gist.github.com/alanhg/fcdf6daeb9ded0e5427578f5aafdf023))
 
 ### 字段值说明
 
 - `nodeJSInstallationName`为Global Tool Configuration-NodeJS中指定版本name
 - `nodejs configId`为Config File Management中npmrc文件ID
 - `userRemoteConfigs credentialsId`为Credentials中Git仓库私有令牌ID
-
-
 
 ### 注意
 
