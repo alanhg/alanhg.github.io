@@ -23,7 +23,7 @@ tags:
   # 生成gitlab公司所需要用的，进行重命名id_rsa_company
   $ ssh-keygen -t rsa -C "he@1991421.cn"
 
- ```
+```
 
 这样两者的密钥就是分开生成了,互不冲突
 
@@ -38,13 +38,13 @@ tags:
 ```
 # company-gitlab
 Host 192.168.1.140
-HostName 192.168.1.140
 IdentityFile ~/.ssh/id_rsa_company
 # github
-Host github
-HostName github.com
+Host *
 IdentityFile ~/.ssh/id_rsa
 ```
+
+​    \*即匹配其它所有
 
 + 检测是否成功
 ```
