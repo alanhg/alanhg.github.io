@@ -10,7 +10,7 @@ date: 2019-02-09 15:14:20
 购买的直接动机是希望对网络请求有更好的管理，比如我想实现Mail客户端下，发送Gmail邮件走代理，而发送其它邮件不走代理。这个如果不用Surge能做到吗？可以，但是麻烦些，比如使用ShadowSocks配合Proxier。
 
 有时软件多也是累赘，对于Surge大名,早有耳闻，看了下官方手册,好长。不过官网的一段介绍-`Meets All Your Personalization about Network`,清晰准确的描述了Surge的定位及解决的点。
-于是乎就下单【69.99刀】，可授权设备数为3台，当然iOS版的话又是单独付费【49.99刀-授权设备数3为台】，不得不说，贵！
+于是就下单【69.99刀】，可授权设备数为3台，当然iOS版的话又是单独付费【49.99刀-授权设备数3为台】，不得不说，贵！
 
 但当你用上一段时间后，对比同类的其它APP时，你会发现真香！
 
@@ -213,6 +213,7 @@ iOS测试版想使用，需要加入TestFlight。如果是Web邮箱注册进行�
 
 ## 参考文档
 - https://manual.nssurge.com/
+- [理解Surge原理](https://manual.nssurge.com/book/understanding-surge/cn/)
 - [Surge Mac Release Note](https://nssurge.zendesk.com/hc/zh-cn/sections/360000031193-Release-Note)
 - https://github.com/lhie1/Rules
 - [让人耳目一新的 Surge Mac 2.0](https://medium.com/@scomper/%E8%AE%A9%E4%BA%BA%E8%80%B3%E7%9B%AE%E4%B8%80%E6%96%B0%E7%9A%84-surge-mac-2-0-bb7cf735b1b8)
