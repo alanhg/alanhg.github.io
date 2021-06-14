@@ -98,7 +98,9 @@ GitHub Action文档虽然全，还是踩坑不少，这里列举下
 
 4. 这里Action导出了star值，如果不导出stars值，而是采用输出该变量到环境变量上是不行的，workflow中无法使用该值
 
+## 写在最后
 
+但凡重复，即是体力，但凡人工，必有失误。最好的办法即自动化。如上每次重新编写获取仓库星星数，显然是个体力活。而如上封装后的action隐藏了实现细节，任何仓库的workflow中只要安装即可使用。
 
 ## 相关文档
 
@@ -106,10 +108,3 @@ GitHub Action文档虽然全，还是踩坑不少，这里列举下
 
 - https://docs.github.com/en/actions/creating-actions
 - https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace
-
-## 写在最后
-
-但凡重复，即是体力，但凡人工，必有失误。最好的办法即自动化。如上每次重新编写获取仓库星星数，显然是个体力活。而如上封装后的action隐藏了实现细节，任何仓库的workflow中只要安装即可使用。
-
-
-
