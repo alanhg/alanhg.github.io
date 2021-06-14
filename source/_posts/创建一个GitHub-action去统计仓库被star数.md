@@ -22,6 +22,10 @@ tags:
 curl -s 'https://api.github.com/repos/${{ inputs.repoPath }}?page=$i&per_page=100' | jq .stargazers_count
 ```
 
+### 注意
+
+[jq](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)为内置工具，不需要手动安装
+
 ## 编写GitHub Action
 
 为了便于多个项目复用使用，于是我进行了Action封装，这样对外只需要消费值即可。
