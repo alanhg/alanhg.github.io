@@ -49,6 +49,15 @@ tags:
 
 
 
+
+
 ## 写在最后
 
 通过开启这个验证才注意到1P原来还支持，不得不说真香。
+
+
+
+## 相关文档
+
+- [什么是两步验证](https://www.iplaysoft.com/two-factor-authentication.html)
+
