@@ -1,5 +1,5 @@
 ---
-title: npmjs发布公共包
+title: NPMJS发布公共包
 tags:
   - tslint
   - npm
@@ -15,7 +15,7 @@ date: 2020-01-21 23:34:41
 ### npmjs账户注册
 简单略过
 
-### GitHub仓库托管
+### GitHub托管
 因为需要更新维护，对应做个仓库比较妥当
 
 [戳这里](https://github.com/alanhg/tslint-recommend-rule)
@@ -61,8 +61,18 @@ npm publish --access参数，向下看=public
 
 1. Package.json中files字段进行白名单
 2. .npmignore进行黑名单
+3. .gitignore进行黑名单
 
+#### 注意
 
+- 如果files明确指定，则优先级最高
+
+- 如果files没有指定，而.npmignore存在，则依据它进行文件排除即可
+
+- 如果.npmignore也不存在则依据.gitignore进行排除
+
+- npm默认发布即会排除node_modules，因此不需要手动排除
+- 这里之所以提到存在，是因为空文件也视为生效
 
 ## 写在最后
 
