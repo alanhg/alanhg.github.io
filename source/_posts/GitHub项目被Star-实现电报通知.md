@@ -56,7 +56,7 @@ GitHub Action中的变量有很多中，`${{ github.event.repository.name }}`、
   - 通过@BotFather，创建Bot获取，注意Token完整格式会是这样`12345678:BBFntuCD6nRx1ZIYZ-eCyfP1UO4FeAjnz2M`
 - TELEGRAM_TO
   - 先随便给该bot发送一条信息，确保开启了聊天
-  - 访问 https://api.telegram.org/bot/12345678:BBFntuCD6nRx1ZIYZ-eCyfP1UO4FeAjnz2M/getUpdates，获取其中的chatID
+  - 访问 https://api.telegram.org/bot12345678:BBFntuCD6nRx1ZIYZ-eCyfP1UO4FeAjnz2M/getUpdates，获取其中的chatID
 
 ## 写在最后
 
