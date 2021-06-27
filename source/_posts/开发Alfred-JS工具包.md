@@ -29,9 +29,9 @@ tags:
 
 ## 技术上几点说明
 
-- 这里使用TS-ESModule进行编写，最终TSC编译成CommonJS即可。因为这里只是服务于Alfred，一定是Node环境，因此只输出CommonJS版，当然如果想输出ES版也很简单，增加配置文件即可。
+- 这里使用TS-ESModule进行编写，最终TSC编译成CommonJS即可。因为这里只是服务于Alfred，一定是Node环境，因此只输出CommonJS版，当然如果想输出ES版也很简单，增加配置文件即可
 
-- 当前的IDE对于TS支持已经非常棒，因此TSC编译时，选择输出.d.ts文件。
+- 当前的IDE对于TS支持已经非常棒，因此TSC编译时，选择输出.d.ts文件
 - standard-version进行server版本管理
 - 整个版本发布采用GitHub Action进行自动发布，同时发布OK会telegram消息推送我
 - 为了确保类库的健壮性，增加hook进行UT检测
@@ -51,7 +51,7 @@ tags:
   export {default as utils} from './utils';
   ```
 
-  
+- TypeScript支持直接CommonJS模块编写，但是我们也可以使用ES语法编写模块，而最终编译成CommonJS即可，这里即是采用的该方案
 
 ## 包使用
 
