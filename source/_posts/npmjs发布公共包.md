@@ -7,7 +7,8 @@ abbrlink: 2d7382fa
 date: 2020-01-21 23:34:41
 ---
 >  之前利用公司的nexus发布了一些公司级的UI组件库，最近希望能够将自己在项目中总结的TSRules发布到源上，因为不止希望公司项目能够使用，所以决定进行npmjs托管。
-> 这里简单记录下发布过程
+>
+>  这里记录下发布过程
 
 ## 发布步骤
 
@@ -36,15 +37,30 @@ date: 2020-01-21 23:34:41
 
 ```
 npm adduser
-npm publish
+
+# 为什么加access参数，向下看
+npm publish --access参数，向下看=public
 ```
-当提交发布成功，即可。通过npmjs网站，我们即可看到[已发布的包](https://www.npmjs.com/package/tslint-recommend-rule)
+执行以上命令即可，当提交发布成功，即可。通过npmjs网站，我们即可看到[已发布的包](https://www.npmjs.com/package/tslint-recommend-rule)
 
 ![](https://i.imgur.com/1ezHDc8.png)
 
 
 
-如果遇到报`402 Payment Required`时，增加`--access=public`重新提交即可，因为NPM私有库是付费的。
+## 注意事项
+
+### 402 Payment Required
+
+这里之所以需要增加`--access=public`，因为默认是发布私有包，而NPM私有库是付费的。如果不加该参数，遇到`402 Payment Required`
+
+
+
+### 发布文件黑白名单
+
+发布包时，经常有这样需求，只想发布制定文件，比如测试文件/编译源文件等，这时就需要有黑白名单指定
+
+1. Package.json中files字段进行白名单
+2. .npmignore进行黑名单
 
 
 
