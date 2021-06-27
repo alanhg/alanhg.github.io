@@ -1,5 +1,5 @@
 ---
-title: 开发Alfred JS工具包
+title: 开发Alfred JS SDK
 date: 2021-06-27 16:02:37
 tags:
 - Alfred
