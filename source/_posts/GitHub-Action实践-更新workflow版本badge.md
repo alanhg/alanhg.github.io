@@ -35,7 +35,7 @@ Alfred的workflow文件本质是一个zip压缩文件，解压后，会看到一
 
 1. workflow有些文件名包含空格。markdown链接中如果包含空格，解析会有问题，因此需要提前做转译处理。关于转译，因为是NodeJS，所以无法使用`encodeURIComponent`，可以使用`queryString.escape`解决。
 
-2. 本地调试时，明明安装了plist到全局模块中，但是IDE还是报`Module is not installed` ，原来而nodejs require第三方模块不支持全局模块，因此需要安装到项目下
+2. 本地调试时，明明安装了plist到全局模块中，但是IDE还是报`Module is not installed` ，原来nodejs require第三方模块并不会去全局模块文件夹下寻找，因此需要安装到项目下或者使用`npm link plist` 
 
    ![](https://static.1991421.cn/2021/2021-07-03-131359.jpeg)
 
