@@ -62,7 +62,7 @@ tags:
 
 > **ZIP** is an [archive file format](https://en.wikipedia.org/wiki/Archive_file_format) that supports [lossless data compression](https://en.wikipedia.org/wiki/Lossless_compression). 
 
-而JS中reader.readAsText是读取文本类型文件，ZIP本身是个压缩格式，如果按照文本读取，应该是会丢失部分字节数据。所以这里确实有错。
+而JS中`reader.readAsText`是读取文本类型文件，ZIP本身是个压缩格式，如果按照文本读取，应该是会丢失部分字节数据。所以这里确实有错。
 
 
 
@@ -78,7 +78,7 @@ tags:
   
 - ~~FileReader.readAsBinaryString()非标准API，已废除~~
 
-对于ZIP，不能使用readAsText，于是这里换成readAsDataURL，同时，编码后字符串因为有前缀MIME，因此要去掉`data:application/zip;base64,`
+对于ZIP，不能使用`readAsText`，于是这里换成`readAsDataURL`，同时，编码后字符串因为有前缀MIME，因此要去掉`data:application/zip;base64,`
 
 最终改写后，测试OK。
 
@@ -88,9 +88,11 @@ tags:
 
 - 为了验证这个问题，这里做了个小[Demo](https://github.com/alanhg/express-demo)，感兴趣的可以看看。
 
-- FileReader.readAsDataURL()适用文本/压缩文件，因此在使用中可以完全替代readAsText
+- `FileReader.readAsDataURL()`适用文本/压缩文件，因此在使用中可以完全替代`readAsText`
 
 
+
+这里贴下关键代码块
 
 ```javascript
 const reader = new FileReader();
@@ -99,11 +101,10 @@ reader.readAsDataURL(file);
 fileContent = evt.target.result.replace(/^(data:application\/zip;base64,|data:application\/octet-stream;base64,)/, '');
 ···
 
-
 ···
 // 后端
- const buff = new Buffer(req.body.file, 'base64');
- fs.writeFileSync(`./test.${req.body.fileType === 'zip' ? 'zip' : 'sol'}`, buff);
+const buff = new Buffer(req.body.file, 'base64');
+fs.writeFileSync(`./test.${req.body.fileType === 'zip' ? 'zip' : 'txt'}`, buff);
 ···
 ```
 
