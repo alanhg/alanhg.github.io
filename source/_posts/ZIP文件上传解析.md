@@ -71,12 +71,10 @@ Base64.encode();
 - FileReader.readAsText()
   - 文本文件读写
 
-- FileReader.readAsBinaryString()
-  - 二进制字符串
 - FileReader.readAsArrayBuffer()
-  - 数组buffer
-
-
+  - 二进制数组
+  
+- ~~FileReader.readAsBinaryString()非标准API，已废除~~
 
 对于ZIP，不能使用readAsText，于是这里换成readAsDataURL，同时，编码后字符串因为有前缀MIME，因此要去掉`data:application/zip;base64,`
 
