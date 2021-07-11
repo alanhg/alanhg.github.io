@@ -19,9 +19,11 @@ tags:
 ### 前端
 
 ```javascript
-reader.readAsText(file);
-
-Base64.encode();
+   const reader = new FileReader();
+      reader.readAsText(file, 'UTF-8'); 
+      reader.onload = (evt) => {
+        setUploadContent(Base64.encode(evt.target.result));
+      };
 ```
 
 ### 后端
@@ -87,6 +89,23 @@ Base64.encode();
 - 为了验证这个问题，这里做了个小[Demo](https://github.com/alanhg/express-demo)，感兴趣的可以看看。
 
 - FileReader.readAsDataURL()适用文本/压缩文件，因此在使用中可以完全替代readAsText
+
+
+
+```javascript
+const reader = new FileReader();
+reader.readAsDataURL(file); 
+···
+fileContent = evt.target.result.replace(/^(data:application\/zip;base64,|data:application\/octet-stream;base64,)/, '');
+···
+
+
+···
+// 后端
+ const buff = new Buffer(req.body.file, 'base64');
+ fs.writeFileSync(`./test.${req.body.fileType === 'zip' ? 'zip' : 'sol'}`, buff);
+···
+```
 
 
 
