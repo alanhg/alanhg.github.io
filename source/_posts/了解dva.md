@@ -29,6 +29,10 @@ tags:
 
 
 
+
+
+![](https://static.1991421.cn/2021/2021-07-18-153006.jpeg)
+
 ## 使用
 
 ### dva.js
@@ -135,7 +139,7 @@ const benjy = modelExtend(human, {
 - [sideEffects : false](https://webpack.js.org/guides/tree-shaking/)
 - 采用ES写法，对于第三方工具，CJS导出
 
-从代码量也可以看出dva封装的很轻，并不重。
+从代码量也可以看出dva封装的很轻。
 
 ### 函数实现
 
