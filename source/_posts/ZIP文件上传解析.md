@@ -98,7 +98,7 @@ tags:
 const reader = new FileReader();
 reader.readAsDataURL(file); 
 ···
-fileContent = evt.target.result.replace(/^(data:application\/[a-z-]+;base64,)/, '')
+fileContent = evt.target.result.replace(/^(data:[a-z-\/]+;base64,)/, '')
 ···
 
 ···
